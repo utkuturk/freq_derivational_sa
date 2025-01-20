@@ -1,7 +1,8 @@
-Data in this folder is taken from Furkan Atmaca's 2020 Bogazici University Master's Thesis titled "Suspended Affixation in Turkish."  All 3 experiments were done in IbexFarm. 
+Data in this folder is taken from Furkan Atmaca's 2020 Bogazici University Master's Thesis titled "Suspended Affixation in Turkish."  All 3 experiments were done in IbexFarm. We are only interested in the acceptability experiment. 
 
 # Experiment 1: Acceptability judgments 
 
+* Tested acceptability of different SA
 * Full-sentence presentation, masked unbounded acceptability
 * 2x9 manipulation
     * Disjunctive vs. Conjuctive coordinator
@@ -17,7 +18,7 @@ Data in this folder is taken from Furkan Atmaca's 2020 Bogazici University Maste
     * Inflectional: -(y)I *accusative*
 * N$_{subject}$ = 214, N$_{item-per-suffix}$ = 3, N$_{trial}$ = 54,  N$_{filler}$ = 54
 * Latin square
-* `acceptability_df.rds` is the processed dataframe. 14% of the trials is excluded.
+* `acceptability_df.rds` is the processed dataframe. 14% of the trials are excluded.
     * 9 participants are excluded due to overall filler accuracy lower than 70%.
     * Trials that were answered faster than 2 seconds.
     * Trials that were answered slower than 20 seconds.

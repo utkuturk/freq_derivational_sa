@@ -1,0 +1,13 @@
+item,NP1,CONJ,NP2,Suffix,NP1_en,NP2_en
+4,inat,ve,yalan,-CI,stubbornness,lie
+5,insan,ve,toplum,-CI,human,society
+6,Trump,ve,Hillary,-CI,Trump,Hillary
+16,tartışma,ve,itiraz,-sIz,argument,objection
+17,su,ve,yemek,-sIz,water,food
+18,yağ,ve,şeker,-sIz,oil,sugar
+4,inat,veya,kırı,-CI,stubbornness,offensive
+5,insan,veya,toplum,-CI,human,society
+6,Trump,veya,Hillary,-CI,Trump,Hillary
+16,tartışma,veya,itiraz,-sIz,argument,objection
+17,su,veya,yemek,-sIz,water,food
+18,yağ,veya,şeker,-sIz,oil,sugar

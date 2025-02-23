@@ -1,0 +1,73 @@
+﻿Group,Item,Condition,Item_type,ConjunctType,ConjunctOrder,Agreement,Sentence,Verb,Question,Answer1,Answer2,CorrectAnswer
+A,1,a,grammatical,NA,NA,NA,Neşe Ahmet eve geldiğinde aslında uyuyordu.,locative,Cümlede 'ev' kelimesi geçti mi?,Evet,Hayır,Evet
+A,2,a,grammatical,NA,NA,NA,Didem Serhat'ın markete gittiğini anlamadı galiba.,embedded,Cümlede 'pazar' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,3,a,grammatical,NA,NA,NA,Buğçe öğretmenlerle toplantı yapmadan karar verdi.,without,Buğçe karar vermiş mi?,Evet,Hayır,Evet
+A,4,a,grammatical,NA,NA,NA,Büşra müdürler ile mesai yaptı.,simple,Büşra istifa etmiş mi?,Evet,Hayır,Hayır
+A,5,a,grammatical,NA,NA,NA,Bircan dansçılarla beraber partiye katıldı.,simple,Dansçılar partiye katılmış mı?,Evet,Hayır,Evet
+A,6,a,grammatical,NA,NA,NA,Sevgi garsonun bahşiş istemesine pek üzüldü.,embedded,Sevgi sevinmiş mi?,Evet,Hayır,Hayır
+A,7,a,grammatical,NA,NA,NA,Kitapçı eksik ürünler için yardımcıyı suçladı. ,simple,Cümlede 'eksik' kelimesi geçti mi?,Evet,Hayır,Evet
+A,8,a,grammatical,NA,NA,NA,Müşteri ürün hatası yüzünden satıcıyı azarladı.,simple,Cümlede 'alıcı' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,9,a,grammatical,NA,NA,NA,Patronun kadrodan stajyeri çıkarması şaşırtıcı.,nomsubject,Cümlede 'kadro' kelimesi geçti mi?,Evet,Hayır,Evet
+A,10,a,grammatical,NA,NA,NA,Müdür koordinatörü arayacak diye bekliyoruz.,complementizer,Cümlede 'yönetici' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,11,a,grammatical,NA,NA,NA,Gelin yemeğe patronu çağıracak sandım.,complementizer,Cümlede 'gelin' kelimesi geçti mi?,Evet,Hayır,Evet
+A,12,a,grammatical,NA,NA,NA,Kimyager asistanı net olarak kovdu.,simple,Cümlede 'kesin' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,13,a,grammatical,NA,NA,NA,Kimse Ali'nin olayı anlatmasına şaşırmadı.,NPI,Cümlede 'şaşırmak' kelimesi geçti mi?,Evet,Hayır,Evet
+A,14,a,grammatical,NA,NA,NA,Hasan Ayça'nın kimseyle anlaşmamasını umuyor.,NPI,Cümlede 'tartışmak' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,15,a,grammatical,NA,NA,NA,Dedem bu olayı nereden duyduğumu bilmiyor.,question,Cümlede 'dede' kelimesi geçti mi?,Evet,Hayır,Evet
+A,16,a,grammatical,NA,NA,NA,Ömer arkadaşlarının aramamasına üzüldü.,nominalizer,Cümlede 'sevgili' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,17,a,grammatical,NA,NA,NA,Son dakikada partiden vazgeçilmezine sinir olduk.,case,Cümlede 'vazgeçmek' kelimesi geçti mi?,Evet,Hayır,Evet
+A,18,a,grammatical,NA,NA,NA,Diete başladıktan sonra şeker tüketmemeye karar verdim.,predicate,Cümlede 'tuz' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,19,a,grammatical,NA,NA,NA,Ayça'nın borcunu çoktan ödediğini duydum.,reported speech,Cümlede 'çoktan' kelimesi geçti mi?,Evet,Hayır,Evet
+A,20,a,grammatical,NA,NA,NA,Kardeşim arkadaşlarının içtenlikle birbirlerini övmelerine şaşırdı.,anaphor,Cümlede 'ölmek' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,21,a,grammatical,NA,NA,NA,Bu bölgedeki inşaata aylar öncesinden başlanmıştı.,passive,Cümlede 'ay' kelimesi geçti mi?,Evet,Hayır,Evet
+A,22,a,grammatical,NA,NA,NA,Selin ona ikramiye çıkmışcasına sevindi.,adverbial clause,Selin'e ikramiye çıktı mı?,Evet,Hayır,Hayır
+A,23,a,grammatical,NA,NA,NA,Ceren dedikodu yapıldığını duydu ben de gördüm.,ellipsis,Dedikodu yapıldı mı?,Evet,Hayır,Evet
+A,24,a,grammatical,NA,NA,NA,Öğrencilerim bu konuyu bitirmeyi çok istiyor.,word order,Cümlede 'mühendis' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,25,a,ungrammatical,NA,NA,NA,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,word order,Hasan yarışı kazanmak istiyor mu?,Evet,Hayır,Evet
+A,26,a,ungrammatical,NA,NA,NA,"Ahmet'in uskumruyu pişirmesi, Mehmet'in de ıstakozu duydum.",ellipsis,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Hayır,Evet
+A,27,a,ungrammatical,NA,NA,NA,Yarışmada ödül aldı kadar mutlu bir kızdı.,adverbial clause,Kız mutlu muydu?,Evet,Hayır,Evet
+A,28,a,ungrammatical,NA,NA,NA,Metin yeni çıkan romanı ve gazete okudu.,coordination,Gazete okundu mu?,Evet,Hayır,Evet
+A,29,a,ungrammatical,NA,NA,NA,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,anaphor,İşe alacak mı?,Evet,Hayır,Evet
+A,30,a,ungrammatical,NA,NA,NA,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,verbal sequence,Fazla içilmiş mi?,Evet,Hayır,Evet
+A,31,a,ungrammatical,NA,NA,NA,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,predicates,Büyük emekler verilmiş mi?,Evet,Hayır,Evet
+A,32,a,ungrammatical,NA,NA,NA,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,passive,Cümlede 'çalışan' kelimesi geçti mi?,Evet,Hayır,Evet
+A,33,a,ungrammatical,NA,NA,NA,Çiçek veren adamın öldüğü kadına tanıyordum.,"RC, case",Cümlede 'ölmek' kelimesi geçti mi?,Evet,Hayır,Evet
+A,34,a,ungrammatical,NA,NA,NA,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,"anaphor, active-passive",Cümlede 'mühendis' kelimesi geçti mi?,Evet,Hayır,Evet
+A,35,a,ungrammatical,NA,NA,NA,Zabıtalar işportacının ceza aldıklarına duydu.,case,Cümlede 'duymak' kelimesi geçti mi?,Evet,Hayır,Evet
+A,36,a,ungrammatical,NA,NA,NA,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,nominalizer,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Hayır,Evet
+A,37,a,ungrammatical,NA,NA,NA,Kameramanın görüntüleri sosyal medyaya yüklemiş mi diye duydum.,reported speech,Cümlede 'fotoğrafçı' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,38,a,ungrammatical,NA,NA,NA,Ziyaretçiye göre kendisine tanınan sürenin belirlendiği biliyordu.,case,Cümlede 'zaman' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,39,a,ungrammatical,NA,NA,NA,Kütüphaneciden öğrenciye çalışma salonunda sabahladığını duyuldu.,case,Cümlede 'öğretmen' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,40,a,ungrammatical,NA,NA,NA,Yavaş Hasan'ın konuşması rahatsız etmiş herkesi.,word order,Cümlede 'konforlu' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,41,a,ungrammatical,NA,NA,NA,Mimarın tecrübeli olması herkesin işini daha kolaydı.,predicate,Cümlede 'işçi' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,42,a,ungrammatical,NA,NA,NA,Kahve zammı sonrası öğrenciler çaya yönelmek şaşırtıcı oldu.,nominalizer,Cümlede 'indirim' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,43,a,ungrammatical,NA,NA,NA,Geminin limana yanaşmak için yavaşlamalıyım.,subject,Limandan uzaklaşılmış mı?,Evet,Hayır,Hayır
+A,44,a,ungrammatical,NA,NA,NA,Arkadaşım uzun bir kahvaltı yapmayı ve dışarı çıkmak istedi.,coordination,Öğle yemeği yenmiş mi?,Evet,Hayır,Hayır
+A,45,a,ungrammatical,NA,NA,NA,Yeni işe başlaması beri her sabah heyecanla uyanıyor.,adverbial clause,İşten ayrılınmı mı?,Evet,Hayır,Hayır
+A,46,a,ungrammatical,NA,NA,NA,Geçen ay egzersiz yapıp sonra pes ettiğimdir.,predicate,Egzersize devam edilmiş mi?,Evet,Hayır,Hayır
+A,47,a,ungrammatical,NA,NA,NA,Kimse doktor geldiğinde zaten şaşırdı.,NPI,Doktor aradı mı?,Evet,Hayır,Hayır
+A,48,a,ungrammatical,NA,NA,NA,Sekreter kimsenin aradığını çoktan biliyordu.,NPI,Sekreter şaşırdı mı?,Evet,Hayır,Hayır
+A,49,a,coordination,pronoun,preverbal,NA,Partiye beni ve seni çağırdılar.,coordination,Bu cümlede 'parti' kelimesi geçti mi?,Evet,Hayır,Evet
+A,50,a,coordination,pronoun,preverbal,NA,Sana ve bana yeni bir elbise alındı.,coordination,Bu cümlede 'elbise' kelimesi geçti mi?,Evet,Hayır,Evet
+A,51,a,coordination,pronoun,preverbal,NA,Kamp alanında seni ve beni gördü.,coordination,Bu cümlede 'Yeliz' kelimesi geçti mi?,Evet,Hayır,Evet
+A,52,a,coordination,pronoun,preverbal,NA,Yeni düzenlemeler seni ve beni çok mutlu etti.,coordination,Yeni düzenlemeler mutlu etti mi?,Evet,Hayır,Evet
+A,53,a,coordination,pronoun,preverbal,NA,Komşular seni ve beni şikayet etmiş.,coordination,Komşular şikayet etmiş mi?,Evet,Hayır,Evet
+A,54,a,coordination,pronoun,preverbal,NA,İşyerinde seni ve beni çok severler.,coordination,Bu cümlede 'işyeri' kelimesi geçti mi?,Evet,Hayır,Evet
+A,55,a,coordination,proper,preverbal,NA,Ben ve Utku'nun atışmasıyla herkes gerildi.,coordination,Utku eğlendi mi?,Evet,Hayır,Hayır
+A,56,a,coordination,proper,preverbal,NA,Ben ve Kemal'in haftasonu maçı var.,coordination,Maç pazartesi miydi?,Evet,Hayır,Hayır
+A,57,a,coordination,proper,preverbal,NA,Ben ve Faruk'un hastalığı tedavi edilebilir.,coordination,Hastalık ölümcül mü?,Evet,Hayır,Hayır
+A,58,a,coordination,proper,preverbal,NA,Problemler ben ve Betül'ü telaşlandırdı.,coordination,Bu cümlede 'sorun' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,59,a,coordination,proper,preverbal,NA,Son olay beni ve Cem'i sarstı.,coordination,Bu cümlede 'Ceren' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,60,a,coordination,proper,preverbal,NA,Benim ve Çağla'nın yoğunluğu bu ara çok fazla.,coordination,Bu cümlede 'az' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,61,a,coordination,pronoun,postverbal,NA,İsim listesine yazmadılar onları ve beni.,coordination,İsim listesi var mı?,Evet,Hayır,Evet
+A,62,a,coordination,pronoun,postverbal,NA,Davete çağıracaklarmış seni ve beni.,coordination,Davete çağırılacak mıyız?,Evet,Hayır,Evet
+A,63,a,coordination,proper,postverbal,NA,Olaya dahil etme Selin'i ve beni.,coordination,Olay var mı?,Evet,Hayır,Evet
+A,64,a,coordination,proper,postverbal,NA,Kitabın yazarı önemli değil Osman ve benim için.,coordination,Bu cümlede 'önemli' kelimesi geçti mi?,Evet,Hayır,Evet
+A,65,a,coordination,proper,postverbal,NA,Tamirci ödemeyi alacak benden ve annemden.,coordination,Bu cümlede 'tamirci' kelimesi geçti mi?,Evet,Hayır,Evet
+A,66,a,coordination,proper,postverbal,NA,Hocalar pek başarılı değil Kemal'e ve bana göre.,coordination,Bu cümlede 'başarılı' kelimesi geçti mi?,Evet,Hayır,Evet
+A,67,a,coordination,proper,postverbal,NA,Hastanede danışabilirsin doktorlara ve bana.,coordination,Bu cümlede 'postane' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,68,a,coordination,pronoun,postverbal,NA,Okul toplantısında konuşabilecekler benimle ve seninle.,coordination,Bu cümlede 'veli' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,69,a,coordination,pronoun,postverbal,NA,Dosyaları göndersinler sana ve bana.,coordination,Bu cümlede 'telefon' kelimesi geçti mi?,Evet,Hayır,Hayır
+A,70,a,coordination,pronoun,postverbal,NA,Çay servisi yapacaklar bana ve sana.,coordination,Servis kahve için mi?,Evet,Hayır,Hayır
+A,71,a,coordination,proper,postverbal,NA,Düğün günü haberleşeceğiz Mehmet ve dedesi ile.,coordination,Anma gününde mi haberleşilecek?,Evet,Hayır,Hayır
+A,72,a,coordination,pronoun,postverbal,NA,Kahvaltıya çağırmadılar seni ve beni. ,coordination,Kahvaltıya çağırılmışlar mı?,Evet,Hayır,Hayır

@@ -1,11 +1,16 @@
 // TODO: 
 // [X] put fillers and exp and practice into same template 
 // [ ] improve text_css to get a value for fontsize
-// [ ] include yes/no + likert / ARE WE DOING THIS?
+// [X] include yes/no + likert / ARE WE DOING THIS?
 // [ ] improve overall css for presentation. text should not wrap to the window.
 // [ ] improve css for the question.
-// [ ] Q sadece filler gramlerde var
-// [ ] Latin Square Group ekle 
+// [X] make sure that question only pops up for some of the trials
+// [X] add Latin Square Group
+// [ ] correct repeating "devam" or "space"
+// [ ] Edit intro and explanations
+// [ ] Header completion
+// [ ] Create a completion code and ask for that in the google form
+// [ ] Create a google form after the experient for them to give their email address
 
 PennController.ResetPrefix();
 PennController.DebugOff();

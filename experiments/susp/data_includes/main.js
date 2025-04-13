@@ -78,6 +78,20 @@ var underline_blank = {
 };
 
 
+var button_css = {
+    "font-family": "Helvetica, sans-serif",
+    // "background-color": "#E03A3E",
+    // color: "white",
+    "font-size": "1.25em",
+    padding: "0.5em",
+    "border-radius": "0.25em",
+    // "width": "4em",
+    margin: "0 auto",
+    "text-align": "center",
+    border: "none", // Remove default button border
+    display: "block", // To center the button
+  };
+
 const trialN = () => [
     newVar("TrialN", 0)
         .settings.global()
@@ -109,27 +123,28 @@ const print_sentence = (f) => [
 ];
 
 const print_scale = () => [
-    newText("right", "Kesinlikle duyabileceğim/söyleyeceğim bir cümle")
-        .css("font-size","14px")
-        .css("font-family", "Helvetica, sans-serif")
-        .css("margin-left", "2em")
-        .css("margin-right", "1em")
-        .css("margin-top", "2.5em")
-        .italic()
-    ,
-    newText("left", "Kesinlikle duyabileceğim/söyleyeceğim bir cümle değil")
-        .css("font-size","14px")
-        .css("font-family", "Helvetica, sans-serif")
-        .css("margin-left", "1em")
-        .css("margin-top", "2.5em")
-        .italic()
-    ,
-    newScale(7)
+    // newText("right", "Kesinlikle duyabileceğim/söyleyeceğim bir cümle")
+    //     .css("font-size","14px")
+    //     .css("font-family", "Helvetica, sans-serif")
+    //     .css("margin-left", "2em")
+    //     .css("margin-right", "1em")
+    //     .css("margin-top", "2.5em")
+    //     .italic()
+    // ,
+    // newText("left", "Kesinlikle duyabileceğim/söyleyeceğim bir cümle değil")
+    //     .css("font-size","14px")
+    //     .css("font-family", "Helvetica, sans-serif")
+    //     .css("margin-left", "1em")
+    //     .css("margin-top", "2.5em")
+    //     .italic()
+    // ,
+    newScale("scale", "oldukça kötü", "kötü", "kötü sayılır", "iyi sayılır", "iyi", "oldukça iyi")
         .radio()
         .labelsPosition("bottom")
         .keys()
-        .before(getText("left"))
-        .after(getText("right"))
+        .italic()
+        // .before(getText("left"))
+        // .after(getText("right"))
         .css("font-size","16px")
         .css("font-family", "Helvetica, sans-serif")
         .css("margin", "30pt")
@@ -151,8 +166,8 @@ const print_space = (n, label = "") => {
 
 const devam = (fontsize, label) => [
     newButton("devam"+label, "Devam")
-        .css("font-size",fontsize)
-        .css("font-family", "Helvetica, sans-serif")
+        .css(button_css)
+        .css("font-size", fontsize)
         .print()
         .wait()
 ];
@@ -207,7 +222,7 @@ newTrial(
     ...print_space(3, "intro6"),
     newButton("devam"+"demo", "Devam")
         .css("font-size", "16px")
-        .css("font-family", "Helvetica, sans-serif")
+        .css(button_css)
         .print()
         .wait(
             getTextInput("age")
@@ -312,14 +327,14 @@ var trial = (label) => (row) => {
                     .center()
                     .print()
                     .css(text_css)
-                    .vertical()
+                    // .horizontal()
                     .log(),
                 getScale("answer")
                     .test.selected(row.correct_answer)
                     .success(getVar("is_correct").set(true)),
                 ...print_space(1, "q2"),
                 newButton("devam" + "q", "Devam")
-                    .css(text_css)
+                    .css(button_css)
                     .center()
                     .print()
                     .wait(getScale("answer").test.selected()),

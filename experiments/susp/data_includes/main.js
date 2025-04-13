@@ -1,13 +1,13 @@
 // TODO: 
 // [X] put fillers and exp and practice into same template 
 // [X] improve text_css to get a value for fontsize
-// [X] include yes/no + likert / ARE WE DOING THIS?
+// [X] 1-6 likert: we should have points with their labels below, I don't think we need actual numbers: labels can be oldukça kötü - kötü - kötü sayılır - iyi sayılır - iyi - oldukça iyi.
 // [X] improve overall css for presentation. text should not wrap to the window.
 // [ ] improve css for the question.
 // [X] make sure that question only pops up for some of the trials
 // [X] add Latin Square Group
 // [X] correct repeating "devam" or "space"
-// [ ] Edit intro and explanations
+// [ ] Edit intro and explanations: DONE
 // [X] Header completion
 // [X] Create a completion code and ask for that in the google form
 // [ ] Create a google form after the experient for them to give their email address
@@ -164,17 +164,18 @@ newTrial("instructions",
     defaultText.css(inst_text_css),
     fullscreen(),
     
-    newText(`<p>Merhaba! Size internet ortamında yürütülen bir psikodilbilim deneyi için ulaşıyoruz. Bu deney Massachusetts Üniversitesi Amherst kampüsünden Özge Bakay tarafından yürütülüyor. </p>
-            <p>Bu deneyde Türkçe konuşanların karmaşık Türkçe cümleleri nasıl anlamlandırdığı hakkında fikir edinmeyi amaçlıyoruz. Bunun için bu deneyde sizden verilen cümleleri okuyup sonrasında bu cümleleri puanlamanızı istiyoruz. </p>
-            <p>Puanlama yaparken size verilen cümleleri öğretilen dilbilgisi kurallarına göre değil, etrafınızdaki kişilerden duyup duymama ihtimalinize ya da kendi Türkçenize uygun bulup bulmamanıza göre değerlendirmenizi istiyoruz.</p>
-            <p>Yani size verilen cümle sizce kabul edilebilir, günlük konuşmada kullanılabilir bir cümle ise cümleye 6-7 gibi yüksek bir puan verebilirsiniz. Ama eğer size verilen cümle Türkçe için uygun bir cümle değilse 1 veya 2 gibi düşük bir puan verebilirsiniz. Eğer cümle ne çok iyi ne de çok kötü ise 3 veya 4 gibi arada bir puan verebilirsiniz.</p>
-            <p>Ayrıca, deney boyunca BAZI cümlelerden sonra bir anlama sorusu gelecek. Soru geldiğinde bir önceki cümleye göre uygun cevabı seçip devam edebilirsiniz. Sorulara doğru cevap vermeniz oldukça önemli, lütfen cümleleri dikkatle okuyun. Deneyin tamamının en fazla 15-20 dakika süreceğini tahmin ediyoruz.</p>
+    newText(`<p>Merhaba! Size internet ortamında yürütülen bir dilbilim deneyi için ulaşıyoruz. Bu deney Massachusetts Üniversitesi Amherst kampüsünden Eva Neu, Özge Bakay ve Maryland Üniversitesi College Park kampüsünden Utku Türk tarafından yürütülüyor. </p>
+            <p>Bu deneyde Türkçe konuşanların karmaşık Türkçe cümleleri nasıl anlamlandırdığı hakkında fikir edinmeyi amaçlıyoruz. Bunun için bu deneyde size verilen cümlelerin kabul edilebilir olup olmadığını değerlendirmenizi istiyoruz. </p>
+            <p>Bu değerlendirmeyi yaparken size verilen cümleleri öğretilen dilbilgisi kurallarına göre değil, etrafınızdaki kişilerden duyup duymama ihtimalinize ya da kendi Türkçenize uygun bulup bulmamanıza göre karar vermenizi istiyoruz.</p>
+            <p>Yani size verilen cümle sizce kabul edilebilir, günlük konuşmada kullanılabilir bir cümle ise cümleye 'iyi' bir puan vermelisiniz. Ama eğer cümle Türkçe için uygun bir cümle değilse 'kötü' bir puan vermelisiniz.</p>
+            <p>Detaylı bir değerlendirme yapabilmeniz için ölçekte hem 'iyi' hem de 'kötü' için 3'er farklı derece olacak. Örneğin iyi seçeneği için 'iyi sayılır', 'iyi' ve 'oldukça iyi' seçeneklerini göreceksiniz. Bu seçeneklerden 'iyi sayılır'ı en düşük, 'iyi'yi orta ve 'oldukça iyi'yi en yüksek seviyede kabul edilebilir cümleler için kullanmalısınız. Aynı şekilde 3'lü bir değerlendirme 'kötü' yani sizce kabul edilemez cümleler için de bulunacak. Ölçeği tanımanız için deneyden önce birkaç alıştırma cümlesi yapacasınız. </p>
+            <p>Ayrıca, deney boyunca BAZI cümlelerden sonra bir anlama sorusu gelecek. Soru geldiğinde bir önceki cümleye göre uygun cevabı seçip devam edebilirsiniz. Sorulara doğru cevap vermeniz oldukça önemli, lütfen cümleleri dikkatle okuyun. Deneyin tamamının en fazla 30 dakika süreceğini tahmin ediyoruz.</p>
             <p>Deneyi BİLGİSAYARDAN, ARA VERMEDEN ve SESSİZ bir ortamda tamamlayın. </p>
             <p>Bu deneye katılabilmek için Türkçe konuşuyor olmanız, en az 18 yaşında olmanız ve herhangi bir okuma probleminizin olmaması gerekli.</p>
             <p>Bu çalışmaya katılarak anadil çalışmalarına katkıda bulunacaksınız. Çalışmanın sizin gibi katılımcıları sayesinde birinci dil konuşanların dili nasıl öğrendiklerini, algıladıklarını ve kullandıklarını daha iyi anlamayı ümit ediyoruz. Çalışmada yaklaşık olarak 60 katılımcı bulunacak. </p>
-            <p>Sizden aldığımız her veri giriş kodu gerektiren kişisel bilgisayarda saklanacak. Bu dokümanlara sadece Özge Bakay erişebilecek. Bu çalışmayla ilgili hiçbir raporda isminiz görünmeyecek. Sizden aldığımız tüm veriler deney sonunda size vereceğimiz kod ile kaydedilecek. Böylelikle veriler her zaman anonim olarak kalacak. Deney verileri akademik platformlarda sadece anonim olarak paylaşılacak ve deney verileriniz ile kişisel verileriniz hiçbir şekilde eşleştirilmeyecek. </p>
+            <p>Sizden aldığımız her veri giriş kodu gerektiren kişisel bilgisayarda saklanacak. Bu dokümanlara sadece deney yürütücüleri erişebilecek. Bu çalışmayla ilgili hiçbir raporda isminiz görünmeyecek. Sizden aldığımız tüm veriler deney sonunda size vereceğimiz kod ile kaydedilecek. Böylelikle veriler her zaman anonim olarak kalacak. Deney verileri akademik platformlarda sadece anonim olarak paylaşılacak ve deney verileriniz ile kişisel verileriniz hiçbir şekilde eşleştirilmeyecek. </p>
             <p>Bu çalışmadaki riskler günlük hayatta karşılaşabileceğiniz risklerden daha fazla değil. Eğer veri toplama esnasında herhangi bir şekilde rahatsızlık hissederseniz prosedürü hemen durdurabilir ve katılımdan vazgeçebilirsiniz. Deneyi yarıda bıraktığınız takdirde o ana kadarki deney verileriniz bilgisayara kaydedilmeyecek ve deneyi yarıda bıraktığınız için herhangi bir yaptırım uygulanmayacak.</p>
-            <p>Deneye katılımınız karşılığında <b>150 TL</b> ödeme alacaksınız. Ödeme için deneyi bitirdiğinizde ekranda gözüken kodu not etmeyi ve size gönderdiğimiz formdaki bilgileri doldurmayı unutmayın! Deneyle ilgili herhangi bir problemle karşılaştığınızda ya da sorunuz olduğunda <b>obakay@umass.edu</b> adresine e-posta gönderebilirsiniz.</p>
+            <p>Deneye katılımınız karşılığında <b>175 TL</b> değerinde bir hediye çeki alacaksınız. Ödeme için deneyi bitirdiğinizde ekranda gözüken 'deney tamamlama kodu'nu mutlaka kaydedin. Daha sonra bir Google Forms'a bu kodu ve e-posta adresinizi yazmanızı isteyeceğiz. Siz bu formu tamamladıktan sonra hediye çekinizi ve çekin kullanım detaylarını e-posta adresinize göndereceğiz. Deneyle ilgili herhangi bir problemle karşılaştığınızda ya da sorunuz olduğunda <b>utkuturk@umd.edu</b> adresine e-posta gönderebilirsiniz.</p>
             <p>Deneye katılmayı kabul ediyorsanız demografik bilgi isteyeceğimiz bir sonraki sayfaya geçmek için aşağıdaki "Devam" butonuna tıklayın.</p>`)
             .css("font-size", "16px")
             .css("font-family", "Helvetica, sans-serif")
@@ -233,7 +234,7 @@ newTrial("practice1",
     ...print_space(1, "prac2"),
     devam("24px"),
     ...print_space(4, "prac3"),
-    newText("Örneğin, Türkçe konuşanlar bu cümleye genelde 6 ya da 7 gibi yüksek puanlar veriyor.")
+    newText("Örneğin, Türkçe konuşanlar bu cümleyi genelde kabul edilebilir buluyor ve 'oldukça iyi' veya 'iyi' şeklinde değerlendiriyor.")
         .css(text_css)
         .center()
         .print()
@@ -249,7 +250,7 @@ print_sentence("Köyü ziyaret eden belediye başkanı asla beğenmiş."),
     ...print_space(1, "prac22"),
     devam("24px"),
     ...print_space(4, "prac23"),
-    newText("Örneğin, Türkçe konuşanlar bu cümleye genelde 1 ya da 2 gibi düşük puanlar veriyor.")
+    newText("Önceki cümlenin aksine, Türkçe konuşanlar bu cümleyi genelde kabul edilemez buluyor ve 'oldukça kötü' ya da 'kötü' şeklinde değerlendiriyor.")
         .css(text_css)
         .center()
         .print()
@@ -265,7 +266,7 @@ newTrial("practice3",
     ...print_space(1, "prac32"),
     devam("24px"),
     ...print_space(4, "prac33"),
-    newText("Türkçe konuşanlar bu cümleye 3 ya da 4 gibi arada puanlar veriyor.")
+    newText("Türkçe konuşanlar bu cümleyi çok çok iyi ya da kabul edilebilir bulmuyor ve 'iyi sayılır' gibi düşük seviyede bir değerlendirme yapıyor.")
         .css(text_css)
         .center()
         .print()

@@ -1,21 +1,49 @@
 // TODO: 
-// [ ] put fillers and exp and practice into same template 
+// [X] put fillers and exp and practice into same template 
 // [ ] improve text_css to get a value for fontsize
-// [ ] include yes/no + likert
+// [ ] include yes/no + likert / ARE WE DOING THIS?
 // [ ] improve overall css for presentation. text should not wrap to the window.
 // [ ] improve css for the question.
+// [ ] Q sadece filler gramlerde var
+// [ ] Latin Square Group ekle 
 
 PennController.ResetPrefix();
 PennController.DebugOff();
 PennController.SetCounter("increase")
 
-Sequence("instructions", "intro", "counter", startsWith("practice"), "break", rshuffle("materials", "fillers"), "SendResults()");
+Sequence("instructions", "intro", "counter", startsWith("practice"), "break", rshuffle("exp", "filler"), "SendResults()");
 
 var sendingResultsMessage = "Sonuçlarınız gönderiliyor, lütfen bekleyin.";
 var randomnumber = Math.floor(Math.random()*1000000);
 var completionCode = String("CO" + randomnumber);
 var completionMessage = "Sonuçlarınız gönderildi. Deney tamamlama kodunuzu not edip sekmeyi kapatabilirsiniz. Deney tamamlama kodunuz:" + completionCode;
 var progressBarText = "Ne kadar kaldı?";
+
+
+Header(
+    newVar("itemNum").global(),
+    newVar("trialNum").global(),
+    newVar("sentence").global(),
+    newVar("type").global(),
+    newVar("conj1").global(),
+    newVar("conj2").global(),
+    newVar("question").global(),
+    newVar("answer").global(),
+    newVar("condition").global(),
+    newVar("correctAnswer").global()
+  )
+    // .log("PROLIFIC", GetURLParameter("id"))
+    // .log("completionCode", completionCode)
+    .log("itemNum", getVar("itemNum"))
+    .log("trialNum", getVar("trialNum"))
+    .log("sentence" ,getVar("sentence"))
+    .log("type" ,getVar("type"))
+    .log("conj1" ,getVar("conj1"))
+    .log("conj2" ,getVar("conj2"))
+    .log("question" ,getVar("question"))
+    .log("answer" ,getVar("answer"))
+    .log("condition" ,getVar("condition"))
+    .log("correctAnswer" ,getVar("correctAnswer"));
 
 
 var text_css = {
@@ -76,29 +104,25 @@ const print_scale = () => [
         .wait() 
 ];
 
-const print_space = (n) => {
+const print_space = (n,label) => {
     let spaceString = "";
     for (let i = 0; i < n; i++) {
       spaceString += "<p> </p>";
     }
     return [
-      newText("Space", spaceString)
+      newText("Space" + label, spaceString)
         .print()
     ];
   };
 
-const devam = (fontsize) => [
-    newButton("Devam")
+const devam = (fontsize, label) => [
+    newButton("devam"+label, "Devam")
         .css("font-size",fontsize)
         .css("font-family", "Helvetica, sans-serif")
         .print()
         .wait()
 ];
 
-Header(
-  // ...
-)
-    .log("completionCode", completionCode)
     
 SetCounter("counter", "inc", 1)
 
@@ -130,23 +154,23 @@ newTrial("instructions",
 
 newTrial("intro",
     demog("Age", "Yaşınız:"),
-    print_space(1),
+    print_space(1, "intro1"),
     demog("NativeLangauge", "Anadiliniz ya da anadilleriniz:"),
-    print_space(1),
+    print_space(1, "intro2"),
     demog("DominantLanguage","Birden fazla anadiliniz varsa kendinizi daha rahat ifade ettiğiniz dil:"),
-    print_space(1),    
+    print_space(1, "intro3"),    
     demog("ForeignLanguage", "Konuştuğunuz diğer diller:"),
-    print_space(1),
+    print_space(1, "intro4"),
     demog("School", "Eğitim durumunuz (lise mezunu, üniversite öğrencisi, üniversite mezunu):"),
-    print_space(1),
+    print_space(1, "intro5"),
     ////////////////
     newText("Bilgiler için teşekkürler! Deneye başlamadan önce birkaç alıştırma cümlesi göreceksiniz. Alıştırma cümlelerine geçmek için aşağıdaki butona tıklayın.")
         .css("font-size","16px")
         .css("font-family", "Helvetica, sans-serif")
         .print()
     ,
-    print_space(1),
-    devam("16px")
+    print_space(1, "intro6"),
+    devam("16px", "intro")
 )
 
 .log("Age", getVar("Age"))
@@ -157,50 +181,50 @@ newTrial("intro",
 
 newTrial("practice1",
     print_sentence("Hizmetçi merdiveni duvara yasladı ama bu pek güvenli değildi."),
-    print_space(4),
+    print_space(4, "prac1"),
     print_scale(),
-    print_space(1),
+    print_space(1, "prac2"),
     devam("24px"),
-    print_space(4),
+    print_space(4, "prac3"),
     newText("Örneğin, Türkçe konuşanlar bu cümleye genelde 6 ya da 7 gibi yüksek puanlar veriyor.")
         .css(text_css)
         .center()
         .print()
     ,
-    print_space(1),
-    devam("24px")
+    // print_space(1),
+    devam("24px", "prac")
 )
 
 newTrial("practice2",
 print_sentence("Köyü ziyaret eden belediye başkanı asla beğenmiş."),
-    print_space(4),
+    print_space(4, "prac21"),
     print_scale(),
-    print_space(1),
+    print_space(1, "prac22"),
     devam("24px"),
-    print_space(4),
+    print_space(4, "prac23"),
     newText("Örneğin, Türkçe konuşanlar bu cümleye genelde 1 ya da 2 gibi düşük puanlar veriyor.")
         .css(text_css)
         .center()
         .print()
     ,
-    print_space(1),
-    devam("24px")
+    print_space(1, "prac24"),
+    devam("24px", "prac2")
 )
 
 newTrial("practice3",
     print_sentence("Harabeler onarılmaya dün çalışıldı."),
-    print_space(4),
+    print_space(4, "prac31"),
     print_scale(),
-    print_space(1),
+    print_space(1, "prac32"),
     devam("24px"),
-    print_space(4),
+    print_space(4, "prac33"),
     newText("Türkçe konuşanlar bu cümleye 3 ya da 4 gibi arada puanlar veriyor.")
         .css(text_css)
         .center()
         .print()
     ,
-    print_space(1),
-    devam("24px")
+    print_space(1, "prac34"),
+    devam("24px", "prac3")
 )
 
 newTrial("break",
@@ -209,67 +233,75 @@ newTrial("break",
         .print()
         .css(text_css)
     ,
-    print_space(2),
-    devam("24px")
+    print_space(2, "break"),
+    devam("24px", "break")
 )
 
-Template("experimental.csv", row =>
-    newTrial("materials",
-        trialN(),
-        print_sentence(row.Sentence),
-        print_space(4),
-        print_scale(),
-        print_space(1),
-        devam("24px")
-)
-    .log("group", row.Group)
-    .log("item", row.Item)
-    .log("condition", row.Condition)
-    .log("itemType", row.Item_type)
-    .log("conjunctType", row.ConjunctType)
-    .log("conjunctOrder", row.ConjunctOrder)
-    .log("agreement", row.Agreement)
-    .log("sentence", row.Sentence)
-    .log("verb", row.Verb)
-)
+var trial = (label) => (row) => {
 
-Template("fillers.csv", row =>
-    newTrial("fillers",
+    return newTrial(
+        label,
         trialN(),
-        print_sentence(row.Sentence),
-        print_space(4),
+        print_sentence(row.sentence),
+        print_space(4, "trialbase1"),
         print_scale(),
-        print_space(1),
-        devam("24px"),
-        clear(),
-        print_sentence(row.Question),
-        print_space(1),
-        newScale("answer", row.Answer1, row.Answer2)
-            .checkbox()
-            .center()
-            .print()
-            .css(text_css)
-            .vertical()
-            .log()
-            ,
-        print_space(1),
-        newButton("Devam")
-            .css(text_css)
-            .center()
-            .print()
-            .wait( getScale("answer").test.selected() ) 
-)
-    .log("group", row.Group)
-    .log("item", row.Item)
-    .log("condition", row.Condition)
-    .log("itemType", row.Item_type)
-    .log("conjunctType", row.ConjunctType)
-    .log("conjunctOrder", row.ConjunctOrder)
-    .log("agreement", row.Agreement)
-    .log("sentence", row.Sentence)
-    .log("verb", row.Verb)
-    .log("question", row.Question)
-    .log("answer1", row.Answer1)
-    .log("answer2", row.Answer2)
-    .log("correctAnswer", row.CorrectAnswer)
-)
+        print_space(1, "trialbase2"),
+        devam("24px", "trialbase"),
+        
+        newVar("is_question", "").set(row.isq),
+        getVar("is_question").test.is(1)
+            .success(
+                clear(),
+                newText("questionasked",row.question)
+                    .css(text_css)
+                    .center()
+                    .print()
+                    .log(),
+                print_space(1, "q1"),
+                newVar("is_correct").global().set(false),
+                newScale("answer", "Evet", "Hayir")
+                    .checkbox()
+                    .center()
+                    .print()
+                    .css(text_css)
+                    .vertical()
+                    .log(),
+                getScale("answer")
+                    .test.selected(row.correct_answer)
+                    .success(getVar("is_correct").set(true)),
+                print_space(1, "q2"),
+                newButton("devam" + "q", "Devam")
+                    .css(text_css)
+                    .center()
+                    .print()
+                    .wait(getScale("answer").test.selected()),
+                getVar("is_correct").set(getVar("is_correct")),
+                getVar("correctAnswer").set(row.correct_answer),
+            ),
+        
+        getVar("itemNum").set(row.item),
+        getVar("trialNum").set(getVar("TrialN")),
+        getVar("type").set(row.type),
+        getVar("sentence").set(row.sentence),
+        getVar("conj1").set(row.conjunct1),
+        getVar("conj2").set(row.conjunct2),
+        getVar("condition").set(row.condition),
+        getVar("question").set(row.question),
+        getVar("is_question").test.is(1)
+            .failure(
+                getVar("is_correct").set("NA"),
+                getVar("correctAnswer").set(row.correct_answer) 
+            )
+    );
+};
+
+
+Template(
+  GetTable("items.csv").filter("type", /filler/),
+  trial("filler")
+);
+
+Template(
+  GetTable("items.csv").filter("type", /exp/),
+  trial("exp")
+);

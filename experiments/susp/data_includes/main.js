@@ -3,14 +3,14 @@
 // [X] improve text_css to get a value for fontsize
 // [X] 1-6 likert: we should have points with their labels below, I don't think we need actual numbers: labels can be oldukça kötü - kötü - kötü sayılır - iyi sayılır - iyi - oldukça iyi.
 // [X] improve overall css for presentation. text should not wrap to the window.
-// [X] improve css for the question.
+// [ ] improve css for the question.
 // [X] make sure that question only pops up for some of the trials
 // [X] add Latin Square Group
 // [X] correct repeating "devam" or "space"
-// [X] Edit intro and explanations: DONE
+// [ ] Edit intro and explanations: DONE
 // [X] Header completion
 // [X] Create a completion code and ask for that in the google form
-// [X] Create a google form after the experient for them to give their email address
+// [ ] Create a google form after the experient for them to give their email address
 
 PennController.ResetPrefix();
 PennController.DebugOff();
@@ -375,12 +375,28 @@ newTrial(
     "exit",
     exitFullscreen(),
     newText(
-      "exit-text-ling",
-      "<center><b>Çalışmamıza katıldığınız için teşekkür ederiz!</b></center><br><br>" +
-        "<p>Lütfen aşağıdaki tamamlanma kodunu üstüne tıklayarak kopyalayınız: " + completionCode + 
-        "<p>Katılımınızı onaylamak için aşağıdaki 'BİTİR' butonuna tıklayabilirsiniz." +
+        "exit-text-ling",
+        "<center><b>Çalışmamıza katıldığınız için teşekkür ederiz!</b></center><br><br>" +
+        "<p>Lütfen tamamlama kodunu <span id='copyCode' style='color:blue; text-decoration:underline; cursor:pointer;'>kopyalamak için tıklayınız</span>: <b>" +
+        completionCode + "</b></p>" +
+        "<p>Katılımınızı onaylamak için aşağıdaki 'BİTİR' butonuna tıklayabilirsiniz.</p>" +
         "<p>Bu sizi bir Google Form sayfasına yönlendirecek. Bu sayfada sizden bu tamamlanma kodunu ve e-posta adresinizi girmeniz istenecek, böylece seçtiğiniz hediye kartını size iletebiliriz."
-    ).css(text_css).print(),
+    )
+        .print()
+    ,
+    newFunction(() => {
+        const span = document.getElementById("copyCode");
+        if (span) {
+            span.addEventListener("click", () => {
+                const code = completionCode;  // Or getVar("completionCode").value if dynamically set
+                navigator.clipboard.writeText(code).then(() => {
+                    alert("Kod panoya kopyalandı!");
+                }).catch(err => {
+                    console.error("Kopyalama başarısız:", err);
+                });
+            });
+        }
+    }).call(),
     newButton("   END   ").bold().css(button_css).print().wait(),
     getText("exit-text-ling").remove(),
     newHtml(

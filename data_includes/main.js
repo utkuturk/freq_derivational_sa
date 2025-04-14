@@ -3,27 +3,27 @@
 // [X] improve text_css to get a value for fontsize
 // [X] 1-6 likert: we should have points with their labels below, I don't think we need actual numbers: labels can be oldukça kötü - kötü - kötü sayılır - iyi sayılır - iyi - oldukça iyi.
 // [X] improve overall css for presentation. text should not wrap to the window.
-// [ ] improve css for the question.
+// [X] improve css for the question.
 // [X] make sure that question only pops up for some of the trials
 // [X] add Latin Square Group
 // [X] correct repeating "devam" or "space"
-// [ ] Edit intro and explanations: DONE
+// [X] Edit intro and explanations: DONE
 // [X] Header completion
 // [X] Create a completion code and ask for that in the google form
-// [ ] Create a google form after the experient for them to give their email address
+// [X] Create a google form after the experient for them to give their email address
 
 PennController.ResetPrefix();
 PennController.DebugOff();
 PennController.SetCounter("increase")
 
-Sequence("instructions", "demo", "counter", startsWith("practice"), "break", rshuffle("exp", "filler"), "SendResults()");
+Sequence("instructions", "demo", "counter", startsWith("practice"), "break", rshuffle("exp", "filler"), "SendResults()", "exit");
 
 var sendingResultsMessage = "Sonuçlarınız gönderiliyor, lütfen bekleyin.";
 var randomnumber = Math.floor(Math.random()*1000000);
 var completionCode = String("CO" + randomnumber);
 var completionMessage = "Sonuçlarınız gönderildi. Deney tamamlama kodunuzu not edip sekmeyi kapatabilirsiniz. Deney tamamlama kodunuz:" + completionCode;
 var progressBarText = "Ne kadar kaldı?";
-
+var finallink = "https://forms.gle/uNtV9axnx6EcT81R6";
 
 Header(
     newVar("itemNum").global(),
@@ -368,3 +368,30 @@ Template(
   GetTable("items.csv").filter("type", /exp/),
   trial("exp")
 );
+
+
+
+newTrial(
+    "exit",
+    exitFullscreen(),
+    newText(
+      "exit-text-ling",
+      "<center><b>Çalışmamıza katıldığınız için teşekkür ederiz!</b></center><br><br>" +
+        "<p>Lütfen aşağıdaki tamamlanma kodunu üstüne tıklayarak kopyalayınız: " + completionCode + 
+        "<p>Katılımınızı onaylamak için aşağıdaki 'BİTİR' butonuna tıklayabilirsiniz." +
+        "<p>Bu sizi bir Google Form sayfasına yönlendirecek. Bu sayfada sizden bu tamamlanma kodunu ve e-posta adresinizi girmeniz istenecek, böylece seçtiğiniz hediye kartını size iletebiliriz."
+    ).css(text_css).print(),
+    newButton("   END   ").bold().css(button_css).print().wait(),
+    getText("exit-text-ling").remove(),
+    newHtml(
+        "ling_debrief",
+        "<!DOCTYPE html><meta http-equiv='refresh' content='0; url=" +
+        finallink +
+          "'>Deney sona erdi ve cevaplarınız sunucuya gönderildi.<br />Hediye kartı için gerekli bilgileri doldurmak için <a href = '" +
+          finallink +
+          "'>bu bağlantıya tıklayın</a> ve yönergeleri izleyin."
+      )
+        .print()
+        .wait()
+      
+  );

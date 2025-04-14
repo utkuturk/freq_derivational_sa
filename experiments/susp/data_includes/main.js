@@ -3,14 +3,14 @@
 // [X] improve text_css to get a value for fontsize
 // [X] 1-6 likert: we should have points with their labels below, I don't think we need actual numbers: labels can be oldukça kötü - kötü - kötü sayılır - iyi sayılır - iyi - oldukça iyi.
 // [X] improve overall css for presentation. text should not wrap to the window.
-// [ ] improve css for the question.
+// [X] improve css for the question.
 // [X] make sure that question only pops up for some of the trials
 // [X] add Latin Square Group
 // [X] correct repeating "devam" or "space"
-// [ ] Edit intro and explanations: DONE
+// [X] Edit intro and explanations: DONE
 // [X] Header completion
 // [X] Create a completion code and ask for that in the google form
-// [ ] Create a google form after the experient for them to give their email address
+// [X] Create a google form after the experient for them to give their email address
 
 PennController.ResetPrefix();
 PennController.DebugOff();

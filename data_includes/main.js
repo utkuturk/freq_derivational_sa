@@ -11,8 +11,8 @@
 // [X] Header completion
 // [X] Create a completion code and ask for that in the google form
 // [X] Create a google form after the experient for them to give their email address
-// [ ] ADD RT
-// [ ] Change Hayir to Hayır
+// [X] ADD RT
+// [X] Change Hayir to Hayır
 
 PennController.ResetPrefix();
 PennController.DebugOff();
@@ -37,7 +37,9 @@ Header(
     newVar("question").global(),
     newVar("answer").global(),
     newVar("condition").global(),
-    newVar("correctAnswer").global()
+    newVar("correctAnswer").global(),
+    newVar("questionRT").global(),
+    newVar("ratingRT").global(),
   )
     // .log("PROLIFIC", GetURLParameter("id"))
     .log("completionCode", completionCode)
@@ -50,7 +52,9 @@ Header(
     .log("question" ,getVar("question"))
     .log("answer" ,getVar("answer"))
     .log("condition" ,getVar("condition"))
-    .log("correctAnswer" ,getVar("correctAnswer"));
+    .log("correctAnswer" ,getVar("correctAnswer"))
+    .log("questionRT" ,getVar("questionRT"))
+    .log("ratingRT" ,getVar("ratingRT"));
 
 
 var text_css = {
@@ -125,28 +129,11 @@ const print_sentence = (f) => [
 ];
 
 const print_scale = () => [
-    // newText("right", "Kesinlikle duyabileceğim/söyleyeceğim bir cümle")
-    //     .css("font-size","14px")
-    //     .css("font-family", "Helvetica, sans-serif")
-    //     .css("margin-left", "2em")
-    //     .css("margin-right", "1em")
-    //     .css("margin-top", "2.5em")
-    //     .italic()
-    // ,
-    // newText("left", "Kesinlikle duyabileceğim/söyleyeceğim bir cümle değil")
-    //     .css("font-size","14px")
-    //     .css("font-family", "Helvetica, sans-serif")
-    //     .css("margin-left", "1em")
-    //     .css("margin-top", "2.5em")
-    //     .italic()
-    // ,
     newScale("scale", "oldukça kötü", "kötü", "kötü sayılır", "iyi sayılır", "iyi", "oldukça iyi")
         .radio()
         .labelsPosition("bottom")
         .keys()
         .italic()
-        // .before(getText("left"))
-        // .after(getText("right"))
         .css("font-size","16px")
         .css("font-family", "Helvetica, sans-serif")
         .css("margin", "30pt")
@@ -307,16 +294,18 @@ var trial = (label) => (row) => {
     return newTrial(
         label,
         trialN(),
+        newVar("RT").global().set((v) => Date.now()),
         print_sentence(row.sentence),
         ...print_space(4, "trialbase1"),
         print_scale(),
         ...print_space(1, "trialbase2"),
         devam("24px", "trialbase"),
-        
+        getVar("RT").set((v) => Date.now() - v),
         newVar("is_question", "").set(row.isq),
         getVar("is_question").test.is(1)
             .success(
                 clear(),
+                newVar("qRT").global().set((v) => Date.now()),
                 newText("questionasked",row.question)
                     .css(text_css)
                     .center()
@@ -324,7 +313,7 @@ var trial = (label) => (row) => {
                     .log(),
                 ...print_space(1, "q1"),
                 newVar("is_correct").global().set(false),
-                newScale("answer", "Evet", "Hayir")
+                newScale("answer", "Evet", "Hayır")
                     .checkbox()
                     .center()
                     .print()
@@ -340,10 +329,12 @@ var trial = (label) => (row) => {
                     .center()
                     .print()
                     .wait(getScale("answer").test.selected()),
+                getVar("RT").set((v) => Date.now() - v),
+                getVar("questionRT").set(getVar("qRT")),
                 getVar("is_correct").set(getVar("is_correct")),
                 getVar("correctAnswer").set(row.correct_answer),
             ),
-        
+        getVar("ratingRT").set(getVar("RT")),
         getVar("itemNum").set(row.item),
         getVar("trialNum").set(getVar("TrialN")),
         getVar("type").set(row.type),
@@ -354,6 +345,7 @@ var trial = (label) => (row) => {
         getVar("question").set(row.question),
         getVar("is_question").test.is(1)
             .failure(
+                getVar("questionRT").set("NA"),
                 getVar("is_correct").set("NA"),
                 getVar("correctAnswer").set(row.correct_answer) 
             )
@@ -390,7 +382,7 @@ newTrial(
         const span = document.getElementById("copyCode");
         if (span) {
             span.addEventListener("click", () => {
-                const code = completionCode;  // Or getVar("completionCode").value if dynamically set
+                const code = completionCode; 
                 navigator.clipboard.writeText(code).then(() => {
                     alert("Kod panoya kopyalandı!");
                 }).catch(err => {

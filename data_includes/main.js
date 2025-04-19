@@ -3,20 +3,22 @@
 // [X] improve text_css to get a value for fontsize
 // [X] 1-6 likert: we should have points with their labels below, I don't think we need actual numbers: labels can be oldukça kötü - kötü - kötü sayılır - iyi sayılır - iyi - oldukça iyi.
 // [X] improve overall css for presentation. text should not wrap to the window.
-// [ ] improve css for the question.
+// [X] improve css for the question.
 // [X] make sure that question only pops up for some of the trials
 // [X] add Latin Square Group
 // [X] correct repeating "devam" or "space"
-// [ ] Edit intro and explanations: DONE
+// [X] Edit intro and explanations: DONE
 // [X] Header completion
 // [X] Create a completion code and ask for that in the google form
-// [ ] Create a google form after the experient for them to give their email address
+// [X] Create a google form after the experient for them to give their email address
+// [ ] ADD RT
+// [ ] Change Hayir to Hayır
 
 PennController.ResetPrefix();
 PennController.DebugOff();
 PennController.SetCounter("increase")
 
-Sequence("instructions", "demo", "counter", startsWith("practice"), "break", rshuffle("exp", "filler"), "SendResults()", "exit");
+Sequence("instructions", "demo", "counter", startsWith("practice"), "break", rshuffle("exp", "filler"), SendResults(), "exit");
 
 var sendingResultsMessage = "Sonuçlarınız gönderiliyor, lütfen bekleyin.";
 var randomnumber = Math.floor(Math.random()*1000000);
@@ -249,7 +251,7 @@ newTrial("practice1",
     ...print_space(1, "prac2"),
     devam("24px"),
     ...print_space(4, "prac3"),
-    newText("Örneğin, Türkçe konuşanlar bu cümleyi genelde kabul edilebilir buluyor ve 'oldukça iyi' veya 'iyi' şeklinde değerlendiriyor.")
+    newText("Örneğin, Türkçe konuşanlar bu cümleyi genelde kabul edilebilir buluyor ve 'oldukça iyi' veya 'iyi' şeklinde değerlendiriyor. Bu cümle yapısal olarak birçok kişinin Türkçesine uygun ve etraflarında duyabilecekleri bir cümle.")
         .css(text_css)
         .center()
         .print()
@@ -265,7 +267,7 @@ print_sentence("Köyü ziyaret eden belediye başkanı asla beğenmiş."),
     ...print_space(1, "prac22"),
     devam("24px"),
     ...print_space(4, "prac23"),
-    newText("Önceki cümlenin aksine, Türkçe konuşanlar bu cümleyi genelde kabul edilemez buluyor ve 'oldukça kötü' ya da 'kötü' şeklinde değerlendiriyor.")
+    newText("Önceki cümlenin aksine, Türkçe konuşanlar bu cümleyi genelde kabul edilemez buluyor ve 'oldukça kötü' ya da 'kötü' şeklinde değerlendiriyor. Bu cümle birçok kişinin Türkçesinin yapısına uygun değil.")
         .css(text_css)
         .center()
         .print()
@@ -281,7 +283,7 @@ newTrial("practice3",
     ...print_space(1, "prac32"),
     devam("24px"),
     ...print_space(4, "prac33"),
-    newText("Türkçe konuşanlar bu cümleyi çok çok iyi ya da kabul edilebilir bulmuyor ve 'iyi sayılır' gibi düşük seviyede bir değerlendirme yapıyor.")
+    newText("Türkçe konuşanlar bu cümleyi çok iyi ya da kabul edilebilir bulmuyor ve 'iyi sayılır' gibi düşük seviyede bir değerlendirme yapıyor.")
         .css(text_css)
         .center()
         .print()
@@ -397,7 +399,7 @@ newTrial(
             });
         }
     }).call(),
-    newButton("   END   ").bold().css(button_css).print().wait(),
+    newButton("   BİTİR   ").bold().css(button_css).print().wait(),
     getText("exit-text-ling").remove(),
     newHtml(
         "ling_debrief",

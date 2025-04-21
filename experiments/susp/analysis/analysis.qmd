@@ -1,3 +1,16 @@
+---
+title: "Results"
+format:
+  html:
+    embed-resources: true
+    smooth-scroll: true
+    code-copy: true
+    code-fold: true
+    code-summary: "Show the code"
+
+---
+
+```{r, warning=FALSE, message=FALSE}
 pkgs <- c("tidyverse", "brms", "Rmisc")
 invisible(lapply(pkgs, require, character.only = TRUE))
 
@@ -16,7 +29,10 @@ get.ibex <- function(filepath) {
   read.csv(filepath, comment.char = "#", header = FALSE, col.names = cols)
 }
 
-fname <- "~/Downloads/apr18.csv"
+```
+
+```{r, warning=FALSE, message=FALSE}
+fname <- "apr20.csv"
 df <- get.ibex(fname)
 
 # forms
@@ -36,10 +52,25 @@ condition_labels <- c(
   "h" = "X-lik-and-Y-lik"
 )
 
+condition_levels <- unname(condition_labels)
 # experimental items
-exp <- df %>% filter(Label == "exp" & PennElementType == "Scale") %>%
-  select(completionCode, trialNum, itemNum, condition, Value, sentence, conj1, conj2) %>% 
-  mutate(condition = recode(condition, !!!condition_labels))
+exp <- df %>% 
+  filter(Label == "exp" & PennElementType == "Scale") %>%
+  select(completionCode, trialNum, itemNum, condition, Value, sentence, conj1, conj2, ratingRT) %>% 
+  mutate(
+    condition = recode(condition, !!!condition_labels),
+    condition = factor(condition, levels = condition_levels),
+    ratingRT = as.numeric(ratingRT)
+  )
+
+# rt cut off
+rt_cutoff <- 10000
+rt_exclude <- exp %>% 
+  filter(ratingRT > rt_cutoff) %>% 
+  mutate(id = paste0(completionCode, "_", itemNum)) %>% 
+  .$id
+exp <- exp %>% 
+  filter(!(paste0(completionCode, "_", itemNum) %in% rt_exclude))
 
 # fillers with q
 filler_q <- df %>% filter(Label == "filler" & PennElementType == "Scale" & PennElementName == "answer" & Parameter == "Choice") %>%
@@ -60,13 +91,29 @@ filler_scale <- df %>% filter(Label == "filler" & PennElementType == "Scale" & P
 
 # plot them
 # Summarize the data
-summary_data <- exp %>%
+summary_data <- exp %>% 
   group_by(condition, Value) %>%
   dplyr::summarise(count = n(), .groups = "drop") %>%
-  dplyr::mutate(rating = factor(Value, levels = c("oldukça iyi", "iyi", "iyi sayılır", "kötü sayılır", "kötü", "oldukça kötü")))
+  dplyr::mutate(rating = factor(Value, levels = rev(c("oldukça iyi", "iyi", "iyi sayılır", "kötü sayılır", "kötü", "oldukça kötü"))))
+```
 
+```{r}
 ggplot(summary_data, aes(x = rating, y = count)) +
   geom_col(fill = "steelblue") +
-  facet_wrap(~ condition, ncol = 2) +
+  facet_wrap(~ condition, ncol = 4) +
   labs(x = "Rating", y = "Count", title = "Counts by Condition for Each Rating") +
   theme_minimal()
+```
+
+```{r}
+rt_avgs <- Rmisc::summarySEwithin(exp, measurevar = "ratingRT", withinvars = c("condition"), idvar = "completionCode", na.rm = TRUE, conf.interval = 0.89, .drop = TRUE) %>%
+  mutate(suffix= rep(c("-ci", "-li", "-lik", "-siz"), 2), sa= rep(c("SA", "No SA"), each = 4))
+
+ggplot(rt_avgs, aes(x = suffix, y = ratingRT, linetype = sa)) + 
+  geom_point(position = position_dodge(0.5), size = 3) +
+  geom_errorbar(aes(ymin = ratingRT - ci, ymax = ratingRT + ci), width = 0.2, position = position_dodge(0.5)) +
+  # free_x in the wrap
+  facet_grid(~ suffix , scales = "free_x") +
+  theme_minimal()
+```
+

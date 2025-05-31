@@ -1,0 +1,157 @@
+---
+title: "Data Prep"
+author: Eva, Utku, Özge
+format:
+  html:
+    self-contained: true  # ensures everything is embedded, no extra folders
+    embed-resources: true
+    smooth-scroll: true
+    code-copy: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    toc: true             # adds table of contents
+    toc-location: left    # optional: move TOC to left side
+    toc-depth: 3          # optional: control how deep the TOC goes
+    number-sections: true # adds numbering to sections
+    theme: flatly          # or use another Bootstrap theme like journal, flatly, etc.
+    highlight-style: a11y # accessible syntax highlighting
+    # css: styles.css       # optional: your custom CSS if needed
+---
+
+
+
+
+
+## Setup: load packages and scripts
+
+
+```{r, warning=FALSE, message=FALSE}
+# packages
+invisible(lapply(c("dplyr", "ggplot2", "tidyr", "readr", "purrr", "stringr", "knitr", "DT"), library, character.only = TRUE))
+
+
+# load scripts
+invisible(lapply(list.files("./scripts", "\\.R$", full.names = TRUE), source))
+
+```
+
+## Load the data
+
+- Read in the experimental data
+- First participant is not included since the experiment code changed after the first try.
+- Including the first participant messes up the data structure. One can include that participant later on.
+- It is okay to have undefineds and everything given that this is the entire raw results.
+
+```{r, warning=FALSE, message=FALSE}
+fname <- "./data/freq_sa_may31.csv"
+df <- get.ibex(fname)
+glimpse(df)
+```
+
+
+## Demographics
+
+- Extract the forms and the demographic parts
+- change  %2C to comma, an ecoding error
+
+```{r, warning=FALSE, message=FALSE}
+# forms
+forms <- df %>%
+  filter(Label == "demo" & PennElementType == "TextInput" & Parameter == "Final") %>%
+  select(completionCode, PennElementName, Value) %>%
+  pivot_wider(names_from = PennElementName, values_from = Value)
+
+forms[] <- lapply(forms, function(x) if (is.character(x)) gsub("%2C", ",", x) else x)
+
+
+datatable(forms, options = list(pageLength = 5), rownames = FALSE)
+```
+
+
+## Experimental data
+
+- Assign the conditions
+- Filter out the experimental data
+  - RT Cutoff: 10 seconds
+  - Filler Accuracy Cutoff: at least 0.8 accuracy
+
+**Some Problems**
+
+- Due to an error in the experiment coding, some of the fillers, specifically the ones that have questions do not have any RT data, including both question RT and rating RT. 
+- It is possible to recover them using the EventTime column. I have not included it yet, but pseudo-code should be as the following:
+- For every participant
+  - For every item
+    - If the item is a filler with a question
+      - Get the EventTime for the question presentation, let it be x
+      - Get the EventTime for their answer, let it be y
+      - questionRT is y-x in linux time.
+      - Get the EventTime for the rating presentation, let it be z
+      - Get the EventTime for their rating, let it be w
+      - ratingRT is w-z in linux time.
+
+```{r, warning=FALSE, message=FALSE}
+# condition list
+condition_labels <- c(
+  "a" = "X-and-Y-ci",
+  "b" = "X-ci-and-Y-ci",
+  "c" = "X-and-Y-li",
+  "d" = "X-li-and-Y-li",
+  "e" = "X-and-Y-siz",
+  "f" = "X-siz-and-Y-siz",
+  "g" = "X-and-Y-lik",
+  "h" = "X-lik-and-Y-lik"
+)
+
+condition_levels <- unname(condition_labels)
+# experimental items
+exp <- df %>%
+  filter(Label == "exp" & PennElementType == "Scale") %>%
+  select(completionCode, trialNum, itemNum, condition, Value, sentence, conj1, conj2, ratingRT) %>%
+  mutate(
+    condition = recode(condition, !!!condition_labels),
+    condition = factor(condition, levels = condition_levels),
+    ratingRT = as.numeric(ratingRT)
+  )
+
+# rt cut off
+rt_cutoff <- 10000
+rt_exclude <- exp %>%
+  filter(ratingRT > rt_cutoff) %>%
+  mutate(id = paste0(completionCode, "_", itemNum)) %>%
+  .$id
+exp <- exp %>%
+  filter(!(paste0(completionCode, "_", itemNum) %in% rt_exclude))
+
+# fillers with q
+filler_q <- df %>% filter(Label == "filler" & PennElementType == "Scale" & PennElementName == "answer" & Parameter == "Choice") %>%
+  mutate(Value = ifelse(Value== "Hayir", "Hayır", Value), is_correct = Value == correctAnswer) %>%
+  select(completionCode, trialNum, itemNum, condition, is_correct, sentence, question, answer_given = Value, correctAnswer)
+
+# get by participant means and think of a cutoff for excluding people
+cutoff <- 0.8
+exclude <- filler_q %>%
+  group_by(completionCode) %>%
+  dplyr::summarize(mean_correct = mean(is_correct, na.rm = TRUE)) %>%
+  filter(mean_correct < cutoff) %>%
+  .$completionCode
+
+# all fillers
+filler_scale <- df %>% filter(Label == "filler" & PennElementType == "Scale" & PennElementName == "scale") %>%
+  select(completionCode, trialNum, itemNum, condition, rating = Value, sentence)
+
+```
+
+## Export Data
+
+- save experimental data as a .csv
+- save filler questions as a .csv too
+
+
+```{r, warning=FALSE, message=FALSE}
+# save the data
+write_csv(exp, "./data/exp_data.csv")
+write_csv(filler_q, "./data/filler_q.csv")
+write_csv(filler_scale, "./data/filler_scale.csv")
+write_csv(forms, "./data/forms.csv")
+```

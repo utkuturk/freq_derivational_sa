@@ -28,7 +28,7 @@ format:
 
 ```{r, warning=FALSE, message=FALSE}
 # packages
-invisible(lapply(c("dplyr", "ggplot2", "tidyr", "readr", "purrr", "stringr", "knitr", "DT"), library, character.only = TRUE))
+invisible(lapply(c("dplyr", "ggplot2", "tidyr", "readr", "purrr", "stringr", "knitr", "gt"), library, character.only = TRUE))
 
 
 # load scripts
@@ -65,13 +65,16 @@ forms <- df %>%
 forms[] <- lapply(forms, function(x) if (is.character(x)) gsub("%2C", ",", x) else x)
 
 
-datatable(forms, options = list(pageLength = 5), rownames = FALSE)
+gt(forms) %>%   opt_interactive(page_size_default = 5)
 ```
 
 
 ## Experimental data
 
 - Assign the conditions
+- get suspended affixation conditions
+- get suffix type
+- get numeric ratings
 - Filter out the experimental data
   - RT Cutoff: 10 seconds
   - Filler Accuracy Cutoff: at least 0.8 accuracy
@@ -123,6 +126,27 @@ rt_exclude <- exp %>%
 exp <- exp %>%
   filter(!(paste0(completionCode, "_", itemNum) %in% rt_exclude))
 
+
+# get the suspended affix trials
+no_sa_conds <- c("X-ci-and-Y-ci", "X-li-and-Y-li", "X-siz-and-Y-siz", "X-lik-and-Y-lik")
+
+exp <- exp %>% mutate(is_sa = ifelse(condition %in% no_sa_conds, 0, 1)) 
+
+# get numeric ratings
+ratings <- c("oldukça iyi"="6", "iyi"="5", "iyi sayılır"="4", "kötü sayılır"="3", "kötü"="2", "oldukça kötü"="1")
+
+exp <- exp %>% mutate(rating = recode(Value, !!!ratings)) %>% mutate(rating= as.numeric(rating))
+
+# get the suffix type
+exp <- exp %>% 
+  mutate(suffix = case_when(
+    str_detect(condition, "-ci") ~ "-cI",
+    str_detect(condition, "-lik") ~ "-lIk",
+    str_detect(condition, "-li") ~ "-lI",
+    str_detect(condition, "-siz") ~ "-sIz"
+  )) 
+
+
 # fillers with q
 filler_q <- df %>% filter(Label == "filler" & PennElementType == "Scale" & PennElementName == "answer" & Parameter == "Choice") %>%
   mutate(Value = ifelse(Value== "Hayir", "Hayır", Value), is_correct = Value == correctAnswer) %>%
@@ -136,9 +160,20 @@ exclude <- filler_q %>%
   filter(mean_correct < cutoff) %>%
   .$completionCode
 
+exp <- exp %>%
+  filter(!completionCode %in% exclude)
+
 # all fillers
 filler_scale <- df %>% filter(Label == "filler" & PennElementType == "Scale" & PennElementName == "scale") %>%
-  select(completionCode, trialNum, itemNum, condition, rating = Value, sentence)
+  select(completionCode, trialNum, itemNum, condition, Value, sentence) %>% filter(!completionCode %in% exclude)
+
+filler_scale <- filler_scale %>% mutate(rating = recode(Value, !!!ratings)) %>% mutate(rating= as.numeric(rating))
+
+filler_q <- filler_q %>% filter(!completionCode %in% exclude)
+
+filler_q <- filler_q %>%
+  left_join(filler_scale %>% select(completionCode, itemNum, Value, rating),
+            by = c("completionCode", "itemNum"))
 
 ```
 
@@ -154,4 +189,12 @@ write_csv(exp, "./data/exp_data.csv")
 write_csv(filler_q, "./data/filler_q.csv")
 write_csv(filler_scale, "./data/filler_scale.csv")
 write_csv(forms, "./data/forms.csv")
+```
+
+## Preview
+
+```{r}
+exp %>% gt() %>% opt_interactive(page_size_default = 5,  use_filters = T) %>% tab_header(title = "Experimental Data", subtitle = paste0("N=", length(unique(exp$completionCode)), " excluded = ", length(unique(exclude))))
+filler_q %>% gt() %>% opt_interactive(page_size_default = 5,  use_filters = T) %>% tab_header(title = "Filler Question Data", subtitle = paste0("N=", length(unique(exp$completionCode)), " excluded = ", length(unique(exclude))))
+filler_scale %>% gt() %>% opt_interactive(page_size_default = 5,  use_filters = T) %>% tab_header(title = "Filler Rating Data", subtitle = paste0("N=", length(unique(exp$completionCode)), " excluded = ", length(unique(exclude))))
 ```

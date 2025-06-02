@@ -79,7 +79,7 @@ gt(forms) %>%   opt_interactive(page_size_default = 5)
   - RT Cutoff: 10 seconds
   - Filler Accuracy Cutoff: at least 0.8 accuracy
 
-**Some Problems**
+**Some Problems** (do we really need to do this, maybe...)
 
 - Due to an error in the experiment coding, some of the fillers, specifically the ones that have questions do not have any RT data, including both question RT and rating RT. 
 - It is possible to recover them using the EventTime column. I have not included it yet, but pseudo-code should be as the following:
@@ -118,7 +118,8 @@ exp <- df %>%
   )
 
 # rt cut off
-rt_cutoff <- 10000
+rt_cutoff <- 10000 # check how many participants on RT cutoffs, maybe have a bigger one
+# who are the long RT people, other trials from those participants
 rt_exclude <- exp %>%
   filter(ratingRT > rt_cutoff) %>%
   mutate(id = paste0(completionCode, "_", itemNum)) %>%
@@ -153,7 +154,7 @@ filler_q <- df %>% filter(Label == "filler" & PennElementType == "Scale" & PennE
   select(completionCode, trialNum, itemNum, condition, is_correct, sentence, question, answer_given = Value, correctAnswer)
 
 # get by participant means and think of a cutoff for excluding people
-cutoff <- 0.8
+cutoff <- 0.8 # made this 0.7
 exclude <- filler_q %>%
   group_by(completionCode) %>%
   dplyr::summarize(mean_correct = mean(is_correct, na.rm = TRUE)) %>%

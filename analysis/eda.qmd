@@ -302,6 +302,13 @@ model_no_suffix <- fit_model(
   formula = rating ~ is_sa + (1 + is_sa | subject) + (1 | itemNum),
   model_name = "model_no_suffix"
 )
+# 
+# is_sa * Coord (for each suffix separately)
+# is_sa * csumPMI (for each suffix separately)
+# is_sa * Coord * Suffix # run this no matter what
+# is_sa * csumPMI * Suffix # run this no matter what
+# Do not log them (freq), unless the models goes wrong
+# add more specification if you can
 ```
 
 

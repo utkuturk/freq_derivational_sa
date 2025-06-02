@@ -1,0 +1,1057 @@
+completionCode,trialNum,itemNum,condition,is_correct,sentence,question,answer_given,correctAnswer,Value,rating
+CO439307,4,104,ungram,FALSE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Evet,Hayır,kötü,2
+CO439307,5,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi sayılır,4
+CO439307,7,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü,2
+CO439307,13,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO439307,16,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO439307,20,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO439307,22,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO439307,26,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,iyi sayılır,4
+CO439307,32,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO439307,37,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO439307,38,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO439307,40,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO439307,47,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO439307,49,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO439307,50,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO439307,52,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO439307,53,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü,2
+CO439307,56,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO439307,71,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO439307,79,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO439307,82,103,ungram,FALSE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Evet,Hayır,oldukça kötü,1
+CO439307,86,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO439307,88,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO439307,91,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO695316,1,106,ungram,FALSE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Hayır,Evet,oldukça kötü,1
+CO695316,4,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO695316,7,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO695316,19,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO695316,20,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO695316,22,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO695316,28,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO695316,31,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO695316,32,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO695316,35,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,kötü,2
+CO695316,41,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO695316,46,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO695316,49,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO695316,50,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO695316,53,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO695316,55,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü,2
+CO695316,58,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO695316,61,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO695316,62,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO695316,68,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,oldukça kötü,1
+CO695316,71,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO695316,82,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO695316,86,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO695316,88,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO448745,3,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO448745,6,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO448745,15,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO448745,18,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO448745,21,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO448745,28,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü,2
+CO448745,30,103,ungram,FALSE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Evet,Hayır,oldukça kötü,1
+CO448745,33,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO448745,34,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO448745,36,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO448745,37,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO448745,40,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO448745,42,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO448745,45,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO448745,48,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO448745,51,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO448745,60,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO448745,66,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO448745,73,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO448745,78,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,iyi,5
+CO448745,81,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü,2
+CO448745,88,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO448745,94,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO448745,96,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,iyi sayılır,4
+CO202632,1,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO202632,12,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO202632,13,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü sayılır,3
+CO202632,18,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO202632,19,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO202632,22,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi,5
+CO202632,24,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO202632,31,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,oldukça kötü,1
+CO202632,34,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO202632,36,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO202632,39,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO202632,45,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO202632,46,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO202632,48,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO202632,55,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO202632,57,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO202632,60,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO202632,61,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO202632,67,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO202632,72,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO202632,84,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO202632,88,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO202632,91,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO202632,94,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO16811,12,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO16811,15,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO16811,18,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü,2
+CO16811,24,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO16811,33,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO16811,36,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO16811,40,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO16811,42,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi,5
+CO16811,51,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO16811,52,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO16811,54,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO16811,57,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO16811,58,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO16811,63,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü sayılır,3
+CO16811,66,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi sayılır,4
+CO16811,67,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO16811,69,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO16811,73,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO16811,81,110,ungram,FALSE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Evet,Hayır,kötü,2
+CO16811,85,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO16811,90,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO16811,91,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,kötü,2
+CO16811,93,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO16811,96,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO703295,5,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,kötü sayılır,3
+CO703295,10,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO703295,11,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO703295,13,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO703295,14,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO703295,17,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO703295,22,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,kötü,2
+CO703295,26,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO703295,29,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO703295,40,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO703295,44,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO703295,46,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO703295,50,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO703295,52,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO703295,53,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO703295,59,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO703295,61,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO703295,65,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO703295,67,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO703295,76,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO703295,77,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO703295,79,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO703295,83,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,oldukça kötü,1
+CO703295,89,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO745806,1,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO745806,6,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO745806,10,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO745806,13,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO745806,15,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO745806,21,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO745806,24,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO745806,25,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi sayılır,4
+CO745806,30,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,iyi sayılır,4
+CO745806,39,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO745806,43,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO745806,51,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi sayılır,4
+CO745806,52,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO745806,57,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO745806,61,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO745806,63,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO745806,66,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO745806,69,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO745806,75,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO745806,76,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi,5
+CO745806,78,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO745806,84,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,iyi,5
+CO745806,85,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,iyi,5
+CO745806,94,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO606387,3,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO606387,4,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO606387,6,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO606387,13,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,iyi,5
+CO606387,15,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO606387,19,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,iyi sayılır,4
+CO606387,27,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO606387,28,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO606387,30,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,iyi sayılır,4
+CO606387,33,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO606387,34,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça kötü,1
+CO606387,37,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO606387,40,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO606387,51,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO606387,54,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO606387,55,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO606387,66,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO606387,69,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,iyi,5
+CO606387,72,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi,5
+CO606387,78,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,iyi,5
+CO606387,79,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO606387,84,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO606387,87,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO606387,88,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO520146,3,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO520146,7,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO520146,9,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO520146,13,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO520146,25,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO520146,28,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO520146,33,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,kötü,2
+CO520146,40,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO520146,43,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO520146,45,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO520146,48,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü sayılır,3
+CO520146,52,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO520146,54,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO520146,58,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO520146,63,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO520146,69,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO520146,72,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO520146,73,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO520146,75,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO520146,76,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO520146,79,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO520146,81,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO520146,90,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO520146,96,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO470488,4,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO470488,16,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO470488,18,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO470488,30,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO470488,36,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO470488,45,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO470488,46,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO470488,48,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO470488,49,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO470488,52,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO470488,54,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO470488,58,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO470488,61,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO470488,63,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü sayılır,3
+CO470488,64,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO470488,69,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO470488,79,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,kötü,2
+CO470488,82,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO470488,84,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO470488,85,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO470488,87,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO470488,90,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO470488,91,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO470488,93,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü,2
+CO263824,1,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO263824,2,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO263824,7,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi sayılır,4
+CO263824,10,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,iyi sayılır,4
+CO263824,11,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO263824,13,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO263824,16,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO263824,22,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,iyi,5
+CO263824,23,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO263824,28,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,iyi sayılır,4
+CO263824,29,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü,2
+CO263824,34,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO263824,37,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,iyi sayılır,4
+CO263824,38,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO263824,43,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO263824,44,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü sayılır,3
+CO263824,47,103,ungram,FALSE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Evet,Hayır,kötü,2
+CO263824,55,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi sayılır,4
+CO263824,56,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO263824,59,223,gram,FALSE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Hayır,Evet,oldukça iyi,6
+CO263824,65,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO263824,82,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO263824,91,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO263824,92,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO490300,1,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO490300,7,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO490300,13,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO490300,20,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO490300,25,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,oldukça kötü,1
+CO490300,29,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü,2
+CO490300,32,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO490300,37,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO490300,41,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,iyi,5
+CO490300,47,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü,2
+CO490300,50,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO490300,58,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO490300,61,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO490300,64,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO490300,65,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi,5
+CO490300,67,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,iyi,5
+CO490300,70,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO490300,73,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO490300,76,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO490300,77,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO490300,80,226,gram,FALSE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Evet,Hayır,iyi sayılır,4
+CO490300,82,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,kötü sayılır,3
+CO490300,83,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO490300,88,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO438265,3,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO438265,4,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO438265,7,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO438265,9,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO438265,10,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO438265,15,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO438265,16,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO438265,21,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO438265,30,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO438265,34,103,ungram,FALSE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Evet,Hayır,oldukça kötü,1
+CO438265,42,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi,5
+CO438265,43,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO438265,48,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO438265,51,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO438265,54,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO438265,61,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO438265,63,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO438265,66,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO438265,76,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO438265,79,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO438265,84,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO438265,90,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi sayılır,4
+CO438265,91,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO438265,94,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO15242,2,215,gram,FALSE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Evet,Hayır,kötü,2
+CO15242,4,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO15242,10,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO15242,11,103,ungram,FALSE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Evet,Hayır,oldukça kötü,1
+CO15242,25,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO15242,28,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO15242,34,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO15242,38,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO15242,43,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO15242,44,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,iyi sayılır,4
+CO15242,46,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO15242,47,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO15242,50,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO15242,53,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO15242,55,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO15242,56,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,iyi,5
+CO15242,70,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO15242,85,105,ungram,FALSE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Evet,Hayır,oldukça kötü,1
+CO15242,86,111,ungram,FALSE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Hayır,Evet,oldukça kötü,1
+CO15242,88,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO15242,91,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO15242,92,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO15242,94,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO15242,95,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO420207,1,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO420207,2,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO420207,5,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO420207,11,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO420207,13,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO420207,17,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO420207,19,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO420207,20,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO420207,22,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO420207,23,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO420207,25,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO420207,28,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO420207,40,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO420207,43,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü,2
+CO420207,50,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi sayılır,4
+CO420207,55,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO420207,58,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO420207,67,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO420207,71,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO420207,76,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO420207,80,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü,2
+CO420207,82,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO420207,85,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO420207,91,103,ungram,FALSE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Evet,Hayır,kötü,2
+CO339043,1,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO339043,7,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO339043,13,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO339043,16,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO339043,24,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO339043,27,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,kötü,2
+CO339043,30,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,kötü,2
+CO339043,36,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO339043,37,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO339043,39,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO339043,43,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO339043,46,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO339043,49,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO339043,55,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO339043,57,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO339043,58,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO339043,61,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO339043,66,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü sayılır,3
+CO339043,72,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü,2
+CO339043,75,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO339043,79,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO339043,81,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO339043,82,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO339043,87,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü,2
+CO970457,4,111,ungram,FALSE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Hayır,Evet,kötü,2
+CO970457,12,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü,2
+CO970457,21,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO970457,28,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO970457,30,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO970457,31,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO970457,37,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO970457,39,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi sayılır,4
+CO970457,40,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO970457,42,202,gram,FALSE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Hayır,Evet,oldukça iyi,6
+CO970457,43,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO970457,46,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi,5
+CO970457,57,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO970457,63,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO970457,67,103,ungram,FALSE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Evet,Hayır,oldukça kötü,1
+CO970457,69,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü sayılır,3
+CO970457,70,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO970457,73,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü sayılır,3
+CO970457,75,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO970457,76,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO970457,79,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO970457,88,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO970457,90,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü sayılır,3
+CO970457,96,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü sayılır,3
+CO937903,2,105,ungram,FALSE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Evet,Hayır,iyi sayılır,4
+CO937903,7,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO937903,8,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO937903,11,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO937903,19,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO937903,23,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü,2
+CO937903,31,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,kötü sayılır,3
+CO937903,34,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO937903,35,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO937903,37,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü,2
+CO937903,41,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO937903,43,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO937903,44,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO937903,53,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO937903,55,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi,5
+CO937903,56,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,iyi sayılır,4
+CO937903,58,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO937903,59,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO937903,62,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,iyi sayılır,4
+CO937903,65,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi sayılır,4
+CO937903,67,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO937903,74,110,ungram,FALSE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Evet,Hayır,kötü sayılır,3
+CO937903,77,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO937903,92,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO71890,1,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO71890,11,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO71890,13,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO71890,14,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,iyi sayılır,4
+CO71890,16,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO71890,19,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO71890,20,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO71890,22,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO71890,26,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO71890,40,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO71890,49,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO71890,50,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü sayılır,3
+CO71890,56,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO71890,58,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO71890,61,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO71890,65,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO71890,73,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,iyi,5
+CO71890,77,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO71890,79,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO71890,86,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO71890,88,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi,5
+CO71890,91,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO71890,92,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO71890,95,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,iyi,5
+CO762194,2,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO762194,4,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO762194,10,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO762194,13,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO762194,14,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO762194,17,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO762194,19,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO762194,20,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO762194,28,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO762194,29,106,ungram,FALSE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Hayır,Evet,oldukça kötü,1
+CO762194,34,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO762194,35,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO762194,38,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO762194,44,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO762194,49,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO762194,50,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO762194,52,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO762194,55,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO762194,61,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO762194,64,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO762194,65,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO762194,67,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO762194,88,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO762194,95,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü sayılır,3
+CO834866,1,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,iyi,5
+CO834866,6,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü sayılır,3
+CO834866,7,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO834866,9,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO834866,18,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO834866,21,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO834866,22,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO834866,24,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO834866,33,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi,5
+CO834866,34,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO834866,39,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO834866,46,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO834866,51,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü sayılır,3
+CO834866,52,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,iyi sayılır,4
+CO834866,54,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü sayılır,3
+CO834866,55,226,gram,FALSE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Evet,Hayır,oldukça iyi,6
+CO834866,57,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü,2
+CO834866,67,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO834866,69,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO834866,73,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO834866,76,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO834866,87,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO834866,91,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO834866,94,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO866,1,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO866,4,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO866,5,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO866,7,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO866,10,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO866,16,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO866,19,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO866,31,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO866,32,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO866,35,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO866,46,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO866,50,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO866,52,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO866,53,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,iyi,5
+CO866,55,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO866,58,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO866,61,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO866,68,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO866,70,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO866,74,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO866,76,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,iyi sayılır,4
+CO866,83,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO866,89,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO866,95,226,gram,FALSE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Evet,Hayır,oldukça iyi,6
+CO224865,1,226,gram,FALSE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Evet,Hayır,kötü,2
+CO224865,3,104,ungram,FALSE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Evet,Hayır,iyi,5
+CO224865,4,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO224865,7,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO224865,15,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,iyi,5
+CO224865,18,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,iyi,5
+CO224865,24,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,iyi sayılır,4
+CO224865,25,228,gram,FALSE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Hayır,Evet,kötü,2
+CO224865,30,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO224865,33,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO224865,42,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO224865,43,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO224865,45,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO224865,55,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi,5
+CO224865,64,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,kötü,2
+CO224865,69,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO224865,70,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,iyi,5
+CO224865,72,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO224865,73,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,iyi,5
+CO224865,76,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,iyi,5
+CO224865,82,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,kötü sayılır,3
+CO224865,87,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO224865,90,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO224865,96,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO680683,4,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO680683,6,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO680683,9,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO680683,19,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü sayılır,3
+CO680683,24,103,ungram,FALSE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Evet,Hayır,kötü,2
+CO680683,27,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi,5
+CO680683,33,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO680683,34,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO680683,36,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO680683,42,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO680683,52,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO680683,60,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü,2
+CO680683,61,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü sayılır,3
+CO680683,66,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO680683,67,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO680683,69,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO680683,79,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO680683,82,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO680683,85,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO680683,90,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO680683,91,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO680683,93,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO680683,94,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO680683,96,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO676222,10,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO676222,13,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO676222,15,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO676222,16,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü sayılır,3
+CO676222,19,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO676222,22,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO676222,28,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO676222,33,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO676222,34,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,iyi sayılır,4
+CO676222,40,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO676222,43,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO676222,48,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO676222,49,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi sayılır,4
+CO676222,55,201,gram,FALSE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Hayır,Evet,oldukça iyi,6
+CO676222,60,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO676222,61,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO676222,63,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO676222,73,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü,2
+CO676222,76,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO676222,79,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,kötü sayılır,3
+CO676222,81,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO676222,87,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO676222,91,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO676222,93,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO458293,1,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,iyi sayılır,4
+CO458293,2,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO458293,4,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO458293,8,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO458293,10,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO458293,13,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO458293,14,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO458293,16,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi sayılır,4
+CO458293,26,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO458293,28,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO458293,31,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,kötü,2
+CO458293,34,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,iyi,5
+CO458293,35,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO458293,43,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO458293,47,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü,2
+CO458293,49,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi sayılır,4
+CO458293,52,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO458293,58,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO458293,68,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,iyi,5
+CO458293,70,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,oldukça kötü,1
+CO458293,80,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO458293,88,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO458293,91,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO458293,92,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO99214,2,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO99214,4,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO99214,5,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO99214,10,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO99214,11,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO99214,20,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO99214,28,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi,5
+CO99214,29,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO99214,35,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO99214,43,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO99214,44,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO99214,46,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO99214,50,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO99214,52,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO99214,55,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi sayılır,4
+CO99214,56,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO99214,58,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO99214,68,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO99214,79,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,oldukça kötü,1
+CO99214,80,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO99214,82,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO99214,86,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO99214,92,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,oldukça kötü,1
+CO99214,94,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO459477,1,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO459477,13,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO459477,15,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO459477,16,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO459477,18,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO459477,19,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO459477,21,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO459477,30,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO459477,33,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi sayılır,4
+CO459477,34,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,iyi,5
+CO459477,39,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO459477,42,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO459477,43,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO459477,45,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO459477,46,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO459477,57,208,gram,FALSE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO459477,60,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi,5
+CO459477,66,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO459477,67,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO459477,73,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO459477,78,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,iyi,5
+CO459477,81,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO459477,85,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,oldukça kötü,1
+CO459477,96,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO712108,3,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü sayılır,3
+CO712108,4,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO712108,6,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO712108,10,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO712108,24,106,ungram,FALSE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Hayır,Evet,kötü,2
+CO712108,33,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO712108,36,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,kötü,2
+CO712108,40,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO712108,42,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO712108,46,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO712108,51,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO712108,52,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO712108,54,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO712108,55,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO712108,57,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü sayılır,3
+CO712108,58,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO712108,61,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO712108,70,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO712108,72,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO712108,73,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO712108,79,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO712108,85,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO712108,91,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO712108,94,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO85758,2,222,gram,FALSE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO85758,5,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO85758,7,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO85758,8,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü,2
+CO85758,14,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO85758,23,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO85758,29,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO85758,32,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi,5
+CO85758,38,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü,2
+CO85758,46,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,iyi,5
+CO85758,47,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO85758,49,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO85758,52,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO85758,59,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO85758,62,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO85758,64,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO85758,65,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO85758,70,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO85758,74,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO85758,77,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO85758,79,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO85758,83,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,oldukça kötü,1
+CO85758,85,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO85758,88,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi,5
+CO391648,3,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,iyi,5
+CO391648,6,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO391648,9,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO391648,13,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO391648,18,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO391648,21,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,iyi sayılır,4
+CO391648,22,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO391648,27,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO391648,39,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO391648,40,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO391648,42,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO391648,43,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO391648,45,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO391648,46,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO391648,52,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO391648,60,227,gram,FALSE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Hayır,Evet,oldukça iyi,6
+CO391648,75,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO391648,79,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO391648,81,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi sayılır,4
+CO391648,82,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO391648,87,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,kötü,2
+CO391648,88,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO391648,91,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,iyi sayılır,4
+CO391648,94,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,iyi sayılır,4
+CO705199,5,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO705199,7,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO705199,10,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO705199,11,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO705199,19,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO705199,22,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü,2
+CO705199,23,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO705199,25,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO705199,26,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça kötü,1
+CO705199,28,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO705199,43,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi sayılır,4
+CO705199,50,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO705199,52,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO705199,64,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO705199,68,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,oldukça kötü,1
+CO705199,73,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO705199,76,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO705199,77,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO705199,79,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO705199,80,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO705199,83,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO705199,88,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,oldukça kötü,1
+CO705199,91,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO705199,94,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO312940,1,111,ungram,FALSE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Hayır,Evet,kötü,2
+CO312940,2,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi sayılır,4
+CO312940,8,201,gram,FALSE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Hayır,Evet,iyi,5
+CO312940,13,105,ungram,FALSE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Evet,Hayır,kötü,2
+CO312940,16,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO312940,17,203,gram,FALSE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Hayır,Evet,iyi,5
+CO312940,19,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO312940,28,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi sayılır,4
+CO312940,29,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO312940,32,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO312940,34,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,oldukça kötü,1
+CO312940,40,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO312940,46,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO312940,52,227,gram,FALSE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Hayır,Evet,kötü sayılır,3
+CO312940,55,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO312940,56,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO312940,59,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO312940,61,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO312940,62,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü,2
+CO312940,74,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO312940,77,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,iyi sayılır,4
+CO312940,83,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,iyi,5
+CO312940,89,226,gram,FALSE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Evet,Hayır,iyi sayılır,4
+CO312940,91,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO991001,1,106,ungram,FALSE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Hayır,Evet,kötü,2
+CO991001,4,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,kötü,2
+CO991001,10,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,iyi,5
+CO991001,13,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,iyi sayılır,4
+CO991001,20,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO991001,22,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO991001,25,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO991001,29,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO991001,35,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO991001,37,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO991001,41,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi sayılır,4
+CO991001,43,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO991001,50,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi sayılır,4
+CO991001,52,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü,2
+CO991001,55,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO991001,56,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO991001,59,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,iyi,5
+CO991001,74,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO991001,77,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,iyi sayılır,4
+CO991001,79,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO991001,83,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO991001,86,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO991001,88,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO991001,89,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO531213,4,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,oldukça iyi,6
+CO531213,12,112,ungram,FALSE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Hayır,Evet,iyi sayılır,4
+CO531213,16,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO531213,24,101,ungram,FALSE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Hayır,Evet,oldukça iyi,6
+CO531213,25,105,ungram,FALSE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Evet,Hayır,oldukça kötü,1
+CO531213,31,110,ungram,FALSE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Evet,Hayır,iyi,5
+CO531213,36,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO531213,37,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO531213,40,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO531213,42,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO531213,43,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,kötü sayılır,3
+CO531213,46,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO531213,49,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,iyi sayılır,4
+CO531213,52,208,gram,FALSE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Evet,Hayır,kötü sayılır,3
+CO531213,54,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO531213,60,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,kötü sayılır,3
+CO531213,61,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,kötü,2
+CO531213,63,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO531213,64,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,kötü sayılır,3
+CO531213,67,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO531213,72,103,ungram,FALSE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Evet,Hayır,kötü sayılır,3
+CO531213,85,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO531213,87,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü,2
+CO531213,88,226,gram,FALSE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Evet,Hayır,kötü,2
+CO289957,1,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO289957,5,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO289957,8,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO289957,11,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO289957,17,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO289957,25,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO289957,34,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO289957,35,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi,5
+CO289957,37,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO289957,41,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO289957,46,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO289957,47,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO289957,52,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO289957,53,110,ungram,FALSE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Evet,Hayır,oldukça kötü,1
+CO289957,55,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO289957,58,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO289957,59,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO289957,70,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO289957,74,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO289957,76,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO289957,80,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO289957,83,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO289957,88,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO289957,94,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO383794,5,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO383794,7,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO383794,8,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO383794,11,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi,5
+CO383794,19,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO383794,23,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO383794,31,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,iyi,5
+CO383794,32,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO383794,37,202,gram,FALSE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Hayır,Evet,oldukça iyi,6
+CO383794,41,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO383794,43,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi sayılır,4
+CO383794,53,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,iyi,5
+CO383794,58,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO383794,59,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO383794,62,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO383794,71,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO383794,73,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO383794,74,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO383794,80,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO383794,82,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü sayılır,3
+CO383794,86,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü sayılır,3
+CO383794,92,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO383794,94,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,kötü sayılır,3
+CO383794,95,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO240084,10,103,ungram,FALSE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Evet,Hayır,oldukça kötü,1
+CO240084,15,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO240084,16,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO240084,21,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi sayılır,4
+CO240084,22,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO240084,25,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,iyi,5
+CO240084,27,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO240084,28,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO240084,31,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO240084,36,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO240084,48,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO240084,57,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO240084,58,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO240084,63,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO240084,67,201,gram,FALSE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Hayır,Evet,iyi,5
+CO240084,69,202,gram,FALSE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Hayır,Evet,oldukça iyi,6
+CO240084,73,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO240084,75,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO240084,78,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO240084,85,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO240084,87,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO240084,88,215,gram,FALSE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO240084,90,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO240084,96,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,kötü,2
+CO438997,4,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO438997,5,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi sayılır,4
+CO438997,7,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO438997,10,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO438997,14,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO438997,20,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO438997,22,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO438997,25,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO438997,31,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO438997,32,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO438997,34,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO438997,35,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO438997,38,226,gram,FALSE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Evet,Hayır,oldukça iyi,6
+CO438997,53,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,iyi sayılır,4
+CO438997,58,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO438997,64,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO438997,71,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO438997,73,105,ungram,FALSE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Evet,Hayır,oldukça kötü,1
+CO438997,77,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,iyi,5
+CO438997,79,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO438997,82,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO438997,83,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO438997,89,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO438997,91,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO112510,4,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO112510,7,103,ungram,FALSE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Evet,Hayır,oldukça kötü,1
+CO112510,8,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO112510,11,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,iyi,5
+CO112510,14,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO112510,16,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO112510,17,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO112510,20,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,iyi sayılır,4
+CO112510,29,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO112510,37,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO112510,38,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO112510,44,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi,5
+CO112510,58,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO112510,62,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO112510,64,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,iyi,5
+CO112510,65,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,oldukça kötü,1
+CO112510,76,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO112510,79,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü sayılır,3
+CO112510,83,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi sayılır,4
+CO112510,85,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO112510,86,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO112510,88,106,ungram,FALSE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Hayır,Evet,iyi sayılır,4
+CO112510,91,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO112510,94,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO221848,1,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO221848,2,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO221848,7,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO221848,13,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO221848,22,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO221848,26,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO221848,28,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü,2
+CO221848,37,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO221848,40,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO221848,43,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO221848,44,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü,2
+CO221848,46,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,oldukça iyi,6
+CO221848,47,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,oldukça iyi,6
+CO221848,61,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO221848,64,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO221848,67,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,iyi sayılır,4
+CO221848,68,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO221848,70,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO221848,76,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,oldukça iyi,6
+CO221848,79,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü,2
+CO221848,80,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO221848,82,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO221848,86,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO221848,88,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO960722,1,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO960722,9,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO960722,15,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,kötü sayılır,3
+CO960722,28,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,iyi sayılır,4
+CO960722,31,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO960722,33,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO960722,36,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO960722,37,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi,5
+CO960722,39,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,iyi,5
+CO960722,40,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,kötü sayılır,3
+CO960722,42,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO960722,43,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,kötü,2
+CO960722,45,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,kötü,2
+CO960722,46,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü,2
+CO960722,49,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO960722,51,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO960722,54,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi sayılır,4
+CO960722,55,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO960722,60,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO960722,61,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO960722,63,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO960722,78,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO960722,79,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü sayılır,3
+CO960722,87,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,iyi sayılır,4
+CO541040,1,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO541040,4,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO541040,10,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO541040,13,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,iyi sayılır,4
+CO541040,15,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,iyi sayılır,4
+CO541040,18,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,oldukça kötü,1
+CO541040,24,228,gram,TRUE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Evet,Evet,oldukça iyi,6
+CO541040,25,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,oldukça kötü,1
+CO541040,27,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO541040,30,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,iyi,5
+CO541040,31,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO541040,36,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO541040,46,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,oldukça iyi,6
+CO541040,52,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO541040,55,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,kötü sayılır,3
+CO541040,57,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,oldukça kötü,1
+CO541040,58,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,kötü,2
+CO541040,63,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO541040,64,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO541040,66,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO541040,69,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO541040,79,221,gram,FALSE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Evet,Hayır,oldukça iyi,6
+CO541040,81,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO541040,96,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO866208,1,223,gram,TRUE,Kahvaltı sofrasına sıcak ve taze ekmek olmadan oturulmaz.,Cümlede 'sıcak' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO866208,3,201,gram,TRUE,Doğum günü partisine arkadaşlarını ve akrabalarını çağırdılar.,Cümlede 'akraba' kelimesi geçti mi?,Evet,Evet,iyi,5
+CO866208,16,106,ungram,TRUE,Fazla içmiş senin gibi göründüğünün farkında değilsin anlaşılan.,Fazla içilmiş mi?,Evet,Evet,oldukça kötü,1
+CO866208,25,109,ungram,TRUE,Çiçek veren adamın öldüğü kadına tanıyordum.,Cümlede 'doğmak' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO866208,30,208,gram,TRUE,Metin severek kullandığı kırmızı ve kalın atkıyı geçenlerde kaybetmiş.,Cümlede 'mavi' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO866208,33,107,ungram,TRUE,Bu işyeri yıllarca büyük emekler verip çalıştığımdır.,Büyük emekler verilmiş mi?,Evet,Evet,kötü,2
+CO866208,34,102,ungram,TRUE,Ahmet'in uskumruyu pişirmesi%2C Mehmet'in de ıstakozu duydum.,Cümlede 'ıstakoz' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO866208,36,112,ungram,TRUE,Veliler için öğretmeni suçlamak kolay olduğunu düşünüyorlar.,Cümlede 'suçlamak' kelimesi geçti mi?,Evet,Evet,kötü,2
+CO866208,39,104,ungram,TRUE,Metin yeni çıkan romanı ve gazete okudu.,Şiir okundu mu?,Hayır,Hayır,iyi sayılır,4
+CO866208,40,221,gram,TRUE,Tamir çantasındaki araç ve gereçler doğru düzgün çalışmıyor.,Cümlede 'alet' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6
+CO866208,43,105,ungram,TRUE,Mehmet Ayça'ya dün akşam dedi ki birbirini işe alacak.,İşten kovacak mı?,Hayır,Hayır,kötü,2
+CO866208,46,108,ungram,TRUE,Binalar yapılmaya yeni başlayan çalışanlar tarafından başlandı.,Cümlede 'patron' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO866208,51,228,gram,FALSE,Lisedeki matematik ve kimya dersleri herkesin korkulu rüyasıydı.,Matematikten korkulur muydu?,Hayır,Evet,oldukça iyi,6
+CO866208,54,205,gram,TRUE,Düğün günü koşturmaca arasında yaşlı ve yatalak dedesi ile de vedalaştı.,Dede sağlıklı mı?,Hayır,Hayır,kötü,2
+CO866208,55,202,gram,TRUE,Hediye çekiyle çocuklara ve yaşlılara yeni birer ayakkabı alındı.,Alışveriş ayakkabı için miydi?,Evet,Evet,iyi,5
+CO866208,57,111,ungram,TRUE,Zabıtalar işportacının ceza aldıklarına duydu.,Cümlede 'duymak' kelimesi geçti mi?,Evet,Evet,oldukça kötü,1
+CO866208,69,101,ungram,TRUE,Bugünkü yarışı kazanmak dostum Hasan çok istiyor.,Hasan yarışı kazanmak istiyor mu?,Evet,Evet,kötü,2
+CO866208,72,103,ungram,TRUE,Yarışmada ödül aldı kadar mutlu bir kızdı.,Kız mutsuz muydu?,Hayır,Hayır,oldukça kötü,1
+CO866208,79,203,gram,TRUE,Piknik alanına yüksek ve zorlu tepeleri aşarak varmamız gerekti.,Tepeler zorlu muydu?,Evet,Evet,oldukça iyi,6
+CO866208,81,110,ungram,TRUE,Mühendisler herkese birbirlerinin işten attıklarını anlattılar.,Cümlede 'mimar' kelimesi geçti mi?,Hayır,Hayır,oldukça kötü,1
+CO866208,84,226,gram,TRUE,Yeni eve kışlık ve kalın yorgan almak için biraz daha bekleyeceklermiş.,Yorgan aldılar mı?,Hayır,Hayır,kötü sayılır,3
+CO866208,87,215,gram,TRUE,Deniz papatyalardan ve lalerden renkli bir buket yaptırmış.,Cümlede 'gül' kelimesi geçti mi?,Hayır,Hayır,iyi,5
+CO866208,88,227,gram,TRUE,Ayşe dikiş kutusunda iğne ve iplik kalmadığını daha yeni fark etti.,Ayşe eksikleri fark etmiş mi?,Evet,Evet,oldukça iyi,6
+CO866208,91,222,gram,TRUE,Kantindeki çay ve kahve fiyatlarına felaket bir zam yapılmış.,Cümlede 'su' kelimesi geçti mi?,Hayır,Hayır,oldukça iyi,6

@@ -2,7 +2,4 @@
 .Rhistory
 .RData
 .Ruserdata
-./analysis/models/model_full_prior.rds
-./analysis/models/model_no_interaction.rds
-./analysis/models/model_no_sa.rds
-./analysis/models/model_no_suffix.rds
+**/*.rds

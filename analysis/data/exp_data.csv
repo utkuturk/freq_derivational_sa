@@ -1,45 +1,67 @@
 completionCode,trialNum,itemNum,condition,Value,sentence,conj1,conj2,ratingRT,is_sa,rating,suffix
+CO439307,3,17,X-and-Y-li,iyi sayılır,Eylül kamp yaparken tepe ve nehirli bir alan seçti.,tepe,nehir,10740,1,4,-lI
+CO439307,6,4,X-lik-and-Y-lik,kötü,Burak tatlı için limonluk ve portakallık bir tabak hazırlamış.,limon,portakal,11970,0,2,-lIk
+CO439307,9,14,X-siz-and-Y-siz,iyi sayılır,Elif gençlik yıllarında faresiz ve aslansız bir oyun sahneledi.,fare,aslan,10758,0,4,-sIz
 CO439307,12,3,X-and-Y-ci,kötü,Leyla eski çarşıda atkı ve şapkacı bir tuhafiyeye uğrayacakmış.,atkı,şapka,8020,1,2,-cI
 CO439307,15,29,X-and-Y-lik,kötü,Melis çocuk kitabı için ejderha ve perilik bir seri başlatmayı düşündü.,ejderha,peri,8363,1,2,-lIk
+CO439307,18,30,X-siz-and-Y-siz,kötü sayılır,Asuman dergi yazısı için düğünsüz ve cenazesiz bir program önerdi.,cenaze,düğün,11654,0,3,-sIz
 CO439307,21,2,X-ci-and-Y-ci,kötü,Ömer yeni evine masacı ve sandalyeci bir usta getirdi.,masa,sandalye,7660,0,2,-cI
 CO439307,24,25,X-and-Y-li,oldukça kötü,İzel toplantı sırasında burun ve boyunlu bir maske inceledi.,burun,boyun,6721,1,1,-lI
 CO439307,27,26,X-ci-and-Y-ci,oldukça kötü,Sinan gece yarısı hayaletçi ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,8440,0,1,-cI
 CO439307,30,13,X-and-Y-lik,oldukça kötü,Emin geçen tatilde şehir ve köylük bir bölgeyi gezdi.,şehir,köy,5015,1,1,-lIk
 CO439307,33,23,X-and-Y-siz,iyi,Jale geçen hafta çatal ve bıçaksız bir piknik yaptı.,çatal,bıçak,9201,1,5,-sIz
 CO439307,36,15,X-and-Y-siz,kötü,Deniz misafir beklerken sürahi ve bardaksız bir sofra kurdu.,sürahi,bardak,8391,1,2,-sIz
+CO439307,39,6,X-siz-and-Y-siz,iyi,Ali diyetteyken muzsuz ve havuçsuz bir kek yapardı.,muz,havuç,12850,0,5,-sIz
 CO439307,42,16,X-li-and-Y-li,oldukça kötü,Okan üniversite yıllarında çiftlikli ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,9201,0,1,-lI
+CO439307,45,32,X-li-and-Y-li,kötü sayılır,Aydan restorasyon projesi için tabanlı ve tavanlı bir plan çizdi.,taban,tavan,13732,0,3,-lI
+CO439307,48,24,X-li-and-Y-li,kötü sayılır,Neval ders çalışırken gözlü ve kulaklı bir robot gördü.,göz,kulak,11552,0,3,-lI
 CO439307,51,27,X-and-Y-ci,oldukça kötü,Baran araştırması için orman ve çölcü bir araştırmacıyla anlaştı.,orman,çöl,9917,1,1,-cI
+CO439307,54,21,X-and-Y-lik,oldukça kötü,Mertcan dün akşam abi ve ablalık bir hediye aldı.,abi,abla,10603,1,1,-lIk
 CO439307,57,7,X-and-Y-siz,iyi,Dilek çeyiz alşverişi için battaniye ve halısız bir paket seçmiş.,battaniye,halı,7015,1,5,-sIz
 CO439307,60,31,X-and-Y-siz,iyi sayılır,Tülay sonbahar koleksiyonu için gömlek ve pantolonsuz bir katalog inceledi.,gömlek,pantolon,7972,1,4,-sIz
 CO439307,63,18,X-ci-and-Y-ci,oldukça kötü,Nevzat genç bir stajyerken okulcu ve camici bir mimarın eserlerini inceledi.,okul,cami,7029,0,1,-cI
 CO439307,66,22,X-siz-and-Y-siz,oldukça kötü,Yankı geçen yaz atsız ve balıksız bir menü denedi.,at,balık,9814,0,1,-sIz
+CO439307,69,12,X-lik-and-Y-lik,kötü,Merve aile mirasıyla evlik ve bahçelik bir arsa satın aldı.,ev,bahçe,10435,0,2,-lIk
+CO439307,72,28,X-lik-and-Y-lik,kötü sayılır,Yasemin mezuniyetinden önce doktorluk ve avukatlık bir kimlik seçti.,avukat,doktor,12319,0,3,-lIk
 CO439307,75,10,X-ci-and-Y-ci,oldukça kötü,Ali her hafta kedici ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,6007,0,1,-cI
+CO439307,78,20,X-lik-and-Y-lik,iyi,Fehime düğünden önce büyükannelik ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,10948,0,5,-lIk
+CO439307,81,5,X-and-Y-lik,oldukça kötü,Ece yılbaşı için tablo ve vazoluk bir masa aldı.,tablo,vazo,10570,1,1,-lIk
 CO439307,84,9,X-and-Y-li,oldukça kötü,Zeynep bu hafta anne ve babalı bir toplantıya katıldı.,anne,baba,5948,1,1,-lI
 CO439307,87,19,X-and-Y-ci,oldukça kötü,Zühre son yolculukta gece ve gündüzcü bir rehberle tanıştı.,gece,gündüz,4665,1,1,-cI
 CO439307,90,8,X-li-and-Y-li,iyi sayılır,Selin tamir için kapılı ve pencereli bir atölye tasarlamış.,kapı,pencere,9184,0,4,-lI
 CO439307,93,1,X-and-Y-li,kötü,Emel geçen haftasonu çorap ve ayakkabılı bir takım aldı.,çorap,ayakkabı,5982,1,2,-lI
 CO439307,96,11,X-and-Y-ci,kötü,Ahmet yabancı bir üniversitede bilim ve teknolojici bir araştırmaya katıldı.,bilim,teknoloji,6066,1,2,-cI
 CO695316,3,10,X-and-Y-li,iyi,Ali geçen ay kedi ve köpekli bir veteriner kliniği açtı.,kedi,köpek,7000,1,5,-lI
+CO695316,6,13,X-lik-and-Y-lik,iyi,Emin geçen tatilde şehirlik ve köylük bir bölgeyi gezdi.,şehir,köy,16935,0,5,-lIk
+CO695316,9,16,X-and-Y-siz,iyi sayılır,Okan üniversite yıllarında çiftlik ve fabrikasız bir iş modeli önerdi.,çiftlik,fabrika,10841,1,4,-sIz
+CO695316,12,20,X-and-Y-ci,oldukça iyi,Fehime düğünden önce büyükanne ve dedeci bir gelenek hakkında yazı okudu.,büyükanne,dede,18276,1,6,-cI
 CO695316,15,23,X-siz-and-Y-siz,oldukça iyi,Jale geçen hafta çatalsız ve bıçaksız bir piknik yaptı.,çatal,bıçak,5878,0,6,-sIz
 CO695316,18,17,X-li-and-Y-li,oldukça iyi,Eylül kamp yaparken tepeli ve nehirli bir alan seçti.,tepe,nehir,4530,0,6,-lI
+CO695316,21,4,X-and-Y-ci,kötü sayılır,Burak tatlı için limon ve portakalcı bir satıcıdan sipariş vermiş.,limon,portakal,54875,1,3,-cI
 CO695316,24,21,X-lik-and-Y-lik,kötü,Mertcan dün akşam abilik ve ablalık bir hediye aldı.,abi,abla,6118,0,2,-lIk
+CO695316,27,18,X-and-Y-li,oldukça iyi,Nevzat genç bir stajyerken okul ve camili bir mahallede oturdu.,okul,cami,14346,1,6,-lI
 CO695316,30,31,X-siz-and-Y-siz,oldukça iyi,Tülay sonbahar koleksiyonu için gömleksiz ve pantolonsuz bir katalog inceledi.,gömlek,pantolon,4883,0,6,-sIz
+CO695316,33,27,X-ci-and-Y-ci,iyi sayılır,Baran araştırması için ormancı ve çölcü bir araştırmacıyla anlaştı.,orman,çöl,14799,0,4,-cI
 CO695316,36,28,X-and-Y-ci,kötü,Yasemin mezuniyetinden önce doktor ve avukatçı bir derneğe katıldı.,avukat,doktor,8406,1,2,-cI
 CO695316,39,3,X-ci-and-Y-ci,oldukça iyi,Leyla eski çarşıda atkıcı ve şapkacı bir tuhafiyeye uğrayacakmış.,atkı,şapka,4742,0,6,-cI
 CO695316,45,11,X-ci-and-Y-ci,kötü sayılır,Ahmet yabancı bir üniversitede bilimci ve teknolojici bir araştırmaya katıldı.,bilim,teknoloji,8178,0,3,-cI
 CO695316,48,8,X-and-Y-siz,oldukça iyi,Selin tamir için kapı ve penceresiz bir atölye tasarlamış.,kapı,pencere,5265,1,6,-sIz
 CO695316,51,14,X-and-Y-lik,oldukça kötü,Elif takım oyununda fare ve aslanlık bir sembol seçti.,fare,aslan,6986,1,1,-lIk
+CO695316,54,1,X-li-and-Y-li,oldukça iyi,Emel geçen haftasonu çoraplı ve ayakkabılı bir takım aldı.,çorap,ayakkabı,15976,0,6,-lI
 CO695316,57,2,X-and-Y-li,oldukça iyi,Ömer yeni evine masa ve sandalyeli bir yemek odası kurdu.,masa,sandalye,3941,1,6,-lI
+CO695316,60,22,X-and-Y-lik,iyi sayılır,Yankı geçen yaz at ve balıklık bir hayvanay bahçesi yaptırdı.,at,balık,11363,1,4,-lIk
 CO695316,63,26,X-and-Y-li,oldukça iyi,Sinan gece yarısı hayalet ve canavarlı bir hikâye okudu.,hayalet,canavar,3225,1,6,-lI
 CO695316,66,15,X-siz-and-Y-siz,oldukça iyi,Deniz misafir beklerken sürahisiz ve bardaksız bir sofra kurdu.,sürahi,bardak,3975,0,6,-sIz
 CO695316,69,19,X-ci-and-Y-ci,oldukça iyi,Zühre son yolculukta gececi ve gündüzcü bir rehberle tanıştı.,gece,gündüz,5375,0,6,-cI
 CO695316,72,7,X-siz-and-Y-siz,oldukça iyi,Dilek çeyiz alşverişi için battaniyesiz ve halısız bir paket seçmiş.,battaniye,halı,4070,0,6,-sIz
+CO695316,75,24,X-and-Y-siz,iyi sayılır,Neval ders çalışırken göz ve kulaksız bir heykel çizdi.,göz,kulak,77209,1,4,-sIz
 CO695316,78,30,X-and-Y-lik,iyi sayılır,Asuman dergi yazısı için düğün ve cenazelik bir tema belirledi.,cenaze,düğün,7387,1,4,-lIk
 CO695316,81,29,X-lik-and-Y-lik,kötü sayılır,Melis çocuk kitabı için ejderhalık ve perilik bir seri başlatmayı düşündü.,ejderha,peri,7493,0,3,-lIk
 CO695316,84,6,X-and-Y-lik,oldukça iyi,Ali diyetteyken muz ve havuçluk bir saklama kabı almıştı.,muz,havuç,7609,1,6,-lIk
 CO695316,90,25,X-li-and-Y-li,kötü sayılır,İzel toplantı sırasında burunlu ve boyunlu bir maske inceledi.,burun,boyun,5590,0,3,-lI
 CO695316,93,32,X-and-Y-siz,kötü,Aydan restorasyon projesi için taban ve tavansız bir oda düşündü.,taban,tavan,8782,1,2,-sIz
 CO695316,96,9,X-li-and-Y-li,iyi,Zeynep bu hafta anneli ve babalı bir toplantıya katıldı.,anne,baba,5083,0,5,-lI
+CO448745,2,17,X-siz-and-Y-siz,iyi,Eylül kamp yaparken tepesiz ve nehirsiz bir manzara gördü.,tepe,nehir,10283,0,5,-sIz
 CO448745,5,24,X-and-Y-lik,oldukça kötü,Neval ders çalışırken göz ve kulaklık bir kutu açtı.,göz,kulak,6043,1,1,-lIk
 CO448745,8,19,X-li-and-Y-li,iyi sayılır,Zühre son yolculukta geceli ve gündüzlü bir seyahat planı hazırladı.,gece,gündüz,5629,0,4,-lI
 CO448745,11,22,X-and-Y-ci,oldukça kötü,Yankı geçen yaz at ve balıkçı bir işletme sahibiyle tanıştı.,at,balık,6549,1,1,-cI
@@ -50,6 +72,7 @@ CO448745,23,27,X-li-and-Y-li,iyi sayılır,Baran araştırması için ormanlı v
 CO448745,26,32,X-and-Y-lik,iyi,Aydan restorasyon projesi için taban ve tavanlık bir malzeme seçti.,taban,tavan,5559,1,5,-lIk
 CO448745,29,11,X-li-and-Y-li,oldukça kötü,Ahmet yabancı bir üniversitede bilimli ve teknolojili bir eğitim sistemi savundu.,bilim,teknoloji,5034,0,1,-lI
 CO448745,32,3,X-li-and-Y-li,iyi sayılır,Leyla eski çarşıda atkılı ve şapkalı bir ünlüyle karşılaşmış.,atkı,şapka,3655,0,4,-lI
+CO448745,35,28,X-and-Y-li,oldukça iyi,Yasemin mezuniyetinden önce doktor ve avukatlı bir skeç yazdı.,avukat,doktor,13110,1,6,-lI
 CO448745,38,16,X-and-Y-lik,kötü sayılır,Okan üniversite yıllarında çiftlik ve fabrikalık bir proje sundu.,çiftlik,fabrika,7631,1,3,-lIk
 CO448745,41,26,X-and-Y-siz,iyi,Sinan gece yarısı hayalet ve canavarsız bir film izledi.,hayalet,canavar,6637,1,5,-sIz
 CO448745,44,18,X-and-Y-siz,kötü,Nevzat genç bir stajyerken okul ve camisiz bir projeye destek verdi.,okul,cami,5157,1,2,-sIz
@@ -71,6 +94,7 @@ CO448745,89,25,X-siz-and-Y-siz,iyi,İzel toplantı sırasında burunsuz ve boyun
 CO448745,92,4,X-and-Y-li,oldukça iyi,Burak tatlı için limon ve portakallı bir tarif bulmuş.,limon,portakal,5646,1,6,-lI
 CO448745,95,7,X-lik-and-Y-lik,kötü sayılır,Dilek çeyiz alşverişi için battaniyelik ve halılık bir indirim bulmuş.,battaniye,halı,3724,0,3,-lIk
 CO202632,2,2,X-siz-and-Y-siz,oldukça iyi,Ömer yeni evine masasız ve sandalyesiz bir mobilya takımı aldı.,masa,sandalye,9890,0,6,-sIz
+CO202632,5,21,X-and-Y-li,kötü sayılır,Mertcan dün akşam abi ve ablalı bir fotoğraf gösterdi.,abi,abla,13067,1,3,-lI
 CO202632,8,8,X-lik-and-Y-lik,iyi sayılır,Selin tamir için kapılık ve pencerelik bir desen seçmiş.,kapı,pencere,7991,0,4,-lIk
 CO202632,11,26,X-siz-and-Y-siz,iyi sayılır,Sinan gece yarısı hayaletsiz ve canavarsız bir film izledi.,hayalet,canavar,6325,0,4,-sIz
 CO202632,14,18,X-siz-and-Y-siz,iyi,Nevzat genç bir stajyerken okulsuz ve camisiz bir projeye destek verdi.,okul,cami,9381,0,5,-sIz
@@ -78,6 +102,7 @@ CO202632,17,24,X-lik-and-Y-lik,kötü,Neval ders çalışırken gözlük ve kula
 CO202632,20,5,X-and-Y-li,iyi sayılır,Ece yılbaşı için tablo ve vazolu bir masa aldı.,tablo,vazo,6260,1,4,-lI
 CO202632,23,17,X-and-Y-lik,iyi sayılır,Eylül kamp yaparken tepe ve nehirlik bir arazi satın aldı.,tepe,nehir,8349,1,4,-lIk
 CO202632,26,28,X-li-and-Y-li,iyi sayılır,Yasemin mezuniyetinden önce doktorlu ve avukatlı bir skeç yazdı.,avukat,doktor,6364,0,4,-lI
+CO202632,29,12,X-li-and-Y-li,iyi sayılır,Merve yaz tatilinde evli ve bahçeli bir tatil köyünü ziyaret etti.,ev,bahçe,15358,0,4,-lI
 CO202632,32,31,X-and-Y-ci,kötü,Tülay sonbahar koleksiyonu için gömlek ve pantoloncu bir tasarımcıyla tanıştı.,gömlek,pantolon,7337,1,2,-cI
 CO202632,35,30,X-ci-and-Y-ci,kötü,Asuman dergi yazısı için düğüncü ve cenazeci bir fotoğrafçıyla anlaştı.,cenaze,düğün,7307,0,2,-cI
 CO202632,38,9,X-and-Y-lik,kötü,Zeynep yıllar önce anne ve babalık bir görev üstlendi.,anne,baba,4000,1,2,-lIk
@@ -85,7 +110,9 @@ CO202632,41,25,X-and-Y-lik,iyi sayılır,İzel toplantı sırasında burun ve bo
 CO202632,44,10,X-siz-and-Y-siz,oldukça iyi,Ali uzun zamandır kedisiz ve köpeksiz bir apartmanda yaşıyor.,kedi,köpek,5667,0,6,-sIz
 CO202632,47,7,X-and-Y-ci,kötü sayılır,Dilek çeyiz alşverişi için battaniye ve halıcı bir züccaciyeciye gidecekmiş.,battaniye,halı,7703,1,3,-cI
 CO202632,50,11,X-and-Y-siz,iyi,Ahmet yabancı bir üniversitede bilim ve teknolojisiz bir düşünceyi eleştirdi.,bilim,teknoloji,7688,1,5,-sIz
+CO202632,53,22,X-ci-and-Y-ci,iyi sayılır,Yankı geçen yaz atçı ve balıkçı bir işletme sahibiyle tanıştı.,at,balık,13340,0,4,-cI
 CO202632,56,29,X-and-Y-li,oldukça iyi,Melis çocuk kitabı için ejderha ve perili bir sahne tasarladı.,ejderha,peri,7695,1,6,-lI
+CO202632,59,19,X-and-Y-siz,kötü sayılır,Zühre son yolculukta gece ve gündüzsüz bir tren yolculuğu önerdi.,gece,gündüz,12908,1,3,-sIz
 CO202632,62,14,X-ci-and-Y-ci,kötü,Elif gençlik yıllarında fareci ve aslancı bir hikaye yazdı.,fare,aslan,5360,0,2,-cI
 CO202632,65,3,X-and-Y-siz,oldukça iyi,Leyla eski çarşıda atkı ve şapkasız bir çocuğa acımış.,atkı,şapka,6979,1,6,-sIz
 CO202632,68,4,X-li-and-Y-li,oldukça iyi,Burak tatlı için limonlu ve portakallı bir tarif bulmuş.,limon,portakal,5419,0,6,-lI
@@ -94,12 +121,14 @@ CO202632,74,20,X-li-and-Y-li,iyi,Fehime düğünden önce büyükanneli ve dedel
 CO202632,77,16,X-lik-and-Y-lik,kötü,Okan üniversite yıllarında çiftliklik ve fabrikalık bir proje sundu.,çiftlik,fabrika,3488,0,2,-lIk
 CO202632,80,6,X-ci-and-Y-ci,kötü,Ali diyetteyken muzcu ve havuççu bir tezgahtara uğrardı.,muz,havuç,2788,0,2,-cI
 CO202632,83,1,X-and-Y-lik,iyi sayılır,Emel geçen haftasonu çorap ve ayakkabılık bir dolap aldı.,çorap,ayakkabı,7408,1,4,-lIk
+CO202632,86,15,X-and-Y-ci,kötü sayılır,Deniz misafir beklerken sürahi ve bardakçı bir antikacıdan alışveriş yaptı.,sürahi,bardak,13753,1,3,-cI
 CO202632,89,23,X-and-Y-ci,kötü sayılır,Jale geçen hafta çatal ve bıçakçı bir esnaftan alışveriş yaptı.,çatal,bıçak,5234,1,3,-cI
 CO202632,92,32,X-lik-and-Y-lik,iyi,Aydan restorasyon projesi için tabanlık ve tavanlık bir malzeme seçti.,taban,tavan,5467,0,5,-lIk
 CO202632,95,27,X-and-Y-siz,kötü,Baran araştırması için orman ve çölsüz bir bölge seçti.,orman,çöl,8055,1,2,-sIz
 CO16811,2,7,X-and-Y-li,oldukça iyi,Dilek çeyiz alşverişi için battaniye ve halılı bir paket seçmiş.,battaniye,halı,5127,1,6,-lI
 CO16811,5,21,X-and-Y-siz,kötü sayılır,Mertcan dün akşam abi ve ablasız bir hayat düşündü.,abi,abla,9042,1,3,-sIz
 CO16811,8,32,X-ci-and-Y-ci,iyi,Aydan restorasyon projesi için tabancı ve tavancı bir ustayla görüştü.,taban,tavan,7558,0,5,-cI
+CO16811,11,30,X-li-and-Y-li,iyi sayılır,Asuman dergi yazısı için düğünlü ve cenazeli bir belgesel izledi.,cenaze,düğün,16758,0,4,-lI
 CO16811,14,13,X-and-Y-siz,oldukça kötü,Emin geçen tatilde şehir ve köysüz bir gezi yaptı.,şehir,köy,5829,1,1,-sIz
 CO16811,17,12,X-siz-and-Y-siz,kötü,Merve yeni hayatında evsiz ve bahçesiz bir şehir hayatı yaşıyor.,ev,bahçe,7190,0,2,-sIz
 CO16811,20,18,X-lik-and-Y-lik,iyi sayılır,Nevzat genç bir stajyerken okulluk ve camilik bir alanın korunmasını önerdi.,okul,cami,9438,0,4,-lIk
@@ -124,28 +153,43 @@ CO16811,74,27,X-and-Y-lik,kötü sayılır,Baran araştırması için orman ve �
 CO16811,77,31,X-and-Y-li,oldukça iyi,Tülay sonbahar koleksiyonu için gömlek ve pantolonlu bir kombin hazırladı.,gömlek,pantolon,6057,1,6,-lI
 CO16811,80,8,X-ci-and-Y-ci,iyi sayılır,Selin tamir için kapıcı ve pencereci bir marangozla anlaşmış.,kapı,pencere,7445,0,4,-cI
 CO16811,83,17,X-and-Y-ci,oldukça kötü,Eylül kamp yaparken tepe ve nehirci bir rehberle doğa yürüyüşüne çıktı.,tepe,nehir,6133,1,1,-cI
+CO16811,86,14,X-li-and-Y-li,iyi,Elif küçük bir çocukken fareli ve aslanlı bir masal dinledi.,fare,aslan,10040,0,5,-lI
 CO16811,89,19,X-and-Y-lik,kötü sayılır,Zühre son yolculukta gece ve gündüzlük bir program belirledi.,gece,gündüz,6508,1,3,-lIk
 CO16811,92,15,X-and-Y-li,kötü,Deniz misafir beklerken sürahi ve bardaklı bir konsept hazırladı.,sürahi,bardak,6264,1,2,-lI
 CO16811,95,10,X-lik-and-Y-lik,kötü sayılır,Ali yeni firmada kedilik ve köpeklik bir tasarım yaptı.,kedi,köpek,6328,0,3,-lIk
+CO703295,3,27,X-siz-and-Y-siz,oldukça iyi,Baran araştırması için ormansız ve çölsüz bir bölge seçti.,orman,çöl,10318,0,6,-sIz
+CO703295,6,30,X-and-Y-li,iyi sayılır,Asuman dergi yazısı için düğün ve cenazeli bir belgesel izledi.,cenaze,düğün,12861,1,4,-lI
+CO703295,9,15,X-ci-and-Y-ci,kötü,Deniz misafir beklerken sürahici ve bardakçı bir antikacıdan alışveriş yaptı.,sürahi,bardak,11885,0,2,-cI
 CO703295,12,21,X-li-and-Y-li,oldukça kötü,Mertcan dün akşam abili ve ablalı bir fotoğraf gösterdi.,abi,abla,7271,0,1,-lI
 CO703295,15,25,X-lik-and-Y-lik,kötü,İzel toplantı sırasında burunluk ve boyunluk bir atkı ördü.,burun,boyun,8142,0,2,-lIk
+CO703295,18,32,X-and-Y-ci,oldukça kötü,Aydan restorasyon projesi için taban ve tavancı bir ustayla görüştü.,taban,tavan,10348,1,1,-cI
+CO703295,21,18,X-and-Y-lik,oldukça kötü,Nevzat genç bir stajyerken okul ve camilik bir alanın korunmasını önerdi.,okul,cami,10379,1,1,-lIk
 CO703295,24,22,X-and-Y-li,iyi,Yankı geçen yaz at ve balıklı bir tablo aldı.,at,balık,7511,1,5,-lI
 CO703295,27,10,X-and-Y-lik,oldukça kötü,Ali yeni firmada kedi ve köpeklik bir tasarım yaptı.,kedi,köpek,3998,1,1,-lIk
+CO703295,30,20,X-and-Y-siz,kötü,Fehime düğünden önce büyükanne ve dedesiz bir aile hayatını irdeledi.,büyükanne,dede,10686,1,2,-sIz
+CO703295,33,13,X-li-and-Y-li,kötü,Emin geçen tatilde şehirli ve köylü bir topluluk projesine katıldı.,şehir,köy,14425,0,2,-lI
 CO703295,36,2,X-and-Y-lik,kötü,Ömer yeni evine masa ve sandalyelik bir renk seçti.,masa,sandalye,8865,1,2,-lIk
+CO703295,39,31,X-ci-and-Y-ci,iyi sayılır,Tülay sonbahar koleksiyonu için gömlekçi ve pantoloncu bir tasarımcıyla tanıştı.,gömlek,pantolon,14587,0,4,-cI
+CO703295,42,14,X-and-Y-li,iyi sayılır,Elif küçük bir çocukken fare ve aslanlı bir masal dinledi.,fare,aslan,10350,1,4,-lI
 CO703295,45,23,X-ci-and-Y-ci,iyi sayılır,Jale geçen hafta çatalcı ve bıçakçı bir esnaftan alışveriş yaptı.,çatal,bıçak,8272,0,4,-cI
 CO703295,48,12,X-and-Y-siz,oldukça kötü,Merve yeni hayatında ev ve bahçesiz bir şehir hayatı yaşıyor.,ev,bahçe,8341,1,1,-sIz
 CO703295,51,4,X-and-Y-siz,iyi sayılır,Burak tatlı için limon ve portakalsız bir tarif bulmuş.,limon,portakal,9523,1,4,-sIz
 CO703295,54,19,X-siz-and-Y-siz,oldukça kötü,Zühre son yolculukta gecesiz ve gündüzsüz bir tren yolculuğu önerdi.,gece,gündüz,6857,0,1,-sIz
+CO703295,57,8,X-and-Y-ci,iyi sayılır,Selin tamir için kapı ve pencereci bir marangozla anlaşmış.,kapı,pencere,10728,1,4,-cI
 CO703295,60,1,X-lik-and-Y-lik,oldukça kötü,Emel geçen haftasonu çoraplık ve ayakkabılık bir dolap aldı.,çorap,ayakkabı,6814,0,1,-lIk
 CO703295,63,29,X-li-and-Y-li,oldukça iyi,Melis çocuk kitabı için ejderhalı ve perili bir sahne tasarladı.,ejderha,peri,3931,0,6,-lI
+CO703295,66,3,X-siz-and-Y-siz,oldukça iyi,Leyla eski çarşıda atkısız ve şapkasız bir çocuğa acımış.,atkı,şapka,11529,0,6,-sIz
 CO703295,69,26,X-and-Y-lik,oldukça kötü,Sinan gece yarısı hayalet ve canavarlık bir sahne tasarladı.,hayalet,canavar,6185,1,1,-lIk
+CO703295,72,7,X-ci-and-Y-ci,oldukça iyi,Dilek çeyiz alşverişi için battaniyeci ve halıcı bir züccaciyeciye gidecekmiş.,battaniye,halı,11096,0,6,-cI
 CO703295,75,24,X-and-Y-ci,oldukça kötü,Neval ders çalışırken göz ve kulakçı bir doktorla konuştu.,göz,kulak,5360,1,1,-cI
 CO703295,78,9,X-lik-and-Y-lik,oldukça kötü,Zeynep yıllar önce annelik ve babalık bir görev üstlendi.,anne,baba,8983,0,1,-lIk
 CO703295,81,5,X-li-and-Y-li,kötü,Ece yılbaşı için tablolu ve vazolu bir masa aldı.,tablo,vazo,7345,0,2,-lI
 CO703295,84,16,X-and-Y-ci,oldukça kötü,Okan üniversite yıllarında çiftlik ve fabrikacı bir yatırımcıyla görüştü.,çiftlik,fabrika,9886,1,1,-cI
+CO703295,87,6,X-and-Y-li,kötü sayılır,Ali diyetteyken muz ve havuçlu bir kek yapardı.,muz,havuç,12836,1,3,-lI
 CO703295,90,17,X-lik-and-Y-lik,oldukça kötü,Eylül kamp yaparken tepelik ve nehirlik bir arazi satın aldı.,tepe,nehir,6152,0,1,-lIk
 CO703295,93,28,X-and-Y-siz,kötü,Yasemin mezuniyetinden önce doktor ve avukatsız bir mizansen canlandırdı.,avukat,doktor,9891,1,2,-sIz
 CO703295,96,11,X-siz-and-Y-siz,iyi sayılır,Ahmet yabancı bir üniversitede bilimsiz ve teknolojisiz bir düşünceyi eleştirdi.,bilim,teknoloji,9422,0,4,-sIz
+CO745806,2,12,X-and-Y-lik,iyi,Merve aile mirasıyla ev ve bahçelik bir arsa satın aldı.,ev,bahçe,10428,1,5,-lIk
 CO745806,5,4,X-and-Y-lik,kötü,Burak tatlı için limon ve portakallık bir tabak hazırlamış.,limon,portakal,4562,1,2,-lIk
 CO745806,8,11,X-lik-and-Y-lik,kötü,Ahmet yabancı bir üniversitede bilimlik ve teknolojilik bir dergi çıkardı.,bilim,teknoloji,8529,0,2,-lIk
 CO745806,11,7,X-li-and-Y-li,iyi,Dilek çeyiz alşverişi için battaniyeli ve halılı bir paket seçmiş.,battaniye,halı,8712,0,5,-lI
@@ -153,6 +197,7 @@ CO745806,14,16,X-and-Y-li,iyi sayılır,Okan üniversite yıllarında çiftlik v
 CO745806,17,5,X-siz-and-Y-siz,kötü sayılır,Ece yılbaşı için tablosuz ve vazosuz bir masa seçti.,tablo,vazo,4857,0,3,-sIz
 CO745806,20,1,X-ci-and-Y-ci,kötü sayılır,Emel geçen haftasonu çorapçı ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,7778,0,3,-cI
 CO745806,23,29,X-siz-and-Y-siz,iyi,Melis çocuk kitabı için ejderhasız ve perisiz bir bölüm yazdı.,ejderha,peri,6516,0,5,-sIz
+CO745806,26,20,X-and-Y-lik,kötü sayılır,Fehime düğünden önce büyükanne ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,11026,1,3,-lIk
 CO745806,29,9,X-ci-and-Y-ci,kötü,Zeynep bu hafta anneci ve babacı bir yeğeniyle ilgilendi.,anne,baba,4488,0,2,-cI
 CO745806,32,17,X-ci-and-Y-ci,kötü sayılır,Eylül kamp yaparken tepeci ve nehirci bir rehberle doğa yürüyüşüne çıktı.,tepe,nehir,5460,0,3,-cI
 CO745806,35,22,X-and-Y-siz,kötü sayılır,Yankı geçen yaz at ve balıksız bir menü denedi.,at,balık,5872,1,3,-sIz
@@ -164,6 +209,7 @@ CO745806,50,24,X-and-Y-li,kötü sayılır,Neval ders çalışırken göz ve kul
 CO745806,53,26,X-and-Y-ci,oldukça kötü,Sinan gece yarısı hayalet ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,3766,1,1,-cI
 CO745806,56,28,X-and-Y-lik,kötü,Yasemin mezuniyetinden önce doktor ve avukatlık bir kimlik seçti.,avukat,doktor,5463,1,2,-lIk
 CO745806,59,10,X-and-Y-ci,kötü,Ali her hafta kedi ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,5155,1,2,-cI
+CO745806,62,23,X-li-and-Y-li,iyi sayılır,Jale geçen hafta çatallı ve bıçaklı bir masa kurdu.,çatal,bıçak,10053,0,4,-lI
 CO745806,65,6,X-and-Y-siz,iyi sayılır,Ali diyetteyken muz ve havuçsuz bir kek yapardı.,muz,havuç,4467,1,4,-sIz
 CO745806,68,3,X-lik-and-Y-lik,kötü sayılır,Leyla eski çarşıda atkılık ve şapkalık bir askı beğenmiş.,atkı,şapka,5686,0,3,-lIk
 CO745806,71,2,X-and-Y-ci,kötü sayılır,Ömer yeni evine masa ve sandalyeci bir usta getirdi.,masa,sandalye,4312,1,3,-cI
@@ -175,22 +221,34 @@ CO745806,86,31,X-li-and-Y-li,kötü sayılır,Tülay sonbahar koleksiyonu için 
 CO745806,89,18,X-and-Y-ci,kötü,Nevzat genç bir stajyerken okul ve camici bir mimarın eserlerini inceledi.,okul,cami,3642,1,2,-cI
 CO745806,92,19,X-lik-and-Y-lik,kötü,Zühre son yolculukta gecelik ve gündüzlük bir program belirledi.,gece,gündüz,4616,0,2,-lIk
 CO745806,95,13,X-siz-and-Y-siz,kötü,Emin geçen tatilde şehirsiz ve köysüz bir gezi yaptı.,şehir,köy,6417,0,2,-sIz
+CO606387,2,29,X-and-Y-lik,kötü sayılır,Melis çocuk kitabı için ejderha ve perilik bir seri başlatmayı düşündü.,ejderha,peri,10202,1,3,-lIk
 CO606387,5,23,X-and-Y-siz,iyi sayılır,Jale geçen hafta çatal ve bıçaksız bir piknik yaptı.,çatal,bıçak,9546,1,4,-sIz
+CO606387,8,5,X-and-Y-lik,kötü sayılır,Ece yılbaşı için tablo ve vazoluk bir masa aldı.,tablo,vazo,19491,1,3,-lIk
+CO606387,11,4,X-lik-and-Y-lik,iyi sayılır,Burak tatlı için limonluk ve portakallık bir tabak hazırlamış.,limon,portakal,12927,0,4,-lIk
+CO606387,14,1,X-and-Y-li,iyi sayılır,Emel geçen haftasonu çorap ve ayakkabılı bir takım aldı.,çorap,ayakkabı,12184,1,4,-lI
 CO606387,17,22,X-siz-and-Y-siz,iyi,Yankı geçen yaz atsız ve balıksız bir menü denedi.,at,balık,9107,0,5,-sIz
+CO606387,20,27,X-and-Y-ci,kötü,Baran araştırması için orman ve çölcü bir araştırmacıyla anlaştı.,orman,çöl,11489,1,2,-cI
 CO606387,23,14,X-siz-and-Y-siz,iyi,Elif gençlik yıllarında faresiz ve aslansız bir oyun sahneledi.,fare,aslan,6963,0,5,-sIz
 CO606387,26,19,X-and-Y-ci,iyi,Zühre son yolculukta gece ve gündüzcü bir rehberle tanıştı.,gece,gündüz,6677,1,5,-cI
+CO606387,29,12,X-lik-and-Y-lik,kötü sayılır,Merve aile mirasıyla evlik ve bahçelik bir arsa satın aldı.,ev,bahçe,42386,0,3,-lIk
 CO606387,32,28,X-lik-and-Y-lik,oldukça kötü,Yasemin mezuniyetinden önce doktorluk ve avukatlık bir kimlik seçti.,avukat,doktor,5528,0,1,-lIk
+CO606387,35,7,X-and-Y-siz,kötü,Dilek çeyiz alşverişi için battaniye ve halısız bir paket seçmiş.,battaniye,halı,18612,1,2,-sIz
 CO606387,38,18,X-ci-and-Y-ci,iyi sayılır,Nevzat genç bir stajyerken okulcu ve camici bir mimarın eserlerini inceledi.,okul,cami,9792,0,4,-cI
 CO606387,41,21,X-and-Y-lik,oldukça kötü,Mertcan dün akşam abi ve ablalık bir hediye aldı.,abi,abla,8541,1,1,-lIk
+CO606387,44,3,X-and-Y-ci,kötü,Leyla eski çarşıda atkı ve şapkacı bir tuhafiyeye uğrayacakmış.,atkı,şapka,43973,1,2,-cI
 CO606387,47,26,X-ci-and-Y-ci,iyi,Sinan gece yarısı hayaletçi ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,6346,0,5,-cI
 CO606387,50,9,X-and-Y-li,kötü sayılır,Zeynep bu hafta anne ve babalı bir toplantıya katıldı.,anne,baba,5166,1,3,-lI
+CO606387,53,31,X-and-Y-siz,iyi sayılır,Tülay sonbahar koleksiyonu için gömlek ve pantolonsuz bir katalog inceledi.,gömlek,pantolon,13053,1,4,-sIz
 CO606387,56,6,X-siz-and-Y-siz,kötü sayılır,Ali diyetteyken muzsuz ve havuçsuz bir kek yapardı.,muz,havuç,8382,0,3,-sIz
 CO606387,59,11,X-and-Y-ci,oldukça kötü,Ahmet yabancı bir üniversitede bilim ve teknolojici bir araştırmaya katıldı.,bilim,teknoloji,6233,1,1,-cI
 CO606387,62,2,X-ci-and-Y-ci,kötü sayılır,Ömer yeni evine masacı ve sandalyeci bir usta getirdi.,masa,sandalye,7453,0,3,-cI
+CO606387,65,32,X-li-and-Y-li,iyi sayılır,Aydan restorasyon projesi için tabanlı ve tavanlı bir plan çizdi.,taban,tavan,12933,0,4,-lI
 CO606387,68,8,X-li-and-Y-li,iyi sayılır,Selin tamir için kapılı ve pencereli bir atölye tasarlamış.,kapı,pencere,5832,0,4,-lI
 CO606387,71,10,X-ci-and-Y-ci,kötü,Ali her hafta kedici ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,4849,0,2,-cI
 CO606387,74,20,X-lik-and-Y-lik,iyi sayılır,Fehime düğünden önce büyükannelik ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,8366,0,4,-lIk
 CO606387,77,13,X-and-Y-lik,iyi sayılır,Emin geçen tatilde şehir ve köylük bir bölgeyi gezdi.,şehir,köy,6752,1,4,-lIk
+CO606387,80,30,X-siz-and-Y-siz,iyi sayılır,Asuman dergi yazısı için düğünsüz ve cenazesiz bir program önerdi.,cenaze,düğün,12927,0,4,-sIz
+CO606387,83,17,X-and-Y-li,iyi,Eylül kamp yaparken tepe ve nehirli bir alan seçti.,tepe,nehir,10792,1,5,-lI
 CO606387,86,16,X-li-and-Y-li,iyi sayılır,Okan üniversite yıllarında çiftlikli ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,7704,0,4,-lI
 CO606387,89,25,X-and-Y-li,kötü sayılır,İzel toplantı sırasında burun ve boyunlu bir maske inceledi.,burun,boyun,7051,1,3,-lI
 CO606387,92,15,X-and-Y-siz,iyi,Deniz misafir beklerken sürahi ve bardaksız bir sofra kurdu.,sürahi,bardak,8972,1,5,-sIz
@@ -199,9 +257,12 @@ CO520146,2,31,X-li-and-Y-li,iyi,Tülay sonbahar koleksiyonu için gömlekli ve p
 CO520146,5,23,X-li-and-Y-li,iyi,Jale geçen hafta çatallı ve bıçaklı bir masa kurdu.,çatal,bıçak,6316,0,5,-lI
 CO520146,8,8,X-and-Y-li,iyi,Selin tamir için kapı ve pencereli bir atölye tasarlamış.,kapı,pencere,9751,1,5,-lI
 CO520146,11,32,X-and-Y-li,iyi sayılır,Aydan restorasyon projesi için taban ve tavanlı bir plan çizdi.,taban,tavan,8033,1,4,-lI
+CO520146,14,22,X-and-Y-siz,iyi sayılır,Yankı geçen yaz at ve balıksız bir menü denedi.,at,balık,70058,1,4,-sIz
 CO520146,17,29,X-siz-and-Y-siz,oldukça iyi,Melis çocuk kitabı için ejderhasız ve perisiz bir bölüm yazdı.,ejderha,peri,6570,0,6,-sIz
+CO520146,20,30,X-and-Y-siz,kötü,Asuman dergi yazısı için düğün ve cenazesiz bir program önerdi.,cenaze,düğün,11427,1,2,-sIz
 CO520146,23,14,X-and-Y-siz,kötü,Elif gençlik yıllarında fare ve aslansız bir oyun sahneledi.,fare,aslan,7019,1,2,-sIz
 CO520146,26,28,X-and-Y-lik,kötü,Yasemin mezuniyetinden önce doktor ve avukatlık bir kimlik seçti.,avukat,doktor,7835,1,2,-lIk
+CO520146,29,17,X-ci-and-Y-ci,kötü sayılır,Eylül kamp yaparken tepeci ve nehirci bir rehberle doğa yürüyüşüne çıktı.,tepe,nehir,37019,0,3,-cI
 CO520146,32,11,X-lik-and-Y-lik,kötü,Ahmet yabancı bir üniversitede bilimlik ve teknolojilik bir dergi çıkardı.,bilim,teknoloji,4325,0,2,-lIk
 CO520146,35,12,X-and-Y-lik,iyi,Merve aile mirasıyla ev ve bahçelik bir arsa satın aldı.,ev,bahçe,6868,1,5,-lIk
 CO520146,38,10,X-and-Y-ci,kötü,Ali her hafta kedi ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,5547,1,2,-cI
@@ -211,6 +272,7 @@ CO520146,47,18,X-and-Y-ci,kötü,Nevzat genç bir stajyerken okul ve camici bir 
 CO520146,50,20,X-and-Y-lik,oldukça iyi,Fehime düğünden önce büyükanne ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,7980,1,6,-lIk
 CO520146,53,13,X-siz-and-Y-siz,oldukça kötü,Emin geçen tatilde şehirsiz ve köysüz bir gezi yaptı.,şehir,köy,9469,0,1,-sIz
 CO520146,56,24,X-and-Y-li,kötü,Neval ders çalışırken göz ve kulaklı bir robot gördü.,göz,kulak,4957,1,2,-lI
+CO520146,59,2,X-and-Y-ci,kötü,Ömer yeni evine masa ve sandalyeci bir usta getirdi.,masa,sandalye,33866,1,2,-cI
 CO520146,62,1,X-ci-and-Y-ci,iyi,Emel geçen haftasonu çorapçı ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,5933,0,5,-cI
 CO520146,65,15,X-li-and-Y-li,oldukça iyi,Deniz misafir beklerken sürahili ve bardaklı bir konsept hazırladı.,sürahi,bardak,5556,0,6,-lI
 CO520146,68,19,X-lik-and-Y-lik,kötü,Zühre son yolculukta gecelik ve gündüzlük bir program belirledi.,gece,gündüz,6530,0,2,-lIk
@@ -219,31 +281,50 @@ CO520146,74,25,X-ci-and-Y-ci,kötü,İzel toplantı sırasında buruncu ve boyun
 CO520146,77,16,X-and-Y-li,iyi sayılır,Okan üniversite yıllarında çiftlik ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,5716,1,4,-lI
 CO520146,80,7,X-li-and-Y-li,iyi sayılır,Dilek çeyiz alşverişi için battaniyeli ve halılı bir paket seçmiş.,battaniye,halı,9363,0,4,-lI
 CO520146,83,21,X-siz-and-Y-siz,iyi,Mertcan dün akşam abisiz ve ablasız bir hayat düşündü.,abi,abla,5605,0,5,-sIz
+CO520146,86,5,X-siz-and-Y-siz,oldukça iyi,Ece yılbaşı için tablosuz ve vazosuz bir masa seçti.,tablo,vazo,10798,0,6,-sIz
 CO520146,89,26,X-and-Y-ci,oldukça iyi,Sinan gece yarısı hayalet ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,5859,1,6,-cI
 CO520146,92,4,X-and-Y-lik,kötü,Burak tatlı için limon ve portakallık bir tabak hazırlamış.,limon,portakal,8780,1,2,-lIk
 CO520146,95,27,X-lik-and-Y-lik,oldukça iyi,Baran araştırması için ormanlık ve çöllük bir alan çizdi.,orman,çöl,6885,0,6,-lIk
+CO470488,2,15,X-and-Y-siz,kötü sayılır,Deniz misafir beklerken sürahi ve bardaksız bir sofra kurdu.,sürahi,bardak,27471,1,3,-sIz
+CO470488,5,23,X-and-Y-siz,iyi,Jale geçen hafta çatal ve bıçaksız bir piknik yaptı.,çatal,bıçak,16317,1,5,-sIz
+CO470488,8,8,X-li-and-Y-li,iyi,Selin tamir için kapılı ve pencereli bir atölye tasarlamış.,kapı,pencere,16657,0,5,-lI
+CO470488,11,13,X-and-Y-lik,iyi,Emin geçen tatilde şehir ve köylük bir bölgeyi gezdi.,şehir,köy,12840,1,5,-lIk
+CO470488,14,1,X-and-Y-li,oldukça iyi,Emel geçen haftasonu çorap ve ayakkabılı bir takım aldı.,çorap,ayakkabı,15576,1,6,-lI
 CO470488,17,6,X-siz-and-Y-siz,iyi,Ali diyetteyken muzsuz ve havuçsuz bir kek yapardı.,muz,havuç,8230,0,5,-sIz
 CO470488,20,18,X-ci-and-Y-ci,kötü sayılır,Nevzat genç bir stajyerken okulcu ve camici bir mimarın eserlerini inceledi.,okul,cami,8046,0,3,-cI
+CO470488,23,17,X-and-Y-li,oldukça iyi,Eylül kamp yaparken tepe ve nehirli bir alan seçti.,tepe,nehir,14638,1,6,-lI
 CO470488,26,11,X-and-Y-ci,kötü sayılır,Ahmet yabancı bir üniversitede bilim ve teknolojici bir araştırmaya katıldı.,bilim,teknoloji,7521,1,3,-cI
+CO470488,29,19,X-and-Y-ci,iyi,Zühre son yolculukta gece ve gündüzcü bir rehberle tanıştı.,gece,gündüz,11284,1,5,-cI
 CO470488,32,22,X-siz-and-Y-siz,kötü sayılır,Yankı geçen yaz atsız ve balıksız bir menü denedi.,at,balık,8899,0,3,-sIz
+CO470488,35,27,X-and-Y-ci,kötü sayılır,Baran araştırması için orman ve çölcü bir araştırmacıyla anlaştı.,orman,çöl,15148,1,3,-cI
 CO470488,38,2,X-ci-and-Y-ci,iyi,Ömer yeni evine masacı ve sandalyeci bir usta getirdi.,masa,sandalye,8548,0,5,-cI
+CO470488,41,31,X-and-Y-siz,oldukça iyi,Tülay sonbahar koleksiyonu için gömlek ve pantolonsuz bir katalog inceledi.,gömlek,pantolon,19385,1,6,-sIz
 CO470488,44,10,X-ci-and-Y-ci,iyi,Ali her hafta kedici ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,6430,0,5,-cI
+CO470488,47,4,X-lik-and-Y-lik,iyi sayılır,Burak tatlı için limonluk ve portakallık bir tabak hazırlamış.,limon,portakal,10457,0,4,-lIk
+CO470488,50,25,X-and-Y-li,iyi,İzel toplantı sırasında burun ve boyunlu bir maske inceledi.,burun,boyun,15189,1,5,-lI
 CO470488,53,26,X-ci-and-Y-ci,kötü,Sinan gece yarısı hayaletçi ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,9628,0,2,-cI
 CO470488,56,28,X-lik-and-Y-lik,kötü sayılır,Yasemin mezuniyetinden önce doktorluk ve avukatlık bir kimlik seçti.,avukat,doktor,6375,0,3,-lIk
 CO470488,59,16,X-li-and-Y-li,kötü sayılır,Okan üniversite yıllarında çiftlikli ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,9693,0,3,-lI
+CO470488,62,29,X-and-Y-lik,kötü sayılır,Melis çocuk kitabı için ejderha ve perilik bir seri başlatmayı düşündü.,ejderha,peri,12929,1,3,-lIk
 CO470488,65,21,X-and-Y-lik,kötü sayılır,Mertcan dün akşam abi ve ablalık bir hediye aldı.,abi,abla,6480,1,3,-lIk
 CO470488,68,32,X-li-and-Y-li,iyi,Aydan restorasyon projesi için tabanlı ve tavanlı bir plan çizdi.,taban,tavan,9451,0,5,-lI
 CO470488,71,14,X-siz-and-Y-siz,iyi,Elif gençlik yıllarında faresiz ve aslansız bir oyun sahneledi.,fare,aslan,9060,0,5,-sIz
 CO470488,74,30,X-siz-and-Y-siz,iyi,Asuman dergi yazısı için düğünsüz ve cenazesiz bir program önerdi.,cenaze,düğün,8025,0,5,-sIz
+CO470488,77,3,X-and-Y-ci,iyi sayılır,Leyla eski çarşıda atkı ve şapkacı bir tuhafiyeye uğrayacakmış.,atkı,şapka,10836,1,4,-cI
 CO470488,80,9,X-and-Y-li,iyi,Zeynep bu hafta anne ve babalı bir toplantıya katıldı.,anne,baba,8811,1,5,-lI
 CO470488,83,7,X-and-Y-siz,oldukça iyi,Dilek çeyiz alşverişi için battaniye ve halısız bir paket seçmiş.,battaniye,halı,7787,1,6,-sIz
+CO470488,86,20,X-lik-and-Y-lik,oldukça iyi,Fehime düğünden önce büyükannelik ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,13852,0,6,-lIk
 CO470488,89,5,X-and-Y-lik,oldukça iyi,Ece yılbaşı için tablo ve vazoluk bir masa aldı.,tablo,vazo,4934,1,6,-lIk
+CO470488,92,12,X-lik-and-Y-lik,oldukça iyi,Merve aile mirasıyla evlik ve bahçelik bir arsa satın aldı.,ev,bahçe,15494,0,6,-lIk
 CO470488,95,24,X-li-and-Y-li,oldukça iyi,Neval ders çalışırken gözlü ve kulaklı bir robot gördü.,göz,kulak,8058,0,6,-lI
 CO263824,3,4,X-and-Y-siz,kötü sayılır,Burak tatlı için limon ve portakalsız bir tarif bulmuş.,limon,portakal,6165,1,3,-sIz
 CO263824,6,31,X-ci-and-Y-ci,kötü,Tülay sonbahar koleksiyonu için gömlekçi ve pantoloncu bir tasarımcıyla tanıştı.,gömlek,pantolon,7210,0,2,-cI
 CO263824,9,14,X-and-Y-li,oldukça iyi,Elif küçük bir çocukken fare ve aslanlı bir masal dinledi.,fare,aslan,5430,1,6,-lI
+CO263824,12,13,X-li-and-Y-li,iyi sayılır,Emin geçen tatilde şehirli ve köylü bir topluluk projesine katıldı.,şehir,köy,24563,0,4,-lI
 CO263824,15,12,X-and-Y-siz,iyi,Merve yeni hayatında ev ve bahçesiz bir şehir hayatı yaşıyor.,ev,bahçe,4199,1,5,-sIz
 CO263824,18,7,X-ci-and-Y-ci,kötü sayılır,Dilek çeyiz alşverişi için battaniyeci ve halıcı bir züccaciyeciye gidecekmiş.,battaniye,halı,9857,0,3,-cI
+CO263824,21,6,X-and-Y-li,iyi,Ali diyetteyken muz ve havuçlu bir kek yapardı.,muz,havuç,52235,1,5,-lI
+CO263824,24,25,X-lik-and-Y-lik,kötü sayılır,İzel toplantı sırasında burunluk ve boyunluk bir atkı ördü.,burun,boyun,21399,0,3,-lIk
 CO263824,27,27,X-siz-and-Y-siz,iyi,Baran araştırması için ormansız ve çölsüz bir bölge seçti.,orman,çöl,7230,0,5,-sIz
 CO263824,30,24,X-and-Y-ci,kötü sayılır,Neval ders çalışırken göz ve kulakçı bir doktorla konuştu.,göz,kulak,4737,1,3,-cI
 CO263824,33,21,X-li-and-Y-li,iyi,Mertcan dün akşam abili ve ablalı bir fotoğraf gösterdi.,abi,abla,4498,0,5,-lI
@@ -253,6 +334,7 @@ CO263824,42,20,X-and-Y-siz,kötü sayılır,Fehime düğünden önce büyükanne
 CO263824,45,16,X-and-Y-ci,kötü sayılır,Okan üniversite yıllarında çiftlik ve fabrikacı bir yatırımcıyla görüştü.,çiftlik,fabrika,8038,1,3,-cI
 CO263824,48,18,X-and-Y-lik,iyi,Nevzat genç bir stajyerken okul ve camilik bir alanın korunmasını önerdi.,okul,cami,7173,1,5,-lIk
 CO263824,51,3,X-siz-and-Y-siz,oldukça iyi,Leyla eski çarşıda atkısız ve şapkasız bir çocuğa acımış.,atkı,şapka,6813,0,6,-sIz
+CO263824,54,23,X-ci-and-Y-ci,oldukça iyi,Jale geçen hafta çatalcı ve bıçakçı bir esnaftan alışveriş yaptı.,çatal,bıçak,14647,0,6,-cI
 CO263824,57,22,X-and-Y-li,iyi,Yankı geçen yaz at ve balıklı bir tablo aldı.,at,balık,7470,1,5,-lI
 CO263824,60,26,X-and-Y-lik,kötü sayılır,Sinan gece yarısı hayalet ve canavarlık bir sahne tasarladı.,hayalet,canavar,9805,1,3,-lIk
 CO263824,63,11,X-siz-and-Y-siz,oldukça iyi,Ahmet yabancı bir üniversitede bilimsiz ve teknolojisiz bir düşünceyi eleştirdi.,bilim,teknoloji,5657,0,6,-sIz
@@ -263,16 +345,21 @@ CO263824,75,8,X-and-Y-ci,iyi,Selin tamir için kapı ve pencereci bir marangozla
 CO263824,78,9,X-lik-and-Y-lik,kötü sayılır,Zeynep yıllar önce annelik ve babalık bir görev üstlendi.,anne,baba,5126,0,3,-lIk
 CO263824,81,28,X-and-Y-siz,oldukça iyi,Yasemin mezuniyetinden önce doktor ve avukatsız bir mizansen canlandırdı.,avukat,doktor,6849,1,6,-sIz
 CO263824,84,29,X-li-and-Y-li,oldukça iyi,Melis çocuk kitabı için ejderhalı ve perili bir sahne tasarladı.,ejderha,peri,4839,0,6,-lI
+CO263824,87,19,X-siz-and-Y-siz,iyi sayılır,Zühre son yolculukta gecesiz ve gündüzsüz bir tren yolculuğu önerdi.,gece,gündüz,11689,0,4,-sIz
+CO263824,90,32,X-and-Y-ci,iyi,Aydan restorasyon projesi için taban ve tavancı bir ustayla görüştü.,taban,tavan,10758,1,5,-cI
 CO263824,93,2,X-and-Y-lik,kötü sayılır,Ömer yeni evine masa ve sandalyelik bir renk seçti.,masa,sandalye,5888,1,3,-lIk
 CO263824,96,10,X-and-Y-lik,kötü sayılır,Ali yeni firmada kedi ve köpeklik bir tasarım yaptı.,kedi,köpek,5207,1,3,-lIk
 CO490300,3,21,X-and-Y-siz,oldukça iyi,Mertcan dün akşam abi ve ablasız bir hayat düşündü.,abi,abla,8627,1,6,-sIz
 CO490300,6,13,X-and-Y-siz,kötü,Emin geçen tatilde şehir ve köysüz bir gezi yaptı.,şehir,köy,9136,1,2,-sIz
+CO490300,9,18,X-lik-and-Y-lik,iyi sayılır,Nevzat genç bir stajyerken okulluk ve camilik bir alanın korunmasını önerdi.,okul,cami,14093,0,4,-lIk
 CO490300,12,8,X-ci-and-Y-ci,kötü,Selin tamir için kapıcı ve pencereci bir marangozla anlaşmış.,kapı,pencere,7137,0,2,-cI
 CO490300,15,2,X-lik-and-Y-lik,iyi sayılır,Ömer yeni evine masalık ve sandalyelik bir renk seçti.,masa,sandalye,8597,0,4,-lIk
 CO490300,18,14,X-li-and-Y-li,iyi,Elif küçük bir çocukken fareli ve aslanlı bir masal dinledi.,fare,aslan,7361,0,5,-lI
+CO490300,21,22,X-li-and-Y-li,iyi sayılır,Yankı geçen yaz atlı ve balıklı bir tablo aldı.,at,balık,10447,0,4,-lI
 CO490300,24,6,X-li-and-Y-li,iyi,Ali diyetteyken muzlu ve havuçlu bir kek yapardı.,muz,havuç,7616,0,5,-lI
 CO490300,27,1,X-and-Y-ci,kötü,Emel geçen haftasonu çorap ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,9036,1,2,-cI
 CO490300,30,23,X-and-Y-li,kötü,Jale geçen hafta çatal ve bıçaklı bir masa kurdu.,çatal,bıçak,7494,1,2,-lI
+CO490300,33,7,X-and-Y-li,kötü,Dilek çeyiz alşverişi için battaniye ve halılı bir paket seçmiş.,battaniye,halı,15140,1,2,-lI
 CO490300,36,32,X-ci-and-Y-ci,iyi,Aydan restorasyon projesi için tabancı ve tavancı bir ustayla görüştü.,taban,tavan,6055,0,5,-cI
 CO490300,39,28,X-siz-and-Y-siz,oldukça iyi,Yasemin mezuniyetinden önce doktorsuz ve avukatsız bir mizansen canlandırdı.,avukat,doktor,5972,0,6,-sIz
 CO490300,42,12,X-siz-and-Y-siz,iyi,Merve yeni hayatında evsiz ve bahçesiz bir şehir hayatı yaşıyor.,ev,bahçe,8937,0,5,-sIz
@@ -283,6 +370,7 @@ CO490300,54,4,X-siz-and-Y-siz,iyi,Burak tatlı için limonsuz ve portakalsız bi
 CO490300,57,29,X-and-Y-siz,kötü,Melis çocuk kitabı için ejderha ve perisiz bir bölüm yazdı.,ejderha,peri,5804,1,2,-sIz
 CO490300,60,20,X-siz-and-Y-siz,iyi,Fehime düğünden önce büyükannesiz ve dedesiz bir aile hayatını irdeledi.,büyükanne,dede,9406,0,5,-sIz
 CO490300,63,27,X-and-Y-lik,kötü,Baran araştırması için orman ve çöllük bir alan çizdi.,orman,çöl,4987,1,2,-lIk
+CO490300,66,25,X-and-Y-ci,kötü,İzel toplantı sırasında burun ve boyuncu bir doktordan bahsetti.,burun,boyun,10580,1,2,-cI
 CO490300,69,5,X-and-Y-siz,oldukça kötü,Ece yılbaşı için tablo ve vazosuz bir masa seçti.,tablo,vazo,6069,1,1,-sIz
 CO490300,72,31,X-and-Y-li,iyi,Tülay sonbahar koleksiyonu için gömlek ve pantolonlu bir kombin hazırladı.,gömlek,pantolon,4715,1,5,-lI
 CO490300,75,30,X-li-and-Y-li,iyi,Asuman dergi yazısı için düğünlü ve cenazeli bir belgesel izledi.,cenaze,düğün,6805,0,5,-lI
@@ -304,61 +392,128 @@ CO438265,23,5,X-siz-and-Y-siz,kötü,Ece yılbaşı için tablosuz ve vazosuz bi
 CO438265,26,6,X-and-Y-siz,kötü,Ali diyetteyken muz ve havuçsuz bir kek yapardı.,muz,havuç,6929,1,2,-sIz
 CO438265,29,18,X-and-Y-ci,kötü,Nevzat genç bir stajyerken okul ve camici bir mimarın eserlerini inceledi.,okul,cami,8277,1,2,-cI
 CO438265,32,20,X-and-Y-lik,iyi sayılır,Fehime düğünden önce büyükanne ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,8379,1,4,-lIk
+CO438265,35,14,X-and-Y-siz,iyi,Elif gençlik yıllarında fare ve aslansız bir oyun sahneledi.,fare,aslan,10063,1,5,-sIz
 CO438265,38,25,X-ci-and-Y-ci,oldukça kötü,İzel toplantı sırasında buruncu ve boyuncu bir doktordan bahsetti.,burun,boyun,5546,0,1,-cI
 CO438265,41,4,X-and-Y-lik,kötü sayılır,Burak tatlı için limon ve portakallık bir tabak hazırlamış.,limon,portakal,6262,1,3,-lIk
 CO438265,44,26,X-and-Y-ci,oldukça kötü,Sinan gece yarısı hayalet ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,4895,1,1,-cI
 CO438265,47,2,X-and-Y-ci,kötü sayılır,Ömer yeni evine masa ve sandalyeci bir usta getirdi.,masa,sandalye,5427,1,3,-cI
+CO438265,50,13,X-siz-and-Y-siz,kötü sayılır,Emin geçen tatilde şehirsiz ve köysüz bir gezi yaptı.,şehir,köy,11645,0,3,-sIz
 CO438265,53,17,X-ci-and-Y-ci,oldukça kötü,Eylül kamp yaparken tepeci ve nehirci bir rehberle doğa yürüyüşüne çıktı.,tepe,nehir,7232,0,1,-cI
 CO438265,56,8,X-and-Y-li,kötü,Selin tamir için kapı ve pencereli bir atölye tasarlamış.,kapı,pencere,6430,1,2,-lI
 CO438265,59,29,X-siz-and-Y-siz,iyi sayılır,Melis çocuk kitabı için ejderhasız ve perisiz bir bölüm yazdı.,ejderha,peri,6724,0,4,-sIz
 CO438265,62,11,X-lik-and-Y-lik,oldukça kötü,Ahmet yabancı bir üniversitede bilimlik ve teknolojilik bir dergi çıkardı.,bilim,teknoloji,4961,0,1,-lIk
+CO438265,65,1,X-ci-and-Y-ci,iyi,Emel geçen haftasonu çorapçı ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,10389,0,5,-cI
 CO438265,68,30,X-and-Y-siz,iyi,Asuman dergi yazısı için düğün ve cenazesiz bir program önerdi.,cenaze,düğün,8285,1,5,-sIz
 CO438265,71,7,X-li-and-Y-li,iyi,Dilek çeyiz alşverişi için battaniyeli ve halılı bir paket seçmiş.,battaniye,halı,5620,0,5,-lI
 CO438265,74,15,X-li-and-Y-li,kötü,Deniz misafir beklerken sürahili ve bardaklı bir konsept hazırladı.,sürahi,bardak,8297,0,2,-lI
 CO438265,77,12,X-and-Y-lik,kötü,Merve aile mirasıyla ev ve bahçelik bir arsa satın aldı.,ev,bahçe,5643,1,2,-lIk
+CO438265,80,32,X-and-Y-li,kötü,Aydan restorasyon projesi için taban ve tavanlı bir plan çizdi.,taban,tavan,11255,1,2,-lI
 CO438265,83,31,X-li-and-Y-li,iyi,Tülay sonbahar koleksiyonu için gömlekli ve pantolonlu bir kombin hazırladı.,gömlek,pantolon,4900,0,5,-lI
 CO438265,86,16,X-and-Y-li,kötü sayılır,Okan üniversite yıllarında çiftlik ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,5079,1,3,-lI
 CO438265,89,24,X-and-Y-li,oldukça kötü,Neval ders çalışırken göz ve kulaklı bir robot gördü.,göz,kulak,3912,1,1,-lI
 CO438265,92,10,X-and-Y-ci,oldukça kötü,Ali her hafta kedi ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,4535,1,1,-cI
 CO438265,95,28,X-and-Y-lik,oldukça kötü,Yasemin mezuniyetinden önce doktor ve avukatlık bir kimlik seçti.,avukat,doktor,4931,1,1,-lIk
+CO15242,3,6,X-siz-and-Y-siz,iyi,Ali diyetteyken muzsuz ve havuçsuz bir kek yapardı.,muz,havuç,16730,0,5,-sIz
+CO15242,6,22,X-siz-and-Y-siz,kötü,Yankı geçen yaz atsız ve balıksız bir menü denedi.,at,balık,11592,0,2,-sIz
+CO15242,9,8,X-li-and-Y-li,iyi sayılır,Selin tamir için kapılı ve pencereli bir atölye tasarlamış.,kapı,pencere,10907,0,4,-lI
+CO15242,12,30,X-siz-and-Y-siz,iyi sayılır,Asuman dergi yazısı için düğünsüz ve cenazesiz bir program önerdi.,cenaze,düğün,16161,0,4,-sIz
+CO15242,15,7,X-and-Y-siz,kötü sayılır,Dilek çeyiz alşverişi için battaniye ve halısız bir paket seçmiş.,battaniye,halı,15673,1,3,-sIz
+CO15242,18,17,X-and-Y-li,iyi,Eylül kamp yaparken tepe ve nehirli bir alan seçti.,tepe,nehir,8207,1,5,-lI
+CO15242,21,14,X-siz-and-Y-siz,iyi sayılır,Elif gençlik yıllarında faresiz ve aslansız bir oyun sahneledi.,fare,aslan,4684,0,4,-sIz
+CO15242,24,24,X-li-and-Y-li,iyi,Neval ders çalışırken gözlü ve kulaklı bir robot gördü.,göz,kulak,8418,0,5,-lI
+CO15242,27,5,X-and-Y-lik,kötü sayılır,Ece yılbaşı için tablo ve vazoluk bir masa aldı.,tablo,vazo,6272,1,3,-lIk
+CO15242,30,4,X-lik-and-Y-lik,kötü sayılır,Burak tatlı için limonluk ve portakallık bir tabak hazırlamış.,limon,portakal,8295,0,3,-lIk
+CO15242,33,32,X-li-and-Y-li,kötü sayılır,Aydan restorasyon projesi için tabanlı ve tavanlı bir plan çizdi.,taban,tavan,8915,0,3,-lI
+CO15242,36,21,X-and-Y-lik,iyi sayılır,Mertcan dün akşam abi ve ablalık bir hediye aldı.,abi,abla,9357,1,4,-lIk
+CO15242,39,3,X-and-Y-ci,kötü,Leyla eski çarşıda atkı ve şapkacı bir tuhafiyeye uğrayacakmış.,atkı,şapka,5995,1,2,-cI
+CO15242,42,18,X-ci-and-Y-ci,kötü sayılır,Nevzat genç bir stajyerken okulcu ve camici bir mimarın eserlerini inceledi.,okul,cami,10031,0,3,-cI
+CO15242,45,29,X-and-Y-lik,oldukça kötü,Melis çocuk kitabı için ejderha ve perilik bir seri başlatmayı düşündü.,ejderha,peri,5467,1,1,-lIk
+CO15242,48,2,X-ci-and-Y-ci,oldukça kötü,Ömer yeni evine masacı ve sandalyeci bir usta getirdi.,masa,sandalye,4224,0,1,-cI
+CO15242,51,28,X-lik-and-Y-lik,kötü sayılır,Yasemin mezuniyetinden önce doktorluk ve avukatlık bir kimlik seçti.,avukat,doktor,16092,0,3,-lIk
+CO15242,54,12,X-lik-and-Y-lik,kötü,Merve aile mirasıyla evlik ve bahçelik bir arsa satın aldı.,ev,bahçe,7576,0,2,-lIk
+CO15242,57,16,X-li-and-Y-li,kötü sayılır,Okan üniversite yıllarında çiftlikli ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,8296,0,3,-lI
+CO15242,60,26,X-ci-and-Y-ci,kötü sayılır,Sinan gece yarısı hayaletçi ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,4187,0,3,-cI
+CO15242,63,23,X-and-Y-siz,kötü sayılır,Jale geçen hafta çatal ve bıçaksız bir piknik yaptı.,çatal,bıçak,4226,1,3,-sIz
+CO15242,66,13,X-and-Y-lik,kötü sayılır,Emin geçen tatilde şehir ve köylük bir bölgeyi gezdi.,şehir,köy,4468,1,3,-lIk
+CO15242,69,1,X-and-Y-li,kötü sayılır,Emel geçen haftasonu çorap ve ayakkabılı bir takım aldı.,çorap,ayakkabı,5545,1,3,-lI
+CO15242,72,27,X-and-Y-ci,kötü sayılır,Baran araştırması için orman ve çölcü bir araştırmacıyla anlaştı.,orman,çöl,15558,1,3,-cI
+CO15242,75,15,X-and-Y-siz,iyi sayılır,Deniz misafir beklerken sürahi ve bardaksız bir sofra kurdu.,sürahi,bardak,5504,1,4,-sIz
+CO15242,78,20,X-lik-and-Y-lik,oldukça kötü,Fehime düğünden önce büyükannelik ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,4394,0,1,-lIk
+CO15242,81,11,X-and-Y-ci,iyi sayılır,Ahmet yabancı bir üniversitede bilim ve teknolojici bir araştırmaya katıldı.,bilim,teknoloji,9098,1,4,-cI
+CO15242,84,31,X-and-Y-siz,kötü,Tülay sonbahar koleksiyonu için gömlek ve pantolonsuz bir katalog inceledi.,gömlek,pantolon,5303,1,2,-sIz
+CO15242,87,10,X-ci-and-Y-ci,kötü,Ali her hafta kedici ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,6042,0,2,-cI
+CO15242,90,19,X-and-Y-ci,kötü sayılır,Zühre son yolculukta gece ve gündüzcü bir rehberle tanıştı.,gece,gündüz,5837,1,3,-cI
+CO15242,93,9,X-and-Y-li,kötü,Zeynep bu hafta anne ve babalı bir toplantıya katıldı.,anne,baba,4703,1,2,-lI
+CO15242,96,25,X-and-Y-li,kötü,İzel toplantı sırasında burun ve boyunlu bir maske inceledi.,burun,boyun,6814,1,2,-lI
 CO420207,3,7,X-and-Y-siz,iyi sayılır,Dilek çeyiz alşverişi için battaniye ve halısız bir paket seçmiş.,battaniye,halı,7819,1,4,-sIz
 CO420207,6,10,X-ci-and-Y-ci,kötü,Ali her hafta kedici ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,7814,0,2,-cI
+CO420207,9,24,X-li-and-Y-li,kötü sayılır,Neval ders çalışırken gözlü ve kulaklı bir robot gördü.,göz,kulak,13173,0,3,-lI
+CO420207,12,23,X-and-Y-siz,iyi,Jale geçen hafta çatal ve bıçaksız bir piknik yaptı.,çatal,bıçak,13094,1,5,-sIz
 CO420207,15,4,X-lik-and-Y-lik,kötü sayılır,Burak tatlı için limonluk ve portakallık bir tabak hazırlamış.,limon,portakal,8688,0,3,-lIk
+CO420207,18,26,X-ci-and-Y-ci,kötü,Sinan gece yarısı hayaletçi ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,11084,0,2,-cI
+CO420207,21,16,X-li-and-Y-li,kötü,Okan üniversite yıllarında çiftlikli ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,12840,0,2,-lI
 CO420207,24,14,X-siz-and-Y-siz,iyi,Elif gençlik yıllarında faresiz ve aslansız bir oyun sahneledi.,fare,aslan,7145,0,5,-sIz
 CO420207,27,27,X-and-Y-ci,kötü,Baran araştırması için orman ve çölcü bir araştırmacıyla anlaştı.,orman,çöl,7885,1,2,-cI
 CO420207,30,31,X-and-Y-siz,iyi,Tülay sonbahar koleksiyonu için gömlek ve pantolonsuz bir katalog inceledi.,gömlek,pantolon,8971,1,5,-sIz
 CO420207,33,1,X-and-Y-li,iyi,Emel geçen haftasonu çorap ve ayakkabılı bir takım aldı.,çorap,ayakkabı,8497,1,5,-lI
 CO420207,36,5,X-and-Y-lik,kötü,Ece yılbaşı için tablo ve vazoluk bir masa aldı.,tablo,vazo,6695,1,2,-lIk
+CO420207,39,8,X-li-and-Y-li,iyi sayılır,Selin tamir için kapılı ve pencereli bir atölye tasarlamış.,kapı,pencere,13752,0,4,-lI
 CO420207,42,2,X-ci-and-Y-ci,kötü sayılır,Ömer yeni evine masacı ve sandalyeci bir usta getirdi.,masa,sandalye,6665,0,3,-cI
 CO420207,45,21,X-and-Y-lik,oldukça kötü,Mertcan dün akşam abi ve ablalık bir hediye aldı.,abi,abla,7277,1,1,-lIk
+CO420207,48,32,X-li-and-Y-li,iyi sayılır,Aydan restorasyon projesi için tabanlı ve tavanlı bir plan çizdi.,taban,tavan,13653,0,4,-lI
 CO420207,51,30,X-siz-and-Y-siz,kötü sayılır,Asuman dergi yazısı için düğünsüz ve cenazesiz bir program önerdi.,cenaze,düğün,5508,0,3,-sIz
 CO420207,54,25,X-and-Y-li,iyi sayılır,İzel toplantı sırasında burun ve boyunlu bir maske inceledi.,burun,boyun,6423,1,4,-lI
+CO420207,57,29,X-and-Y-lik,iyi sayılır,Melis çocuk kitabı için ejderha ve perilik bir seri başlatmayı düşündü.,ejderha,peri,12773,1,4,-lIk
 CO420207,60,13,X-and-Y-lik,iyi sayılır,Emin geçen tatilde şehir ve köylük bir bölgeyi gezdi.,şehir,köy,9112,1,4,-lIk
 CO420207,63,22,X-siz-and-Y-siz,kötü,Yankı geçen yaz atsız ve balıksız bir menü denedi.,at,balık,8588,0,2,-sIz
 CO420207,66,28,X-lik-and-Y-lik,iyi sayılır,Yasemin mezuniyetinden önce doktorluk ve avukatlık bir kimlik seçti.,avukat,doktor,8116,0,4,-lIk
 CO420207,69,12,X-lik-and-Y-lik,kötü sayılır,Merve aile mirasıyla evlik ve bahçelik bir arsa satın aldı.,ev,bahçe,5598,0,3,-lIk
 CO420207,72,9,X-and-Y-li,iyi sayılır,Zeynep bu hafta anne ve babalı bir toplantıya katıldı.,anne,baba,4593,1,4,-lI
 CO420207,75,20,X-lik-and-Y-lik,iyi sayılır,Fehime düğünden önce büyükannelik ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,5666,0,4,-lIk
+CO420207,78,17,X-and-Y-li,kötü sayılır,Eylül kamp yaparken tepe ve nehirli bir alan seçti.,tepe,nehir,15463,1,3,-lI
+CO420207,81,11,X-and-Y-ci,kötü,Ahmet yabancı bir üniversitede bilim ve teknolojici bir araştırmaya katıldı.,bilim,teknoloji,10656,1,2,-cI
 CO420207,84,18,X-ci-and-Y-ci,kötü sayılır,Nevzat genç bir stajyerken okulcu ve camici bir mimarın eserlerini inceledi.,okul,cami,4927,0,3,-cI
 CO420207,87,6,X-siz-and-Y-siz,kötü sayılır,Ali diyetteyken muzsuz ve havuçsuz bir kek yapardı.,muz,havuç,4814,0,3,-sIz
 CO420207,90,3,X-and-Y-ci,kötü,Leyla eski çarşıda atkı ve şapkacı bir tuhafiyeye uğrayacakmış.,atkı,şapka,7032,1,2,-cI
 CO420207,93,15,X-and-Y-siz,iyi sayılır,Deniz misafir beklerken sürahi ve bardaksız bir sofra kurdu.,sürahi,bardak,5630,1,4,-sIz
 CO420207,96,19,X-and-Y-ci,oldukça kötü,Zühre son yolculukta gece ve gündüzcü bir rehberle tanıştı.,gece,gündüz,7134,1,1,-cI
+CO339043,2,30,X-ci-and-Y-ci,kötü,Asuman dergi yazısı için düğüncü ve cenazeci bir fotoğrafçıyla anlaştı.,cenaze,düğün,29725,0,2,-cI
+CO339043,5,32,X-lik-and-Y-lik,iyi,Aydan restorasyon projesi için tabanlık ve tavanlık bir malzeme seçti.,taban,tavan,24483,0,5,-lIk
+CO339043,8,11,X-and-Y-siz,kötü,Ahmet yabancı bir üniversitede bilim ve teknolojisiz bir düşünceyi eleştirdi.,bilim,teknoloji,16850,1,2,-sIz
+CO339043,11,18,X-siz-and-Y-siz,kötü sayılır,Nevzat genç bir stajyerken okulsuz ve camisiz bir projeye destek verdi.,okul,cami,21397,0,3,-sIz
+CO339043,14,2,X-siz-and-Y-siz,oldukça iyi,Ömer yeni evine masasız ve sandalyesiz bir mobilya takımı aldı.,masa,sandalye,18770,0,6,-sIz
+CO339043,17,4,X-li-and-Y-li,oldukça iyi,Burak tatlı için limonlu ve portakallı bir tarif bulmuş.,limon,portakal,12747,0,6,-lI
+CO339043,20,6,X-ci-and-Y-ci,kötü sayılır,Ali diyetteyken muzcu ve havuççu bir tezgahtara uğrardı.,muz,havuç,16199,0,3,-cI
+CO339043,23,8,X-lik-and-Y-lik,kötü sayılır,Selin tamir için kapılık ve pencerelik bir desen seçmiş.,kapı,pencere,13377,0,3,-lIk
+CO339043,26,17,X-and-Y-lik,oldukça kötü,Eylül kamp yaparken tepe ve nehirlik bir arazi satın aldı.,tepe,nehir,10502,1,1,-lIk
+CO339043,29,16,X-lik-and-Y-lik,kötü sayılır,Okan üniversite yıllarında çiftliklik ve fabrikalık bir proje sundu.,çiftlik,fabrika,12495,0,3,-lIk
 CO339043,32,25,X-and-Y-lik,oldukça kötü,İzel toplantı sırasında burun ve boyunluk bir atkı ördü.,burun,boyun,8802,1,1,-lIk
 CO339043,35,3,X-and-Y-siz,kötü sayılır,Leyla eski çarşıda atkı ve şapkasız bir çocuğa acımış.,atkı,şapka,7099,1,3,-sIz
 CO339043,38,21,X-and-Y-li,kötü,Mertcan dün akşam abi ve ablalı bir fotoğraf gösterdi.,abi,abla,9296,1,2,-lI
+CO339043,41,19,X-and-Y-siz,kötü,Zühre son yolculukta gece ve gündüzsüz bir tren yolculuğu önerdi.,gece,gündüz,13240,1,2,-sIz
+CO339043,44,23,X-and-Y-ci,kötü,Jale geçen hafta çatal ve bıçakçı bir esnaftan alışveriş yaptı.,çatal,bıçak,30752,1,2,-cI
+CO339043,47,29,X-and-Y-li,kötü sayılır,Melis çocuk kitabı için ejderha ve perili bir sahne tasarladı.,ejderha,peri,14257,1,3,-lI
+CO339043,50,15,X-and-Y-ci,kötü,Deniz misafir beklerken sürahi ve bardakçı bir antikacıdan alışveriş yaptı.,sürahi,bardak,10480,1,2,-cI
 CO339043,53,28,X-li-and-Y-li,kötü,Yasemin mezuniyetinden önce doktorlu ve avukatlı bir skeç yazdı.,avukat,doktor,6284,0,2,-lI
 CO339043,56,14,X-ci-and-Y-ci,oldukça kötü,Elif gençlik yıllarında fareci ve aslancı bir hikaye yazdı.,fare,aslan,5722,0,1,-cI
+CO339043,59,1,X-and-Y-lik,kötü sayılır,Emel geçen haftasonu çorap ve ayakkabılık bir dolap aldı.,çorap,ayakkabı,11701,1,3,-lIk
 CO339043,62,12,X-li-and-Y-li,kötü sayılır,Merve yaz tatilinde evli ve bahçeli bir tatil köyünü ziyaret etti.,ev,bahçe,8893,0,3,-lI
 CO339043,65,9,X-and-Y-lik,kötü,Zeynep yıllar önce anne ve babalık bir görev üstlendi.,anne,baba,7698,1,2,-lIk
 CO339043,68,10,X-siz-and-Y-siz,iyi sayılır,Ali uzun zamandır kedisiz ve köpeksiz bir apartmanda yaşıyor.,kedi,köpek,9603,0,4,-sIz
 CO339043,71,24,X-lik-and-Y-lik,kötü,Neval ders çalışırken gözlük ve kulaklık bir kutu açtı.,göz,kulak,6075,0,2,-lIk
 CO339043,74,5,X-and-Y-li,kötü,Ece yılbaşı için tablo ve vazolu bir masa aldı.,tablo,vazo,9134,1,2,-lI
+CO339043,77,7,X-and-Y-ci,iyi sayılır,Dilek çeyiz alşverişi için battaniye ve halıcı bir züccaciyeciye gidecekmiş.,battaniye,halı,14173,1,4,-cI
+CO339043,80,13,X-and-Y-li,kötü,Emin geçen tatilde şehir ve köylü bir topluluk projesine katıldı.,şehir,köy,13094,1,2,-lI
 CO339043,83,27,X-and-Y-siz,kötü sayılır,Baran araştırması için orman ve çölsüz bir bölge seçti.,orman,çöl,7621,1,3,-sIz
 CO339043,86,22,X-ci-and-Y-ci,kötü,Yankı geçen yaz atçı ve balıkçı bir işletme sahibiyle tanıştı.,at,balık,7029,0,2,-cI
 CO339043,89,26,X-siz-and-Y-siz,iyi sayılır,Sinan gece yarısı hayaletsiz ve canavarsız bir film izledi.,hayalet,canavar,5457,0,4,-sIz
+CO339043,92,31,X-and-Y-ci,kötü,Tülay sonbahar koleksiyonu için gömlek ve pantoloncu bir tasarımcıyla tanıştı.,gömlek,pantolon,13500,1,2,-cI
 CO339043,95,20,X-li-and-Y-li,oldukça kötü,Fehime düğünden önce büyükanneli ve dedeli bir aile hayatını irdeledi.,büyükanne,dede,8032,0,1,-lI
 CO970457,2,22,X-and-Y-li,iyi sayılır,Yankı geçen yaz at ve balıklı bir tablo aldı.,at,balık,9408,1,4,-lI
+CO970457,5,29,X-li-and-Y-li,iyi sayılır,Melis çocuk kitabı için ejderhalı ve perili bir sahne tasarladı.,ejderha,peri,11837,0,4,-lI
+CO970457,8,28,X-and-Y-siz,iyi,Yasemin mezuniyetinden önce doktor ve avukatsız bir mizansen canlandırdı.,avukat,doktor,10388,1,5,-sIz
+CO970457,11,1,X-lik-and-Y-lik,iyi sayılır,Emel geçen haftasonu çoraplık ve ayakkabılık bir dolap aldı.,çorap,ayakkabı,10262,0,4,-lIk
+CO970457,14,31,X-ci-and-Y-ci,iyi sayılır,Tülay sonbahar koleksiyonu için gömlekçi ve pantoloncu bir tasarımcıyla tanıştı.,gömlek,pantolon,11420,0,4,-cI
 CO970457,17,17,X-lik-and-Y-lik,iyi,Eylül kamp yaparken tepelik ve nehirlik bir arazi satın aldı.,tepe,nehir,6101,0,5,-lIk
 CO970457,20,23,X-ci-and-Y-ci,iyi sayılır,Jale geçen hafta çatalcı ve bıçakçı bir esnaftan alışveriş yaptı.,çatal,bıçak,6132,0,4,-cI
 CO970457,23,9,X-lik-and-Y-lik,iyi sayılır,Zeynep yıllar önce annelik ve babalık bir görev üstlendi.,anne,baba,5575,0,4,-lIk
@@ -386,6 +541,7 @@ CO970457,86,26,X-and-Y-lik,kötü sayılır,Sinan gece yarısı hayalet ve canav
 CO970457,89,20,X-and-Y-siz,oldukça iyi,Fehime düğünden önce büyükanne ve dedesiz bir aile hayatını irdeledi.,büyükanne,dede,5603,1,6,-sIz
 CO970457,92,21,X-li-and-Y-li,iyi sayılır,Mertcan dün akşam abili ve ablalı bir fotoğraf gösterdi.,abi,abla,5275,0,4,-lI
 CO970457,95,7,X-ci-and-Y-ci,kötü sayılır,Dilek çeyiz alşverişi için battaniyeci ve halıcı bir züccaciyeciye gidecekmiş.,battaniye,halı,7148,0,3,-cI
+CO937903,3,26,X-and-Y-ci,iyi sayılır,Sinan gece yarısı hayalet ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,18947,1,4,-cI
 CO937903,6,22,X-and-Y-siz,kötü sayılır,Yankı geçen yaz at ve balıksız bir menü denedi.,at,balık,6495,1,3,-sIz
 CO937903,9,20,X-and-Y-lik,iyi,Fehime düğünden önce büyükanne ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,7809,1,5,-lIk
 CO937903,12,29,X-siz-and-Y-siz,iyi,Melis çocuk kitabı için ejderhasız ve perisiz bir bölüm yazdı.,ejderha,peri,6534,0,5,-sIz
@@ -395,36 +551,100 @@ CO937903,21,31,X-li-and-Y-li,iyi,Tülay sonbahar koleksiyonu için gömlekli ve 
 CO937903,24,9,X-ci-and-Y-ci,kötü sayılır,Zeynep bu hafta anneci ve babacı bir yeğeniyle ilgilendi.,anne,baba,4507,0,3,-cI
 CO937903,27,16,X-and-Y-li,iyi sayılır,Okan üniversite yıllarında çiftlik ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,5440,1,4,-lI
 CO937903,30,24,X-and-Y-li,iyi sayılır,Neval ders çalışırken göz ve kulaklı bir robot gördü.,göz,kulak,5193,1,4,-lI
+CO937903,33,4,X-and-Y-lik,kötü sayılır,Burak tatlı için limon ve portakallık bir tabak hazırlamış.,limon,portakal,11043,1,3,-lIk
+CO937903,36,17,X-ci-and-Y-ci,kötü sayılır,Eylül kamp yaparken tepeci ve nehirci bir rehberle doğa yürüyüşüne çıktı.,tepe,nehir,17434,0,3,-cI
 CO937903,39,2,X-and-Y-ci,iyi sayılır,Ömer yeni evine masa ve sandalyeci bir usta getirdi.,masa,sandalye,3872,1,4,-cI
 CO937903,42,19,X-lik-and-Y-lik,kötü sayılır,Zühre son yolculukta gecelik ve gündüzlük bir program belirledi.,gece,gündüz,9509,0,3,-lIk
+CO937903,45,10,X-and-Y-ci,kötü,Ali her hafta kedi ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,53357,1,2,-cI
+CO937903,48,1,X-ci-and-Y-ci,iyi sayılır,Emel geçen haftasonu çorapçı ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,27365,0,4,-cI
 CO937903,51,11,X-lik-and-Y-lik,kötü sayılır,Ahmet yabancı bir üniversitede bilimlik ve teknolojilik bir dergi çıkardı.,bilim,teknoloji,5790,0,3,-lIk
 CO937903,54,12,X-and-Y-lik,iyi sayılır,Merve aile mirasıyla ev ve bahçelik bir arsa satın aldı.,ev,bahçe,8570,1,4,-lIk
 CO937903,57,5,X-siz-and-Y-siz,iyi sayılır,Ece yılbaşı için tablosuz ve vazosuz bir masa seçti.,tablo,vazo,6574,0,4,-sIz
 CO937903,60,6,X-and-Y-siz,kötü,Ali diyetteyken muz ve havuçsuz bir kek yapardı.,muz,havuç,5972,1,2,-sIz
 CO937903,63,14,X-and-Y-siz,kötü,Elif gençlik yıllarında fare ve aslansız bir oyun sahneledi.,fare,aslan,6294,1,2,-sIz
+CO937903,66,3,X-lik-and-Y-lik,iyi sayılır,Leyla eski çarşıda atkılık ve şapkalık bir askı beğenmiş.,atkı,şapka,23280,0,4,-lIk
+CO937903,69,18,X-and-Y-ci,kötü sayılır,Nevzat genç bir stajyerken okul ve camici bir mimarın eserlerini inceledi.,okul,cami,20867,1,3,-cI
 CO937903,72,8,X-and-Y-li,iyi,Selin tamir için kapı ve pencereli bir atölye tasarlamış.,kapı,pencere,4143,1,5,-lI
 CO937903,75,30,X-and-Y-siz,kötü,Asuman dergi yazısı için düğün ve cenazesiz bir program önerdi.,cenaze,düğün,6192,1,2,-sIz
+CO937903,78,27,X-lik-and-Y-lik,iyi,Baran araştırması için ormanlık ve çöllük bir alan çizdi.,orman,çöl,48821,0,5,-lIk
+CO937903,81,32,X-and-Y-li,iyi,Aydan restorasyon projesi için taban ve tavanlı bir plan çizdi.,taban,tavan,79681,1,5,-lI
+CO937903,84,15,X-li-and-Y-li,iyi sayılır,Deniz misafir beklerken sürahili ve bardaklı bir konsept hazırladı.,sürahi,bardak,16983,0,4,-lI
 CO937903,87,21,X-siz-and-Y-siz,kötü sayılır,Mertcan dün akşam abisiz ve ablasız bir hayat düşündü.,abi,abla,3894,0,3,-sIz
 CO937903,90,23,X-li-and-Y-li,kötü sayılır,Jale geçen hafta çatallı ve bıçaklı bir masa kurdu.,çatal,bıçak,3670,0,3,-lI
 CO937903,93,7,X-li-and-Y-li,iyi,Dilek çeyiz alşverişi için battaniyeli ve halılı bir paket seçmiş.,battaniye,halı,4461,0,5,-lI
 CO937903,96,28,X-and-Y-lik,kötü,Yasemin mezuniyetinden önce doktor ve avukatlık bir kimlik seçti.,avukat,doktor,4511,1,2,-lIk
+CO71890,3,19,X-lik-and-Y-lik,iyi sayılır,Zühre son yolculukta gecelik ve gündüzlük bir program belirledi.,gece,gündüz,16673,0,4,-lIk
+CO71890,6,32,X-and-Y-li,iyi sayılır,Aydan restorasyon projesi için taban ve tavanlı bir plan çizdi.,taban,tavan,13707,1,4,-lI
+CO71890,9,1,X-ci-and-Y-ci,iyi,Emel geçen haftasonu çorapçı ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,16005,0,5,-cI
+CO71890,12,4,X-and-Y-lik,iyi sayılır,Burak tatlı için limon ve portakallık bir tabak hazırlamış.,limon,portakal,14474,1,4,-lIk
+CO71890,15,5,X-siz-and-Y-siz,iyi,Ece yılbaşı için tablosuz ve vazosuz bir masa seçti.,tablo,vazo,10605,0,5,-sIz
+CO71890,18,7,X-li-and-Y-li,iyi sayılır,Dilek çeyiz alşverişi için battaniyeli ve halılı bir paket seçmiş.,battaniye,halı,20525,0,4,-lI
+CO71890,24,9,X-ci-and-Y-ci,iyi sayılır,Zeynep bu hafta anneci ve babacı bir yeğeniyle ilgilendi.,anne,baba,16841,0,4,-cI
+CO71890,27,26,X-and-Y-ci,kötü sayılır,Sinan gece yarısı hayalet ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,12870,1,3,-cI
+CO71890,30,20,X-and-Y-lik,kötü,Fehime düğünden önce büyükanne ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,12189,1,2,-lIk
+CO71890,33,29,X-siz-and-Y-siz,iyi,Melis çocuk kitabı için ejderhasız ve perisiz bir bölüm yazdı.,ejderha,peri,12476,0,5,-sIz
 CO71890,36,25,X-ci-and-Y-ci,iyi sayılır,İzel toplantı sırasında buruncu ve boyuncu bir doktordan bahsetti.,burun,boyun,7653,0,4,-cI
+CO71890,39,11,X-lik-and-Y-lik,kötü sayılır,Ahmet yabancı bir üniversitede bilimlik ve teknolojilik bir dergi çıkardı.,bilim,teknoloji,13907,0,3,-lIk
+CO71890,42,30,X-and-Y-siz,iyi sayılır,Asuman dergi yazısı için düğün ve cenazesiz bir program önerdi.,cenaze,düğün,20945,1,4,-sIz
+CO71890,45,2,X-and-Y-ci,kötü sayılır,Ömer yeni evine masa ve sandalyeci bir usta getirdi.,masa,sandalye,10506,1,3,-cI
+CO71890,48,15,X-li-and-Y-li,iyi sayılır,Deniz misafir beklerken sürahili ve bardaklı bir konsept hazırladı.,sürahi,bardak,10156,0,4,-lI
 CO71890,51,17,X-ci-and-Y-ci,kötü sayılır,Eylül kamp yaparken tepeci ve nehirci bir rehberle doğa yürüyüşüne çıktı.,tepe,nehir,9791,0,3,-cI
 CO71890,54,21,X-siz-and-Y-siz,iyi,Mertcan dün akşam abisiz ve ablasız bir hayat düşündü.,abi,abla,8986,0,5,-sIz
 CO71890,57,23,X-li-and-Y-li,iyi sayılır,Jale geçen hafta çatallı ve bıçaklı bir masa kurdu.,çatal,bıçak,9105,0,4,-lI
+CO71890,60,3,X-lik-and-Y-lik,iyi sayılır,Leyla eski çarşıda atkılık ve şapkalık bir askı beğenmiş.,atkı,şapka,10423,0,4,-lIk
+CO71890,63,13,X-siz-and-Y-siz,kötü sayılır,Emin geçen tatilde şehirsiz ve köysüz bir gezi yaptı.,şehir,köy,14125,0,3,-sIz
+CO71890,66,14,X-and-Y-siz,kötü sayılır,Elif gençlik yıllarında fare ve aslansız bir oyun sahneledi.,fare,aslan,11390,1,3,-sIz
+CO71890,69,18,X-and-Y-ci,kötü sayılır,Nevzat genç bir stajyerken okul ve camici bir mimarın eserlerini inceledi.,okul,cami,10595,1,3,-cI
+CO71890,72,16,X-and-Y-li,kötü sayılır,Okan üniversite yıllarında çiftlik ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,13036,1,3,-lI
+CO71890,75,6,X-and-Y-siz,kötü sayılır,Ali diyetteyken muz ve havuçsuz bir kek yapardı.,muz,havuç,11471,1,3,-sIz
+CO71890,78,22,X-and-Y-siz,iyi sayılır,Yankı geçen yaz at ve balıksız bir menü denedi.,at,balık,11123,1,4,-sIz
+CO71890,81,12,X-and-Y-lik,iyi sayılır,Merve aile mirasıyla ev ve bahçelik bir arsa satın aldı.,ev,bahçe,11774,1,4,-lIk
+CO71890,84,31,X-li-and-Y-li,iyi,Tülay sonbahar koleksiyonu için gömlekli ve pantolonlu bir kombin hazırladı.,gömlek,pantolon,10941,0,5,-lI
+CO71890,87,10,X-and-Y-ci,kötü sayılır,Ali her hafta kedi ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,12788,1,3,-cI
+CO71890,90,28,X-and-Y-lik,oldukça kötü,Yasemin mezuniyetinden önce doktor ve avukatlık bir kimlik seçti.,avukat,doktor,13307,1,1,-lIk
+CO71890,93,24,X-and-Y-li,kötü sayılır,Neval ders çalışırken göz ve kulaklı bir robot gördü.,göz,kulak,12639,1,3,-lI
+CO71890,96,8,X-and-Y-li,iyi sayılır,Selin tamir için kapı ve pencereli bir atölye tasarlamış.,kapı,pencere,10427,1,4,-lI
+CO762194,3,19,X-ci-and-Y-ci,kötü,Zühre son yolculukta gececi ve gündüzcü bir rehberle tanıştı.,gece,gündüz,20149,0,2,-cI
+CO762194,6,9,X-li-and-Y-li,iyi sayılır,Zeynep bu hafta anneli ve babalı bir toplantıya katıldı.,anne,baba,11389,0,4,-lI
+CO762194,9,13,X-lik-and-Y-lik,kötü sayılır,Emin geçen tatilde şehirlik ve köylük bir bölgeyi gezdi.,şehir,köy,11655,0,3,-lIk
+CO762194,12,29,X-lik-and-Y-lik,kötü,Melis çocuk kitabı için ejderhalık ve perilik bir seri başlatmayı düşündü.,ejderha,peri,11272,0,2,-lIk
+CO762194,15,28,X-and-Y-ci,kötü,Yasemin mezuniyetinden önce doktor ve avukatçı bir derneğe katıldı.,avukat,doktor,10612,1,2,-cI
+CO762194,18,27,X-ci-and-Y-ci,kötü sayılır,Baran araştırması için ormancı ve çölcü bir araştırmacıyla anlaştı.,orman,çöl,18046,0,3,-cI
+CO762194,21,20,X-and-Y-ci,kötü sayılır,Fehime düğünden önce büyükanne ve dedeci bir gelenek hakkında yazı okudu.,büyükanne,dede,11582,1,3,-cI
+CO762194,24,3,X-ci-and-Y-ci,iyi,Leyla eski çarşıda atkıcı ve şapkacı bir tuhafiyeye uğrayacakmış.,atkı,şapka,11858,0,5,-cI
+CO762194,27,31,X-siz-and-Y-siz,iyi,Tülay sonbahar koleksiyonu için gömleksiz ve pantolonsuz bir katalog inceledi.,gömlek,pantolon,15320,0,5,-sIz
+CO762194,30,22,X-and-Y-lik,oldukça kötü,Yankı geçen yaz at ve balıklık bir hayvanay bahçesi yaptırdı.,at,balık,29163,1,1,-lIk
+CO762194,33,21,X-lik-and-Y-lik,iyi sayılır,Mertcan dün akşam abilik ve ablalık bir hediye aldı.,abi,abla,11358,0,4,-lIk
+CO762194,36,12,X-and-Y-ci,iyi sayılır,Merve yeni villası için ev ve bahçeci bir peyzaj tasarımcısıyla anlaştı.,ev,bahçe,11049,1,4,-cI
 CO762194,39,10,X-and-Y-li,kötü sayılır,Ali geçen ay kedi ve köpekli bir veteriner kliniği açtı.,kedi,köpek,7991,1,3,-lI
+CO762194,42,16,X-and-Y-siz,kötü,Okan üniversite yıllarında çiftlik ve fabrikasız bir iş modeli önerdi.,çiftlik,fabrika,12117,1,2,-sIz
+CO762194,45,25,X-li-and-Y-li,oldukça iyi,İzel toplantı sırasında burunlu ve boyunlu bir maske inceledi.,burun,boyun,18498,0,6,-lI
+CO762194,48,2,X-and-Y-li,oldukça iyi,Ömer yeni evine masa ve sandalyeli bir yemek odası kurdu.,masa,sandalye,10136,1,6,-lI
+CO762194,51,14,X-and-Y-lik,kötü,Elif takım oyununda fare ve aslanlık bir sembol seçti.,fare,aslan,18260,1,2,-lIk
 CO762194,54,23,X-siz-and-Y-siz,oldukça iyi,Jale geçen hafta çatalsız ve bıçaksız bir piknik yaptı.,çatal,bıçak,7242,0,6,-sIz
 CO762194,57,5,X-lik-and-Y-lik,iyi,Ece yılbaşı için tabloluk ve vazoluk bir masa aldı.,tablo,vazo,9055,0,5,-lIk
 CO762194,60,6,X-and-Y-lik,iyi,Ali diyetteyken muz ve havuçluk bir saklama kabı almıştı.,muz,havuç,8647,1,5,-lIk
 CO762194,63,32,X-and-Y-siz,oldukça iyi,Aydan restorasyon projesi için taban ve tavansız bir oda düşündü.,taban,tavan,8855,1,6,-sIz
+CO762194,66,17,X-li-and-Y-li,iyi,Eylül kamp yaparken tepeli ve nehirli bir alan seçti.,tepe,nehir,11216,0,5,-lI
 CO762194,69,26,X-and-Y-li,oldukça iyi,Sinan gece yarısı hayalet ve canavarlı bir hikâye okudu.,hayalet,canavar,8151,1,6,-lI
+CO762194,72,18,X-and-Y-li,iyi,Nevzat genç bir stajyerken okul ve camili bir mahallede oturdu.,okul,cami,19089,1,5,-lI
+CO762194,75,8,X-and-Y-siz,iyi,Selin tamir için kapı ve penceresiz bir atölye tasarlamış.,kapı,pencere,15598,1,5,-sIz
 CO762194,78,15,X-siz-and-Y-siz,oldukça iyi,Deniz misafir beklerken sürahisiz ve bardaksız bir sofra kurdu.,sürahi,bardak,8079,0,6,-sIz
+CO762194,81,1,X-li-and-Y-li,iyi,Emel geçen haftasonu çoraplı ve ayakkabılı bir takım aldı.,çorap,ayakkabı,11102,0,5,-lI
+CO762194,84,4,X-and-Y-ci,kötü sayılır,Burak tatlı için limon ve portakalcı bir satıcıdan sipariş vermiş.,limon,portakal,12870,1,3,-cI
+CO762194,87,11,X-ci-and-Y-ci,kötü sayılır,Ahmet yabancı bir üniversitede bilimci ve teknolojici bir araştırmaya katıldı.,bilim,teknoloji,26076,0,3,-cI
 CO762194,90,7,X-siz-and-Y-siz,oldukça iyi,Dilek çeyiz alşverişi için battaniyesiz ve halısız bir paket seçmiş.,battaniye,halı,5144,0,6,-sIz
+CO762194,93,30,X-and-Y-lik,kötü sayılır,Asuman dergi yazısı için düğün ve cenazelik bir tema belirledi.,cenaze,düğün,14450,1,3,-lIk
 CO762194,96,24,X-and-Y-siz,oldukça iyi,Neval ders çalışırken göz ve kulaksız bir heykel çizdi.,göz,kulak,7512,1,6,-sIz
 CO834866,2,9,X-lik-and-Y-lik,kötü,Zeynep yıllar önce annelik ve babalık bir görev üstlendi.,anne,baba,8424,0,2,-lIk
+CO834866,5,26,X-and-Y-lik,kötü,Sinan gece yarısı hayalet ve canavarlık bir sahne tasarladı.,hayalet,canavar,12067,1,2,-lIk
+CO834866,8,21,X-li-and-Y-li,iyi sayılır,Mertcan dün akşam abili ve ablalı bir fotoğraf gösterdi.,abi,abla,10639,0,4,-lI
 CO834866,11,5,X-li-and-Y-li,iyi sayılır,Ece yılbaşı için tablolu ve vazolu bir masa aldı.,tablo,vazo,8284,0,4,-lI
 CO834866,14,24,X-and-Y-ci,kötü,Neval ders çalışırken göz ve kulakçı bir doktorla konuştu.,göz,kulak,7638,1,2,-cI
 CO834866,17,2,X-and-Y-lik,iyi sayılır,Ömer yeni evine masa ve sandalyelik bir renk seçti.,masa,sandalye,7083,1,4,-lIk
+CO834866,20,6,X-and-Y-li,iyi,Ali diyetteyken muz ve havuçlu bir kek yapardı.,muz,havuç,11100,1,5,-lI
+CO834866,23,13,X-li-and-Y-li,kötü,Emin geçen tatilde şehirli ve köylü bir topluluk projesine katıldı.,şehir,köy,11694,0,2,-lI
+CO834866,26,18,X-and-Y-lik,kötü sayılır,Nevzat genç bir stajyerken okul ve camilik bir alanın korunmasını önerdi.,okul,cami,14988,1,3,-lIk
 CO834866,29,30,X-and-Y-li,iyi sayılır,Asuman dergi yazısı için düğün ve cenazeli bir belgesel izledi.,cenaze,düğün,7322,1,4,-lI
 CO834866,32,4,X-and-Y-siz,iyi sayılır,Burak tatlı için limon ve portakalsız bir tarif bulmuş.,limon,portakal,9782,1,4,-sIz
 CO834866,35,27,X-siz-and-Y-siz,iyi,Baran araştırması için ormansız ve çölsüz bir bölge seçti.,orman,çöl,5629,0,5,-sIz
@@ -437,14 +657,19 @@ CO834866,53,32,X-and-Y-ci,iyi,Aydan restorasyon projesi için taban ve tavancı 
 CO834866,56,22,X-and-Y-li,iyi sayılır,Yankı geçen yaz at ve balıklı bir tablo aldı.,at,balık,6980,1,4,-lI
 CO834866,59,12,X-and-Y-siz,oldukça iyi,Merve yeni hayatında ev ve bahçesiz bir şehir hayatı yaşıyor.,ev,bahçe,5959,1,6,-sIz
 CO834866,62,28,X-and-Y-siz,kötü sayılır,Yasemin mezuniyetinden önce doktor ve avukatsız bir mizansen canlandırdı.,avukat,doktor,5213,1,3,-sIz
+CO834866,65,17,X-lik-and-Y-lik,kötü,Eylül kamp yaparken tepelik ve nehirlik bir arazi satın aldı.,tepe,nehir,11865,0,2,-lIk
 CO834866,68,31,X-ci-and-Y-ci,kötü sayılır,Tülay sonbahar koleksiyonu için gömlekçi ve pantoloncu bir tasarımcıyla tanıştı.,gömlek,pantolon,6660,0,3,-cI
 CO834866,71,8,X-and-Y-ci,kötü sayılır,Selin tamir için kapı ve pencereci bir marangozla anlaşmış.,kapı,pencere,5815,1,3,-cI
 CO834866,74,11,X-siz-and-Y-siz,iyi,Ahmet yabancı bir üniversitede bilimsiz ve teknolojisiz bir düşünceyi eleştirdi.,bilim,teknoloji,5698,0,5,-sIz
 CO834866,77,10,X-and-Y-lik,iyi sayılır,Ali yeni firmada kedi ve köpeklik bir tasarım yaptı.,kedi,köpek,8145,1,4,-lIk
+CO834866,80,20,X-and-Y-siz,iyi sayılır,Fehime düğünden önce büyükanne ve dedesiz bir aile hayatını irdeledi.,büyükanne,dede,10306,1,4,-sIz
 CO834866,83,3,X-siz-and-Y-siz,iyi,Leyla eski çarşıda atkısız ve şapkasız bir çocuğa acımış.,atkı,şapka,9267,0,5,-sIz
 CO834866,86,7,X-ci-and-Y-ci,iyi sayılır,Dilek çeyiz alşverişi için battaniyeci ve halıcı bir züccaciyeciye gidecekmiş.,battaniye,halı,8683,0,4,-cI
+CO834866,89,16,X-and-Y-ci,kötü sayılır,Okan üniversite yıllarında çiftlik ve fabrikacı bir yatırımcıyla görüştü.,çiftlik,fabrika,25755,1,3,-cI
 CO834866,92,19,X-siz-and-Y-siz,iyi sayılır,Zühre son yolculukta gecesiz ve gündüzsüz bir tren yolculuğu önerdi.,gece,gündüz,5470,0,4,-sIz
 CO834866,95,25,X-lik-and-Y-lik,kötü sayılır,İzel toplantı sırasında burunluk ve boyunluk bir atkı ördü.,burun,boyun,6927,0,3,-lIk
+CO866,3,19,X-and-Y-lik,iyi sayılır,Zühre son yolculukta gece ve gündüzlük bir program belirledi.,gece,gündüz,13783,1,4,-lIk
+CO866,6,1,X-and-Y-ci,kötü,Emel geçen haftasonu çorap ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,10647,1,2,-cI
 CO866,9,11,X-and-Y-lik,iyi sayılır,Ahmet yabancı bir üniversitede bilim ve teknolojilik bir dergi çıkardı.,bilim,teknoloji,5165,1,4,-lIk
 CO866,12,16,X-ci-and-Y-ci,kötü sayılır,Okan üniversite yıllarında çiftlikçi ve fabrikacı bir yatırımcıyla görüştü.,çiftlik,fabrika,7177,0,3,-cI
 CO866,15,10,X-lik-and-Y-lik,iyi sayılır,Ali yeni firmada kedilik ve köpeklik bir tasarım yaptı.,kedi,köpek,5749,0,4,-lIk
@@ -453,7 +678,9 @@ CO866,21,6,X-li-and-Y-li,oldukça iyi,Ali diyetteyken muzlu ve havuçlu bir kek 
 CO866,24,3,X-and-Y-lik,iyi sayılır,Leyla eski çarşıda atkı ve şapkalık bir askı beğenmiş.,atkı,şapka,5403,1,4,-lIk
 CO866,27,32,X-ci-and-Y-ci,oldukça iyi,Aydan restorasyon projesi için tabancı ve tavancı bir ustayla görüştü.,taban,tavan,3871,0,6,-cI
 CO866,30,28,X-siz-and-Y-siz,iyi sayılır,Yasemin mezuniyetinden önce doktorsuz ve avukatsız bir mizansen canlandırdı.,avukat,doktor,5814,0,4,-sIz
+CO866,33,18,X-lik-and-Y-lik,kötü,Nevzat genç bir stajyerken okulluk ve camilik bir alanın korunmasını önerdi.,okul,cami,12812,0,2,-lIk
 CO866,36,4,X-siz-and-Y-siz,oldukça iyi,Burak tatlı için limonsuz ve portakalsız bir tarif bulmuş.,limon,portakal,2565,0,6,-sIz
+CO866,39,24,X-ci-and-Y-ci,iyi sayılır,Neval ders çalışırken gözcü ve kulakçı bir doktorla konuştu.,göz,kulak,20124,0,4,-cI
 CO866,42,7,X-and-Y-li,oldukça iyi,Dilek çeyiz alşverişi için battaniye ve halılı bir paket seçmiş.,battaniye,halı,2872,1,6,-lI
 CO866,45,27,X-and-Y-lik,iyi sayılır,Baran araştırması için orman ve çöllük bir alan çizdi.,orman,çöl,7623,1,4,-lIk
 CO866,48,22,X-li-and-Y-li,iyi,Yankı geçen yaz atlı ve balıklı bir tablo aldı.,at,balık,4688,0,5,-lI
@@ -505,12 +732,19 @@ CO224865,86,2,X-and-Y-ci,iyi,Ömer yeni evine masa ve sandalyeci bir usta getird
 CO224865,89,20,X-and-Y-lik,iyi,Fehime düğünden önce büyükanne ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,4543,1,5,-lIk
 CO224865,92,23,X-li-and-Y-li,iyi sayılır,Jale geçen hafta çatallı ve bıçaklı bir masa kurdu.,çatal,bıçak,3479,0,4,-lI
 CO224865,95,9,X-ci-and-Y-ci,iyi,Zeynep bu hafta anneci ve babacı bir yeğeniyle ilgilendi.,anne,baba,3815,0,5,-cI
+CO680683,2,29,X-and-Y-lik,iyi sayılır,Melis çocuk kitabı için ejderha ve perilik bir seri başlatmayı düşündü.,ejderha,peri,12524,1,4,-lIk
+CO680683,5,16,X-li-and-Y-li,iyi,Okan üniversite yıllarında çiftlikli ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,24230,0,5,-lI
+CO680683,11,24,X-li-and-Y-li,oldukça iyi,Neval ders çalışırken gözlü ve kulaklı bir robot gördü.,göz,kulak,16497,0,6,-lI
+CO680683,14,7,X-and-Y-siz,iyi,Dilek çeyiz alşverişi için battaniye ve halısız bir paket seçmiş.,battaniye,halı,32601,1,5,-sIz
+CO680683,17,12,X-lik-and-Y-lik,iyi sayılır,Merve aile mirasıyla evlik ve bahçelik bir arsa satın aldı.,ev,bahçe,10784,0,4,-lIk
 CO680683,20,4,X-lik-and-Y-lik,iyi,Burak tatlı için limonluk ve portakallık bir tabak hazırlamış.,limon,portakal,9623,0,5,-lIk
 CO680683,23,21,X-and-Y-lik,iyi sayılır,Mertcan dün akşam abi ve ablalık bir hediye aldı.,abi,abla,6630,1,4,-lIk
 CO680683,26,31,X-and-Y-siz,iyi,Tülay sonbahar koleksiyonu için gömlek ve pantolonsuz bir katalog inceledi.,gömlek,pantolon,7346,1,5,-sIz
 CO680683,29,17,X-and-Y-li,oldukça iyi,Eylül kamp yaparken tepe ve nehirli bir alan seçti.,tepe,nehir,7808,1,6,-lI
+CO680683,32,11,X-and-Y-ci,kötü sayılır,Ahmet yabancı bir üniversitede bilim ve teknolojici bir araştırmaya katıldı.,bilim,teknoloji,15884,1,3,-cI
 CO680683,35,28,X-lik-and-Y-lik,kötü sayılır,Yasemin mezuniyetinden önce doktorluk ve avukatlık bir kimlik seçti.,avukat,doktor,8887,0,3,-lIk
 CO680683,38,18,X-ci-and-Y-ci,kötü,Nevzat genç bir stajyerken okulcu ve camici bir mimarın eserlerini inceledi.,okul,cami,7723,0,2,-cI
+CO680683,41,8,X-li-and-Y-li,iyi,Selin tamir için kapılı ve pencereli bir atölye tasarlamış.,kapı,pencere,10560,0,5,-lI
 CO680683,44,26,X-ci-and-Y-ci,kötü sayılır,Sinan gece yarısı hayaletçi ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,6769,0,3,-cI
 CO680683,47,2,X-ci-and-Y-ci,kötü sayılır,Ömer yeni evine masacı ve sandalyeci bir usta getirdi.,masa,sandalye,6713,0,3,-cI
 CO680683,50,13,X-and-Y-lik,iyi,Emin geçen tatilde şehir ve köylük bir bölgeyi gezdi.,şehir,köy,7025,1,5,-lIk
@@ -520,38 +754,62 @@ CO680683,59,3,X-and-Y-ci,iyi sayılır,Leyla eski çarşıda atkı ve şapkacı 
 CO680683,62,5,X-and-Y-lik,oldukça iyi,Ece yılbaşı için tablo ve vazoluk bir masa aldı.,tablo,vazo,9921,1,6,-lIk
 CO680683,65,32,X-li-and-Y-li,oldukça iyi,Aydan restorasyon projesi için tabanlı ve tavanlı bir plan çizdi.,taban,tavan,7758,0,6,-lI
 CO680683,68,22,X-siz-and-Y-siz,iyi sayılır,Yankı geçen yaz atsız ve balıksız bir menü denedi.,at,balık,7658,0,4,-sIz
+CO680683,71,20,X-lik-and-Y-lik,oldukça iyi,Fehime düğünden önce büyükannelik ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,13635,0,6,-lIk
+CO680683,74,19,X-and-Y-ci,iyi,Zühre son yolculukta gece ve gündüzcü bir rehberle tanıştı.,gece,gündüz,10868,1,5,-cI
 CO680683,77,27,X-and-Y-ci,kötü sayılır,Baran araştırması için orman ve çölcü bir araştırmacıyla anlaştı.,orman,çöl,5338,1,3,-cI
+CO680683,80,25,X-and-Y-li,iyi,İzel toplantı sırasında burun ve boyunlu bir maske inceledi.,burun,boyun,30541,1,5,-lI
+CO680683,83,1,X-and-Y-li,kötü sayılır,Emel geçen haftasonu çorap ve ayakkabılı bir takım aldı.,çorap,ayakkabı,10463,1,3,-lI
 CO680683,86,23,X-and-Y-siz,iyi,Jale geçen hafta çatal ve bıçaksız bir piknik yaptı.,çatal,bıçak,5853,1,5,-sIz
 CO680683,89,9,X-and-Y-li,iyi sayılır,Zeynep bu hafta anne ve babalı bir toplantıya katıldı.,anne,baba,6522,1,4,-lI
 CO680683,92,14,X-siz-and-Y-siz,iyi,Elif gençlik yıllarında faresiz ve aslansız bir oyun sahneledi.,fare,aslan,9489,0,5,-sIz
 CO680683,95,6,X-siz-and-Y-siz,oldukça iyi,Ali diyetteyken muzsuz ve havuçsuz bir kek yapardı.,muz,havuç,8055,0,6,-sIz
 CO676222,2,17,X-li-and-Y-li,oldukça iyi,Eylül kamp yaparken tepeli ve nehirli bir alan seçti.,tepe,nehir,6326,0,6,-lI
 CO676222,5,7,X-siz-and-Y-siz,oldukça iyi,Dilek çeyiz alşverişi için battaniyesiz ve halısız bir paket seçmiş.,battaniye,halı,7020,0,6,-sIz
+CO676222,8,4,X-and-Y-ci,kötü,Burak tatlı için limon ve portakalcı bir satıcıdan sipariş vermiş.,limon,portakal,12729,1,2,-cI
+CO676222,11,20,X-and-Y-ci,kötü,Fehime düğünden önce büyükanne ve dedeci bir gelenek hakkında yazı okudu.,büyükanne,dede,21329,1,2,-cI
+CO676222,14,6,X-and-Y-lik,iyi,Ali diyetteyken muz ve havuçluk bir saklama kabı almıştı.,muz,havuç,12480,1,5,-lIk
+CO676222,17,22,X-and-Y-lik,kötü,Yankı geçen yaz at ve balıklık bir hayvanay bahçesi yaptırdı.,at,balık,14498,1,2,-lIk
 CO676222,20,30,X-and-Y-lik,iyi sayılır,Asuman dergi yazısı için düğün ve cenazelik bir tema belirledi.,cenaze,düğün,9456,1,4,-lIk
+CO676222,23,18,X-and-Y-li,iyi,Nevzat genç bir stajyerken okul ve camili bir mahallede oturdu.,okul,cami,14244,1,5,-lI
 CO676222,26,24,X-and-Y-siz,iyi,Neval ders çalışırken göz ve kulaksız bir heykel çizdi.,göz,kulak,9884,1,5,-sIz
+CO676222,29,25,X-li-and-Y-li,oldukça iyi,İzel toplantı sırasında burunlu ve boyunlu bir maske inceledi.,burun,boyun,10709,0,6,-lI
 CO676222,32,13,X-lik-and-Y-lik,oldukça iyi,Emin geçen tatilde şehirlik ve köylük bir bölgeyi gezdi.,şehir,köy,4864,0,6,-lIk
 CO676222,35,23,X-siz-and-Y-siz,oldukça iyi,Jale geçen hafta çatalsız ve bıçaksız bir piknik yaptı.,çatal,bıçak,4503,0,6,-sIz
 CO676222,38,26,X-and-Y-li,oldukça iyi,Sinan gece yarısı hayalet ve canavarlı bir hikâye okudu.,hayalet,canavar,6120,1,6,-lI
 CO676222,41,8,X-and-Y-siz,oldukça iyi,Selin tamir için kapı ve penceresiz bir atölye tasarlamış.,kapı,pencere,6990,1,6,-sIz
 CO676222,44,5,X-lik-and-Y-lik,iyi,Ece yılbaşı için tabloluk ve vazoluk bir masa aldı.,tablo,vazo,9566,0,5,-lIk
 CO676222,47,10,X-and-Y-li,kötü,Ali geçen ay kedi ve köpekli bir veteriner kliniği açtı.,kedi,köpek,8174,1,2,-lI
+CO676222,50,3,X-ci-and-Y-ci,iyi,Leyla eski çarşıda atkıcı ve şapkacı bir tuhafiyeye uğrayacakmış.,atkı,şapka,10581,0,5,-cI
 CO676222,53,14,X-and-Y-lik,kötü sayılır,Elif takım oyununda fare ve aslanlık bir sembol seçti.,fare,aslan,5523,1,3,-lIk
+CO676222,56,32,X-and-Y-siz,kötü,Aydan restorasyon projesi için taban ve tavansız bir oda düşündü.,taban,tavan,12784,1,2,-sIz
 CO676222,59,31,X-siz-and-Y-siz,oldukça iyi,Tülay sonbahar koleksiyonu için gömleksiz ve pantolonsuz bir katalog inceledi.,gömlek,pantolon,5023,0,6,-sIz
 CO676222,62,9,X-li-and-Y-li,iyi,Zeynep bu hafta anneli ve babalı bir toplantıya katıldı.,anne,baba,8982,0,5,-lI
+CO676222,65,11,X-ci-and-Y-ci,oldukça kötü,Ahmet yabancı bir üniversitede bilimci ve teknolojici bir araştırmaya katıldı.,bilim,teknoloji,12248,0,1,-cI
+CO676222,68,28,X-and-Y-ci,oldukça kötü,Yasemin mezuniyetinden önce doktor ve avukatçı bir derneğe katıldı.,avukat,doktor,15674,1,1,-cI
 CO676222,71,12,X-and-Y-ci,kötü,Merve yeni villası için ev ve bahçeci bir peyzaj tasarımcısıyla anlaştı.,ev,bahçe,7634,1,2,-cI
 CO676222,74,2,X-and-Y-li,oldukça iyi,Ömer yeni evine masa ve sandalyeli bir yemek odası kurdu.,masa,sandalye,4701,1,6,-lI
+CO676222,77,29,X-lik-and-Y-lik,oldukça kötü,Melis çocuk kitabı için ejderhalık ve perilik bir seri başlatmayı düşündü.,ejderha,peri,11603,0,1,-lIk
 CO676222,80,27,X-ci-and-Y-ci,iyi,Baran araştırması için ormancı ve çölcü bir araştırmacıyla anlaştı.,orman,çöl,8356,0,5,-cI
+CO676222,83,16,X-and-Y-siz,kötü,Okan üniversite yıllarında çiftlik ve fabrikasız bir iş modeli önerdi.,çiftlik,fabrika,19572,1,2,-sIz
 CO676222,86,21,X-lik-and-Y-lik,oldukça kötü,Mertcan dün akşam abilik ve ablalık bir hediye aldı.,abi,abla,6755,0,1,-lIk
 CO676222,89,15,X-siz-and-Y-siz,iyi,Deniz misafir beklerken sürahisiz ve bardaksız bir sofra kurdu.,sürahi,bardak,8450,0,5,-sIz
 CO676222,92,1,X-li-and-Y-li,oldukça kötü,Emel geçen haftasonu çoraplı ve ayakkabılı bir takım aldı.,çorap,ayakkabı,6725,0,1,-lI
 CO676222,95,19,X-ci-and-Y-ci,kötü,Zühre son yolculukta gececi ve gündüzcü bir rehberle tanıştı.,gece,gündüz,9367,0,2,-cI
+CO458293,3,15,X-and-Y-lik,kötü,Deniz misafir beklerken sürahi ve bardaklık bir raf yaptırdı.,sürahi,bardak,12452,1,2,-lIk
 CO458293,6,1,X-and-Y-siz,kötü sayılır,Emel geçen haftasonu çorap ve ayakkabısız bir yoga eğitimi aldı.,çorap,ayakkabı,9984,1,3,-sIz
+CO458293,9,20,X-ci-and-Y-ci,kötü sayılır,Fehime düğünden önce büyükanneci ve dedeci bir gelenek hakkında yazı okudu.,büyükanne,dede,14372,0,3,-cI
+CO458293,12,17,X-and-Y-siz,kötü sayılır,Eylül kamp yaparken tepe ve nehirsiz bir manzara gördü.,tepe,nehir,12685,1,3,-sIz
 CO458293,15,18,X-li-and-Y-li,kötü sayılır,Nevzat genç bir stajyerken okullu ve camili bir mahallede oturdu.,okul,cami,8697,0,3,-lI
+CO458293,18,19,X-and-Y-li,iyi sayılır,Zühre son yolculukta gece ve gündüzlü bir seyahat planı hazırladı.,gece,gündüz,10617,1,4,-lI
+CO458293,21,25,X-and-Y-siz,kötü sayılır,İzel toplantı sırasında burun ve boyunsuz bir mumya fotoğrafı gösterdi.,burun,boyun,15842,1,3,-sIz
 CO458293,24,23,X-and-Y-lik,kötü sayılır,Jale geçen hafta çatal ve bıçaklık bir dolap aldı.,çatal,bıçak,8531,1,3,-lIk
 CO458293,27,5,X-and-Y-ci,kötü,Ece yılbaşı için tablo ve vazocu bir dükkana uğradı.,tablo,vazo,8484,1,2,-cI
 CO458293,30,4,X-ci-and-Y-ci,kötü sayılır,Burak tatlı için limoncu ve portakalcı bir satıcıdan sipariş vermiş.,limon,portakal,8130,0,3,-cI
+CO458293,33,16,X-siz-and-Y-siz,kötü sayılır,Okan üniversite yıllarında çiftliksiz ve fabrikasız bir iş modeli önerdi.,çiftlik,fabrika,10234,0,3,-sIz
 CO458293,36,6,X-lik-and-Y-lik,kötü sayılır,Ali diyetteyken muzluk ve havuçluk bir saklama kabı almıştı.,muz,havuç,5830,0,3,-lIk
+CO458293,39,2,X-li-and-Y-li,kötü,Ömer yeni evine masalı ve sandalyeli bir yemek odası kurdu.,masa,sandalye,15237,0,2,-lI
 CO458293,42,11,X-and-Y-li,kötü,Ahmet yabancı bir üniversitede bilim ve teknolojili bir eğitim sistemi savundu.,bilim,teknoloji,4625,1,2,-lI
+CO458293,45,8,X-siz-and-Y-siz,iyi sayılır,Selin tamir için kapısız ve penceresiz bir atölye tasarlamış.,kapı,pencere,10186,0,4,-sIz
 CO458293,48,32,X-siz-and-Y-siz,iyi sayılır,Aydan restorasyon projesi için tabansız ve tavansız bir oda düşündü.,taban,tavan,8900,0,4,-sIz
 CO458293,51,10,X-li-and-Y-li,kötü,Ali geçen ay kedili ve köpekli bir veteriner kliniği açtı.,kedi,köpek,6766,0,2,-lI
 CO458293,54,3,X-and-Y-li,kötü,Leyla eski çarşıda atkı ve şapkalı bir ünlüyle karşılaşmış.,atkı,şapka,6065,1,2,-lI
@@ -569,6 +827,7 @@ CO458293,87,27,X-and-Y-li,kötü,Baran araştırması için orman ve çöllü bi
 CO458293,90,14,X-lik-and-Y-lik,kötü,Elif takım oyununda farelik ve aslanlık bir sembol seçti.,fare,aslan,3897,0,2,-lIk
 CO458293,93,28,X-ci-and-Y-ci,kötü,Yasemin mezuniyetinden önce doktorcu ve avukatçı bir derneğe katıldı.,avukat,doktor,5729,0,2,-cI
 CO458293,96,12,X-ci-and-Y-ci,kötü,Merve yeni villası için evci ve bahçeci bir peyzaj tasarımcısıyla anlaştı.,ev,bahçe,6583,0,2,-cI
+CO99214,3,32,X-lik-and-Y-lik,iyi,Aydan restorasyon projesi için tabanlık ve tavanlık bir malzeme seçti.,taban,tavan,11133,0,5,-lIk
 CO99214,6,7,X-and-Y-ci,kötü,Dilek çeyiz alşverişi için battaniye ve halıcı bir züccaciyeciye gidecekmiş.,battaniye,halı,9106,1,2,-cI
 CO99214,9,30,X-ci-and-Y-ci,kötü sayılır,Asuman dergi yazısı için düğüncü ve cenazeci bir fotoğrafçıyla anlaştı.,cenaze,düğün,7271,0,3,-cI
 CO99214,12,15,X-and-Y-ci,kötü sayılır,Deniz misafir beklerken sürahi ve bardakçı bir antikacıdan alışveriş yaptı.,sürahi,bardak,8031,1,3,-cI
@@ -579,21 +838,27 @@ CO99214,24,25,X-and-Y-lik,kötü,İzel toplantı sırasında burun ve boyunluk b
 CO99214,27,28,X-li-and-Y-li,kötü,Yasemin mezuniyetinden önce doktorlu ve avukatlı bir skeç yazdı.,avukat,doktor,7794,0,2,-lI
 CO99214,30,12,X-li-and-Y-li,oldukça kötü,Merve yaz tatilinde evli ve bahçeli bir tatil köyünü ziyaret etti.,ev,bahçe,8589,0,1,-lI
 CO99214,33,3,X-and-Y-siz,iyi sayılır,Leyla eski çarşıda atkı ve şapkasız bir çocuğa acımış.,atkı,şapka,6025,1,4,-sIz
+CO99214,36,10,X-siz-and-Y-siz,oldukça iyi,Ali uzun zamandır kedisiz ve köpeksiz bir apartmanda yaşıyor.,kedi,köpek,10826,0,6,-sIz
 CO99214,39,5,X-and-Y-li,kötü sayılır,Ece yılbaşı için tablo ve vazolu bir masa aldı.,tablo,vazo,7196,1,3,-lI
 CO99214,42,8,X-lik-and-Y-lik,kötü,Selin tamir için kapılık ve pencerelik bir desen seçmiş.,kapı,pencere,5679,0,2,-lIk
+CO99214,45,22,X-ci-and-Y-ci,kötü,Yankı geçen yaz atçı ve balıkçı bir işletme sahibiyle tanıştı.,at,balık,10370,0,2,-cI
 CO99214,48,29,X-and-Y-li,kötü sayılır,Melis çocuk kitabı için ejderha ve perili bir sahne tasarladı.,ejderha,peri,7433,1,3,-lI
 CO99214,51,6,X-ci-and-Y-ci,oldukça kötü,Ali diyetteyken muzcu ve havuççu bir tezgahtara uğrardı.,muz,havuç,6392,0,1,-cI
 CO99214,54,14,X-ci-and-Y-ci,kötü,Elif gençlik yıllarında fareci ve aslancı bir hikaye yazdı.,fare,aslan,5146,0,2,-cI
+CO99214,57,27,X-and-Y-siz,iyi sayılır,Baran araştırması için orman ve çölsüz bir bölge seçti.,orman,çöl,10798,1,4,-sIz
 CO99214,60,1,X-and-Y-lik,oldukça kötü,Emel geçen haftasonu çorap ve ayakkabılık bir dolap aldı.,çorap,ayakkabı,7776,1,1,-lIk
 CO99214,63,9,X-and-Y-lik,oldukça kötü,Zeynep yıllar önce anne ve babalık bir görev üstlendi.,anne,baba,5506,1,1,-lIk
 CO99214,66,26,X-siz-and-Y-siz,kötü sayılır,Sinan gece yarısı hayaletsiz ve canavarsız bir film izledi.,hayalet,canavar,6291,0,3,-sIz
 CO99214,69,16,X-lik-and-Y-lik,oldukça kötü,Okan üniversite yıllarında çiftliklik ve fabrikalık bir proje sundu.,çiftlik,fabrika,6099,0,1,-lIk
+CO99214,72,13,X-and-Y-li,oldukça kötü,Emin geçen tatilde şehir ve köylü bir topluluk projesine katıldı.,şehir,köy,12679,1,1,-lI
 CO99214,75,17,X-and-Y-lik,iyi sayılır,Eylül kamp yaparken tepe ve nehirlik bir arazi satın aldı.,tepe,nehir,8243,1,4,-lIk
+CO99214,78,11,X-and-Y-siz,iyi sayılır,Ahmet yabancı bir üniversitede bilim ve teknolojisiz bir düşünceyi eleştirdi.,bilim,teknoloji,11145,1,4,-sIz
 CO99214,81,24,X-lik-and-Y-lik,kötü,Neval ders çalışırken gözlük ve kulaklık bir kutu açtı.,göz,kulak,6351,0,2,-lIk
 CO99214,84,4,X-li-and-Y-li,oldukça iyi,Burak tatlı için limonlu ve portakallı bir tarif bulmuş.,limon,portakal,7204,0,6,-lI
 CO99214,87,20,X-li-and-Y-li,kötü,Fehime düğünden önce büyükanneli ve dedeli bir aile hayatını irdeledi.,büyükanne,dede,7539,0,2,-lI
 CO99214,90,18,X-siz-and-Y-siz,iyi sayılır,Nevzat genç bir stajyerken okulsuz ve camisiz bir projeye destek verdi.,okul,cami,7832,0,4,-sIz
 CO99214,93,2,X-siz-and-Y-siz,iyi,Ömer yeni evine masasız ve sandalyesiz bir mobilya takımı aldı.,masa,sandalye,9919,0,5,-sIz
+CO99214,96,31,X-and-Y-ci,oldukça kötü,Tülay sonbahar koleksiyonu için gömlek ve pantoloncu bir tasarımcıyla tanıştı.,gömlek,pantolon,14686,1,1,-cI
 CO459477,2,17,X-lik-and-Y-lik,iyi,Eylül kamp yaparken tepelik ve nehirlik bir arazi satın aldı.,tepe,nehir,4831,0,5,-lIk
 CO459477,5,30,X-and-Y-li,kötü sayılır,Asuman dergi yazısı için düğün ve cenazeli bir belgesel izledi.,cenaze,düğün,7098,1,3,-lI
 CO459477,8,21,X-li-and-Y-li,iyi sayılır,Mertcan dün akşam abili ve ablalı bir fotoğraf gösterdi.,abi,abla,4664,0,4,-lI
@@ -618,16 +883,20 @@ CO459477,62,16,X-and-Y-ci,oldukça kötü,Okan üniversite yıllarında çiftlik
 CO459477,65,31,X-ci-and-Y-ci,kötü,Tülay sonbahar koleksiyonu için gömlekçi ve pantoloncu bir tasarımcıyla tanıştı.,gömlek,pantolon,4547,0,2,-cI
 CO459477,68,15,X-ci-and-Y-ci,oldukça kötü,Deniz misafir beklerken sürahici ve bardakçı bir antikacıdan alışveriş yaptı.,sürahi,bardak,4829,0,1,-cI
 CO459477,71,19,X-siz-and-Y-siz,oldukça kötü,Zühre son yolculukta gecesiz ve gündüzsüz bir tren yolculuğu önerdi.,gece,gündüz,3736,0,1,-sIz
+CO459477,74,27,X-siz-and-Y-siz,iyi sayılır,Baran araştırması için ormansız ve çölsüz bir bölge seçti.,orman,çöl,11828,0,4,-sIz
 CO459477,77,32,X-and-Y-ci,oldukça kötü,Aydan restorasyon projesi için taban ve tavancı bir ustayla görüştü.,taban,tavan,4570,1,1,-cI
 CO459477,80,18,X-and-Y-lik,kötü,Nevzat genç bir stajyerken okul ve camilik bir alanın korunmasını önerdi.,okul,cami,9505,1,2,-lIk
+CO459477,83,12,X-and-Y-siz,kötü sayılır,Merve yeni hayatında ev ve bahçesiz bir şehir hayatı yaşıyor.,ev,bahçe,10143,1,3,-sIz
 CO459477,86,2,X-and-Y-lik,kötü sayılır,Ömer yeni evine masa ve sandalyelik bir renk seçti.,masa,sandalye,4689,1,3,-lIk
 CO459477,89,28,X-and-Y-siz,iyi sayılır,Yasemin mezuniyetinden önce doktor ve avukatsız bir mizansen canlandırdı.,avukat,doktor,5054,1,4,-sIz
 CO459477,92,1,X-lik-and-Y-lik,oldukça kötü,Emel geçen haftasonu çoraplık ve ayakkabılık bir dolap aldı.,çorap,ayakkabı,4879,0,1,-lIk
 CO459477,95,3,X-siz-and-Y-siz,oldukça iyi,Leyla eski çarşıda atkısız ve şapkasız bir çocuğa acımış.,atkı,şapka,5078,0,6,-sIz
+CO712108,2,20,X-siz-and-Y-siz,iyi sayılır,Fehime düğünden önce büyükannesiz ve dedesiz bir aile hayatını irdeledi.,büyükanne,dede,14726,0,4,-sIz
 CO712108,5,22,X-li-and-Y-li,oldukça iyi,Yankı geçen yaz atlı ve balıklı bir tablo aldı.,at,balık,9244,0,6,-lI
 CO712108,8,2,X-lik-and-Y-lik,iyi sayılır,Ömer yeni evine masalık ve sandalyelik bir renk seçti.,masa,sandalye,8095,0,4,-lIk
 CO712108,11,8,X-ci-and-Y-ci,oldukça iyi,Selin tamir için kapıcı ve pencereci bir marangozla anlaşmış.,kapı,pencere,9496,0,6,-cI
 CO712108,14,18,X-lik-and-Y-lik,iyi sayılır,Nevzat genç bir stajyerken okulluk ve camilik bir alanın korunmasını önerdi.,okul,cami,5530,0,4,-lIk
+CO712108,17,21,X-and-Y-siz,oldukça iyi,Mertcan dün akşam abi ve ablasız bir hayat düşündü.,abi,abla,13546,1,6,-sIz
 CO712108,20,29,X-and-Y-siz,iyi,Melis çocuk kitabı için ejderha ve perisiz bir bölüm yazdı.,ejderha,peri,3913,1,5,-sIz
 CO712108,23,6,X-li-and-Y-li,oldukça iyi,Ali diyetteyken muzlu ve havuçlu bir kek yapardı.,muz,havuç,5464,0,6,-lI
 CO712108,26,4,X-siz-and-Y-siz,oldukça iyi,Burak tatlı için limonsuz ve portakalsız bir tarif bulmuş.,limon,portakal,5264,0,6,-sIz
@@ -654,6 +923,7 @@ CO712108,86,13,X-and-Y-siz,iyi sayılır,Emin geçen tatilde şehir ve köysüz 
 CO712108,89,7,X-and-Y-li,iyi,Dilek çeyiz alşverişi için battaniye ve halılı bir paket seçmiş.,battaniye,halı,3930,1,5,-lI
 CO712108,92,3,X-and-Y-lik,kötü sayılır,Leyla eski çarşıda atkı ve şapkalık bir askı beğenmiş.,atkı,şapka,6111,1,3,-lIk
 CO712108,95,25,X-and-Y-ci,iyi sayılır,İzel toplantı sırasında burun ve boyuncu bir doktordan bahsetti.,burun,boyun,7130,1,4,-cI
+CO85758,3,5,X-siz-and-Y-siz,oldukça iyi,Ece yılbaşı için tablosuz ve vazosuz bir masa seçti.,tablo,vazo,13400,0,6,-sIz
 CO85758,6,12,X-and-Y-lik,oldukça iyi,Merve aile mirasıyla ev ve bahçelik bir arsa satın aldı.,ev,bahçe,5896,1,6,-lIk
 CO85758,9,32,X-and-Y-li,iyi sayılır,Aydan restorasyon projesi için taban ve tavanlı bir plan çizdi.,taban,tavan,6585,1,4,-lI
 CO85758,12,15,X-li-and-Y-li,iyi,Deniz misafir beklerken sürahili ve bardaklı bir konsept hazırladı.,sürahi,bardak,5430,0,5,-lI
@@ -665,19 +935,25 @@ CO85758,27,29,X-siz-and-Y-siz,iyi,Melis çocuk kitabı için ejderhasız ve peri
 CO85758,30,24,X-and-Y-li,iyi sayılır,Neval ders çalışırken göz ve kulaklı bir robot gördü.,göz,kulak,5340,1,4,-lI
 CO85758,33,3,X-lik-and-Y-lik,iyi,Leyla eski çarşıda atkılık ve şapkalık bir askı beğenmiş.,atkı,şapka,8501,0,5,-lIk
 CO85758,36,25,X-ci-and-Y-ci,iyi sayılır,İzel toplantı sırasında buruncu ve boyuncu bir doktordan bahsetti.,burun,boyun,8286,0,4,-cI
+CO85758,39,27,X-lik-and-Y-lik,iyi sayılır,Baran araştırması için ormanlık ve çöllük bir alan çizdi.,orman,çöl,16336,0,4,-lIk
 CO85758,42,10,X-and-Y-ci,iyi sayılır,Ali her hafta kedi ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,5876,1,4,-cI
+CO85758,45,20,X-and-Y-lik,kötü sayılır,Fehime düğünden önce büyükanne ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,10386,1,3,-lIk
 CO85758,48,9,X-ci-and-Y-ci,iyi sayılır,Zeynep bu hafta anneci ve babacı bir yeğeniyle ilgilendi.,anne,baba,9301,0,4,-cI
 CO85758,51,1,X-ci-and-Y-ci,oldukça iyi,Emel geçen haftasonu çorapçı ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,5489,0,6,-cI
 CO85758,54,22,X-and-Y-siz,kötü,Yankı geçen yaz at ve balıksız bir menü denedi.,at,balık,7090,1,2,-sIz
 CO85758,57,23,X-li-and-Y-li,oldukça iyi,Jale geçen hafta çatallı ve bıçaklı bir masa kurdu.,çatal,bıçak,6096,0,6,-lI
 CO85758,60,30,X-and-Y-siz,kötü sayılır,Asuman dergi yazısı için düğün ve cenazesiz bir program önerdi.,cenaze,düğün,9660,1,3,-sIz
+CO85758,63,16,X-and-Y-li,iyi sayılır,Okan üniversite yıllarında çiftlik ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,44485,1,4,-lI
 CO85758,66,2,X-and-Y-ci,oldukça iyi,Ömer yeni evine masa ve sandalyeci bir usta getirdi.,masa,sandalye,3623,1,6,-cI
 CO85758,69,19,X-lik-and-Y-lik,oldukça iyi,Zühre son yolculukta gecelik ve gündüzlük bir program belirledi.,gece,gündüz,3721,0,6,-lIk
 CO85758,72,13,X-siz-and-Y-siz,iyi,Emin geçen tatilde şehirsiz ve köysüz bir gezi yaptı.,şehir,köy,8304,0,5,-sIz
+CO85758,75,7,X-li-and-Y-li,oldukça iyi,Dilek çeyiz alşverişi için battaniyeli ve halılı bir paket seçmiş.,battaniye,halı,10616,0,6,-lI
 CO85758,78,21,X-siz-and-Y-siz,oldukça iyi,Mertcan dün akşam abisiz ve ablasız bir hayat düşündü.,abi,abla,4122,0,6,-sIz
 CO85758,81,8,X-and-Y-li,oldukça iyi,Selin tamir için kapı ve pencereli bir atölye tasarlamış.,kapı,pencere,3532,1,6,-lI
+CO85758,84,28,X-and-Y-lik,oldukça kötü,Yasemin mezuniyetinden önce doktor ve avukatlık bir kimlik seçti.,avukat,doktor,11671,1,1,-lIk
 CO85758,87,31,X-li-and-Y-li,oldukça iyi,Tülay sonbahar koleksiyonu için gömlekli ve pantolonlu bir kombin hazırladı.,gömlek,pantolon,3888,0,6,-lI
 CO85758,90,17,X-ci-and-Y-ci,iyi sayılır,Eylül kamp yaparken tepeci ve nehirci bir rehberle doğa yürüyüşüne çıktı.,tepe,nehir,8983,0,4,-cI
+CO85758,93,4,X-and-Y-lik,iyi sayılır,Burak tatlı için limon ve portakallık bir tabak hazırlamış.,limon,portakal,12058,1,4,-lIk
 CO85758,96,26,X-and-Y-ci,iyi,Sinan gece yarısı hayalet ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,4026,1,5,-cI
 CO391648,2,9,X-li-and-Y-li,iyi sayılır,Zeynep bu hafta anneli ve babalı bir toplantıya katıldı.,anne,baba,8496,0,4,-lI
 CO391648,5,30,X-and-Y-lik,kötü,Asuman dergi yazısı için düğün ve cenazelik bir tema belirledi.,cenaze,düğün,8407,1,2,-lIk
@@ -709,31 +985,76 @@ CO391648,80,19,X-ci-and-Y-ci,iyi sayılır,Zühre son yolculukta gececi ve günd
 CO391648,83,20,X-and-Y-ci,iyi sayılır,Fehime düğünden önce büyükanne ve dedeci bir gelenek hakkında yazı okudu.,büyükanne,dede,7474,1,4,-cI
 CO391648,86,11,X-ci-and-Y-ci,iyi sayılır,Ahmet yabancı bir üniversitede bilimci ve teknolojici bir araştırmaya katıldı.,bilim,teknoloji,4898,0,4,-cI
 CO391648,89,23,X-siz-and-Y-siz,iyi sayılır,Jale geçen hafta çatalsız ve bıçaksız bir piknik yaptı.,çatal,bıçak,4354,0,4,-sIz
+CO391648,92,8,X-and-Y-siz,kötü sayılır,Selin tamir için kapı ve penceresiz bir atölye tasarlamış.,kapı,pencere,17061,1,3,-sIz
 CO391648,95,21,X-lik-and-Y-lik,kötü sayılır,Mertcan dün akşam abilik ve ablalık bir hediye aldı.,abi,abla,4648,0,3,-lIk
 CO705199,3,26,X-and-Y-li,oldukça iyi,Sinan gece yarısı hayalet ve canavarlı bir hikâye okudu.,hayalet,canavar,5844,1,6,-lI
 CO705199,6,15,X-siz-and-Y-siz,iyi,Deniz misafir beklerken sürahisiz ve bardaksız bir sofra kurdu.,sürahi,bardak,7130,0,5,-sIz
+CO705199,9,25,X-li-and-Y-li,kötü sayılır,İzel toplantı sırasında burunlu ve boyunlu bir maske inceledi.,burun,boyun,10742,0,3,-lI
 CO705199,12,28,X-and-Y-ci,kötü,Yasemin mezuniyetinden önce doktor ve avukatçı bir derneğe katıldı.,avukat,doktor,8546,1,2,-cI
 CO705199,15,21,X-lik-and-Y-lik,kötü,Mertcan dün akşam abilik ve ablalık bir hediye aldı.,abi,abla,5067,0,2,-lIk
+CO705199,18,19,X-ci-and-Y-ci,iyi sayılır,Zühre son yolculukta gececi ve gündüzcü bir rehberle tanıştı.,gece,gündüz,14624,0,4,-cI
 CO705199,21,17,X-li-and-Y-li,kötü sayılır,Eylül kamp yaparken tepeli ve nehirli bir alan seçti.,tepe,nehir,9106,0,3,-lI
+CO705199,24,2,X-and-Y-li,iyi sayılır,Ömer yeni evine masa ve sandalyeli bir yemek odası kurdu.,masa,sandalye,13838,1,4,-lI
+CO705199,27,30,X-and-Y-lik,kötü sayılır,Asuman dergi yazısı için düğün ve cenazelik bir tema belirledi.,cenaze,düğün,10237,1,3,-lIk
 CO705199,30,24,X-and-Y-siz,kötü sayılır,Neval ders çalışırken göz ve kulaksız bir heykel çizdi.,göz,kulak,7144,1,3,-sIz
 CO705199,33,23,X-siz-and-Y-siz,kötü,Jale geçen hafta çatalsız ve bıçaksız bir piknik yaptı.,çatal,bıçak,8681,0,2,-sIz
+CO705199,36,1,X-li-and-Y-li,kötü sayılır,Emel geçen haftasonu çoraplı ve ayakkabılı bir takım aldı.,çorap,ayakkabı,12246,0,3,-lI
 CO705199,39,5,X-lik-and-Y-lik,kötü,Ece yılbaşı için tabloluk ve vazoluk bir masa aldı.,tablo,vazo,9047,0,2,-lIk
 CO705199,42,8,X-and-Y-siz,oldukça iyi,Selin tamir için kapı ve penceresiz bir atölye tasarlamış.,kapı,pencere,7598,1,6,-sIz
+CO705199,45,6,X-and-Y-lik,kötü,Ali diyetteyken muz ve havuçluk bir saklama kabı almıştı.,muz,havuç,10970,1,2,-lIk
 CO705199,48,13,X-lik-and-Y-lik,kötü sayılır,Emin geçen tatilde şehirlik ve köylük bir bölgeyi gezdi.,şehir,köy,8678,0,3,-lIk
 CO705199,51,16,X-and-Y-siz,oldukça iyi,Okan üniversite yıllarında çiftlik ve fabrikasız bir iş modeli önerdi.,çiftlik,fabrika,6460,1,6,-sIz
 CO705199,54,12,X-and-Y-ci,iyi sayılır,Merve yeni villası için ev ve bahçeci bir peyzaj tasarımcısıyla anlaştı.,ev,bahçe,8558,1,4,-cI
+CO705199,57,32,X-and-Y-siz,kötü sayılır,Aydan restorasyon projesi için taban ve tavansız bir oda düşündü.,taban,tavan,15865,1,3,-sIz
+CO705199,60,4,X-and-Y-ci,kötü sayılır,Burak tatlı için limon ve portakalcı bir satıcıdan sipariş vermiş.,limon,portakal,17501,1,3,-cI
 CO705199,63,3,X-ci-and-Y-ci,iyi,Leyla eski çarşıda atkıcı ve şapkacı bir tuhafiyeye uğrayacakmış.,atkı,şapka,9333,0,5,-cI
 CO705199,66,20,X-and-Y-ci,oldukça kötü,Fehime düğünden önce büyükanne ve dedeci bir gelenek hakkında yazı okudu.,büyükanne,dede,9574,1,1,-cI
+CO705199,69,29,X-lik-and-Y-lik,kötü,Melis çocuk kitabı için ejderhalık ve perilik bir seri başlatmayı düşündü.,ejderha,peri,15248,0,2,-lIk
 CO705199,72,18,X-and-Y-li,kötü,Nevzat genç bir stajyerken okul ve camili bir mahallede oturdu.,okul,cami,7784,1,2,-lI
 CO705199,75,27,X-ci-and-Y-ci,kötü sayılır,Baran araştırması için ormancı ve çölcü bir araştırmacıyla anlaştı.,orman,çöl,9065,0,3,-cI
 CO705199,78,7,X-siz-and-Y-siz,oldukça iyi,Dilek çeyiz alşverişi için battaniyesiz ve halısız bir paket seçmiş.,battaniye,halı,6613,0,6,-sIz
+CO705199,81,11,X-ci-and-Y-ci,kötü,Ahmet yabancı bir üniversitede bilimci ve teknolojici bir araştırmaya katıldı.,bilim,teknoloji,12322,0,2,-cI
 CO705199,84,31,X-siz-and-Y-siz,iyi,Tülay sonbahar koleksiyonu için gömleksiz ve pantolonsuz bir katalog inceledi.,gömlek,pantolon,9168,0,5,-sIz
 CO705199,87,9,X-li-and-Y-li,oldukça kötü,Zeynep bu hafta anneli ve babalı bir toplantıya katıldı.,anne,baba,5470,0,1,-lI
 CO705199,90,10,X-and-Y-li,kötü,Ali geçen ay kedi ve köpekli bir veteriner kliniği açtı.,kedi,köpek,8405,1,2,-lI
+CO705199,93,22,X-and-Y-lik,oldukça kötü,Yankı geçen yaz at ve balıklık bir hayvanay bahçesi yaptırdı.,at,balık,15427,1,1,-lIk
 CO705199,96,14,X-and-Y-lik,kötü sayılır,Elif takım oyununda fare ve aslanlık bir sembol seçti.,fare,aslan,9758,1,3,-lIk
+CO312940,3,2,X-and-Y-lik,kötü,Ömer yeni evine masa ve sandalyelik bir renk seçti.,masa,sandalye,6079,1,2,-lIk
+CO312940,6,25,X-lik-and-Y-lik,kötü,İzel toplantı sırasında burunluk ve boyunluk bir atkı ördü.,burun,boyun,6363,0,2,-lIk
+CO312940,9,30,X-and-Y-li,kötü,Asuman dergi yazısı için düğün ve cenazeli bir belgesel izledi.,cenaze,düğün,4684,1,2,-lI
+CO312940,12,20,X-and-Y-siz,kötü sayılır,Fehime düğünden önce büyükanne ve dedesiz bir aile hayatını irdeledi.,büyükanne,dede,11517,1,3,-sIz
+CO312940,15,15,X-ci-and-Y-ci,iyi,Deniz misafir beklerken sürahici ve bardakçı bir antikacıdan alışveriş yaptı.,sürahi,bardak,5026,0,5,-cI
+CO312940,18,17,X-lik-and-Y-lik,kötü,Eylül kamp yaparken tepelik ve nehirlik bir arazi satın aldı.,tepe,nehir,11428,0,2,-lIk
+CO312940,21,32,X-and-Y-ci,iyi,Aydan restorasyon projesi için taban ve tavancı bir ustayla görüştü.,taban,tavan,5395,1,5,-cI
+CO312940,24,31,X-ci-and-Y-ci,iyi sayılır,Tülay sonbahar koleksiyonu için gömlekçi ve pantoloncu bir tasarımcıyla tanıştı.,gömlek,pantolon,8723,0,4,-cI
+CO312940,27,14,X-and-Y-li,iyi,Elif küçük bir çocukken fare ve aslanlı bir masal dinledi.,fare,aslan,6584,1,5,-lI
+CO312940,30,23,X-ci-and-Y-ci,iyi sayılır,Jale geçen hafta çatalcı ve bıçakçı bir esnaftan alışveriş yaptı.,çatal,bıçak,7442,0,4,-cI
+CO312940,33,11,X-siz-and-Y-siz,iyi sayılır,Ahmet yabancı bir üniversitede bilimsiz ve teknolojisiz bir düşünceyi eleştirdi.,bilim,teknoloji,7485,0,4,-sIz
+CO312940,36,3,X-siz-and-Y-siz,iyi,Leyla eski çarşıda atkısız ve şapkasız bir çocuğa acımış.,atkı,şapka,3487,0,5,-sIz
+CO312940,39,6,X-and-Y-li,kötü sayılır,Ali diyetteyken muz ve havuçlu bir kek yapardı.,muz,havuç,9218,1,3,-lI
+CO312940,42,5,X-li-and-Y-li,iyi,Ece yılbaşı için tablolu ve vazolu bir masa aldı.,tablo,vazo,5829,0,5,-lI
+CO312940,45,26,X-and-Y-lik,kötü,Sinan gece yarısı hayalet ve canavarlık bir sahne tasarladı.,hayalet,canavar,5951,1,2,-lIk
+CO312940,48,18,X-and-Y-lik,kötü sayılır,Nevzat genç bir stajyerken okul ve camilik bir alanın korunmasını önerdi.,okul,cami,5804,1,3,-lIk
+CO312940,51,9,X-lik-and-Y-lik,kötü,Zeynep yıllar önce annelik ve babalık bir görev üstlendi.,anne,baba,48727,0,2,-lIk
+CO312940,54,22,X-and-Y-li,kötü sayılır,Yankı geçen yaz at ve balıklı bir tablo aldı.,at,balık,6987,1,3,-lI
+CO312940,57,29,X-li-and-Y-li,iyi sayılır,Melis çocuk kitabı için ejderhalı ve perili bir sahne tasarladı.,ejderha,peri,13052,0,4,-lI
+CO312940,60,13,X-li-and-Y-li,oldukça iyi,Emin geçen tatilde şehirli ve köylü bir topluluk projesine katıldı.,şehir,köy,10724,0,6,-lI
+CO312940,63,16,X-and-Y-ci,kötü,Okan üniversite yıllarında çiftlik ve fabrikacı bir yatırımcıyla görüştü.,çiftlik,fabrika,14026,1,2,-cI
+CO312940,66,19,X-siz-and-Y-siz,kötü,Zühre son yolculukta gecesiz ve gündüzsüz bir tren yolculuğu önerdi.,gece,gündüz,4737,0,2,-sIz
+CO312940,69,21,X-li-and-Y-li,kötü sayılır,Mertcan dün akşam abili ve ablalı bir fotoğraf gösterdi.,abi,abla,6538,0,3,-lI
+CO312940,72,1,X-lik-and-Y-lik,kötü,Emel geçen haftasonu çoraplık ve ayakkabılık bir dolap aldı.,çorap,ayakkabı,4481,0,2,-lIk
+CO312940,75,8,X-and-Y-ci,kötü,Selin tamir için kapı ve pencereci bir marangozla anlaşmış.,kapı,pencere,19043,1,2,-cI
+CO312940,78,10,X-and-Y-lik,kötü,Ali yeni firmada kedi ve köpeklik bir tasarım yaptı.,kedi,köpek,5136,1,2,-lIk
+CO312940,81,24,X-and-Y-ci,oldukça kötü,Neval ders çalışırken göz ve kulakçı bir doktorla konuştu.,göz,kulak,4647,1,1,-cI
+CO312940,84,7,X-ci-and-Y-ci,kötü sayılır,Dilek çeyiz alşverişi için battaniyeci ve halıcı bir züccaciyeciye gidecekmiş.,battaniye,halı,7092,0,3,-cI
+CO312940,87,27,X-siz-and-Y-siz,kötü,Baran araştırması için ormansız ve çölsüz bir bölge seçti.,orman,çöl,6625,0,2,-sIz
+CO312940,90,4,X-and-Y-siz,kötü,Burak tatlı için limon ve portakalsız bir tarif bulmuş.,limon,portakal,5978,1,2,-sIz
+CO312940,93,28,X-and-Y-siz,kötü sayılır,Yasemin mezuniyetinden önce doktor ve avukatsız bir mizansen canlandırdı.,avukat,doktor,4553,1,3,-sIz
+CO312940,96,12,X-and-Y-siz,kötü,Merve yeni hayatında ev ve bahçesiz bir şehir hayatı yaşıyor.,ev,bahçe,7642,1,2,-sIz
 CO991001,3,12,X-and-Y-li,oldukça kötü,Merve yaz tatilinde ev ve bahçeli bir tatil köyünü ziyaret etti.,ev,bahçe,5242,1,1,-lI
 CO991001,6,1,X-siz-and-Y-siz,iyi sayılır,Emel geçen haftasonu çorapsız ve ayakkabısız bir yoga eğitimi aldı.,çorap,ayakkabı,5150,0,4,-sIz
 CO991001,9,8,X-and-Y-lik,kötü,Selin tamir için kapı ve pencerelik bir desen seçmiş.,kapı,pencere,9948,1,2,-lIk
+CO991001,12,27,X-li-and-Y-li,kötü,Baran araştırması için ormanlı ve çöllü bir harita inceledi.,orman,çöl,39269,0,2,-lI
 CO991001,15,20,X-and-Y-li,oldukça kötü,Fehime düğünden önce büyükanne ve dedeli bir aile hayatını irdeledi.,büyükanne,dede,8188,1,1,-lI
 CO991001,18,10,X-and-Y-siz,iyi,Ali uzun zamandır kedi ve köpeksiz bir apartmanda yaşıyor.,kedi,köpek,4469,1,5,-sIz
 CO991001,21,19,X-li-and-Y-li,iyi,Zühre son yolculukta geceli ve gündüzlü bir seyahat planı hazırladı.,gece,gündüz,9412,0,5,-lI
@@ -742,23 +1063,63 @@ CO991001,27,32,X-and-Y-lik,kötü,Aydan restorasyon projesi için taban ve tavan
 CO991001,33,21,X-ci-and-Y-ci,oldukça kötü,Mertcan dün akşam abici ve ablacı bir komşu çocuğuna baktı.,abi,abla,5553,0,1,-cI
 CO991001,36,2,X-and-Y-siz,iyi sayılır,Ömer yeni evine masa ve sandalyesiz bir mobilya takımı aldı.,masa,sandalye,8837,1,4,-sIz
 CO991001,39,6,X-and-Y-ci,kötü,Ali diyetteyken muz ve havuççu bir tezgahtara uğrardı.,muz,havuç,4969,1,2,-cI
+CO991001,42,24,X-and-Y-lik,oldukça kötü,Neval ders çalışırken göz ve kulaklık bir kutu açtı.,göz,kulak,12828,1,1,-lIk
 CO991001,45,17,X-siz-and-Y-siz,iyi,Eylül kamp yaparken tepesiz ve nehirsiz bir manzara gördü.,tepe,nehir,4500,0,5,-sIz
 CO991001,48,4,X-and-Y-li,iyi sayılır,Burak tatlı için limon ve portakallı bir tarif bulmuş.,limon,portakal,6471,1,4,-lI
 CO991001,51,28,X-and-Y-li,iyi sayılır,Yasemin mezuniyetinden önce doktor ve avukatlı bir skeç yazdı.,avukat,doktor,7256,1,4,-lI
+CO991001,54,15,X-lik-and-Y-lik,kötü,Deniz misafir beklerken sürahilik ve bardaklık bir raf yaptırdı.,sürahi,bardak,41265,0,2,-lIk
+CO991001,57,31,X-lik-and-Y-lik,kötü sayılır,Tülay sonbahar koleksiyonu için gömleklik ve pantolonluk bir kumaş sipariş etti.,gömlek,pantolon,32944,0,3,-lIk
 CO991001,63,22,X-and-Y-ci,kötü sayılır,Yankı geçen yaz at ve balıkçı bir işletme sahibiyle tanıştı.,at,balık,9155,1,3,-cI
 CO991001,66,7,X-lik-and-Y-lik,kötü,Dilek çeyiz alşverişi için battaniyelik ve halılık bir indirim bulmuş.,battaniye,halı,6383,0,2,-lIk
 CO991001,69,9,X-siz-and-Y-siz,iyi sayılır,Zeynep yıllar önce annesiz ve babasız bir çocukluk geçirdi.,anne,baba,6536,0,4,-sIz
+CO991001,72,14,X-and-Y-ci,oldukça kötü,Elif gençlik yıllarında fare ve aslancı bir hikaye yazdı.,fare,aslan,42648,1,1,-cI
 CO991001,75,11,X-li-and-Y-li,iyi sayılır,Ahmet yabancı bir üniversitede bilimli ve teknolojili bir eğitim sistemi savundu.,bilim,teknoloji,6742,0,4,-lI
 CO991001,78,16,X-and-Y-lik,kötü,Okan üniversite yıllarında çiftlik ve fabrikalık bir proje sundu.,çiftlik,fabrika,4906,1,2,-lIk
 CO991001,81,25,X-siz-and-Y-siz,iyi sayılır,İzel toplantı sırasında burunsuz ve boyunsuz bir mumya fotoğrafı gösterdi.,burun,boyun,6887,0,4,-sIz
+CO991001,84,5,X-ci-and-Y-ci,iyi sayılır,Ece yılbaşı için tablocu ve vazocu bir dükkana uğradı.,tablo,vazo,22400,0,4,-cI
 CO991001,87,29,X-ci-and-Y-ci,iyi sayılır,Melis çocuk kitabı için ejderhacı ve perici bir illüstratörle çalıştı.,ejderha,peri,6920,0,4,-cI
+CO991001,90,18,X-and-Y-siz,kötü,Nevzat genç bir stajyerken okul ve camisiz bir projeye destek verdi.,okul,cami,13071,1,2,-sIz
 CO991001,93,23,X-lik-and-Y-lik,iyi sayılır,Jale geçen hafta çatallık ve bıçaklık bir dolap aldı.,çatal,bıçak,4637,0,4,-lIk
 CO991001,96,13,X-ci-and-Y-ci,kötü sayılır,Emin geçen tatilde şehirci ve köycü bir yazarın kitabını okudu.,şehir,köy,7469,0,3,-cI
+CO531213,2,31,X-and-Y-li,iyi,Tülay sonbahar koleksiyonu için gömlek ve pantolonlu bir kombin hazırladı.,gömlek,pantolon,2868,1,5,-lI
+CO531213,5,2,X-lik-and-Y-lik,kötü,Ömer yeni evine masalık ve sandalyelik bir renk seçti.,masa,sandalye,1979,0,2,-lIk
+CO531213,8,4,X-siz-and-Y-siz,oldukça iyi,Burak tatlı için limonsuz ve portakalsız bir tarif bulmuş.,limon,portakal,19036,0,6,-sIz
+CO531213,11,17,X-and-Y-ci,kötü,Eylül kamp yaparken tepe ve nehirci bir rehberle doğa yürüyüşüne çıktı.,tepe,nehir,2223,1,2,-cI
+CO531213,14,28,X-siz-and-Y-siz,kötü sayılır,Yasemin mezuniyetinden önce doktorsuz ve avukatsız bir mizansen canlandırdı.,avukat,doktor,1580,0,3,-sIz
+CO531213,17,29,X-and-Y-siz,oldukça kötü,Melis çocuk kitabı için ejderha ve perisiz bir bölüm yazdı.,ejderha,peri,2060,1,1,-sIz
+CO531213,20,10,X-lik-and-Y-lik,iyi,Ali yeni firmada kedilik ve köpeklik bir tasarım yaptı.,kedi,köpek,1542,0,5,-lIk
+CO531213,23,16,X-ci-and-Y-ci,oldukça iyi,Okan üniversite yıllarında çiftlikçi ve fabrikacı bir yatırımcıyla görüştü.,çiftlik,fabrika,1533,0,6,-cI
+CO531213,26,32,X-ci-and-Y-ci,kötü sayılır,Aydan restorasyon projesi için tabancı ve tavancı bir ustayla görüştü.,taban,tavan,66621,0,3,-cI
+CO531213,29,24,X-ci-and-Y-ci,oldukça kötü,Neval ders çalışırken gözcü ve kulakçı bir doktorla konuştu.,göz,kulak,3477,0,1,-cI
+CO531213,32,25,X-and-Y-ci,kötü sayılır,İzel toplantı sırasında burun ve boyuncu bir doktordan bahsetti.,burun,boyun,4260,1,3,-cI
+CO531213,35,12,X-siz-and-Y-siz,iyi,Merve yeni hayatında evsiz ve bahçesiz bir şehir hayatı yaşıyor.,ev,bahçe,3749,0,5,-sIz
+CO531213,38,9,X-and-Y-ci,oldukça iyi,Zeynep bu hafta anne ve babacı bir yeğeniyle ilgilendi.,anne,baba,4830,1,6,-cI
+CO531213,41,13,X-and-Y-siz,kötü,Emin geçen tatilde şehir ve köysüz bir gezi yaptı.,şehir,köy,2652,1,2,-sIz
+CO531213,44,11,X-and-Y-lik,kötü,Ahmet yabancı bir üniversitede bilim ve teknolojilik bir dergi çıkardı.,bilim,teknoloji,3428,1,2,-lIk
+CO531213,47,15,X-and-Y-li,iyi sayılır,Deniz misafir beklerken sürahi ve bardaklı bir konsept hazırladı.,sürahi,bardak,3149,1,4,-lI
+CO531213,50,19,X-and-Y-lik,kötü,Zühre son yolculukta gece ve gündüzlük bir program belirledi.,gece,gündüz,7805,1,2,-lIk
+CO531213,53,5,X-and-Y-siz,iyi sayılır,Ece yılbaşı için tablo ve vazosuz bir masa seçti.,tablo,vazo,2109,1,4,-sIz
+CO531213,56,22,X-li-and-Y-li,kötü,Yankı geçen yaz atlı ve balıklı bir tablo aldı.,at,balık,3277,0,2,-lI
+CO531213,59,3,X-and-Y-lik,iyi,Leyla eski çarşıda atkı ve şapkalık bir askı beğenmiş.,atkı,şapka,2509,1,5,-lIk
+CO531213,62,20,X-siz-and-Y-siz,oldukça kötü,Fehime düğünden önce büyükannesiz ve dedesiz bir aile hayatını irdeledi.,büyükanne,dede,4252,0,1,-sIz
+CO531213,65,30,X-li-and-Y-li,kötü sayılır,Asuman dergi yazısı için düğünlü ve cenazeli bir belgesel izledi.,cenaze,düğün,2052,0,3,-lI
+CO531213,68,1,X-and-Y-ci,oldukça kötü,Emel geçen haftasonu çorap ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,1748,1,1,-cI
+CO531213,71,6,X-li-and-Y-li,oldukça kötü,Ali diyetteyken muzlu ve havuçlu bir kek yapardı.,muz,havuç,1933,0,1,-lI
+CO531213,74,8,X-ci-and-Y-ci,iyi sayılır,Selin tamir için kapıcı ve pencereci bir marangozla anlaşmış.,kapı,pencere,2093,0,4,-cI
+CO531213,77,7,X-and-Y-li,oldukça iyi,Dilek çeyiz alşverişi için battaniye ve halılı bir paket seçmiş.,battaniye,halı,2117,1,6,-lI
+CO531213,80,14,X-li-and-Y-li,oldukça kötü,Elif küçük bir çocukken fareli ve aslanlı bir masal dinledi.,fare,aslan,1981,0,1,-lI
+CO531213,83,18,X-lik-and-Y-lik,iyi sayılır,Nevzat genç bir stajyerken okulluk ve camilik bir alanın korunmasını önerdi.,okul,cami,1861,0,4,-lIk
+CO531213,86,21,X-and-Y-siz,kötü,Mertcan dün akşam abi ve ablasız bir hayat düşündü.,abi,abla,2028,1,2,-sIz
+CO531213,89,26,X-lik-and-Y-lik,kötü,Sinan gece yarısı hayaletlik ve canavarlık bir sahne tasarladı.,hayalet,canavar,2404,0,2,-lIk
+CO531213,92,27,X-and-Y-lik,oldukça iyi,Baran araştırması için orman ve çöllük bir alan çizdi.,orman,çöl,1621,1,6,-lIk
+CO531213,95,23,X-and-Y-li,kötü,Jale geçen hafta çatal ve bıçaklı bir masa kurdu.,çatal,bıçak,2037,1,2,-lI
 CO289957,3,12,X-and-Y-lik,oldukça iyi,Merve aile mirasıyla ev ve bahçelik bir arsa satın aldı.,ev,bahçe,6045,1,6,-lIk
+CO289957,6,2,X-and-Y-ci,iyi sayılır,Ömer yeni evine masa ve sandalyeci bir usta getirdi.,masa,sandalye,12998,1,4,-cI
 CO289957,9,9,X-ci-and-Y-ci,kötü sayılır,Zeynep bu hafta anneci ve babacı bir yeğeniyle ilgilendi.,anne,baba,8068,0,3,-cI
 CO289957,12,19,X-lik-and-Y-lik,kötü sayılır,Zühre son yolculukta gecelik ve gündüzlük bir program belirledi.,gece,gündüz,6638,0,3,-lIk
 CO289957,15,23,X-li-and-Y-li,iyi,Jale geçen hafta çatallı ve bıçaklı bir masa kurdu.,çatal,bıçak,3237,0,5,-lI
 CO289957,18,25,X-ci-and-Y-ci,kötü sayılır,İzel toplantı sırasında buruncu ve boyuncu bir doktordan bahsetti.,burun,boyun,6178,0,3,-cI
+CO289957,21,8,X-and-Y-li,kötü sayılır,Selin tamir için kapı ve pencereli bir atölye tasarlamış.,kapı,pencere,11679,1,3,-lI
 CO289957,24,27,X-lik-and-Y-lik,iyi sayılır,Baran araştırması için ormanlık ve çöllük bir alan çizdi.,orman,çöl,5468,0,4,-lIk
 CO289957,27,28,X-and-Y-lik,kötü,Yasemin mezuniyetinden önce doktor ve avukatlık bir kimlik seçti.,avukat,doktor,5875,1,2,-lIk
 CO289957,30,6,X-and-Y-siz,oldukça iyi,Ali diyetteyken muz ve havuçsuz bir kek yapardı.,muz,havuç,3319,1,6,-sIz
@@ -782,15 +1143,20 @@ CO289957,81,31,X-li-and-Y-li,oldukça iyi,Tülay sonbahar koleksiyonu için göm
 CO289957,84,1,X-ci-and-Y-ci,iyi,Emel geçen haftasonu çorapçı ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,7164,0,5,-cI
 CO289957,87,29,X-siz-and-Y-siz,iyi,Melis çocuk kitabı için ejderhasız ve perisiz bir bölüm yazdı.,ejderha,peri,8469,0,5,-sIz
 CO289957,90,26,X-and-Y-ci,iyi sayılır,Sinan gece yarısı hayalet ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,5796,1,4,-cI
+CO289957,93,18,X-and-Y-ci,iyi sayılır,Nevzat genç bir stajyerken okul ve camici bir mimarın eserlerini inceledi.,okul,cami,10353,1,4,-cI
 CO289957,96,20,X-and-Y-lik,iyi sayılır,Fehime düğünden önce büyükanne ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,8001,1,4,-lIk
 CO383794,3,9,X-and-Y-li,iyi sayılır,Zeynep bu hafta anne ve babalı bir toplantıya katıldı.,anne,baba,5775,1,4,-lI
+CO383794,6,7,X-and-Y-siz,iyi,Dilek çeyiz alşverişi için battaniye ve halısız bir paket seçmiş.,battaniye,halı,12855,1,5,-sIz
+CO383794,9,22,X-siz-and-Y-siz,oldukça kötü,Yankı geçen yaz atsız ve balıksız bir menü denedi.,at,balık,12093,0,1,-sIz
 CO383794,12,10,X-ci-and-Y-ci,kötü,Ali her hafta kedici ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,8843,0,2,-cI
 CO383794,15,31,X-and-Y-siz,iyi,Tülay sonbahar koleksiyonu için gömlek ve pantolonsuz bir katalog inceledi.,gömlek,pantolon,9223,1,5,-sIz
 CO383794,18,2,X-ci-and-Y-ci,iyi sayılır,Ömer yeni evine masacı ve sandalyeci bir usta getirdi.,masa,sandalye,4484,0,4,-cI
 CO383794,21,13,X-and-Y-lik,iyi sayılır,Emin geçen tatilde şehir ve köylük bir bölgeyi gezdi.,şehir,köy,9723,1,4,-lIk
+CO383794,24,30,X-siz-and-Y-siz,iyi sayılır,Asuman dergi yazısı için düğünsüz ve cenazesiz bir program önerdi.,cenaze,düğün,24911,0,4,-sIz
 CO383794,27,23,X-and-Y-siz,iyi,Jale geçen hafta çatal ve bıçaksız bir piknik yaptı.,çatal,bıçak,7485,1,5,-sIz
 CO383794,30,29,X-and-Y-lik,kötü sayılır,Melis çocuk kitabı için ejderha ve perilik bir seri başlatmayı düşündü.,ejderha,peri,6158,1,3,-lIk
 CO383794,33,26,X-ci-and-Y-ci,kötü sayılır,Sinan gece yarısı hayaletçi ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,9691,0,3,-cI
+CO383794,36,12,X-lik-and-Y-lik,iyi,Merve aile mirasıyla evlik ve bahçelik bir arsa satın aldı.,ev,bahçe,25804,0,5,-lIk
 CO383794,39,5,X-and-Y-lik,iyi sayılır,Ece yılbaşı için tablo ve vazoluk bir masa aldı.,tablo,vazo,5036,1,4,-lIk
 CO383794,42,25,X-and-Y-li,iyi,İzel toplantı sırasında burun ve boyunlu bir maske inceledi.,burun,boyun,7141,1,5,-lI
 CO383794,45,17,X-and-Y-li,iyi,Eylül kamp yaparken tepe ve nehirli bir alan seçti.,tepe,nehir,4481,1,5,-lI
@@ -821,6 +1187,8 @@ CO240084,20,31,X-siz-and-Y-siz,iyi,Tülay sonbahar koleksiyonu için gömleksiz 
 CO240084,23,1,X-li-and-Y-li,iyi sayılır,Emel geçen haftasonu çoraplı ve ayakkabılı bir takım aldı.,çorap,ayakkabı,5461,0,4,-lI
 CO240084,26,25,X-li-and-Y-li,kötü,İzel toplantı sırasında burunlu ve boyunlu bir maske inceledi.,burun,boyun,8748,0,2,-lI
 CO240084,29,23,X-siz-and-Y-siz,iyi,Jale geçen hafta çatalsız ve bıçaksız bir piknik yaptı.,çatal,bıçak,6527,0,5,-sIz
+CO240084,35,7,X-siz-and-Y-siz,oldukça iyi,Dilek çeyiz alşverişi için battaniyesiz ve halısız bir paket seçmiş.,battaniye,halı,77311,0,6,-sIz
+CO240084,38,12,X-and-Y-ci,oldukça kötü,Merve yeni villası için ev ve bahçeci bir peyzaj tasarımcısıyla anlaştı.,ev,bahçe,75730,1,1,-cI
 CO240084,41,27,X-ci-and-Y-ci,oldukça kötü,Baran araştırması için ormancı ve çölcü bir araştırmacıyla anlaştı.,orman,çöl,9547,0,1,-cI
 CO240084,44,20,X-and-Y-ci,kötü,Fehime düğünden önce büyükanne ve dedeci bir gelenek hakkında yazı okudu.,büyükanne,dede,7028,1,2,-cI
 CO240084,47,30,X-and-Y-lik,oldukça iyi,Asuman dergi yazısı için düğün ve cenazelik bir tema belirledi.,cenaze,düğün,6219,1,6,-lIk
@@ -831,8 +1199,11 @@ CO240084,65,11,X-ci-and-Y-ci,oldukça kötü,Ahmet yabancı bir üniversitede bi
 CO240084,68,18,X-and-Y-li,iyi,Nevzat genç bir stajyerken okul ve camili bir mahallede oturdu.,okul,cami,5514,1,5,-lI
 CO240084,71,9,X-li-and-Y-li,iyi,Zeynep bu hafta anneli ve babalı bir toplantıya katıldı.,anne,baba,8455,0,5,-lI
 CO240084,74,28,X-and-Y-ci,oldukça kötü,Yasemin mezuniyetinden önce doktor ve avukatçı bir derneğe katıldı.,avukat,doktor,7566,1,1,-cI
+CO240084,77,19,X-ci-and-Y-ci,oldukça iyi,Zühre son yolculukta gececi ve gündüzcü bir rehberle tanıştı.,gece,gündüz,10697,0,6,-cI
 CO240084,80,4,X-and-Y-ci,kötü,Burak tatlı için limon ve portakalcı bir satıcıdan sipariş vermiş.,limon,portakal,8280,1,2,-cI
 CO240084,83,6,X-and-Y-lik,iyi sayılır,Ali diyetteyken muz ve havuçluk bir saklama kabı almıştı.,muz,havuç,5363,1,4,-lIk
+CO240084,86,22,X-and-Y-lik,kötü sayılır,Yankı geçen yaz at ve balıklık bir hayvanay bahçesi yaptırdı.,at,balık,10482,1,3,-lIk
+CO240084,89,13,X-lik-and-Y-lik,iyi,Emin geçen tatilde şehirlik ve köylük bir bölgeyi gezdi.,şehir,köy,77845,0,5,-lIk
 CO240084,92,14,X-and-Y-lik,kötü sayılır,Elif takım oyununda fare ve aslanlık bir sembol seçti.,fare,aslan,5064,1,3,-lIk
 CO240084,95,16,X-and-Y-siz,iyi sayılır,Okan üniversite yıllarında çiftlik ve fabrikasız bir iş modeli önerdi.,çiftlik,fabrika,6997,1,4,-sIz
 CO438997,3,15,X-and-Y-lik,iyi sayılır,Deniz misafir beklerken sürahi ve bardaklık bir raf yaptırdı.,sürahi,bardak,5380,1,4,-lIk
@@ -844,7 +1215,9 @@ CO438997,18,5,X-and-Y-ci,kötü,Ece yılbaşı için tablo ve vazocu bir dükkan
 CO438997,21,11,X-and-Y-li,kötü,Ahmet yabancı bir üniversitede bilim ve teknolojili bir eğitim sistemi savundu.,bilim,teknoloji,4285,1,2,-lI
 CO438997,24,2,X-li-and-Y-li,kötü sayılır,Ömer yeni evine masalı ve sandalyeli bir yemek odası kurdu.,masa,sandalye,4221,0,3,-lI
 CO438997,27,10,X-li-and-Y-li,iyi sayılır,Ali geçen ay kedili ve köpekli bir veteriner kliniği açtı.,kedi,köpek,5221,0,4,-lI
+CO438997,30,20,X-ci-and-Y-ci,iyi sayılır,Fehime düğünden önce büyükanneci ve dedeci bir gelenek hakkında yazı okudu.,büyükanne,dede,56564,0,4,-cI
 CO438997,33,25,X-and-Y-siz,kötü,İzel toplantı sırasında burun ve boyunsuz bir mumya fotoğrafı gösterdi.,burun,boyun,6627,1,2,-sIz
+CO438997,36,27,X-and-Y-li,kötü sayılır,Baran araştırması için orman ve çöllü bir harita inceledi.,orman,çöl,14548,1,3,-lI
 CO438997,39,22,X-lik-and-Y-lik,oldukça kötü,Yankı geçen yaz atlık ve balıklık bir hayvanay bahçesi yaptırdı.,at,balık,7712,0,1,-lIk
 CO438997,42,24,X-siz-and-Y-siz,oldukça iyi,Neval ders çalışırken gözsüz ve kulaksız bir heykel çizdi.,göz,kulak,3610,0,6,-sIz
 CO438997,45,32,X-siz-and-Y-siz,oldukça iyi,Aydan restorasyon projesi için tabansız ve tavansız bir oda düşündü.,taban,tavan,4472,0,6,-sIz
@@ -897,25 +1270,35 @@ CO112510,87,19,X-li-and-Y-li,iyi sayılır,Zühre son yolculukta geceli ve günd
 CO112510,90,31,X-lik-and-Y-lik,oldukça iyi,Tülay sonbahar koleksiyonu için gömleklik ve pantolonluk bir kumaş sipariş etti.,gömlek,pantolon,3868,0,6,-lIk
 CO112510,93,32,X-and-Y-lik,iyi,Aydan restorasyon projesi için taban ve tavanlık bir malzeme seçti.,taban,tavan,6219,1,5,-lIk
 CO112510,96,4,X-and-Y-li,iyi sayılır,Burak tatlı için limon ve portakallı bir tarif bulmuş.,limon,portakal,4059,1,4,-lI
+CO221848,3,19,X-siz-and-Y-siz,iyi sayılır,Zühre son yolculukta gecesiz ve gündüzsüz bir tren yolculuğu önerdi.,gece,gündüz,15135,0,4,-sIz
 CO221848,6,13,X-li-and-Y-li,oldukça iyi,Emin geçen tatilde şehirli ve köylü bir topluluk projesine katıldı.,şehir,köy,9909,0,6,-lI
+CO221848,9,22,X-and-Y-li,oldukça iyi,Yankı geçen yaz at ve balıklı bir tablo aldı.,at,balık,11091,1,6,-lI
 CO221848,12,32,X-and-Y-ci,oldukça iyi,Aydan restorasyon projesi için taban ve tavancı bir ustayla görüştü.,taban,tavan,7191,1,6,-cI
 CO221848,15,20,X-and-Y-siz,oldukça iyi,Fehime düğünden önce büyükanne ve dedesiz bir aile hayatını irdeledi.,büyükanne,dede,7659,1,6,-sIz
+CO221848,18,11,X-siz-and-Y-siz,oldukça iyi,Ahmet yabancı bir üniversitede bilimsiz ve teknolojisiz bir düşünceyi eleştirdi.,bilim,teknoloji,10354,0,6,-sIz
 CO221848,21,24,X-and-Y-ci,oldukça iyi,Neval ders çalışırken göz ve kulakçı bir doktorla konuştu.,göz,kulak,9924,1,6,-cI
 CO221848,24,31,X-ci-and-Y-ci,oldukça iyi,Tülay sonbahar koleksiyonu için gömlekçi ve pantoloncu bir tasarımcıyla tanıştı.,gömlek,pantolon,9199,0,6,-cI
 CO221848,27,3,X-siz-and-Y-siz,oldukça iyi,Leyla eski çarşıda atkısız ve şapkasız bir çocuğa acımış.,atkı,şapka,7251,0,6,-sIz
+CO221848,30,28,X-and-Y-siz,kötü sayılır,Yasemin mezuniyetinden önce doktor ve avukatsız bir mizansen canlandırdı.,avukat,doktor,14801,1,3,-sIz
 CO221848,33,16,X-and-Y-ci,oldukça iyi,Okan üniversite yıllarında çiftlik ve fabrikacı bir yatırımcıyla görüştü.,çiftlik,fabrika,7071,1,6,-cI
 CO221848,36,5,X-li-and-Y-li,oldukça iyi,Ece yılbaşı için tablolu ve vazolu bir masa aldı.,tablo,vazo,6081,0,6,-lI
 CO221848,39,9,X-lik-and-Y-lik,kötü sayılır,Zeynep yıllar önce annelik ve babalık bir görev üstlendi.,anne,baba,8900,0,3,-lIk
 CO221848,42,27,X-siz-and-Y-siz,oldukça iyi,Baran araştırması için ormansız ve çölsüz bir bölge seçti.,orman,çöl,6756,0,6,-sIz
 CO221848,45,2,X-and-Y-lik,oldukça iyi,Ömer yeni evine masa ve sandalyelik bir renk seçti.,masa,sandalye,7352,1,6,-lIk
+CO221848,48,15,X-ci-and-Y-ci,oldukça iyi,Deniz misafir beklerken sürahici ve bardakçı bir antikacıdan alışveriş yaptı.,sürahi,bardak,25640,0,6,-cI
 CO221848,51,14,X-and-Y-li,oldukça iyi,Elif küçük bir çocukken fare ve aslanlı bir masal dinledi.,fare,aslan,7533,1,6,-lI
 CO221848,54,10,X-and-Y-lik,oldukça iyi,Ali yeni firmada kedi ve köpeklik bir tasarım yaptı.,kedi,köpek,7899,1,6,-lIk
 CO221848,57,4,X-and-Y-siz,oldukça iyi,Burak tatlı için limon ve portakalsız bir tarif bulmuş.,limon,portakal,9691,1,6,-sIz
 CO221848,60,7,X-ci-and-Y-ci,oldukça iyi,Dilek çeyiz alşverişi için battaniyeci ve halıcı bir züccaciyeciye gidecekmiş.,battaniye,halı,6447,0,6,-cI
+CO221848,63,17,X-lik-and-Y-lik,oldukça iyi,Eylül kamp yaparken tepelik ve nehirlik bir arazi satın aldı.,tepe,nehir,59480,0,6,-lIk
 CO221848,66,21,X-li-and-Y-li,kötü,Mertcan dün akşam abili ve ablalı bir fotoğraf gösterdi.,abi,abla,7737,0,2,-lI
+CO221848,69,18,X-and-Y-lik,oldukça iyi,Nevzat genç bir stajyerken okul ve camilik bir alanın korunmasını önerdi.,okul,cami,30278,1,6,-lIk
 CO221848,72,8,X-and-Y-ci,oldukça iyi,Selin tamir için kapı ve pencereci bir marangozla anlaşmış.,kapı,pencere,9129,1,6,-cI
+CO221848,75,26,X-and-Y-lik,oldukça iyi,Sinan gece yarısı hayalet ve canavarlık bir sahne tasarladı.,hayalet,canavar,10266,1,6,-lIk
 CO221848,78,1,X-lik-and-Y-lik,oldukça iyi,Emel geçen haftasonu çoraplık ve ayakkabılık bir dolap aldı.,çorap,ayakkabı,6682,0,6,-lIk
 CO221848,81,6,X-and-Y-li,oldukça iyi,Ali diyetteyken muz ve havuçlu bir kek yapardı.,muz,havuç,5471,1,6,-lI
+CO221848,84,29,X-li-and-Y-li,oldukça iyi,Melis çocuk kitabı için ejderhalı ve perili bir sahne tasarladı.,ejderha,peri,13773,0,6,-lI
+CO221848,87,12,X-and-Y-siz,iyi,Merve yeni hayatında ev ve bahçesiz bir şehir hayatı yaşıyor.,ev,bahçe,14022,1,5,-sIz
 CO221848,90,30,X-and-Y-li,oldukça iyi,Asuman dergi yazısı için düğün ve cenazeli bir belgesel izledi.,cenaze,düğün,5965,1,6,-lI
 CO221848,93,23,X-ci-and-Y-ci,oldukça iyi,Jale geçen hafta çatalcı ve bıçakçı bir esnaftan alışveriş yaptı.,çatal,bıçak,7532,0,6,-cI
 CO221848,96,25,X-lik-and-Y-lik,oldukça iyi,İzel toplantı sırasında burunluk ve boyunluk bir atkı ördü.,burun,boyun,7702,0,6,-lIk
@@ -932,6 +1315,7 @@ CO960722,29,3,X-and-Y-lik,iyi sayılır,Leyla eski çarşıda atkı ve şapkalı
 CO960722,32,17,X-and-Y-ci,iyi sayılır,Eylül kamp yaparken tepe ve nehirci bir rehberle doğa yürüyüşüne çıktı.,tepe,nehir,6773,1,4,-cI
 CO960722,35,15,X-and-Y-li,iyi sayılır,Deniz misafir beklerken sürahi ve bardaklı bir konsept hazırladı.,sürahi,bardak,4342,1,4,-lI
 CO960722,38,28,X-siz-and-Y-siz,kötü,Yasemin mezuniyetinden önce doktorsuz ve avukatsız bir mizansen canlandırdı.,avukat,doktor,5902,0,2,-sIz
+CO960722,41,1,X-and-Y-ci,kötü sayılır,Emel geçen haftasonu çorap ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,10325,1,3,-cI
 CO960722,44,6,X-li-and-Y-li,iyi,Ali diyetteyken muzlu ve havuçlu bir kek yapardı.,muz,havuç,7190,0,5,-lI
 CO960722,47,30,X-li-and-Y-li,iyi sayılır,Asuman dergi yazısı için düğünlü ve cenazeli bir belgesel izledi.,cenaze,düğün,9286,0,4,-lI
 CO960722,50,5,X-and-Y-siz,iyi sayılır,Ece yılbaşı için tablo ve vazosuz bir masa seçti.,tablo,vazo,6182,1,4,-sIz
@@ -950,3 +1334,99 @@ CO960722,86,27,X-and-Y-lik,iyi sayılır,Baran araştırması için orman ve ç�
 CO960722,89,14,X-li-and-Y-li,iyi,Elif küçük bir çocukken fareli ve aslanlı bir masal dinledi.,fare,aslan,4711,0,5,-lI
 CO960722,92,19,X-and-Y-lik,iyi,Zühre son yolculukta gece ve gündüzlük bir program belirledi.,gece,gündüz,4278,1,5,-lIk
 CO960722,95,2,X-lik-and-Y-lik,iyi sayılır,Ömer yeni evine masalık ve sandalyelik bir renk seçti.,masa,sandalye,3790,0,4,-lIk
+CO541040,2,1,X-ci-and-Y-ci,oldukça kötü,Emel geçen haftasonu çorapçı ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,9016,0,1,-cI
+CO541040,5,2,X-and-Y-ci,kötü,Ömer yeni evine masa ve sandalyeci bir usta getirdi.,masa,sandalye,9687,1,2,-cI
+CO541040,8,4,X-and-Y-lik,kötü,Burak tatlı için limon ve portakallık bir tabak hazırlamış.,limon,portakal,5055,1,2,-lIk
+CO541040,11,30,X-and-Y-siz,oldukça kötü,Asuman dergi yazısı için düğün ve cenazesiz bir program önerdi.,cenaze,düğün,7779,1,1,-sIz
+CO541040,14,13,X-siz-and-Y-siz,oldukça kötü,Emin geçen tatilde şehirsiz ve köysüz bir gezi yaptı.,şehir,köy,13880,0,1,-sIz
+CO541040,17,3,X-lik-and-Y-lik,kötü sayılır,Leyla eski çarşıda atkılık ve şapkalık bir askı beğenmiş.,atkı,şapka,30143,0,3,-lIk
+CO541040,20,12,X-and-Y-lik,iyi,Merve aile mirasıyla ev ve bahçelik bir arsa satın aldı.,ev,bahçe,11375,1,5,-lIk
+CO541040,23,17,X-ci-and-Y-ci,kötü sayılır,Eylül kamp yaparken tepeci ve nehirci bir rehberle doğa yürüyüşüne çıktı.,tepe,nehir,3878,0,3,-cI
+CO541040,26,9,X-ci-and-Y-ci,oldukça kötü,Zeynep bu hafta anneci ve babacı bir yeğeniyle ilgilendi.,anne,baba,18280,0,1,-cI
+CO541040,29,32,X-and-Y-li,kötü sayılır,Aydan restorasyon projesi için taban ve tavanlı bir plan çizdi.,taban,tavan,4485,1,3,-lI
+CO541040,32,28,X-and-Y-lik,oldukça kötü,Yasemin mezuniyetinden önce doktor ve avukatlık bir kimlik seçti.,avukat,doktor,6033,1,1,-lIk
+CO541040,35,20,X-and-Y-lik,iyi sayılır,Fehime düğünden önce büyükanne ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,4294,1,4,-lIk
+CO541040,38,6,X-and-Y-siz,oldukça kötü,Ali diyetteyken muz ve havuçsuz bir kek yapardı.,muz,havuç,8065,1,1,-sIz
+CO541040,41,18,X-and-Y-ci,oldukça kötü,Nevzat genç bir stajyerken okul ve camici bir mimarın eserlerini inceledi.,okul,cami,7001,1,1,-cI
+CO541040,44,27,X-lik-and-Y-lik,kötü sayılır,Baran araştırması için ormanlık ve çöllük bir alan çizdi.,orman,çöl,15895,0,3,-lIk
+CO541040,47,21,X-siz-and-Y-siz,iyi sayılır,Mertcan dün akşam abisiz ve ablasız bir hayat düşündü.,abi,abla,12572,0,4,-sIz
+CO541040,50,8,X-and-Y-li,kötü sayılır,Selin tamir için kapı ve pencereli bir atölye tasarlamış.,kapı,pencere,21355,1,3,-lI
+CO541040,53,31,X-li-and-Y-li,kötü sayılır,Tülay sonbahar koleksiyonu için gömlekli ve pantolonlu bir kombin hazırladı.,gömlek,pantolon,29148,0,3,-lI
+CO541040,56,14,X-and-Y-siz,kötü,Elif gençlik yıllarında fare ve aslansız bir oyun sahneledi.,fare,aslan,7566,1,2,-sIz
+CO541040,59,26,X-and-Y-ci,oldukça kötü,Sinan gece yarısı hayalet ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,4389,1,1,-cI
+CO541040,62,19,X-lik-and-Y-lik,kötü,Zühre son yolculukta gecelik ve gündüzlük bir program belirledi.,gece,gündüz,4829,0,2,-lIk
+CO541040,65,10,X-and-Y-ci,oldukça kötü,Ali her hafta kedi ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,4276,1,1,-cI
+CO541040,68,23,X-li-and-Y-li,oldukça kötü,Jale geçen hafta çatallı ve bıçaklı bir masa kurdu.,çatal,bıçak,2659,0,1,-lI
+CO541040,71,24,X-and-Y-li,oldukça kötü,Neval ders çalışırken göz ve kulaklı bir robot gördü.,göz,kulak,5822,1,1,-lI
+CO541040,74,15,X-li-and-Y-li,oldukça kötü,Deniz misafir beklerken sürahili ve bardaklı bir konsept hazırladı.,sürahi,bardak,4269,0,1,-lI
+CO541040,77,5,X-siz-and-Y-siz,kötü,Ece yılbaşı için tablosuz ve vazosuz bir masa seçti.,tablo,vazo,7595,0,2,-sIz
+CO541040,80,29,X-siz-and-Y-siz,iyi sayılır,Melis çocuk kitabı için ejderhasız ve perisiz bir bölüm yazdı.,ejderha,peri,5012,0,4,-sIz
+CO541040,83,25,X-ci-and-Y-ci,oldukça kötü,İzel toplantı sırasında buruncu ve boyuncu bir doktordan bahsetti.,burun,boyun,6231,0,1,-cI
+CO541040,86,16,X-and-Y-li,oldukça kötü,Okan üniversite yıllarında çiftlik ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,5048,1,1,-lI
+CO541040,89,7,X-li-and-Y-li,oldukça kötü,Dilek çeyiz alşverişi için battaniyeli ve halılı bir paket seçmiş.,battaniye,halı,6793,0,1,-lI
+CO541040,92,22,X-and-Y-siz,oldukça kötü,Yankı geçen yaz at ve balıksız bir menü denedi.,at,balık,15183,1,1,-sIz
+CO541040,95,11,X-lik-and-Y-lik,oldukça kötü,Ahmet yabancı bir üniversitede bilimlik ve teknolojilik bir dergi çıkardı.,bilim,teknoloji,3065,0,1,-lIk
+CO866208,2,20,X-and-Y-lik,kötü,Fehime düğünden önce büyükanne ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,8822,1,2,-lIk
+CO866208,5,21,X-siz-and-Y-siz,oldukça iyi,Mertcan dün akşam abisiz ve ablasız bir hayat düşündü.,abi,abla,8044,0,6,-sIz
+CO866208,8,7,X-li-and-Y-li,iyi,Dilek çeyiz alşverişi için battaniyeli ve halılı bir paket seçmiş.,battaniye,halı,5856,0,5,-lI
+CO866208,11,13,X-siz-and-Y-siz,kötü,Emin geçen tatilde şehirsiz ve köysüz bir gezi yaptı.,şehir,köy,9043,0,2,-sIz
+CO866208,14,12,X-and-Y-lik,oldukça iyi,Merve aile mirasıyla ev ve bahçelik bir arsa satın aldı.,ev,bahçe,8054,1,6,-lIk
+CO866208,17,1,X-ci-and-Y-ci,kötü,Emel geçen haftasonu çorapçı ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,11772,0,2,-cI
+CO866208,20,30,X-and-Y-siz,kötü,Asuman dergi yazısı için düğün ve cenazesiz bir program önerdi.,cenaze,düğün,8351,1,2,-sIz
+CO866208,23,9,X-ci-and-Y-ci,oldukça kötü,Zeynep bu hafta anneci ve babacı bir yeğeniyle ilgilendi.,anne,baba,6437,0,1,-cI
+CO866208,26,22,X-and-Y-siz,oldukça kötü,Yankı geçen yaz at ve balıksız bir menü denedi.,at,balık,5300,1,1,-sIz
+CO866208,29,24,X-and-Y-li,kötü,Neval ders çalışırken göz ve kulaklı bir robot gördü.,göz,kulak,8390,1,2,-lI
+CO866208,32,27,X-lik-and-Y-lik,kötü sayılır,Baran araştırması için ormanlık ve çöllük bir alan çizdi.,orman,çöl,7972,0,3,-lIk
+CO866208,35,28,X-and-Y-lik,oldukça kötü,Yasemin mezuniyetinden önce doktor ve avukatlık bir kimlik seçti.,avukat,doktor,6676,1,1,-lIk
+CO866208,38,29,X-siz-and-Y-siz,iyi,Melis çocuk kitabı için ejderhasız ve perisiz bir bölüm yazdı.,ejderha,peri,9289,0,5,-sIz
+CO866208,41,26,X-and-Y-ci,oldukça kötü,Sinan gece yarısı hayalet ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,8742,1,1,-cI
+CO866208,44,8,X-and-Y-li,kötü,Selin tamir için kapı ve pencereli bir atölye tasarlamış.,kapı,pencere,12887,1,2,-lI
+CO866208,47,15,X-li-and-Y-li,iyi sayılır,Deniz misafir beklerken sürahili ve bardaklı bir konsept hazırladı.,sürahi,bardak,8718,0,4,-lI
+CO866208,50,5,X-siz-and-Y-siz,oldukça iyi,Ece yılbaşı için tablosuz ve vazosuz bir masa seçti.,tablo,vazo,7911,0,6,-sIz
+CO866208,53,31,X-li-and-Y-li,oldukça iyi,Tülay sonbahar koleksiyonu için gömlekli ve pantolonlu bir kombin hazırladı.,gömlek,pantolon,7888,0,6,-lI
+CO866208,56,11,X-lik-and-Y-lik,kötü,Ahmet yabancı bir üniversitede bilimlik ve teknolojilik bir dergi çıkardı.,bilim,teknoloji,7443,0,2,-lIk
+CO866208,59,6,X-and-Y-siz,kötü sayılır,Ali diyetteyken muz ve havuçsuz bir kek yapardı.,muz,havuç,5730,1,3,-sIz
+CO866208,62,19,X-lik-and-Y-lik,kötü sayılır,Zühre son yolculukta gecelik ve gündüzlük bir program belirledi.,gece,gündüz,15853,0,3,-lIk
+CO866208,65,3,X-lik-and-Y-lik,kötü sayılır,Leyla eski çarşıda atkılık ve şapkalık bir askı beğenmiş.,atkı,şapka,8298,0,3,-lIk
+CO866208,68,18,X-and-Y-ci,kötü,Nevzat genç bir stajyerken okul ve camici bir mimarın eserlerini inceledi.,okul,cami,9208,1,2,-cI
+CO866208,71,25,X-ci-and-Y-ci,oldukça kötü,İzel toplantı sırasında buruncu ve boyuncu bir doktordan bahsetti.,burun,boyun,6799,0,1,-cI
+CO866208,74,4,X-and-Y-lik,iyi sayılır,Burak tatlı için limon ve portakallık bir tabak hazırlamış.,limon,portakal,7956,1,4,-lIk
+CO866208,77,17,X-ci-and-Y-ci,kötü sayılır,Eylül kamp yaparken tepeci ve nehirci bir rehberle doğa yürüyüşüne çıktı.,tepe,nehir,6978,0,3,-cI
+CO866208,80,2,X-and-Y-ci,iyi sayılır,Ömer yeni evine masa ve sandalyeci bir usta getirdi.,masa,sandalye,8577,1,4,-cI
+CO866208,83,10,X-and-Y-ci,kötü sayılır,Ali her hafta kedi ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,7077,1,3,-cI
+CO866208,86,23,X-li-and-Y-li,iyi sayılır,Jale geçen hafta çatallı ve bıçaklı bir masa kurdu.,çatal,bıçak,6749,0,4,-lI
+CO866208,89,16,X-and-Y-li,iyi sayılır,Okan üniversite yıllarında çiftlik ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,10277,1,4,-lI
+CO866208,92,32,X-and-Y-li,iyi sayılır,Aydan restorasyon projesi için taban ve tavanlı bir plan çizdi.,taban,tavan,8768,1,4,-lI
+CO866208,95,14,X-and-Y-siz,iyi sayılır,Elif gençlik yıllarında fare ve aslansız bir oyun sahneledi.,fare,aslan,6670,1,4,-sIz
+CO994419,2,31,X-li-and-Y-li,oldukça iyi,Tülay sonbahar koleksiyonu için gömlekli ve pantolonlu bir kombin hazırladı.,gömlek,pantolon,NA,0,6,-lI
+CO994419,5,30,X-and-Y-siz,kötü sayılır,Asuman dergi yazısı için düğün ve cenazesiz bir program önerdi.,cenaze,düğün,NA,1,3,-sIz
+CO994419,8,13,X-siz-and-Y-siz,iyi sayılır,Emin geçen tatilde şehirsiz ve köysüz bir gezi yaptı.,şehir,köy,NA,0,4,-sIz
+CO994419,11,25,X-ci-and-Y-ci,kötü,İzel toplantı sırasında buruncu ve boyuncu bir doktordan bahsetti.,burun,boyun,NA,0,2,-cI
+CO994419,14,17,X-ci-and-Y-ci,kötü,Eylül kamp yaparken tepeci ve nehirci bir rehberle doğa yürüyüşüne çıktı.,tepe,nehir,NA,0,2,-cI
+CO994419,17,21,X-siz-and-Y-siz,oldukça iyi,Mertcan dün akşam abisiz ve ablasız bir hayat düşündü.,abi,abla,NA,0,6,-sIz
+CO994419,20,20,X-and-Y-lik,kötü sayılır,Fehime düğünden önce büyükanne ve dedelik ilişkisi üzerine bir roman okudu.,büyükanne,dede,NA,1,3,-lIk
+CO994419,23,19,X-lik-and-Y-lik,kötü sayılır,Zühre son yolculukta gecelik ve gündüzlük bir program belirledi.,gece,gündüz,NA,0,3,-lIk
+CO994419,26,1,X-ci-and-Y-ci,iyi,Emel geçen haftasonu çorapçı ve ayakkabıcı bir adamla tanıştı.,çorap,ayakkabı,NA,0,5,-cI
+CO994419,29,3,X-lik-and-Y-lik,kötü,Leyla eski çarşıda atkılık ve şapkalık bir askı beğenmiş.,atkı,şapka,NA,0,2,-lIk
+CO994419,32,29,X-siz-and-Y-siz,oldukça iyi,Melis çocuk kitabı için ejderhasız ve perisiz bir bölüm yazdı.,ejderha,peri,NA,0,6,-sIz
+CO994419,35,15,X-li-and-Y-li,iyi,Deniz misafir beklerken sürahili ve bardaklı bir konsept hazırladı.,sürahi,bardak,NA,0,5,-lI
+CO994419,38,11,X-lik-and-Y-lik,oldukça kötü,Ahmet yabancı bir üniversitede bilimlik ve teknolojilik bir dergi çıkardı.,bilim,teknoloji,NA,0,1,-lIk
+CO994419,41,16,X-and-Y-li,iyi sayılır,Okan üniversite yıllarında çiftlik ve fabrikalı bir işletme kurdu.,çiftlik,fabrika,NA,1,4,-lI
+CO994419,44,12,X-and-Y-lik,kötü,Merve aile mirasıyla ev ve bahçelik bir arsa satın aldı.,ev,bahçe,NA,1,2,-lIk
+CO994419,47,27,X-lik-and-Y-lik,kötü sayılır,Baran araştırması için ormanlık ve çöllük bir alan çizdi.,orman,çöl,NA,0,3,-lIk
+CO994419,50,28,X-and-Y-lik,oldukça kötü,Yasemin mezuniyetinden önce doktor ve avukatlık bir kimlik seçti.,avukat,doktor,NA,1,1,-lIk
+CO994419,53,9,X-ci-and-Y-ci,kötü,Zeynep bu hafta anneci ve babacı bir yeğeniyle ilgilendi.,anne,baba,NA,0,2,-cI
+CO994419,56,14,X-and-Y-siz,kötü sayılır,Elif gençlik yıllarında fare ve aslansız bir oyun sahneledi.,fare,aslan,NA,1,3,-sIz
+CO994419,59,10,X-and-Y-ci,kötü sayılır,Ali her hafta kedi ve köpekçi bir komşusuyla sohbet eder.,kedi,köpek,NA,1,3,-cI
+CO994419,62,5,X-siz-and-Y-siz,oldukça iyi,Ece yılbaşı için tablosuz ve vazosuz bir masa seçti.,tablo,vazo,NA,0,6,-sIz
+CO994419,65,18,X-and-Y-ci,kötü,Nevzat genç bir stajyerken okul ve camici bir mimarın eserlerini inceledi.,okul,cami,NA,1,2,-cI
+CO994419,68,6,X-and-Y-siz,kötü sayılır,Ali diyetteyken muz ve havuçsuz bir kek yapardı.,muz,havuç,NA,1,3,-sIz
+CO994419,71,2,X-and-Y-ci,kötü sayılır,Ömer yeni evine masa ve sandalyeci bir usta getirdi.,masa,sandalye,NA,1,3,-cI
+CO994419,74,8,X-and-Y-li,iyi,Selin tamir için kapı ve pencereli bir atölye tasarlamış.,kapı,pencere,NA,1,5,-lI
+CO994419,77,23,X-li-and-Y-li,kötü,Jale geçen hafta çatallı ve bıçaklı bir masa kurdu.,çatal,bıçak,NA,0,2,-lI
+CO994419,80,7,X-li-and-Y-li,iyi sayılır,Dilek çeyiz alşverişi için battaniyeli ve halılı bir paket seçmiş.,battaniye,halı,NA,0,4,-lI
+CO994419,83,26,X-and-Y-ci,kötü,Sinan gece yarısı hayalet ve canavarcı bir yazarla röportaj yaptı.,hayalet,canavar,NA,1,2,-cI
+CO994419,86,32,X-and-Y-li,iyi,Aydan restorasyon projesi için taban ve tavanlı bir plan çizdi.,taban,tavan,NA,1,5,-lI
+CO994419,89,4,X-and-Y-lik,kötü,Burak tatlı için limon ve portakallık bir tabak hazırlamış.,limon,portakal,NA,1,2,-lIk
+CO994419,92,24,X-and-Y-li,oldukça kötü,Neval ders çalışırken göz ve kulaklı bir robot gördü.,göz,kulak,NA,1,1,-lI
+CO994419,95,22,X-and-Y-siz,kötü,Yankı geçen yaz at ve balıksız bir menü denedi.,at,balık,NA,1,2,-sIz

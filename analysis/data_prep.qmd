@@ -28,7 +28,7 @@ format:
 
 ```{r, warning=FALSE, message=FALSE}
 # packages
-invisible(lapply(c("dplyr", "ggplot2", "tidyr", "readr", "purrr", "stringr", "knitr", "gt"), library, character.only = TRUE))
+invisible(lapply(c("dplyr", "ggplot2", "tidyr", "readr", "purrr", "stringr", "knitr", "dplyr", "gt"), library, character.only = TRUE))
 
 
 # load scripts
@@ -39,14 +39,14 @@ invisible(lapply(list.files("./scripts", "\\.R$", full.names = TRUE), source))
 ## Load the data
 
 - Read in the experimental data
-- First participant is not included since the experiment code changed after the first try.
-- Including the first participant messes up the data structure. One can include that participant later on.
+- First participant is also included now.
 - It is okay to have undefineds and everything given that this is the entire raw results.
 
 ```{r, warning=FALSE, message=FALSE}
-fname <- "./data/freq_sa_may31.csv"
+fname <- "./data/freq_sa_june2.csv"
 df <- get.ibex(fname)
 glimpse(df)
+df_fp <- get.ibex("./data/freq_sa_june2_firstparticipant.csv")
 ```
 
 
@@ -62,6 +62,12 @@ forms <- df %>%
   select(completionCode, PennElementName, Value) %>%
   pivot_wider(names_from = PennElementName, values_from = Value)
 
+forms_fp <- df_fp %>% 
+  filter(Label == "demo" & PennElementType == "TextInput" & Parameter == "Final") %>%
+  select(completionCode, PennElementName, Value) %>%
+  pivot_wider(names_from = PennElementName, values_from = Value)
+
+forms <- bind_rows(forms, forms_fp)
 forms[] <- lapply(forms, function(x) if (is.character(x)) gsub("%2C", ",", x) else x)
 
 
@@ -76,8 +82,8 @@ gt(forms) %>%   opt_interactive(page_size_default = 5)
 - get suffix type
 - get numeric ratings
 - Filter out the experimental data
-  - RT Cutoff: 10 seconds
-  - Filler Accuracy Cutoff: at least 0.8 accuracy
+  - RT Cutoff: 2.5sd above the mean
+  - Filler Accuracy Cutoff: at least 0.7 accuracy
 
 **Some Problems** (do we really need to do this, maybe...)
 
@@ -117,15 +123,41 @@ exp <- df %>%
     ratingRT = as.numeric(ratingRT)
   )
 
-# rt cut off
-rt_cutoff <- 10000 # check how many participants on RT cutoffs, maybe have a bigger one
-# who are the long RT people, other trials from those participants
-rt_exclude <- exp %>%
-  filter(ratingRT > rt_cutoff) %>%
-  mutate(id = paste0(completionCode, "_", itemNum)) %>%
-  .$id
+exp_fp <- df_fp %>%
+  filter(Label == "exp" & PennElementType == "Scale") %>%
+  select(completionCode, trialNum, itemNum, condition, Value, sentence, conj1, conj2) %>%
+  mutate(
+    condition = recode(condition, !!!condition_labels),
+    condition = factor(condition, levels = condition_levels),
+    ratingRT = NA
+  )
+
+
+#Ozge: I remove 2.5sd above the mean, this leads to the removal of 10 data points
+#the max in this case is a bit over 1 min, I think this is good
+hist(exp$ratingRT)
+cutoff.RT <- mean(exp$ratingRT) + 2.5*sd(exp$ratingRT)
+total_rows <- nrow(exp)
+rows_to_remove <- sum(exp$ratingRT > cutoff.RT)
+percent_lost <- (rows_to_remove / total_rows) * 100
+
 exp <- exp %>%
-  filter(!(paste0(completionCode, "_", itemNum) %in% rt_exclude))
+  filter(ratingRT <= cutoff.RT)
+
+hist(exp$ratingRT)
+max(exp$ratingRT) #max is 79k ms, a bit over a min, this seems fine
+
+exp <- bind_rows(exp, exp_fp)
+
+#Utku: stricter rt cut off
+#rt_cutoff <- 10000 # check how many participants on RT cutoffs, maybe have a bigger one
+# who are the long RT people, other trials from those participants
+# rt_exclude <- exp %>%
+#  filter(ratingRT > rt_cutoff) %>%
+#  mutate(id = paste0(completionCode, "_", itemNum)) %>%
+#  .$id
+# exp <- exp %>%
+#  filter(!(paste0(completionCode, "_", itemNum) %in% rt_exclude))
 
 
 # get the suspended affix trials
@@ -139,13 +171,16 @@ ratings <- c("oldukça iyi"="6", "iyi"="5", "iyi sayılır"="4", "kötü sayıl�
 exp <- exp %>% mutate(rating = recode(Value, !!!ratings)) %>% mutate(rating= as.numeric(rating))
 
 # get the suffix type
-exp <- exp %>% 
+# instead of str_detect use if it ends with -ci etc...
+
+exp <- exp %>%
   mutate(suffix = case_when(
-    str_detect(condition, "-ci") ~ "-cI",
-    str_detect(condition, "-lik") ~ "-lIk",
-    str_detect(condition, "-li") ~ "-lI",
-    str_detect(condition, "-siz") ~ "-sIz"
-  )) 
+    str_ends(condition, "-ci") ~ "-cI",
+    str_ends(condition, "-lik") ~ "-lIk",
+    str_ends(condition, "-li") ~ "-lI",
+    str_ends(condition, "-siz") ~ "-sIz",
+    TRUE ~ NA_character_
+  ))
 
 
 # fillers with q
@@ -153,12 +188,19 @@ filler_q <- df %>% filter(Label == "filler" & PennElementType == "Scale" & PennE
   mutate(Value = ifelse(Value== "Hayir", "Hayır", Value), is_correct = Value == correctAnswer) %>%
   select(completionCode, trialNum, itemNum, condition, is_correct, sentence, question, answer_given = Value, correctAnswer)
 
+filler_q_fp <- df_fp %>% 
+  filter(Label == "filler" & PennElementType == "Scale" & PennElementName == "answer" & Parameter == "Choice") %>%
+  mutate(Value = ifelse(Value== "Hayir", "Hayır", Value), is_correct = Value == correctAnswer) %>%
+  select(completionCode, trialNum, itemNum, condition, is_correct, sentence, question, answer_given = Value, correctAnswer)
+
+filler_q <- bind_rows(filler_q, filler_q_fp)
+
 # get by participant means and think of a cutoff for excluding people
-cutoff <- 0.8 # made this 0.7
+cutoff.Acc <- 0.7 # made this 0.7
 exclude <- filler_q %>%
   group_by(completionCode) %>%
   dplyr::summarize(mean_correct = mean(is_correct, na.rm = TRUE)) %>%
-  filter(mean_correct < cutoff) %>%
+  filter(mean_correct < cutoff.Acc) %>%
   .$completionCode
 
 exp <- exp %>%
@@ -168,6 +210,11 @@ exp <- exp %>%
 filler_scale <- df %>% filter(Label == "filler" & PennElementType == "Scale" & PennElementName == "scale") %>%
   select(completionCode, trialNum, itemNum, condition, Value, sentence) %>% filter(!completionCode %in% exclude)
 
+filler_scale_fp <- df_fp %>% filter(Label == "filler" & PennElementType == "Scale" & PennElementName == "scale") %>%
+  select(completionCode, trialNum, itemNum, condition, Value, sentence) %>% filter(!completionCode %in% exclude)
+
+filler_scale <- bind_rows(filler_scale, filler_scale_fp)
+
 filler_scale <- filler_scale %>% mutate(rating = recode(Value, !!!ratings)) %>% mutate(rating= as.numeric(rating))
 
 filler_q <- filler_q %>% filter(!completionCode %in% exclude)
@@ -175,6 +222,9 @@ filler_q <- filler_q %>% filter(!completionCode %in% exclude)
 filler_q <- filler_q %>%
   left_join(filler_scale %>% select(completionCode, itemNum, Value, rating),
             by = c("completionCode", "itemNum"))
+
+#exp participant number
+length(unique(exp$completionCode))
 
 ```
 

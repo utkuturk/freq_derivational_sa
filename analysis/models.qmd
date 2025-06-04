@@ -1,0 +1,564 @@
+---
+title: "Modelling"
+author: Eva, Utku, Özge
+format:
+  html:
+    self-contained: true  # ensures everything is embedded, no extra folders
+    embed-resources: true
+    fig-width: 7
+    fig-height: 4
+    smooth-scroll: true
+    code-copy: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    toc: true             # adds table of contents
+    toc-location: left    # optional: move TOC to left side
+    toc-depth: 3          # optional: control how deep the TOC goes
+    number-sections: true # adds numbering to sections
+    theme: flatly          # or use another Bootstrap theme like journal, flatly, etc.
+    highlight-style: a11y # accessible syntax highlighting
+    # css: styles.css       # optional: your custom CSS if needed
+editor_options: 
+  chunk_output_type: console
+---
+
+
+## Setup: load packages and scripts and data
+
+
+```{r, warning=FALSE, message=FALSE}
+# packages
+invisible(lapply(c("dplyr", "ggplot2", "tidyr", "readr", "purrr", "stringr", "knitr", "brms", "tidybayes", "loo"), library, character.only = TRUE))
+
+
+# load scripts
+invisible(lapply(list.files("./scripts", "\\.R$", full.names = TRUE), source))
+
+# load data
+exp <- read_csv("./data/exp_data.csv") 
+
+freq <- read_csv("../freqs_for_analysis.csv")
+
+exp_joined <- exp %>%
+  rowwise() %>%
+  mutate(matched = list(
+    freq %>% filter(str_detect(item, str_c("\\b", conj1, "\\b"))))
+  ) %>%
+  unnest(matched)
+
+exp_joined <- exp_joined %>%
+  mutate(logCoord = log(Coord + 1))  %>%
+  mutate(logCoord_z = scale(logCoord)[, 1])
+```
+
+
+## Models with Coordination Frequency
+
+```{r}
+exp_joined$is_sa <- as.factor(exp_joined$is_sa)
+exp_joined$rating <- factor(exp_joined$rating, ordered = TRUE)
+exp_joined <- exp_joined %>%
+  group_by(completionCode) %>%
+  mutate(subject = paste0("S", cur_group_id())) %>%
+  ungroup()
+exp_joined$subject <- as.factor(exp_joined$subject)
+exp_joined$itemNum <- as.factor(exp_joined$itemNum)
+exp_joined$suffix <- as.factor(exp_joined$suffix)
+
+contrasts(exp_joined$is_sa) <- -1 * contr.sum(2)/2  # centered contrast for suspension (.5 = Suspended, -.5 = Not Suspended)
+contrasts(exp_joined$suffix) <- contr.sum(4)/2 # deviation coding for suffixes
+my_prior <- c(
+  prior(normal(0, 0.5), class = "b", coef = "is_sa1"),
+  prior(exponential(1), class = "sd", group = "subject"),
+  prior(exponential(1), class = "sd", group = "itemNum"),
+  prior(exponential(1), class = "sd", coef = "is_sa1", group = "subject"),
+  prior(lkj(2), class = "cor"),
+  prior(normal(0, 5), class = "Intercept")
+)
+```
+
+### rating ~ logCoord_z
+
+```{r}
+
+m_coord <-  brm(
+    formula = bf(
+      rating ~ 1 + logCoord_z + 
+        (1 + logCoord_z | subject) + 
+        (1 | itemNum)
+      , decomp = "QR"
+    )
+    , data = exp_joined
+    , family = cumulative(link = "logit")
+    , prior = c(
+        prior(exponential(1), class = "sd", group = "subject"),
+        prior(exponential(1), class = "sd", group = "itemNum"),
+        prior(lkj(2), class = "cor"),
+        prior(normal(0, 5), class = "Intercept")
+      )
+    , chains = 4, iter = 4000, cores = 8
+    , control = list(adapt_delta = 0.9, max_treedepth = 16)
+    , file = "./models/just_coord"
+  )
+
+m_coord %>%
+  spread_draws(`b_Intercept[1]`, `b_Intercept[2]`, `b_Intercept[3]`, `b_Intercept[4]`, `b_Intercept[5]`) %>%
+  pivot_longer(cols = starts_with("b_Intercept"), names_to = "threshold", values_to = "value") %>%
+  mutate(threshold_num = str_extract(threshold, "\\d+") %>% as.integer()) %>%
+  ggplot(aes(x = threshold_num, y = value)) +
+  stat_halfeye(.width = c(.66, .95)) +
+  scale_x_continuous(breaks = 1:5, labels = paste("θ", 1:5)) +
+  labs(
+    x = "Threshold",
+    y = "Latent Rating Location (logit scale)",
+    title = "Posterior Distributions of Ordinal Thresholds"
+  ) +
+  theme_minimal()
+
+posterior_df <- m_coord %>%
+  spread_draws(b_logCoord_z) %>%
+  mutate(term = "b_logCoord_z")  # optional if you want a consistent column for multiple terms
+
+posterior_summary <- posterior_df %>%
+  group_by(term) %>%
+  summarise(
+    p_gt_0 = mean(b_logCoord_z < 0),
+    estimate = mean(b_logCoord_z)
+  )
+
+max_x <- max(posterior_df$b_logCoord_z)
+buffer <- (max_x - min(posterior_df$b_logCoord_z)) * 0.3  # 30% extra space
+
+# Plot with annotation and extended white space
+posterior_df %>%
+  mutate(term = "b_logCoord_z") %>%
+  ggplot(aes(x = b_logCoord_z, y = term)) +
+  stat_halfeye(.width = c(.66, .95)) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_text(
+    data = posterior_summary,
+    aes(
+      x = max_x + buffer * 0.2,
+      y = term,
+      label = paste0("P(β<0) = ", round(p_gt_0, 2))
+    ),
+    hjust = 0
+  ) +
+  labs(
+    x = "Effect (log odds)",
+    y = "Coefficient",
+    title = "Posterior Distribution of b_logCoord_z"
+  ) +
+  theme_minimal() +
+  coord_cartesian(xlim = c(min(posterior_df$b_logCoord_z), max_x + buffer))
+
+```
+
+### rating ~ logCoord_z * is_sa
+
+```{r}
+
+m_coord_sa <-  brm(
+    formula = bf(
+      rating ~ 1 + is_sa * logCoord_z + 
+        (1 + is_sa * logCoord_z | subject) + 
+        (1 + is_sa | itemNum)
+      , decomp = "QR"
+    )
+    , data = exp_joined
+    , family = cumulative(link = "logit")
+    , prior = my_prior
+    , chains = 4, iter = 4000, cores = 8
+    , control = list(adapt_delta = 0.9, max_treedepth = 16)
+    , file = "./models/no_suffix"
+  )
+
+m_coord_sa %>%
+  spread_draws(`b_Intercept[1]`, `b_Intercept[2]`, `b_Intercept[3]`, `b_Intercept[4]`, `b_Intercept[5]`) %>%
+  pivot_longer(cols = starts_with("b_Intercept"), names_to = "threshold", values_to = "value") %>%
+  mutate(threshold_num = str_extract(threshold, "\\d+") %>% as.integer()) %>%
+  ggplot(aes(x = threshold_num, y = value)) +
+  stat_halfeye(.width = c(.66, .95)) +
+  scale_x_continuous(breaks = 1:5, labels = paste("θ", 1:5)) +
+  labs(
+    x = "Threshold",
+    y = "Latent Rating Location (logit scale)",
+    title = "Posterior Distributions of Ordinal Thresholds"
+  ) +
+  theme_minimal()
+
+# Extract fixed effects (excluding intercepts)
+posterior_df <- m_coord_sa %>%
+  spread_draws(b_is_sa1, b_logCoord_z, `b_is_sa1:logCoord_z`) %>%
+  select(-.chain, -.iteration, -.draw) %>%  # <- remove draw metadata
+  pivot_longer(cols = everything(), names_to = "term", values_to = "estimate")
+
+# Compute posterior probabilities
+posterior_summary <- posterior_df %>%
+  group_by(term) %>%
+  summarise(
+    p_gt_0 = mean(estimate > 0),
+    avg_estimate = mean(estimate),
+    .groups = "drop"
+  )
+
+# Join avg_estimate into plotting data
+posterior_df <- left_join(posterior_df, posterior_summary, by = "term")
+
+# Calculate x-axis buffer
+x_range <- range(posterior_df$estimate)
+buffer <- diff(x_range) * 0.3
+max_x <- max(posterior_df$estimate)
+
+# Plot
+ggplot(posterior_df, aes(x = estimate, y = reorder(term, avg_estimate))) +
+  stat_halfeye(.width = c(.66, .95)) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_text(
+    data = posterior_summary,
+    aes(
+      x = max_x + buffer * 0.1,
+      y = term,
+      label = paste0("P(β>0) = ", round(p_gt_0, 2))
+    ),
+    hjust = 0,
+    inherit.aes = FALSE
+  ) +
+  labs(
+    x = "Effect (log odds)",
+    y = "Coefficient",
+    title = "Posterior Distributions of Fixed Effects"
+  ) +
+  theme_minimal() +
+  coord_cartesian(xlim = c(x_range[1], max_x + buffer))
+
+```
+
+### rating ~ logCoord_z * is_sa * suffix
+
+
+```{r}
+m <-  brm(
+    formula = bf(
+      rating ~ 1 + is_sa * suffix * logCoord_z + 
+        (1 + is_sa * suffix * logCoord_z | subject) + 
+        (1 + is_sa * suffix | itemNum)
+      , decomp = "QR"
+    )
+    , data = exp_joined
+    , family = cumulative(link = "logit")
+    , prior = my_prior
+    , chains = 4, iter = 4000, cores = 8
+    , control = list(adapt_delta = 0.9, max_treedepth = 16)
+    , file = "./models/model_deviation_coding"
+  )
+
+
+m %>%
+  spread_draws(`b_Intercept[1]`, `b_Intercept[2]`, `b_Intercept[3]`, `b_Intercept[4]`, `b_Intercept[5]`) %>%
+  pivot_longer(cols = starts_with("b_Intercept"), names_to = "threshold", values_to = "value") %>%
+  mutate(threshold_num = str_extract(threshold, "\\d+") %>% as.integer()) %>%
+  ggplot(aes(x = threshold_num, y = value)) +
+  stat_halfeye(.width = c(.66, .95)) +
+  scale_x_continuous(breaks = 1:5, labels = paste("θ", 1:5)) +
+  labs(
+    x = "Threshold",
+    y = "Latent Rating Location (logit scale)",
+    title = "Posterior Distributions of Ordinal Thresholds"
+  ) +
+  theme_minimal()
+
+posterior_df <- m %>%
+  spread_draws(`b_.*`, regex = TRUE) %>%
+  select(-.chain, -.iteration, -.draw) %>%
+  pivot_longer(cols = everything(), names_to = "term", values_to = "estimate") %>%
+  filter(!grepl("Intercept", term))  # remove cumulative thresholds
+
+# Compute posterior probabilities
+posterior_summary <- posterior_df %>%
+  group_by(term) %>%
+  summarise(
+    p_gt_0 = mean(estimate > 0),
+    avg_estimate = mean(estimate),
+    .groups = "drop"
+  )
+
+# Join estimates to plotting data
+posterior_df <- left_join(posterior_df, posterior_summary, by = "term")
+
+# Calculate x-axis buffer
+x_range <- range(posterior_df$estimate)
+buffer <- diff(x_range) * 0.3
+max_x <- max(posterior_df$estimate)
+
+# Plot
+ggplot(posterior_df, aes(x = estimate, y = reorder(term, avg_estimate))) +
+  stat_halfeye(.width = c(.66, .95)) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_text(
+    data = posterior_summary,
+    aes(
+      x = max_x + buffer * 0.1,
+      y = term,
+      label = paste0("P(β>0) = ", round(p_gt_0, 2))
+    ),
+    hjust = 0,
+    inherit.aes = FALSE
+  ) +
+  labs(
+    x = "Effect (log odds)",
+    y = "Coefficient",
+    title = "Posterior Distributions of Fixed Effects"
+  ) +
+  theme_minimal(base_size = 13) +
+  coord_cartesian(xlim = c(x_range[1], max_x + buffer))
+```
+
+
+## Models with csumPMI Frequency
+
+```{r}
+exp_joined <- exp_joined %>%
+  mutate(log_csumPMI = log1p(csumPMI)) %>% 
+  mutate(log_csumPMI_z = scale(log1p(csumPMI)))
+```
+
+
+### rating ~ log_csumPMI_z
+
+```{r}
+
+m_csum <-  brm(
+    formula = bf(
+      rating ~ 1 + log_csumPMI_z + 
+        (1 + log_csumPMI_z | subject) + 
+        (1 | itemNum)
+      , decomp = "QR"
+    )
+    , data = exp_joined
+    , family = cumulative(link = "logit")
+    , prior = c(
+        prior(exponential(1), class = "sd", group = "subject"),
+        prior(exponential(1), class = "sd", group = "itemNum"),
+        prior(lkj(2), class = "cor"),
+        prior(normal(0, 5), class = "Intercept")
+      )
+    , chains = 4, iter = 4000, cores = 8
+    , control = list(adapt_delta = 0.9, max_treedepth = 16)
+    , file = "./models/just_csum"
+  )
+
+m_csum %>%
+  spread_draws(`b_Intercept[1]`, `b_Intercept[2]`, `b_Intercept[3]`, `b_Intercept[4]`, `b_Intercept[5]`) %>%
+  pivot_longer(cols = starts_with("b_Intercept"), names_to = "threshold", values_to = "value") %>%
+  mutate(threshold_num = str_extract(threshold, "\\d+") %>% as.integer()) %>%
+  ggplot(aes(x = threshold_num, y = value)) +
+  stat_halfeye(.width = c(.66, .95)) +
+  scale_x_continuous(breaks = 1:5, labels = paste("θ", 1:5)) +
+  labs(
+    x = "Threshold",
+    y = "Latent Rating Location (logit scale)",
+    title = "Posterior Distributions of Ordinal Thresholds"
+  ) +
+  theme_minimal()
+
+posterior_df <- m_csum %>%
+  spread_draws(b_log_csumPMI_z) %>%
+  mutate(term = "b_log_csumPMI_z")  # optional if you want a consistent column for multiple terms
+
+posterior_summary <- posterior_df %>%
+  group_by(term) %>%
+  summarise(
+    p_gt_0 = mean(b_log_csumPMI_z > 0),
+    estimate = mean(b_log_csumPMI_z)
+  )
+
+max_x <- max(posterior_df$b_log_csumPMI_z)
+buffer <- (max_x - min(posterior_df$b_log_csumPMI_z)) * 0.3  # 30% extra space
+
+# Plot with annotation and extended white space
+posterior_df %>%
+  mutate(term = "b_log_csumPMI_z") %>%
+  ggplot(aes(x = b_log_csumPMI_z, y = term)) +
+  stat_halfeye(.width = c(.66, .95)) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_text(
+    data = posterior_summary,
+    aes(
+      x = max_x + buffer * 0.2,
+      y = term,
+      label = paste0("P(β>0) = ", round(p_gt_0, 2))
+    ),
+    hjust = 0
+  ) +
+  labs(
+    x = "Effect (log odds)",
+    y = "Coefficient",
+    title = "Posterior Distribution of log_csumPMI_z"
+  ) +
+  theme_minimal() +
+  coord_cartesian(xlim = c(min(posterior_df$b_log_csumPMI_z), max_x + buffer))
+
+```
+
+### rating ~ log_csumPMI_z * is_sa
+
+```{r}
+
+m_csum_sa <-  brm(
+    formula = bf(
+      rating ~ 1 + is_sa * log_csumPMI_z + 
+        (1 + is_sa * log_csumPMI_z | subject) + 
+        (1 + is_sa | itemNum)
+      , decomp = "QR"
+    )
+    , data = exp_joined
+    , family = cumulative(link = "logit")
+    , prior = my_prior
+    , chains = 4, iter = 4000, cores = 8
+    , control = list(adapt_delta = 0.9, max_treedepth = 16)
+    , file = "./models/no_suffix_csum"
+  )
+
+m_csum_sa %>%
+  spread_draws(`b_Intercept[1]`, `b_Intercept[2]`, `b_Intercept[3]`, `b_Intercept[4]`, `b_Intercept[5]`) %>%
+  pivot_longer(cols = starts_with("b_Intercept"), names_to = "threshold", values_to = "value") %>%
+  mutate(threshold_num = str_extract(threshold, "\\d+") %>% as.integer()) %>%
+  ggplot(aes(x = threshold_num, y = value)) +
+  stat_halfeye(.width = c(.66, .95)) +
+  scale_x_continuous(breaks = 1:5, labels = paste("θ", 1:5)) +
+  labs(
+    x = "Threshold",
+    y = "Latent Rating Location (logit scale)",
+    title = "Posterior Distributions of Ordinal Thresholds"
+  ) +
+  theme_minimal()
+
+# Extract fixed effects (excluding intercepts)
+posterior_df <- m_csum_sa %>%
+  spread_draws(b_is_sa1, b_log_csumPMI_z, `b_is_sa1:log_csumPMI_z`) %>%
+  select(-.chain, -.iteration, -.draw) %>%  # <- remove draw metadata
+  pivot_longer(cols = everything(), names_to = "term", values_to = "estimate")
+
+# Compute posterior probabilities
+posterior_summary <- posterior_df %>%
+  group_by(term) %>%
+  summarise(
+    p_gt_0 = mean(estimate > 0),
+    avg_estimate = mean(estimate),
+    .groups = "drop"
+  )
+
+# Join avg_estimate into plotting data
+posterior_df <- left_join(posterior_df, posterior_summary, by = "term")
+
+# Calculate x-axis buffer
+x_range <- range(posterior_df$estimate)
+buffer <- diff(x_range) * 0.3
+max_x <- max(posterior_df$estimate)
+
+# Plot
+ggplot(posterior_df, aes(x = estimate, y = reorder(term, avg_estimate))) +
+  stat_halfeye(.width = c(.66, .95)) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_text(
+    data = posterior_summary,
+    aes(
+      x = max_x + buffer * 0.1,
+      y = term,
+      label = paste0("P(β>0) = ", round(p_gt_0, 2))
+    ),
+    hjust = 0,
+    inherit.aes = FALSE
+  ) +
+  labs(
+    x = "Effect (log odds)",
+    y = "Coefficient",
+    title = "Posterior Distributions of Fixed Effects"
+  ) +
+  theme_minimal() +
+  coord_cartesian(xlim = c(x_range[1], max_x + buffer))
+
+```
+
+### rating ~ logCoord_z * is_sa * suffix
+
+
+```{r}
+m2 <-  brm(
+    formula = bf(
+      rating ~ 1 + is_sa * suffix * log_csumPMI_z + 
+        (1 + is_sa * suffix * log_csumPMI_z | subject) + 
+        (1 + is_sa * suffix | itemNum)
+      , decomp = "QR"
+    )
+    , data = exp_joined
+    , family = cumulative(link = "logit")
+    , prior = my_prior
+    , chains = 4, iter = 4000, cores = 8
+    , control = list(adapt_delta = 0.9, max_treedepth = 16)
+    , file = "./models/model_deviation_coding_csum"
+  )
+
+
+m2 %>%
+  spread_draws(`b_Intercept[1]`, `b_Intercept[2]`, `b_Intercept[3]`, `b_Intercept[4]`, `b_Intercept[5]`) %>%
+  pivot_longer(cols = starts_with("b_Intercept"), names_to = "threshold", values_to = "value") %>%
+  mutate(threshold_num = str_extract(threshold, "\\d+") %>% as.integer()) %>%
+  ggplot(aes(x = threshold_num, y = value)) +
+  stat_halfeye(.width = c(.66, .95)) +
+  scale_x_continuous(breaks = 1:5, labels = paste("θ", 1:5)) +
+  labs(
+    x = "Threshold",
+    y = "Latent Rating Location (logit scale)",
+    title = "Posterior Distributions of Ordinal Thresholds"
+  ) +
+  theme_minimal()
+
+posterior_df <- m2 %>%
+  spread_draws(`b_.*`, regex = TRUE) %>%
+  select(-.chain, -.iteration, -.draw) %>%
+  pivot_longer(cols = everything(), names_to = "term", values_to = "estimate") %>%
+  filter(!grepl("Intercept", term))  # remove cumulative thresholds
+
+# Compute posterior probabilities
+posterior_summary <- posterior_df %>%
+  group_by(term) %>%
+  summarise(
+    p_gt_0 = mean(estimate > 0),
+    avg_estimate = mean(estimate),
+    .groups = "drop"
+  )
+
+# Join estimates to plotting data
+posterior_df <- left_join(posterior_df, posterior_summary, by = "term")
+
+# Calculate x-axis buffer
+x_range <- range(posterior_df$estimate)
+buffer <- diff(x_range) * 0.3
+max_x <- max(posterior_df$estimate)
+
+# Plot
+ggplot(posterior_df, aes(x = estimate, y = reorder(term, avg_estimate))) +
+  stat_halfeye(.width = c(.66, .95)) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_text(
+    data = posterior_summary,
+    aes(
+      x = max_x + buffer * 0.1,
+      y = term,
+      label = paste0("P(β>0) = ", round(p_gt_0, 2))
+    ),
+    hjust = 0,
+    inherit.aes = FALSE
+  ) +
+  labs(
+    x = "Effect (log odds)",
+    y = "Coefficient",
+    title = "Posterior Distributions of Fixed Effects"
+  ) +
+  theme_minimal(base_size = 13) +
+  coord_cartesian(xlim = c(x_range[1], max_x + buffer))
+
+```

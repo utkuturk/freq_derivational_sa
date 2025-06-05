@@ -124,7 +124,7 @@ exp_joined <- exp_joined %>%
 
 # get by item means
 avgs <- exp_joined %>%
-  group_by(itemNum, suffix, is_sa, logCoord_z) %>%
+  group_by(itemNum, suffix, is_sa, logCoord_z, Coord) %>%
   dplyr::summarize(
     item_mean = mean(as.numeric(as.character(rating)), na.rm = TRUE),
     item_se = sd(as.numeric(as.character(rating)), na.rm = TRUE) / sqrt(n()),
@@ -133,24 +133,89 @@ avgs <- exp_joined %>%
   ) %>%
   ungroup()
 
+avgs$suffix <- factor(avgs$suffix, levels = c("-sIz", "-cI", "-lI", "-lIk"))
+avgs <- avgs %>%
+  mutate(
+    is_sa = case_when(
+      is_sa == "Suspended" ~ "with SA",
+      is_sa == "Not Suspended" ~ "without SA"
+    )
+  )
 
-ggplot(avgs %>% filter(is_sa == "Suspended"), aes(x = logCoord_z, y = item_mean)) +
-  geom_point(aes(color = suffix, shape = is_sa), alpha = 0.5) +
-  geom_smooth(method = "lm", se = FALSE, color = "black") +
+ggplot(avgs, aes(x = logCoord_z, y = item_mean, group = is_sa)) +
+  geom_point(aes(shape = is_sa, color = is_sa), alpha = 0.5) +
+  geom_smooth(aes(color = is_sa), method = "lm", se = FALSE, size = 0.5) +
+  scale_color_manual(values = c("with SA" = "#1f78b4", "without SA" = "#ff7f00")) +
   labs(
-    x = "Log Frequency (z-scored)",
-    y = "Rating",
-    color = "Suffix",
-    shape = "Suspension"
+    x = "Frequency (z-scored)",
+    y = "Mean(Rating)",
+    color = ""
   ) +
+  guides(shape = "none") +
   theme_minimal() +
   theme(
+    legend.position = "bottom",
+    axis.text.x = element_text(size = 12),
+    axis.text.y = element_text(size = 12),
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12)
+  ) +
+  facet_wrap(~suffix, ncol = 4)
+
+ggplot(avgs, aes(x = logCoord_z, y = item_mean, group = is_sa)) +
+  geom_point(aes(shape = is_sa, color = is_sa), alpha = 0.5) +
+  geom_smooth(aes(color = is_sa), method = "lm", se = FALSE, size = 0.5) +
+  scale_color_manual(values = c("with SA" = "#1f78b4", "without SA" = "#ff7f00")) +
+  labs(
+    x = "Frequency (z-scored)",
+    y = "Mean(Rating)",
+    color = ""
+  ) +
+  theme_minimal() +
+  guides(shape = "none") +
+  theme(
     legend.position = "right",
-    axis.text.x = element_text(size = 12, face = "bold"),
-    axis.text.y = element_text(size = 12, face = "bold"),
-    axis.title.x = element_text(size = 13, face = "bold"),
-    axis.title.y = element_text(size = 13, face = "bold")
-  )
+    axis.text.x = element_text(size = 12),
+    axis.text.y = element_text(size = 12),
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12),
+    panel.grid.minor = element_blank(),
+    axis.ticks.y = element_line(color = "black", size = 0.5),
+    axis.ticks.x = element_line(color = "black", size = 0.5),
+    panel.border = element_rect(color = "black", size = 0.5, fill = "transparent"), 
+    strip.background = element_rect(color = "black")
+  ) +
+  facet_wrap(~suffix, ncol = 4)
+
+avgs <- avgs %>%
+  mutate(Item_ordered = factor(itemNum, levels = unique(itemNum[order(Coord)])))
+  
+ggplot(avgs, aes(x = Item_ordered, y = item_mean, group = is_sa)) +
+  geom_point(aes(shape = is_sa, color = is_sa), alpha = 0.5,
+    position = position_dodge(width = 0.5)) +
+  geom_errorbar(
+    aes(ymin = item_mean - item_se, ymax = item_mean + item_se, color = is_sa),
+    width = 0.3,  # wider than a tick, still not full bars
+    alpha = 0.5,
+    position = position_dodge(width = 0.5)
+  ) +
+  geom_smooth(aes(color = is_sa), method = "lm", se = FALSE, size = 0.5) +
+  scale_color_manual(values = c("SA" = "#1f78b4", "without SA" = "#ff7f00")) +
+  labs(
+    x = "Binomials order from Low (left) to High frequency",
+    y = "Mean(Rating)",
+    color = ""
+  ) +
+  guides(shape = "none") +
+  theme_minimal() +
+  theme(
+    legend.position = "bottom",
+    axis.text.x = element_blank(),
+    axis.text.y = element_text(size = 12),
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12)
+  ) +
+  facet_wrap(~suffix, ncol = 4)
 ```
 
 ## By subject plots for ratings

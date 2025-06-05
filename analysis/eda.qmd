@@ -105,6 +105,54 @@ ggplot(summary_df, aes(x = suffix, y = mean_rating, group = factor(is_sa),
   theme_minimal()
 ```
 
+## Rating ~ Frequency 
+
+```{r, warning=FALSE, message=FALSE}
+
+freq <- read_csv("../freqs_for_analysis.csv")
+
+exp_joined <- exp %>%
+  rowwise() %>%
+  mutate(matched = list(
+    freq %>% filter(str_detect(item, str_c("\\b", conj1, "\\b"))))
+  ) %>%
+  unnest(matched)
+
+exp_joined <- exp_joined %>%
+  mutate(logCoord = log(Coord + 1))  %>%
+  mutate(logCoord_z = scale(logCoord)[, 1])
+
+# get by item means
+avgs <- exp_joined %>%
+  group_by(itemNum, suffix, is_sa, logCoord_z) %>%
+  dplyr::summarize(
+    item_mean = mean(as.numeric(as.character(rating)), na.rm = TRUE),
+    item_se = sd(as.numeric(as.character(rating)), na.rm = TRUE) / sqrt(n()),
+    item_n = n(),
+    item_ci = 1.96 * item_se
+  ) %>%
+  ungroup()
+
+
+ggplot(avgs %>% filter(is_sa == "Suspended"), aes(x = logCoord_z, y = item_mean)) +
+  geom_point(aes(color = suffix, shape = is_sa), alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE, color = "black") +
+  labs(
+    x = "Log Frequency (z-scored)",
+    y = "Rating",
+    color = "Suffix",
+    shape = "Suspension"
+  ) +
+  theme_minimal() +
+  theme(
+    legend.position = "right",
+    axis.text.x = element_text(size = 12, face = "bold"),
+    axis.text.y = element_text(size = 12, face = "bold"),
+    axis.title.x = element_text(size = 13, face = "bold"),
+    axis.title.y = element_text(size = 13, face = "bold")
+  )
+```
+
 ## By subject plots for ratings
 
 ```{r, warning=FALSE, message=FALSE}

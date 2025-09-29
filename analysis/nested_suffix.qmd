@@ -109,8 +109,8 @@ exp_joined$subject <- as.factor(exp_joined$subject)
 exp_joined$itemNum <- as.factor(exp_joined$itemNum)
 exp_joined$suffix <- as.factor(exp_joined$suffix)
 
-contrasts(exp_joined$is_sa) <-  contr.sum(2)/2  # centered contrast for suspension (.5 = Suspended, -.5 = Not Suspended)
-contrasts(exp_joined$suffix) <- contr.sum(4)/2 # deviation coding for suffixes
+contrasts(exp_joined$is_sa) <-  contr.sum(2)/2
+contrasts(exp_joined$suffix) <- contr.sum(4)/2
 
 my_prior <- c(
   prior(normal(0, 0.5), class = "b", coef = "is_sa1"),
@@ -202,31 +202,23 @@ item_level_posteriors <- function(result,
                                   reorder_by = c("median", "mean")) {
     reorder_by <- match.arg(reorder_by)
 
-    if (!is.list(result) || !"model" %in% names(result)) {
-        stop("`result` must be the list returned by run_suffix_model() (with $model).")
-    }
     fit <- result$model
 
-    # ---- fixed effect draws (b_<coef>) ----
     beff_name <- paste0("b_", coef)
     fixed <- fit %>%
         tidybayes::gather_draws(!!rlang::sym(beff_name)) %>%
         dplyr::rename(b = .value) %>%
         dplyr::select(.chain, .iteration, .draw, b)
 
-    # ---- random effect draws for items on <coef> ----
-    # Use gather_draws so we reliably get `.value`
     re_expr <- rlang::parse_expr(paste0("r_itemNum[itemNum, ", coef, "]"))
     rand <- fit %>%
         tidybayes::gather_draws(!!re_expr) %>%
         dplyr::rename(u = .value) %>%
         dplyr::select(.chain, .iteration, .draw, itemNum, u)
 
-    # ---- combine and compute per-item effect ----
     draws <- dplyr::left_join(rand, fixed, by = c(".chain", ".iteration", ".draw")) %>%
         dplyr::mutate(effect = b + u)
 
-    # optional transform (e.g., plogis)
     effect_col <- "effect"
     xlab <- paste0(coef, " (log-odds)")
     if (!is.null(transform)) {

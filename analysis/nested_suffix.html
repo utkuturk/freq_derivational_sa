@@ -2401,8 +2401,8 @@ vertical-align: -.125em;
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>exp_joined<span class="sc">$</span>itemNum <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(exp_joined<span class="sc">$</span>itemNum)</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>exp_joined<span class="sc">$</span>suffix <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(exp_joined<span class="sc">$</span>suffix)</span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">contrasts</span>(exp_joined<span class="sc">$</span>is_sa) <span class="ot">&lt;-</span>  <span class="fu">contr.sum</span>(<span class="dv">2</span>)<span class="sc">/</span><span class="dv">2</span>  <span class="co"># centered contrast for suspension (.5 = Suspended, -.5 = Not Suspended)</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">contrasts</span>(exp_joined<span class="sc">$</span>suffix) <span class="ot">&lt;-</span> <span class="fu">contr.sum</span>(<span class="dv">4</span>)<span class="sc">/</span><span class="dv">2</span> <span class="co"># deviation coding for suffixes</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">contrasts</span>(exp_joined<span class="sc">$</span>is_sa) <span class="ot">&lt;-</span>  <span class="fu">contr.sum</span>(<span class="dv">2</span>)<span class="sc">/</span><span class="dv">2</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">contrasts</span>(exp_joined<span class="sc">$</span>suffix) <span class="ot">&lt;-</span> <span class="fu">contr.sum</span>(<span class="dv">4</span>)<span class="sc">/</span><span class="dv">2</span></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>my_prior <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">prior</span>(<span class="fu">normal</span>(<span class="dv">0</span>, <span class="fl">0.5</span>), <span class="at">class =</span> <span class="st">&quot;b&quot;</span>, <span class="at">coef =</span> <span class="st">&quot;is_sa1&quot;</span>),</span>
@@ -2493,61 +2493,53 @@ vertical-align: -.125em;
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">reorder_by =</span> <span class="fu">c</span>(<span class="st">&quot;median&quot;</span>, <span class="st">&quot;mean&quot;</span>)) {</span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    reorder_by <span class="ot">&lt;-</span> <span class="fu">match.arg</span>(reorder_by)</span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.list</span>(result) <span class="sc">||</span> <span class="sc">!</span><span class="st">&quot;model&quot;</span> <span class="sc">%in%</span> <span class="fu">names</span>(result)) {</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">stop</span>(<span class="st">&quot;`result` must be the list returned by run_suffix_model() (with $model).&quot;</span>)</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    fit <span class="ot">&lt;-</span> result<span class="sc">$</span>model</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ---- fixed effect draws (b_&lt;coef&gt;) ----</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    beff_name <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;b_&quot;</span>, coef)</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    fixed <span class="ot">&lt;-</span> fit <span class="sc">%&gt;%</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        tidybayes<span class="sc">::</span><span class="fu">gather_draws</span>(<span class="sc">!!</span>rlang<span class="sc">::</span><span class="fu">sym</span>(beff_name)) <span class="sc">%&gt;%</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">b =</span> .value) <span class="sc">%&gt;%</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">select</span>(.chain, .iteration, .draw, b)</span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ---- random effect draws for items on &lt;coef&gt; ----</span></span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Use gather_draws so we reliably get `.value`</span></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    re_expr <span class="ot">&lt;-</span> rlang<span class="sc">::</span><span class="fu">parse_expr</span>(<span class="fu">paste0</span>(<span class="st">&quot;r_itemNum[itemNum, &quot;</span>, coef, <span class="st">&quot;]&quot;</span>))</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    rand <span class="ot">&lt;-</span> fit <span class="sc">%&gt;%</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>        tidybayes<span class="sc">::</span><span class="fu">gather_draws</span>(<span class="sc">!!</span>re_expr) <span class="sc">%&gt;%</span></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">u =</span> .value) <span class="sc">%&gt;%</span></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">select</span>(.chain, .iteration, .draw, itemNum, u)</span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ---- combine and compute per-item effect ----</span></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    draws <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">left_join</span>(rand, fixed, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">&quot;.chain&quot;</span>, <span class="st">&quot;.iteration&quot;</span>, <span class="st">&quot;.draw&quot;</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">effect =</span> b <span class="sc">+</span> u)</span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># optional transform (e.g., plogis)</span></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>    effect_col <span class="ot">&lt;-</span> <span class="st">&quot;effect&quot;</span></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>    xlab <span class="ot">&lt;-</span> <span class="fu">paste0</span>(coef, <span class="st">&quot; (log-odds)&quot;</span>)</span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(transform)) {</span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>        draws <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">mutate</span>(draws, <span class="at">effect_t =</span> <span class="fu">transform</span>(effect))</span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>        effect_col <span class="ot">&lt;-</span> <span class="st">&quot;effect_t&quot;</span></span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>        xlab <span class="ot">&lt;-</span> <span class="fu">paste0</span>(coef, <span class="st">&quot; (transformed)&quot;</span>)</span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>    eff_sym <span class="ot">&lt;-</span> rlang<span class="sc">::</span><span class="fu">sym</span>(effect_col)</span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>    summ <span class="ot">&lt;-</span> draws <span class="sc">%&gt;%</span></span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">group_by</span>(itemNum) <span class="sc">%&gt;%</span></span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>        tidybayes<span class="sc">::</span><span class="fu">median_qi</span>(<span class="sc">!!</span>eff_sym, <span class="at">.width =</span> prob) <span class="sc">%&gt;%</span></span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">estimate =</span> <span class="sc">!!</span>eff_sym) <span class="sc">%&gt;%</span></span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">ungroup</span>()</span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>    plt <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(</span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>        summ,</span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>        ggplot2<span class="sc">::</span><span class="fu">aes</span>(</span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>            <span class="at">y =</span> stats<span class="sc">::</span><span class="fu">reorder</span>(itemNum, estimate),</span>
-<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>            <span class="at">x =</span> estimate, <span class="at">xmin =</span> .lower, <span class="at">xmax =</span> .upper</span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>        )</span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>        ggplot2<span class="sc">::</span><span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>        ggplot2<span class="sc">::</span><span class="fu">geom_errorbarh</span>(<span class="at">height =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
-<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>        ggplot2<span class="sc">::</span><span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="cf">if</span> (<span class="fu">is.null</span>(transform)) <span class="dv">0</span> <span class="cf">else</span> <span class="fl">0.5</span>, <span class="at">linetype =</span> <span class="st">&quot;dashed&quot;</span>) <span class="sc">+</span></span>
-<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>        ggplot2<span class="sc">::</span><span class="fu">labs</span>(<span class="at">x =</span> xlab, <span class="at">y =</span> <span class="st">&quot;Item&quot;</span>, <span class="at">title =</span> <span class="fu">paste0</span>(<span class="st">&quot;Item-level posterior: &quot;</span>, coef)) <span class="sc">+</span></span>
-<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>        ggplot2<span class="sc">::</span><span class="fu">theme_minimal</span>()</span>
-<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list</span>(<span class="at">draws =</span> draws, <span class="at">summary =</span> summ, <span class="at">plot =</span> plt)</span>
-<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    fit <span class="ot">&lt;-</span> result<span class="sc">$</span>model</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    beff_name <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;b_&quot;</span>, coef)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    fixed <span class="ot">&lt;-</span> fit <span class="sc">%&gt;%</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        tidybayes<span class="sc">::</span><span class="fu">gather_draws</span>(<span class="sc">!!</span>rlang<span class="sc">::</span><span class="fu">sym</span>(beff_name)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">b =</span> .value) <span class="sc">%&gt;%</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">select</span>(.chain, .iteration, .draw, b)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    re_expr <span class="ot">&lt;-</span> rlang<span class="sc">::</span><span class="fu">parse_expr</span>(<span class="fu">paste0</span>(<span class="st">&quot;r_itemNum[itemNum, &quot;</span>, coef, <span class="st">&quot;]&quot;</span>))</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    rand <span class="ot">&lt;-</span> fit <span class="sc">%&gt;%</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>        tidybayes<span class="sc">::</span><span class="fu">gather_draws</span>(<span class="sc">!!</span>re_expr) <span class="sc">%&gt;%</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">u =</span> .value) <span class="sc">%&gt;%</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">select</span>(.chain, .iteration, .draw, itemNum, u)</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    draws <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">left_join</span>(rand, fixed, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">&quot;.chain&quot;</span>, <span class="st">&quot;.iteration&quot;</span>, <span class="st">&quot;.draw&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">effect =</span> b <span class="sc">+</span> u)</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    effect_col <span class="ot">&lt;-</span> <span class="st">&quot;effect&quot;</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    xlab <span class="ot">&lt;-</span> <span class="fu">paste0</span>(coef, <span class="st">&quot; (log-odds)&quot;</span>)</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(transform)) {</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>        draws <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">mutate</span>(draws, <span class="at">effect_t =</span> <span class="fu">transform</span>(effect))</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>        effect_col <span class="ot">&lt;-</span> <span class="st">&quot;effect_t&quot;</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>        xlab <span class="ot">&lt;-</span> <span class="fu">paste0</span>(coef, <span class="st">&quot; (transformed)&quot;</span>)</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>    eff_sym <span class="ot">&lt;-</span> rlang<span class="sc">::</span><span class="fu">sym</span>(effect_col)</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>    summ <span class="ot">&lt;-</span> draws <span class="sc">%&gt;%</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">group_by</span>(itemNum) <span class="sc">%&gt;%</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>        tidybayes<span class="sc">::</span><span class="fu">median_qi</span>(<span class="sc">!!</span>eff_sym, <span class="at">.width =</span> prob) <span class="sc">%&gt;%</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">estimate =</span> <span class="sc">!!</span>eff_sym) <span class="sc">%&gt;%</span></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">ungroup</span>()</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>    plt <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>        summ,</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>        ggplot2<span class="sc">::</span><span class="fu">aes</span>(</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>            <span class="at">y =</span> stats<span class="sc">::</span><span class="fu">reorder</span>(itemNum, estimate),</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>            <span class="at">x =</span> estimate, <span class="at">xmin =</span> .lower, <span class="at">xmax =</span> .upper</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>        ggplot2<span class="sc">::</span><span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>        ggplot2<span class="sc">::</span><span class="fu">geom_errorbarh</span>(<span class="at">height =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>        ggplot2<span class="sc">::</span><span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="cf">if</span> (<span class="fu">is.null</span>(transform)) <span class="dv">0</span> <span class="cf">else</span> <span class="fl">0.5</span>, <span class="at">linetype =</span> <span class="st">&quot;dashed&quot;</span>) <span class="sc">+</span></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>        ggplot2<span class="sc">::</span><span class="fu">labs</span>(<span class="at">x =</span> xlab, <span class="at">y =</span> <span class="st">&quot;Item&quot;</span>, <span class="at">title =</span> <span class="fu">paste0</span>(<span class="st">&quot;Item-level posterior: &quot;</span>, coef)) <span class="sc">+</span></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>        ggplot2<span class="sc">::</span><span class="fu">theme_minimal</span>()</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list</span>(<span class="at">draws =</span> draws, <span class="at">summary =</span> summ, <span class="at">plot =</span> plt)</span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 <section id="li" class="level3" data-number="1.1">

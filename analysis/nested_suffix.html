@@ -2672,43 +2672,18 @@ vertical-align: -.125em;
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>lI_items  <span class="ot">&lt;-</span> <span class="fu">item_level_posteriors</span>(result_lI,  <span class="at">coef =</span> <span class="st">&quot;is_sa1&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>lI_items  <span class="ot">&lt;-</span> <span class="fu">item_level_posteriors</span>(result_lI,  <span class="at">coef =</span> <span class="st">&quot;is_sa1&quot;</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>lIk_items <span class="ot">&lt;-</span> <span class="fu">item_level_posteriors</span>(result_lIk, <span class="at">coef =</span> <span class="st">&quot;is_sa1&quot;</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>sIz_items <span class="ot">&lt;-</span> <span class="fu">item_level_posteriors</span>(result_sIz, <span class="at">coef =</span> <span class="st">&quot;is_sa1&quot;</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>cI_items  <span class="ot">&lt;-</span> <span class="fu">item_level_posteriors</span>(result_cI,  <span class="at">coef =</span> <span class="st">&quot;is_sa1&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-stderr">
-<pre><code>Adding missing grouping variables: `.variable`
-Adding missing grouping variables: `is_sa1`, `.variable`</code></pre>
-</div>
-<details class="code-fold">
-<summary>Show the code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>lIk_items <span class="ot">&lt;-</span> <span class="fu">item_level_posteriors</span>(result_lIk, <span class="at">coef =</span> <span class="st">&quot;is_sa1&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-stderr">
-<pre><code>Adding missing grouping variables: `.variable`
-Adding missing grouping variables: `is_sa1`, `.variable`</code></pre>
-</div>
-<details class="code-fold">
-<summary>Show the code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>sIz_items <span class="ot">&lt;-</span> <span class="fu">item_level_posteriors</span>(result_sIz, <span class="at">coef =</span> <span class="st">&quot;is_sa1&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-stderr">
-<pre><code>Adding missing grouping variables: `.variable`
-Adding missing grouping variables: `is_sa1`, `.variable`</code></pre>
-</div>
-<details class="code-fold">
-<summary>Show the code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>cI_items  <span class="ot">&lt;-</span> <span class="fu">item_level_posteriors</span>(result_cI,  <span class="at">coef =</span> <span class="st">&quot;is_sa1&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-stderr">
-<pre><code>Adding missing grouping variables: `.variable`
-Adding missing grouping variables: `is_sa1`, `.variable`</code></pre>
-</div>
 </div>
 <section id="li-items" class="level3" data-number="2.1">
 <h3 data-number="2.1" class="anchored" data-anchor-id="li-items"><span class="header-section-number">2.1</span> LI Items</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>lI_items<span class="sc">$</span>plot</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>lI_items<span class="sc">$</span>plot</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -2724,7 +2699,7 @@ Adding missing grouping variables: `is_sa1`, `.variable`</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>lIk_items<span class="sc">$</span>plot</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>lIk_items<span class="sc">$</span>plot</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -2740,7 +2715,7 @@ Adding missing grouping variables: `is_sa1`, `.variable`</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>sIz_items<span class="sc">$</span>plot</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>sIz_items<span class="sc">$</span>plot</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -2756,7 +2731,7 @@ Adding missing grouping variables: `is_sa1`, `.variable`</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>cI_items<span class="sc">$</span>plot</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>cI_items<span class="sc">$</span>plot</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -2766,7 +2741,6 @@ Adding missing grouping variables: `is_sa1`, `.variable`</code></pre>
 </div>
 </div>
 </div>
-<p>```</p>
 </section>
 </section>
 

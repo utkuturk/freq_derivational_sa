@@ -299,7 +299,7 @@ result_cI$plot
 
 ## Item Level
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 
 lI_items  <- item_level_posteriors(result_lI,  coef = "is_sa1")
 lIk_items <- item_level_posteriors(result_lIk, coef = "is_sa1")
@@ -308,27 +308,25 @@ cI_items  <- item_level_posteriors(result_cI,  coef = "is_sa1")
 ```
 
 
-###  LI Items
+### LI Items
 
 ```{r}
 lI_items$plot
 ```
 
 ### LIK Items
+
 ```{r}
 lIk_items$plot
 ```
+
 ### SIZ Items
 
 ```{r}
 sIz_items$plot
 ```
+
 ### CI Items
 ```{r}
 cI_items$plot
-```
-
-
-
-
 ```

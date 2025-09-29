@@ -19,7 +19,7 @@ format:
     theme: flatly          # or use another Bootstrap theme like journal, flatly, etc.
     highlight-style: a11y # accessible syntax highlighting
     # css: styles.css       # optional: your custom CSS if needed
-editor_options: 
+editor_options:
   chunk_output_type: console
 ---
 
@@ -36,20 +36,42 @@ invisible(lapply(c("dplyr", "ggplot2", "tidyr", "readr", "purrr", "stringr", "kn
 invisible(lapply(list.files("./scripts", "\\.R$", full.names = TRUE), source))
 
 # load data
-exp <- read_csv("./data/exp_data.csv") 
+exp <- read_csv("./data/exp_data.csv")
 
 freq <- read_csv("../freqs_for_analysis.csv")
 
-exp_joined <- exp %>%
-  rowwise() %>%
-  mutate(matched = list(
-    freq %>% filter(str_detect(item, str_c("\\b", conj1, "\\b"))))
+rank_freq <- freq %>%
+    arrange(desc(Coord)) %>%
+    mutate(
+        rank = row_number(),
+        rel_freq = Coord / sum(Coord)
+    )
+
+
+lex <- rank_freq %>%
+  transmute(
+    item,
+    Coord, PMI, cPMI, csumPMI, rank, rel_freq,
+    word = str_split(item, fixed(" ve "))
   ) %>%
-  unnest(matched)
+  unnest_longer(word) %>%
+  mutate(word = str_squish(word))
+
+# Normalize known orthographic variants (expand as needed)
+lex <- lex %>%
+  mutate(word = dplyr::recode(word,
+    "ilim" = "bilim"   # map 'ilim ve teknoloji' to conj1 == 'bilim'
+  ))
+
+# Join by the single-noun conj1 to the member word of the pair
+exp_joined <- exp %>%
+  left_join(lex, by = c("conj1" = "word"))
 
 exp_joined <- exp_joined %>%
-  mutate(logCoord = log(Coord + 1))  %>%
-  mutate(logCoord_z = scale(logCoord)[, 1])
+    mutate(logCoord = log(Coord + 1)) %>%
+    mutate(logCoord_z = scale(logCoord)[, 1]) %>%
+    mutate(log_rank = log(rank), log_rank_z = scale(log_rank)[,1])
+
 ```
 
 
@@ -84,8 +106,8 @@ my_prior <- c(
 
 m_coord <-  brm(
     formula = bf(
-      rating ~ 1 + logCoord_z + 
-        (1 + logCoord_z | subject) + 
+      rating ~ 1 + logCoord_z +
+        (1 + logCoord_z | subject) +
         (1 | itemNum)
       , decomp = "QR"
     )
@@ -161,8 +183,8 @@ posterior_df %>%
 
 m_coord_sa <-  brm(
     formula = bf(
-      rating ~ 1 + is_sa * logCoord_z + 
-        (1 + is_sa * logCoord_z | subject) + 
+      rating ~ 1 + is_sa * logCoord_z +
+        (1 + is_sa * logCoord_z | subject) +
         (1 + is_sa | itemNum)
       , decomp = "QR"
     )
@@ -241,8 +263,8 @@ ggplot(posterior_df, aes(x = estimate, y = reorder(term, avg_estimate))) +
 ```{r}
 m <-  brm(
     formula = bf(
-      rating ~ 1 + is_sa * suffix * logCoord_z + 
-        (1 + is_sa * suffix * logCoord_z | subject) + 
+      rating ~ 1 + is_sa * suffix * logCoord_z +
+        (1 + is_sa * suffix * logCoord_z | subject) +
         (1 + is_sa * suffix | itemNum)
       , decomp = "QR"
     )
@@ -320,7 +342,7 @@ ggplot(posterior_df, aes(x = estimate, y = reorder(term, avg_estimate))) +
 
 ```{r}
 exp_joined <- exp_joined %>%
-  mutate(log_csumPMI = log1p(csumPMI)) %>% 
+  mutate(log_csumPMI = log1p(csumPMI)) %>%
   mutate(log_csumPMI_z = scale(log1p(csumPMI)))
 ```
 
@@ -331,8 +353,8 @@ exp_joined <- exp_joined %>%
 
 m_csum <-  brm(
     formula = bf(
-      rating ~ 1 + log_csumPMI_z + 
-        (1 + log_csumPMI_z | subject) + 
+      rating ~ 1 + log_csumPMI_z +
+        (1 + log_csumPMI_z | subject) +
         (1 | itemNum)
       , decomp = "QR"
     )
@@ -408,8 +430,8 @@ posterior_df %>%
 
 m_csum_sa <-  brm(
     formula = bf(
-      rating ~ 1 + is_sa * log_csumPMI_z + 
-        (1 + is_sa * log_csumPMI_z | subject) + 
+      rating ~ 1 + is_sa * log_csumPMI_z +
+        (1 + is_sa * log_csumPMI_z | subject) +
         (1 + is_sa | itemNum)
       , decomp = "QR"
     )
@@ -488,8 +510,8 @@ ggplot(posterior_df, aes(x = estimate, y = reorder(term, avg_estimate))) +
 ```{r}
 m2 <-  brm(
     formula = bf(
-      rating ~ 1 + is_sa * suffix * log_csumPMI_z + 
-        (1 + is_sa * suffix * log_csumPMI_z | subject) + 
+      rating ~ 1 + is_sa * suffix * log_csumPMI_z +
+        (1 + is_sa * suffix * log_csumPMI_z | subject) +
         (1 + is_sa * suffix | itemNum)
       , decomp = "QR"
     )

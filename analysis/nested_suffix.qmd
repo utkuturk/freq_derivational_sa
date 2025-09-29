@@ -19,13 +19,43 @@ format:
     theme: flatly          # or use another Bootstrap theme like journal, flatly, etc.
     highlight-style: a11y # accessible syntax highlighting
     # css: styles.css       # optional: your custom CSS if needed
-editor_options: 
+editor_options:
   chunk_output_type: console
 ---
 
 
 ## Setup: load packages and scripts and data
 
+
+- Calculated the rank frequency by ordering the items based on their Coordination frequency in descending order.
+
+- Used centered contrasts for the suspended affixation factor to code the two levels as +0.5 for NotSuspended and -0.5 for Suspended, given that we expected increased effect with NotSuspended.
+- Applied deviation (sum-to-zero) coding for the suffix factor to ensure that the coefficients represent deviations from the overall mean rather than comparisons to a reference category
+
+| Suffix |  C1  |  C2  |  C3  |
+|--------|------|------|------|
+| -cI    | 0.5  | 0.0  | 0.0  |
+| -lI    | 0.0  | 0.5  | 0.0  |
+| -lIk   | 0.0  | 0.0  | 0.5  |
+| -sIz   | -0.5 | -0.5 | -0.5 |
+
+
+
+- Specified weakly informative priors for fixed effects and group-level parameters to introduce mild regularization
+
+
+| Parameter Type    | Prior Distribution | Notes                                                                       |
+| ----------------- | ------------------ | --------------------------------------------------------------------------- |
+| Fixed effects (b) | Normal(0, 0.5)     | Shrinks slopes towards 0; weakly informative for all fixed effects.         |
+| Subject SD        | Exponential(1)     | Prior on subject-level variability; favors smaller variance but flexible.   |
+| Item SD           | Exponential(1)     | Prior on item-level variability; same reasoning as for subjects.            |
+| Correlations      | LKJ(2)             | Slight preference for weaker correlations; standard in hierarchical models. |
+| Intercept         | Normal(0, 5)       | Weakly informative prior on thresholds/intercepts, allows broad range.      |
+
+
+
+- Employed a cumulative logit model suitable for ordinal response data to appropriately model the ordered nature of the rating variable
+- Included maximal random effects structure with random intercepts and slopes for subjects and items to account for individual variability and item-specific effects
 
 ```{r, warning=FALSE, message=FALSE}
 # packages
@@ -36,25 +66,37 @@ invisible(lapply(c("dplyr", "ggplot2", "tidyr", "readr", "purrr", "stringr", "kn
 invisible(lapply(list.files("./scripts", "\\.R$", full.names = TRUE), source))
 
 # load data
-exp <- read_csv("./data/exp_data.csv") 
+exp <- read_csv("./data/exp_data.csv")
 
 freq <- read_csv("../freqs_for_analysis.csv")
 
-exp_joined <- exp %>%
-  rowwise() %>%
-  mutate(matched = list(
-    freq %>% filter(str_detect(item, str_c("\\b", conj1, "\\b"))))
-  ) %>%
-  unnest(matched)
+rank_freq <- freq %>%
+    arrange(desc(Coord)) %>%
+    mutate(
+        rank = row_number(),
+        rel_freq = Coord / sum(Coord)
+    )
+
+
+lex <- rank_freq %>%
+    transmute(
+        item,
+        Coord, PMI, cPMI, csumPMI, rank, rel_freq,
+        word = str_split(item, fixed(" ve "))
+    ) %>%
+    unnest_longer(word) %>%
+    mutate(word = str_squish(word))
+
+lex <- lex %>% mutate(word = dplyr::recode(word, "ilim" = "bilim"))
+
+exp_joined <- exp %>% left_join(lex, by = c("conj1" = "word"))
 
 exp_joined <- exp_joined %>%
-  mutate(logCoord = log(Coord + 1))  %>%
-  mutate(logCoord_z = scale(logCoord)[, 1])
+    mutate(logCoord = log(Coord + 1)) %>%
+    mutate(logCoord_z = scale(logCoord)[, 1]) %>%
+    mutate(log_rank = log(rank), log_rank_z = scale(log_rank)[, 1])
 ```
 
-
-
-## Models with Coordination Frequency
 
 ```{r}
 exp_joined$is_sa <- as.factor(exp_joined$is_sa)
@@ -67,7 +109,7 @@ exp_joined$subject <- as.factor(exp_joined$subject)
 exp_joined$itemNum <- as.factor(exp_joined$itemNum)
 exp_joined$suffix <- as.factor(exp_joined$suffix)
 
-contrasts(exp_joined$is_sa) <- -1 * contr.sum(2)/2  # centered contrast for suspension (.5 = Suspended, -.5 = Not Suspended)
+contrasts(exp_joined$is_sa) <-  contr.sum(2)/2  # centered contrast for suspension (.5 = Suspended, -.5 = Not Suspended)
 contrasts(exp_joined$suffix) <- contr.sum(4)/2 # deviation coding for suffixes
 
 my_prior <- c(
@@ -85,9 +127,9 @@ my_prior <- c(
 
 run_suffix_model <- function(suffix_level, data, prior, model_path_prefix = "./models/", freq_var = "logCoord_z") {
   # Create formula dynamically
-  formula_str <- paste0("rating ~ 1 + is_sa * ", freq_var, 
+  formula_str <- paste0("rating ~ 1 + is_sa * ", freq_var,
                         " + (1 + is_sa * ", freq_var, " | subject) + (1 + is_sa | itemNum)")
-  
+
   # Fit the model
   fit <- brm(
     formula = bf(as.formula(formula_str), decomp = "QR"),
@@ -150,37 +192,97 @@ run_suffix_model <- function(suffix_level, data, prior, model_path_prefix = "./m
 
 ```
 
-### -lI
 
-- No main effect of suspension
-- Coordination frequency overall reduces ratings
-- Negative Interaction: higher coordination frequency leads to lower ratings for suspended suffixes
 
 ```{r}
-result_lI <- run_suffix_model("-lI", exp_joined, my_prior)
+item_level_posteriors <- function(result,
+                                  coef = "is_sa1",
+                                  prob = c(.66, .95),
+                                  transform = NULL,
+                                  reorder_by = c("median", "mean")) {
+    reorder_by <- match.arg(reorder_by)
+
+    if (!is.list(result) || !"model" %in% names(result)) {
+        stop("`result` must be the list returned by run_suffix_model() (with $model).")
+    }
+    fit <- result$model
+
+    # ---- fixed effect draws (b_<coef>) ----
+    beff_name <- paste0("b_", coef)
+    fixed <- fit %>%
+        tidybayes::gather_draws(!!rlang::sym(beff_name)) %>%
+        dplyr::rename(b = .value) %>%
+        dplyr::select(.chain, .iteration, .draw, b)
+
+    # ---- random effect draws for items on <coef> ----
+    # Use gather_draws so we reliably get `.value`
+    re_expr <- rlang::parse_expr(paste0("r_itemNum[itemNum, ", coef, "]"))
+    rand <- fit %>%
+        tidybayes::gather_draws(!!re_expr) %>%
+        dplyr::rename(u = .value) %>%
+        dplyr::select(.chain, .iteration, .draw, itemNum, u)
+
+    # ---- combine and compute per-item effect ----
+    draws <- dplyr::left_join(rand, fixed, by = c(".chain", ".iteration", ".draw")) %>%
+        dplyr::mutate(effect = b + u)
+
+    # optional transform (e.g., plogis)
+    effect_col <- "effect"
+    xlab <- paste0(coef, " (log-odds)")
+    if (!is.null(transform)) {
+        draws <- dplyr::mutate(draws, effect_t = transform(effect))
+        effect_col <- "effect_t"
+        xlab <- paste0(coef, " (transformed)")
+    }
+
+    eff_sym <- rlang::sym(effect_col)
+    summ <- draws %>%
+        dplyr::group_by(itemNum) %>%
+        tidybayes::median_qi(!!eff_sym, .width = prob) %>%
+        dplyr::rename(estimate = !!eff_sym) %>%
+        dplyr::ungroup()
+
+    plt <- ggplot2::ggplot(
+        summ,
+        ggplot2::aes(
+            y = stats::reorder(itemNum, estimate),
+            x = estimate, xmin = .lower, xmax = .upper
+        )
+    ) +
+        ggplot2::geom_point() +
+        ggplot2::geom_errorbarh(height = 0) +
+        ggplot2::geom_vline(xintercept = if (is.null(transform)) 0 else 0.5, linetype = "dashed") +
+        ggplot2::labs(x = xlab, y = "Item", title = paste0("Item-level posterior: ", coef)) +
+        ggplot2::theme_minimal()
+
+    list(draws = draws, summary = summ, plot = plt)
+}
+```
+
+
+### -lI
+
+```{r}
+result_lI <- run_suffix_model("-lI", exp_joined, my_prior, freq_var = "log_rank_z")
 result_lI$summary
 result_lI$plot
 ```
 
+
 ### -lIk
 
-- No main effect of frequency
-- Almost no main effect of suspension
-- No interaction
 
 ```{r}
-result_lIk <- run_suffix_model("-lIk", exp_joined, my_prior)
+result_lIk <- run_suffix_model("-lIk", exp_joined, my_prior, freq_var = "log_rank_z")
 result_lIk$summary
 result_lIk$plot
 ```
 
 ### -sIz
 
-- No main effect of frequency
-- Suspension reduces overall ratings
-- Positive interaction between suspension and frequency: higher coordination frequency leads to higher ratings for suspended suffixes
+
 ```{r}
-result_sIz <- run_suffix_model("-sIz", exp_joined, my_prior)
+result_sIz <- run_suffix_model("-sIz", exp_joined, my_prior, freq_var = "log_rank_z")
 result_sIz$summary
 result_sIz$plot
 ```
@@ -188,67 +290,27 @@ result_sIz$plot
 ### -cI
 
 
-- Frequency overall increases ratings
-- Suspension overall reduces ratings
-- Positive interaction between suspension and frequency: higher coordination frequency leads to higher ratings for suspended suffixes
-
 ```{r}
-result_cI <- run_suffix_model("-cI", exp_joined, my_prior)
+result_cI <- run_suffix_model("-cI", exp_joined, my_prior, freq_var = "log_rank_z")
 result_cI$summary
 result_cI$plot
 ```
 
 
-## Models with csumPMI Frequency
+## Item Level
 
 ```{r}
-exp_joined <- exp_joined %>%
-  mutate(log_csumPMI = log1p(csumPMI)) %>% 
-  mutate(log_csumPMI_z = scale(log1p(csumPMI)))
+
+lI_items  <- item_level_posteriors(result_lI,  coef = "is_sa1")
+lIk_items <- item_level_posteriors(result_lIk, coef = "is_sa1")
+sIz_items <- item_level_posteriors(result_sIz, coef = "is_sa1")
+cI_items  <- item_level_posteriors(result_cI,  coef = "is_sa1")
+
+
+
+# Plot them
+lI_items$plot
+lIk_items$plot
+sIz_items$plot
+cI_items$plot
 ```
-
-
-### -lI
- 
-- No effect
-
-```{r}
-result_lI <- run_suffix_model("-lI", exp_joined, my_prior, freq_var = "log_csumPMI_z")
-result_lI$summary
-result_lI$plot
-```
-
-### -lIk
-
-- No effect
-
-```{r}
-result_lIk <- run_suffix_model("-lIk", exp_joined, my_prior,freq_var = "log_csumPMI_z")
-result_lIk$summary
-result_lIk$plot
-```
-
-### -sIz
-
-- Main negative effect of suspended affixation
-- Main positive effect of frequency
-- No interaction
-
-```{r}
-result_sIz <- run_suffix_model("-sIz", exp_joined, my_prior,freq_var = "log_csumPMI_z")
-result_sIz$summary
-result_sIz$plot
-```
-
-### -cI
-
-- Main positive effect of frequency
-- Main negative effect of suspended affixation
-- Maybe a positive interaction? But very unlikely.
-
-```{r}
-result_cI <- run_suffix_model("-cI", exp_joined, my_prior,freq_var = "log_csumPMI_z")
-result_cI$summary
-result_cI$plot
-```
-

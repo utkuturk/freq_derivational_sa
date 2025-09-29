@@ -1,0 +1,392 @@
+---
+title: "Item-wise with Ranking"
+author: Eva, Utku, Özge
+format:
+  html:
+    self-contained: true  # ensures everything is embedded, no extra folders
+    embed-resources: true
+    fig-width: 7
+    fig-height: 4
+    smooth-scroll: true
+    code-copy: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    toc: true             # adds table of contents
+    toc-location: left    # optional: move TOC to left side
+    toc-depth: 3          # optional: control how deep the TOC goes
+    number-sections: true # adds numbering to sections
+    theme: flatly          # or use another Bootstrap theme like journal, flatly, etc.
+    highlight-style: a11y # accessible syntax highlighting
+    # css: styles.css       # optional: your custom CSS if needed
+editor_options:
+  chunk_output_type: console
+---
+
+
+## Setup: load packages and scripts and data
+
+
+```{r, warning=FALSE, message=FALSE}
+# packages
+invisible(lapply(c("dplyr", "ggplot2", "tidyr", "readr", "purrr", "stringr", "knitr", "brms", "tidybayes", "loo"), library, character.only = TRUE))
+
+
+# load scripts
+invisible(lapply(list.files("./scripts", "\\.R$", full.names = TRUE), source))
+
+# load data
+exp <- read_csv("./data/exp_data.csv")
+
+freq <- read_csv("../freqs_for_analysis.csv")
+
+rank_freq <- freq %>%
+    arrange(desc(Coord)) %>%
+    mutate(
+        rank = row_number(),
+        rel_freq = Coord / sum(Coord)
+    )
+
+
+lex <- rank_freq %>%
+  transmute(
+    item,
+    Coord, PMI, cPMI, csumPMI, rank, rel_freq,
+    word = str_split(item, fixed(" ve "))
+  ) %>%
+  unnest_longer(word) %>%
+  mutate(word = str_squish(word))
+
+lex <- lex %>% mutate(word = dplyr::recode(word,"ilim" = "bilim"))
+
+exp_joined <- exp %>% left_join(lex, by = c("conj1" = "word"))
+
+exp_joined <- exp_joined %>%
+    mutate(logCoord = log(Coord + 1)) %>%
+    mutate(logCoord_z = scale(logCoord)[, 1]) %>%
+    mutate(log_rank = log(rank), log_rank_z = scale(log_rank)[,1])
+
+```
+
+
+- Calculated the rank frequency by ordering the items based on their Coordination frequency in descending order.
+
+# Model with Rank Frequency
+
+- Used centered contrasts for the suspended affixation factor to code the two levels as +0.5 for NotSuspended and -0.5 for Suspended, given that we expected increased effect with NotSuspended.
+- Applied deviation (sum-to-zero) coding for the suffix factor to ensure that the coefficients represent deviations from the overall mean rather than comparisons to a reference category
+
+| Suffix |  C1  |  C2  |  C3  |
+|--------|------|------|------|
+| -cI    | 0.5  | 0.0  | 0.0  |
+| -lI    | 0.0  | 0.5  | 0.0  |
+| -lIk   | 0.0  | 0.0  | 0.5  |
+| -sIz   | -0.5 | -0.5 | -0.5 |
+
+```{r contrasts-prep, warning=FALSE, message=FALSE}
+exp_joined$is_sa <- as.factor(exp_joined$is_sa)
+exp_joined$rating <- factor(exp_joined$rating, ordered = TRUE)
+exp_joined <- exp_joined %>%
+    group_by(completionCode) %>%
+    mutate(subject = paste0("S", cur_group_id())) %>%
+    ungroup()
+exp_joined$subject <- as.factor(exp_joined$subject)
+exp_joined$itemNum <- as.factor(exp_joined$itemNum)
+exp_joined$suffix <- as.factor(exp_joined$suffix)
+
+contrasts(exp_joined$is_sa) <- contr.sum(2) / 2 # centered contrast for suspension (.5 = Suspended, -.5 = Not Suspended)
+contrasts(exp_joined$suffix) <- contr.sum(4) / 2 # deviation coding for suffixes
+```
+
+
+- Specified weakly informative priors for fixed effects and group-level parameters to introduce mild regularization
+
+
+| Parameter Type    | Prior Distribution | Notes                                                                       |
+| ----------------- | ------------------ | --------------------------------------------------------------------------- |
+| Fixed effects (b) | Normal(0, 0.5)     | Shrinks slopes towards 0; weakly informative for all fixed effects.         |
+| Subject SD        | Exponential(1)     | Prior on subject-level variability; favors smaller variance but flexible.   |
+| Item SD           | Exponential(1)     | Prior on item-level variability; same reasoning as for subjects.            |
+| Correlations      | LKJ(2)             | Slight preference for weaker correlations; standard in hierarchical models. |
+| Intercept         | Normal(0, 5)       | Weakly informative prior on thresholds/intercepts, allows broad range.      |
+
+```{r priors, warning=FALSE, message=FALSE}
+my_prior <- c(
+    prior(normal(0, 0.5), class = "b"), # slope priors for all fixed effects
+    prior(exponential(1), class = "sd", group = "subject"),
+    prior(exponential(1), class = "sd", group = "itemNum"),
+    prior(lkj(2), class = "cor"),
+    prior(normal(0, 5), class = "Intercept")
+)
+```
+
+- Employed a cumulative logit model suitable for ordinal response data to appropriately model the ordered nature of the rating variable
+- Included maximal random effects structure with random intercepts and slopes for subjects and items to account for individual variability and item-specific effects
+
+```{r model, warning=FALSE, message=FALSE}
+
+m <- brm(
+  rating ~ 1 + is_sa * suffix * log_rank_z +
+    (1 + is_sa * suffix * log_rank_z | subject) +
+    (1 + is_sa * suffix | itemNum),
+  data = exp_joined,
+  family = cumulative("logit"),
+  prior = my_prior,
+  chains = 4, iter = 4000, cores = 4
+#   ,
+#   control = list(adapt_delta = 0.95, max_treedepth = 15)
+)
+```
+
+
+
+
+# Posteriors
+
+- Posterior Check
+
+```{r}
+# basic PPC: overlay predicted vs. observed distributions
+pp_check(m, ndraws = 100)
+
+# histograms/densities
+pp_check(m, type = "bars", ndraws = 100)
+
+
+# ordinal-specific: binned probability plots
+pp_check(m, type = "bars_grouped", group = "is_sa")
+
+```
+
+- Estimates
+
+- Threshold posterior distributions
+
+```{r threshold-posteriors, warning=FALSE, message=FALSE}
+library(tidybayes)
+library(stringr)
+library(dplyr)
+library(ggplot2)
+
+fixed_df <- m %>%
+    gather_draws(`b_.*`, regex = TRUE) %>%
+    filter(!str_detect(.variable, "Intercept\\[")) %>% # drop ordinal cutpoints
+    mutate(term = .variable)
+
+fixed_df %>%
+    ggplot(aes(x = .value, y = reorder(term, .value))) +
+    stat_halfeye(.width = c(.66, .95)) +
+    geom_vline(xintercept = 0, linetype = "dashed") +
+    labs(x = "Effect (log-odds)", y = NULL, title = "Fixed-effects posteriors (all betas)") +
+    theme_minimal()
+```
+
+- Posterior of `log_rank_z` effect
+
+```{r logrank-posteriors, warning=FALSE, message=FALSE}
+posterior_df <- m %>%
+  spread_draws(b_log_rank_z) %>%
+  mutate(term = "b_log_rank_z")
+
+posterior_summary <- posterior_df %>%
+  group_by(term) %>%
+  summarise(
+    p_lt_0 = mean(b_log_rank_z < 0),
+    estimate = mean(b_log_rank_z)
+  )
+
+max_x <- max(posterior_df$b_log_rank_z)
+buffer <- (max_x - min(posterior_df$b_log_rank_z)) * 0.3
+
+posterior_df %>%
+  ggplot(aes(x = b_log_rank_z, y = term)) +
+  stat_halfeye(.width = c(.66, .95)) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_text(
+    data = posterior_summary,
+    aes(
+      x = max_x + buffer * 0.2,
+      y = term,
+      label = paste0("P(β<0) = ", round(p_lt_0, 2))
+    ),
+    hjust = 0
+  ) +
+  labs(
+    x = "Effect (log odds)",
+    y = "Coefficient",
+    title = "Posterior Distribution of b_log_rank_z"
+  ) +
+  theme_minimal() +
+  coord_cartesian(xlim = c(min(posterior_df$b_log_rank_z), max_x + buffer))
+```
+
+
+```{r}
+
+
+```
+
+- Individual Item Estimates
+
+```{r}
+
+# Item × is_sa/suffix contrasts (inspect names first)
+m %>%
+    gather_draws(r_itemNum[itemNum, term]) %>%
+    distinct(term) %>%
+    arrange(term)
+
+item_slopes <- m %>%
+    gather_draws(r_itemNum[itemNum, term]) %>%
+    filter(term %in% c("is_sa1", "suffix1", "suffix2", "suffix3"))
+
+item_slopes %>%
+    group_by(itemNum, term) %>%
+    median_qi(.value, .width = c(.66, .95)) %>%
+    ggplot(aes(y = reorder(itemNum, .value), x = .value, xmin = .lower, xmax = .upper)) +
+    geom_point() +
+    geom_errorbarh(height = 0) +
+    geom_vline(xintercept = 0, linetype = "dashed") +
+    facet_wrap(~term, scales = "free_x") +
+    labs(
+        x = "Item-specific slope", y = "Item",
+        title = "Random slopes: items × is_sa / suffix contrasts"
+    ) +
+    theme_minimal()
+```
+
+
+
+
+# LOG CORD Z
+
+
+```{r model, warning=FALSE, message=FALSE}
+m2 <- brm(
+    rating ~ 1 + is_sa * suffix * logCoord_z +
+        (1 + is_sa * suffix * logCoord_z | subject) +
+        (1 + is_sa * suffix | itemNum),
+    data = exp_joined,
+    family = cumulative("logit"),
+    prior = my_prior,
+    chains = 4, iter = 4000, cores = 4
+    # ,
+    # control = list(adapt_delta = 0.95, max_treedepth = 15)
+)
+```
+
+
+
+
+# Posteriors
+
+- Posterior Check
+
+```{r}
+# basic PPC: overlay predicted vs. observed distributions
+pp_check(m, ndraws = 100)
+
+# histograms/densities
+pp_check(m, type = "bars", ndraws = 100)
+
+
+# ordinal-specific: binned probability plots
+pp_check(m, type = "bars_grouped", group = "is_sa")
+
+```
+
+- Estimates
+
+- Threshold posterior distributions
+
+```{r threshold-posteriors, warning=FALSE, message=FALSE}
+library(tidybayes)
+library(stringr)
+library(dplyr)
+library(ggplot2)
+
+fixed_df <- m %>%
+    gather_draws(`b_.*`, regex = TRUE) %>%
+    filter(!str_detect(.variable, "Intercept\\[")) %>% # drop ordinal cutpoints
+    mutate(term = .variable)
+
+fixed_df %>%
+    ggplot(aes(x = .value, y = reorder(term, .value))) +
+    stat_halfeye(.width = c(.66, .95)) +
+    geom_vline(xintercept = 0, linetype = "dashed") +
+    labs(x = "Effect (log-odds)", y = NULL, title = "Fixed-effects posteriors (all betas)") +
+    theme_minimal()
+```
+
+- Posterior of `log_rank_z` effect
+
+```{r logrank-posteriors, warning=FALSE, message=FALSE}
+posterior_df <- m %>%
+  spread_draws(b_log_rank_z) %>%
+  mutate(term = "b_log_rank_z")
+
+posterior_summary <- posterior_df %>%
+  group_by(term) %>%
+  summarise(
+    p_lt_0 = mean(b_log_rank_z < 0),
+    estimate = mean(b_log_rank_z)
+  )
+
+max_x <- max(posterior_df$b_log_rank_z)
+buffer <- (max_x - min(posterior_df$b_log_rank_z)) * 0.3
+
+posterior_df %>%
+  ggplot(aes(x = b_log_rank_z, y = term)) +
+  stat_halfeye(.width = c(.66, .95)) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_text(
+    data = posterior_summary,
+    aes(
+      x = max_x + buffer * 0.2,
+      y = term,
+      label = paste0("P(β<0) = ", round(p_lt_0, 2))
+    ),
+    hjust = 0
+  ) +
+  labs(
+    x = "Effect (log odds)",
+    y = "Coefficient",
+    title = "Posterior Distribution of b_log_rank_z"
+  ) +
+  theme_minimal() +
+  coord_cartesian(xlim = c(min(posterior_df$b_log_rank_z), max_x + buffer))
+```
+
+
+```{r}
+
+
+```
+
+- Individual Item Estimates
+
+```{r}
+# Item × is_sa/suffix contrasts (inspect names first)
+m %>%
+    gather_draws(r_itemNum[itemNum, term]) %>%
+    distinct(term) %>%
+    arrange(term)
+
+item_slopes <- m %>%
+    gather_draws(r_itemNum[itemNum, term]) %>%
+    filter(term %in% c("is_sa1", "suffix1", "suffix2", "suffix3"))
+
+item_slopes %>%
+    group_by(itemNum, term) %>%
+    median_qi(.value, .width = c(.66, .95)) %>%
+    ggplot(aes(y = reorder(itemNum, .value), x = .value, xmin = .lower, xmax = .upper)) +
+    geom_point() +
+    geom_errorbarh(height = 0) +
+    geom_vline(xintercept = 0, linetype = "dashed") +
+    facet_wrap(~term, scales = "free_x") +
+    labs(
+        x = "Item-specific slope", y = "Item",
+        title = "Random slopes: items × is_sa / suffix contrasts"
+    ) +
+    theme_minimal()
+```

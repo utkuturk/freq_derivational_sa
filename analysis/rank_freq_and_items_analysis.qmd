@@ -1,0 +1,549 @@
+---
+title: "Rank Frequency and Item-wise Analysis"
+author: Eva, Utku, Özge
+format:
+  html:
+    self-contained: true  # ensures everything is embedded, no extra folders
+    embed-resources: true
+    fig-width: 7
+    fig-height: 6
+    smooth-scroll: true
+    code-copy: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    toc: true             # adds table of contents
+    toc-location: left    # optional: move TOC to left side
+    toc-depth: 3          # optional: control how deep the TOC goes
+    number-sections: true # adds numbering to sections
+    theme: flatly          # or use another Bootstrap theme like journal, flatly, etc.
+    highlight-style: a11y # accessible syntax highlighting
+    # css: styles.css       # optional: your custom CSS if needed
+editor_options:
+  chunk_output_type: console
+---
+  
+# Recap: variables and transformations
+
+**Core variables:**
+
+- `Coord`: token frequency of the exact conjunct pair `X ve Y`.
+- `rank`: ordinal rank of `Coord` (higher rank = rarer pair).
+- `rank_c`: `rank - mean(rank)`.
+
+**Design + coding:**
+
+- Outcome: `rating` (ordered factor) → cumulative logit.
+- Predictors: full interaction `is_sa * suffix * rank_c`.
+- Random effects: `(1 + is_sa * suffix * rank_c | subject) + (1 + is_sa | itemNum)`.
+- Contrasts: `contr.sum(2)/2` for `is_sa`, `contr.sum(4)/2` for `suffix` (grand-mean parameterization).
+
+| **Factor** | **Level** | **Contrast 1** | **Contrast 2** | **Contrast 3** |
+|:------------|:----------|:--------------:|:--------------:|:--------------:|
+| **is_sa** | 0 (Non-suspended) | +0.5 | — | — |
+|  | 1 (Suspended) | −0.5 | — | — |
+| **suffix** | −cI | +0.5 | 0.0 | 0.0 |
+|  | −lI | 0.0 | +0.5 | 0.0 |
+|  | −lIk | 0.0 | 0.0 | +0.5 |
+|  | −sIz | −0.5 | −0.5 | −0.5 |
+
+
+
+
+```{r, warning=FALSE, message=FALSE}
+# packages
+invisible(lapply(c("dplyr", "ggplot2", "tidyr", "readr", "purrr", "stringr", "knitr", "brms", "tidybayes", "loo", "gt"), library, character.only = TRUE))
+
+
+# load scripts
+invisible(lapply(list.files("./scripts", "\\.R$", full.names = TRUE), source))
+
+# load data
+exp <- read_csv("./data/exp_data.csv")
+
+freq <- read_csv("../freqs_for_analysis.csv")
+
+rank_freq <- freq %>%
+  arrange(desc(Coord)) %>%
+  mutate(
+    rank = row_number(),
+    rel_freq = Coord / sum(Coord)
+  )
+
+
+lex <- rank_freq %>%
+  transmute(
+    item,
+    Coord, PMI, cPMI, csumPMI, rank, rel_freq,
+    word = str_split(item, fixed(" ve "))
+  ) %>%
+  unnest_longer(word) %>%
+  mutate(word = str_squish(word))
+
+lex <- lex %>% mutate(word = dplyr::recode(word, "ilim" = "bilim"))
+
+exp_joined <- exp %>% left_join(lex, by = c("conj1" = "word"))
+
+exp_joined <- exp_joined %>%
+  mutate(rank_c = rank - mean(rank, na.rm = TRUE))
+```
+
+
+```{r}
+exp_joined$is_sa <- as.factor(exp_joined$is_sa)
+exp_joined$rating <- factor(exp_joined$rating, ordered = TRUE)
+exp_joined <- exp_joined %>%
+  group_by(completionCode) %>%
+  mutate(subject = paste0("S", cur_group_id())) %>%
+  ungroup()
+exp_joined$subject <- as.factor(exp_joined$subject)
+exp_joined$itemNum <- as.factor(exp_joined$itemNum)
+exp_joined$suffix <- factor(exp_joined$suffix, levels = c("-cI", "-lI", "-sIz", "-lIk"))
+
+contrasts(exp_joined$is_sa) <-  contr.sum(2)/2
+contrasts(exp_joined$suffix) <- contr.sum(4)/2
+
+
+colnames(attr(exp_joined$suffix, "contrasts")) <- 
+  c("suffixSupportervsHood", "suffixWithvsHood", "suffixWithoutvsHood")
+
+
+my_prior <- c(
+  prior(normal(0, 0.5), class = "b", coef = "is_sa1"),
+  prior(exponential(1), class = "sd", group = "subject"),
+  prior(exponential(1), class = "sd", group = "itemNum"),
+  prior(exponential(1), class = "sd", coef = "is_sa1", group = "subject"),
+  prior(lkj(2), class = "cor"),
+  prior(normal(0, 5), class = "Intercept")
+)
+```
+
+```{r}
+run_model_all_suffixes <- function(
+  data,
+  prior,
+  freq_var = "logCoord_z",
+  model_path_prefix = "./models/",
+  chains = 4, iter = 4000, cores = 8,
+  adapt_delta = 0.95, max_treedepth = 15,
+  decomp = "QR",
+  backend = "cmdstanr",          
+  threads_per_chain = NULL,      
+  title_prefix = "Posterior Distributions (all suffixes)"
+) {
+  stopifnot(freq_var %in% names(data))
+  data$is_sa <- factor(data$is_sa)
+  data$suffix <- factor(data$suffix, levels = c("-cI", "-lI", "-sIz", "-lIk"))
+
+  contrasts(data$is_sa) <-  contr.sum(2)/2
+  contrasts(data$suffix) <- contr.sum(4)/2
+  colnames(attr(data$suffix, "contrasts")) <- 
+    c("suffixSupportervsHood", "suffixWithvsHood", "suffixWithoutvsHood")
+
+  # formula
+  rhs     <- paste0("1 + is_sa * suffix * ", freq_var)
+  re_subj <- paste0("(1 + is_sa * suffix * ", freq_var, " | subject)")
+  re_item <- "(1 + is_sa * suffix | itemNum)"
+  formula_str <- paste("rating ~", rhs, "+", re_subj, "+", re_item)
+  
+  # model itself
+  brm_args <- list(
+    formula = bf(as.formula(formula_str), decomp = decomp),
+    data = data,
+    family = cumulative(link = "logit"),
+    prior = prior,
+    chains = chains, iter = iter, cores = cores,
+    control = list(adapt_delta = adapt_delta, max_treedepth = max_treedepth),
+    file = file.path(model_path_prefix, paste0("model_all_", freq_var))
+  )
+  if (!is.null(backend)) brm_args$backend <- backend
+  if (!is.null(threads_per_chain)) brm_args$threads <- threading(threads_per_chain)
+
+  fit <- do.call(brm, brm_args)
+
+  post_fixef <- fit %>%
+    tidybayes::gather_draws(`b_.*`, regex = TRUE) %>%
+    rename(term = .variable, estimate = .value) %>%
+    select(-.chain, -.iteration, -.draw)
+
+  # getting a summary
+  posterior_summary <- post_fixef %>%
+    group_by(term) %>%
+    summarise(
+      p_gt_0       = mean(estimate > 0),
+      avg_estimate = mean(estimate),
+      ci_95_low    = quantile(estimate, .025),
+      ci_95_high   = quantile(estimate, .975),
+      .groups = "drop"
+    )
+
+  # labelling
+  pretty_term <- function(x) {
+    x %>%
+      str_remove("^b_") %>%
+      str_replace_all(":", " × ")
+  }
+
+  posterior_summary <- posterior_summary %>%
+    mutate(term_pretty = pretty_term(term)) %>%
+    arrange(avg_estimate)
+
+  post_fixef <- post_fixef %>%
+    left_join(posterior_summary, by = "term") %>%
+    mutate(term_pretty = factor(term_pretty, levels = posterior_summary$term_pretty)) %>%
+    filter(!grepl("^Intercept", term_pretty))
+  
+
+  # plotting
+  x_range <- range(post_fixef$estimate)
+  buffer  <- diff(x_range) * 0.3
+  max_x   <- max(post_fixef$estimate)
+
+  p <- ggplot(post_fixef, aes(x = estimate, y = term_pretty)) +
+    stat_halfeye(.width = c(.66, .95)) +
+    geom_vline(xintercept = 0, linetype = "dashed") +
+    geom_text(
+      data = posterior_summary,
+      aes(
+        x = max_x + buffer * 0.1,
+        y = term_pretty,
+        label = paste0("P(β>0) = ", sprintf("%.2f", p_gt_0))
+      ),
+      hjust = 0,
+      inherit.aes = FALSE
+    ) +
+    labs(
+      x = "Effect",
+      y = "Coefficient",
+      title = paste0(title_prefix, " · freq var = ", freq_var)
+    ) +
+    theme_minimal() +
+    coord_cartesian(xlim = c(x_range[1], max_x + buffer))
+
+  # brms fixef table
+  fixef_table <- as.data.frame(brms::fixef(fit, robust = FALSE, probs = c(.025, .5, .975)))
+  fixef_table$term <- rownames(fixef_table)
+  rownames(fixef_table) <- NULL
+  fixef_table <- fixef_table %>% relocate(term)
+
+  list(model = fit, plot = p, summary = posterior_summary, fixef = fixef_table)
+}
+
+suffix_is_sa_contrasts <- function(fit, data, freq_var = "logCoord_z", freq_at = 0) {
+  stopifnot(freq_var %in% names(data))
+  sf <- levels(factor(data$suffix))
+
+  newdata <- do.call(rbind, lapply(sf, function(s) {
+    rbind(
+      data.frame(is_sa = factor(0, levels = levels(data$is_sa)), suffix = factor(s, levels = sf)),
+      data.frame(is_sa = factor(1, levels = levels(data$is_sa)), suffix = factor(s, levels = sf))
+    )
+  }))
+  newdata[[freq_var]] <- freq_at
+
+  # population-level stuff
+  lp <- brms::posterior_linpred(fit, newdata = newdata, re_formula = NA)
+
+  idx0 <- seq(1, nrow(newdata), by = 2)
+  idx1 <- seq(2, nrow(newdata), by = 2)
+
+  deltas <- lp[, idx1, drop = FALSE] - lp[, idx0, drop = FALSE]
+  colnames(deltas) <- sf
+
+  summ <- lapply(sf, function(s) {
+    d <- deltas[, s]
+    data.frame(
+      suffix     = s,
+      avg        = mean(d),
+      p_gt_0     = mean(d > 0),
+      ci_95_low  = quantile(d, .025),
+      ci_95_high = quantile(d, .975)
+    )
+  }) %>% bind_rows()
+
+  list(draws = deltas, summary = summ)
+}
+
+freq_effect_by_suffix <- function(fit, data, freq_var = "logCoord_z",
+                                  low = -1, high = 1, is_sa_level = 1) {
+  stopifnot(freq_var %in% names(data))
+  sf <- levels(factor(data$suffix))
+
+  # two frequency values: low and high (e.g., -1 SD vs +1 SD)
+  newdata <- do.call(rbind, lapply(sf, function(s) {
+    rbind(
+      data.frame(
+        is_sa = factor(is_sa_level, levels = levels(data$is_sa)),
+        suffix = factor(s, levels = sf),
+        freq = low
+      ),
+      data.frame(
+        is_sa = factor(is_sa_level, levels = levels(data$is_sa)),
+        suffix = factor(s, levels = sf),
+        freq = high
+      )
+    )
+  }))
+
+  # rename freq column to match freq_var
+  names(newdata)[names(newdata) == "freq"] <- freq_var
+
+  # population-level linear predictor
+  lp <- brms::posterior_linpred(fit, newdata = newdata, re_formula = NA)
+
+  # differences: high - low
+  idx_low <- seq(1, nrow(newdata), by = 2)
+  idx_high <- seq(2, nrow(newdata), by = 2)
+
+  deltas <- lp[, idx_high, drop = FALSE] - lp[, idx_low, drop = FALSE]
+  colnames(deltas) <- sf
+
+  # summarize
+  summ <- lapply(sf, function(s) {
+    d <- deltas[, s]
+    data.frame(
+      suffix     = s,
+      avg        = mean(d),
+      p_gt_0     = mean(d > 0),
+      ci_95_low  = quantile(d, .025),
+      ci_95_high = quantile(d, .975)
+    )
+  }) %>% dplyr::bind_rows()
+
+  list(draws = deltas, summary = summ)
+}
+
+
+item_suffix_sa_contrasts <- function(result,
+                                     freq_var = "logCoord_z",
+                                     freq_at = 0,
+                                     prob = c(.66, .95),
+                                     facet_scales = "free_y") {
+  fit <- result$model
+  dat <- fit$data
+  stopifnot(freq_var %in% names(dat))
+
+  items    <- levels(factor(dat$itemNum))
+  suffixes <- levels(dat$suffix)
+  islvls   <- levels(dat$is_sa)
+
+  base <- expand.grid(itemNum = items, suffix = suffixes, KEEP.OUT.ATTRS = FALSE, stringsAsFactors = FALSE)
+  nd0  <- transform(base, is_sa = factor(islvls[1], levels = islvls), .which = "is0")
+  nd1  <- transform(base, is_sa = factor(islvls[2], levels = islvls), .which = "is1")
+  newdata <- rbind(nd0, nd1)
+
+  newdata[[freq_var]] <- freq_at
+
+  newdata$itemNum <- factor(newdata$itemNum, levels = levels(dat$itemNum))
+  newdata$suffix  <- factor(newdata$suffix,  levels = levels(dat$suffix))
+  newdata$is_sa   <- factor(newdata$is_sa,   levels = levels(dat$is_sa))
+
+  lp <- brms::posterior_linpred(
+    fit,
+    newdata   = newdata,
+    re_formula = ~ (1 + is_sa * suffix | itemNum)  
+  )
+
+  idx0 <- which(newdata$.which == "is0")
+  idx1 <- which(newdata$.which == "is1")
+  stopifnot(
+    all(newdata$itemNum[idx0] == newdata$itemNum[idx1]),
+    all(newdata$suffix[idx0]  == newdata$suffix[idx1])
+  )
+
+  deltas <- lp[, idx1, drop = FALSE] - lp[, idx0, drop = FALSE]
+  keys   <- newdata[idx0, c("itemNum", "suffix")]
+
+  lo66 <- (1 - prob[1]) / 2; hi66 <- 1 - lo66
+  lo95 <- (1 - prob[2]) / 2; hi95 <- 1 - lo95
+
+  summ <- purrr::map_dfr(seq_len(ncol(deltas)), function(j) {
+    d <- deltas[, j]
+    tibble::tibble(
+      itemNum  = as.character(keys$itemNum[j]),
+      suffix   = as.character(keys$suffix[j]),
+      estimate = mean(d),
+      p_gt_0   = mean(d > 0),
+      low66    = stats::quantile(d, lo66),
+      high66   = stats::quantile(d, hi66),
+      low95    = stats::quantile(d, lo95),
+      high95   = stats::quantile(d, hi95)
+    )
+  })
+
+  if (requireNamespace("tidytext", quietly = TRUE)) {
+    summ <- dplyr::mutate(summ, item_for_facet = tidytext::reorder_within(itemNum, estimate, suffix))
+    y_aes <- ggplot2::aes(y = item_for_facet)
+    y_scale <- tidytext::scale_y_reordered()
+  } else {
+    summ <- dplyr::mutate(summ, item_for_facet = stats::reorder(itemNum, estimate))
+    y_aes <- ggplot2::aes(y = item_for_facet)
+    y_scale <- NULL
+  }
+
+  p <- ggplot2::ggplot(summ, ggplot2::aes(x = estimate)) +
+    ggplot2::geom_errorbarh(ggplot2::aes(xmin = low95, xmax = high95), height = 0) +
+    ggplot2::geom_errorbarh(ggplot2::aes(xmin = low66, xmax = high66), height = 0, linewidth = 1.1) +
+    ggplot2::geom_point(size = 1.8) +
+    ggplot2::geom_vline(xintercept = 0, linetype = "dashed", color = "gray50") +
+    ggplot2::facet_wrap(~ suffix, scales = facet_scales) +
+    ggplot2::labs(
+      x = "Δ SA (is_sa=1 − is_sa=0) at reference frequency (log-odds)",
+      y = "Item",
+      title = sprintf("Item × suffix SA contrasts at %s = %s", freq_var, as.character(freq_at))
+    ) +
+    ggplot2::theme_minimal(base_size = 12) +
+    y_aes +
+    (if (is.null(y_scale)) ggplot2::theme() else y_scale)
+
+  list(table = summ, plot = p)
+}
+```
+
+
+
+# Models 
+
+We fit a unified models (all suffixes in one model)  with centered rank.
+
+Models use the following prior family (generic `class = "b"` for fixed effects, exponential for sds, LKJ(2) for correlations) and the same random-effects structure. Suffix and `is_sa` are sum-coded (+/-.5), so main effects are grand means and interactions are clean deviations.
+
+| **Applied To** | **Family** | **Parameters** | **Scope** | **Purpose** |
+|:----------------|:-----------|:---------------|:-----------|:-------------|
+| Fixed effects | Normal | mean = 0, sd = 0.5 | Population-level | Regularizes coefficients around zero. |
+| Intercept | Normal | mean = 0, sd = 5 | Population-level | Allows wide variation for the baseline. |
+| Random-effect SDs | Exponential | rate = 1 | Subject | Keeps subject-level variation modest. |
+| Random-effect SDs | Exponential | rate = 1 | Item | Keeps item-level variation modest. |
+| Correlations | LKJ | η = 2 | Random effects | Favors moderate correlations. |
+
+
+## Centered Rank Model
+
+```{r}
+
+priors_generic <- c(
+  prior(normal(0, 0.5), class = "b"),           
+  prior(normal(0, 5),   class = "Intercept"),
+  prior(exponential(1), class = "sd", group = "subject"),
+  prior(exponential(1), class = "sd", group = "itemNum"),
+  prior(lkj(2),         class = "cor")
+)
+
+res <- run_model_all_suffixes(
+  data = exp_joined,
+  prior = priors_generic,                 
+  freq_var = "rank_c",
+  chains = 1, iter = 4000, cores = 16,
+  adapt_delta = 0.95, max_treedepth = 15,
+  threads_per_chain = 2                   
+)
+
+res$plot
+# head(res$summary)
+# res$fixef
+
+# siz = lik vs siz
+# lik = li vs siz
+# li = ci vs siz
+# lik'i constant alalim.
+
+```
+
+
+
+Key result: the interaction is negative. As pairs become frequent (low rank), the suspended affixation effect is amplified.
+
+Interpretation: suspended affixation (SA) sensitivity tracks usage-based accessibility: more frequent conjunct pairs make the SA-related contrast larger.
+
+### Sanity check: Conditional Δ(is_sa) 
+
+Checking the effect of suspended affixation within each suffix at mean freq (0). p_gt_0 (probability greater than 0) for a suffix should be either lower than 0.11 or higher than .89 for -lI and -sIz only.
+
+```{r}
+
+
+delta_sa <- suffix_is_sa_contrasts(res$model, exp_joined, freq_var = "rank_c", freq_at = 0)
+delta_sa$summary
+```
+
+
+### Itemwise 
+
+Item-wise estimate of suspended affixation. We kept the frequency at the mean (0). 
+
+```{r}
+outA <- item_suffix_sa_contrasts(res, freq_var = "rank_c",   freq_at = 0)
+
+outA$plot  
+
+
+limax <- outA$table %>% filter(suffix == "-lI") %>% slice_max(estimate, n = 3) %>% ungroup() %>% .$itemNum
+
+exp %>% filter(suffix == "-lI") %>% filter(itemNum %in% limax) %>% select(itemNum, condition, sentence) %>% distinct()
+
+
+```
+
+
+
+
+### Outlier Items
+
+```{r}
+
+
+top_ids <- outA$table %>%
+  group_by(suffix) %>%
+  slice_max(order_by = estimate, n = 3, with_ties = FALSE) %>%
+  transmute(suffix, itemNum = as.character(itemNum))
+
+bottom_ids <- outA$table %>%
+  group_by(suffix) %>%
+  slice_min(order_by = estimate, n = 3, with_ties = FALSE) %>%
+  transmute(suffix, itemNum = as.character(itemNum))
+
+top_rows <- exp %>%
+  mutate(itemNum = as.character(itemNum)) %>%
+  semi_join(top_ids, by = c("suffix", "itemNum")) %>%
+  select(suffix, itemNum, condition, sentence) %>%
+  distinct()
+
+bottom_rows <- exp %>%
+  mutate(itemNum = as.character(itemNum)) %>%
+  semi_join(bottom_ids, by = c("suffix", "itemNum")) %>%
+  select(suffix, itemNum, condition, sentence) %>%
+  distinct()
+
+
+top_rows %>%
+  arrange(suffix) %>%
+  group_by(suffix) %>%
+  gt() %>%
+  cols_label(
+    itemNum = "Item",
+    condition = "Condition",
+    sentence = "Sentence"
+  ) %>%
+  tab_options(table.width = pct(100))
+
+
+
+
+
+bottom_rows %>%
+  arrange(suffix) %>%
+  group_by(suffix) %>%
+  gt() %>%
+  cols_label(
+    itemNum = "Item",
+    condition = "Condition",
+    sentence = "Sentence"
+  ) %>%
+  tab_options(table.width = pct(100))
+
+
+
+# Check item-wise differences without grouping suffixes
+# check if overall acceptability mattered?
+# 
+```

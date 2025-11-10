@@ -1,0 +1,300 @@
+---
+title: "Modelling without ambiguity"
+author: Eva, Utku, Özge
+format:
+  html:
+    self-contained: true  # ensures everything is embedded, no extra folders
+    embed-resources: true
+    fig-width: 7
+    fig-height: 4
+    smooth-scroll: true
+    code-copy: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    toc: true             # adds table of contents
+    toc-location: left    # optional: move TOC to left side
+    toc-depth: 3          # optional: control how deep the TOC goes
+    number-sections: true # adds numbering to sections
+    theme: flatly          # or use another Bootstrap theme like journal, flatly, etc.
+    highlight-style: a11y # accessible syntax highlighting
+    # css: styles.css       # optional: your custom CSS if needed
+editor_options:
+  chunk_output_type: console
+---
+
+
+
+
+```{r, warning=FALSE, message=FALSE}
+# packages
+invisible(lapply(c("dplyr", "ggplot2", "tidyr", "readr", "purrr", "stringr", "knitr", "brms", "tidybayes", "loo"), library, character.only = TRUE))
+
+
+# load scripts
+invisible(lapply(list.files("./scripts", "\\.R$", full.names = TRUE), source))
+
+# load data
+exp <- read_csv("./data/exp_data.csv")
+
+freq <- read_csv("../freqs_for_analysis.csv")
+
+rank_freq <- freq %>%
+  arrange(desc(Coord)) %>%
+  mutate(
+    rank = row_number(),
+    rel_freq = Coord / sum(Coord)
+  )
+
+
+lex <- rank_freq %>%
+  transmute(
+    item,
+    Coord, PMI, cPMI, csumPMI, rank, rel_freq,
+    word = str_split(item, fixed(" ve "))
+  ) %>%
+  unnest_longer(word) %>%
+  mutate(word = str_squish(word))
+
+lex <- lex %>% mutate(word = dplyr::recode(word, "ilim" = "bilim"))
+
+exp_joined <- exp %>% left_join(lex, by = c("conj1" = "word"))
+
+exp_joined <- exp_joined %>%
+  mutate(logCoord = log(Coord + 1)) %>%
+  mutate(logCoord_z = scale(logCoord)[, 1]) %>%
+  mutate(log_rank = log(rank), log_rank_z = scale(log_rank)[, 1]) %>% 
+  mutate(rank_c = rank - mean(rank, na.rm = TRUE))
+```
+
+
+
+
+```{r}
+
+amb = read.csv("data/ambiguity.csv") %>% 
+  select(item, sentence, condition, type, amb=Ozge.is.ambiguous)
+
+amb_items <- amb %>% filter(type == "exp") %>% filter(amb == 1) %>% select(item, condition, amb)
+
+amb_items <- amb_items %>% 
+  mutate(
+    suffix = case_when(
+      condition == "a" ~ "Supporter",
+      condition == "b" ~ "Supporter",
+      condition == "c" ~ "With",
+      condition == "d" ~ "With",
+      condition == "e" ~ "Without",
+      condition == "f" ~ "Without",
+      condition == "g" ~ "Hood",
+      condition == "h" ~ "Hood"
+    )
+  )
+
+# a b
+# c d 
+# e f
+# g h 
+
+
+
+```
+
+```{r}
+exp_joined$is_sa <- as.factor(exp_joined$is_sa)
+exp_joined$rating <- factor(exp_joined$rating, ordered = TRUE)
+exp_joined <- exp_joined %>%
+  group_by(completionCode) %>%
+  mutate(subject = paste0("S", cur_group_id())) %>%
+  ungroup()
+exp_joined$subject <- as.factor(exp_joined$subject)
+exp_joined$itemNum <- as.factor(exp_joined$itemNum)
+
+exp_joined <- exp_joined %>%
+   mutate(
+    suffix = case_when(
+      suffix == "-cI" ~ "Supporter",
+      suffix == "-lI" ~ "With",
+      suffix == "-sIz" ~ "Without",
+      suffix == "-lIk" ~ "Hood"
+    )
+  )
+
+
+
+amb_items <- amb_items %>% mutate(f_cod = paste0(item, "_", suffix))
+exp_joined <- exp_joined %>% mutate(f_cod = paste0(itemNum, "_", suffix))
+og <- exp_joined
+exp_joined <- exp_joined %>% anti_join(., amb_items, by = "f_cod", copy = FALSE) 
+
+
+exp_joined$suffix <- as.factor(exp_joined$suffix)
+
+
+contrasts(exp_joined$is_sa) <-  contr.sum(2)/2
+contrasts(exp_joined$suffix) <- contr.sum(4)/2
+
+my_prior <- c(
+  prior(normal(0, 0.5), class = "b", coef = "is_sa1"),
+  prior(exponential(1), class = "sd", group = "subject"),
+  prior(exponential(1), class = "sd", group = "itemNum"),
+  prior(exponential(1), class = "sd", coef = "is_sa1", group = "subject"),
+  prior(lkj(2), class = "cor"),
+  prior(normal(0, 5), class = "Intercept")
+)
+
+```
+
+
+
+
+
+
+```{r}
+
+run_suffix_model <- function(suffix_level, data, prior, model_path_prefix = "./models/", freq_var = "logCoord_z") {
+  # Create formula dynamically
+  formula_str <- paste0("rating ~ 1 + is_sa * ", freq_var,
+                        " + (1 + is_sa * ", freq_var, " | subject) + (1 + is_sa | itemNum)")
+
+  # Fit the model
+  fit <- brm(
+    formula = bf(as.formula(formula_str), decomp = "QR"),
+    data = data %>% filter(suffix == suffix_level),
+    family = cumulative(link = "logit"),
+    prior = prior,
+    chains = 4, iter = 4000, cores = 8,
+    control = list(adapt_delta = 0.9, max_treedepth = 16),
+    file = paste0(model_path_prefix, "model_", gsub("-", "", suffix_level), "_", freq_var)
+  )
+
+  # Extract fixed effects
+  interaction_term <- paste0("b_is_sa1:", freq_var)
+  posterior_df <- fit %>%
+    spread_draws(!!sym("b_is_sa1"), !!sym(paste0("b_", freq_var)), !!sym(interaction_term)) %>%
+    select(-.chain, -.iteration, -.draw) %>%
+    pivot_longer(cols = everything(), names_to = "term", values_to = "estimate")
+
+  # Summarise with posterior probabilities and CIs
+  posterior_summary <- posterior_df %>%
+    group_by(term) %>%
+    summarise(
+      p_gt_0 = mean(estimate > 0),
+      avg_estimate = mean(estimate),
+      ci_95_low = quantile(estimate, 0.025),
+      ci_95_high = quantile(estimate, 0.975),
+      .groups = "drop"
+    )
+
+  # Join summary for plotting
+  posterior_df <- left_join(posterior_df, posterior_summary, by = "term")
+  x_range <- range(posterior_df$estimate)
+  buffer <- diff(x_range) * 0.3
+  max_x <- max(posterior_df$estimate)
+
+  # Plot
+  p <- ggplot(posterior_df, aes(x = estimate, y = reorder(term, avg_estimate))) +
+    stat_halfeye(.width = c(.66, .95)) +
+    geom_vline(xintercept = 0, linetype = "dashed") +
+    geom_text(
+      data = posterior_summary,
+      aes(
+        x = max_x + buffer * 0.1,
+        y = term,
+        label = paste0("P(β>0) = ", round(p_gt_0, 2))
+      ),
+      hjust = 0,
+      inherit.aes = FALSE
+    ) +
+    labs(
+      x = "Effect (log odds)",
+      y = "Coefficient",
+      title = paste("Posterior Distributions for", suffix_level, "with", freq_var)
+    ) +
+    theme_minimal() +
+    coord_cartesian(xlim = c(x_range[1], max_x + buffer))
+
+  return(list(model = fit, plot = p, summary = posterior_summary))
+}
+
+```
+
+
+### RANK_C
+
+#### Hood
+
+```{r}
+m.hood <- run_suffix_model("Hood", exp_joined, my_prior, freq_var = "rank_c")
+m.hood$summary
+m.hood$plot
+```
+
+
+#### With
+
+
+```{r}
+m.with <- run_suffix_model("With", exp_joined, my_prior, freq_var = "rank_c")
+m.with$summary
+m.with$plot
+```
+
+#### Without
+
+
+```{r}
+m.without <- run_suffix_model("Without", exp_joined, my_prior, freq_var = "rank_c")
+m.without$summary
+m.without$plot
+```
+
+#### Supporter
+
+
+```{r}
+m.supporter <- run_suffix_model("Supporter", exp_joined, my_prior, freq_var = "rank_c")
+m.supporter$summary
+m.supporter$plot
+```
+
+
+
+### logCoord_z
+
+#### Hood
+
+```{r}
+m.hood <- run_suffix_model("Hood", exp_joined, my_prior, freq_var = "logCoord_z")
+m.hood$summary
+m.hood$plot
+```
+
+
+#### With
+
+
+```{r}
+m.with <- run_suffix_model("With", exp_joined, my_prior, freq_var = "logCoord_z")
+m.with$summary
+m.with$plot
+```
+
+#### Without
+
+
+```{r}
+m.without <- run_suffix_model("Without", exp_joined, my_prior, freq_var = "logCoord_z")
+m.without$summary
+m.without$plot
+```
+
+#### Supporter
+
+
+```{r}
+m.supporter <- run_suffix_model("Supporter", exp_joined, my_prior, freq_var = "logCoord_z")
+m.supporter$summary
+m.supporter$plot
+```
+
